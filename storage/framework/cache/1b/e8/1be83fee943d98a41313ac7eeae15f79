@@ -1,0 +1,56 @@
+1455587780s:1781:"a:6:{s:5:"mtime";i:1450443677;s:7:"content";s:755:"title = "News Category"
+url = "/:slug/:page?"
+layout = "blog-home-1"
+is_hidden = 0
+show_menu = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+<?php
+function onEnd()
+{
+    // Optional - set the page title to the category name
+    if ($this->category)
+        $this->page->title = $this->category->name;
+}
+?>
+==
+<div class="panel panel-default">
+  <div class="panel-body">
+  
+    {% if not category %}
+        <h2>Category not found</h2>
+    {% else %}
+        <h2>{{ category.name }}</h2>
+    
+        {% component 'blogPosts' %}
+    {% endif %}
+    
+  </div>    <!--/.panel-body-->
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:13:"News Category";s:3:"url";s:13:"/:slug/:page?";s:6:"layout";s:11:"blog-home-1";s:9:"is_hidden";s:1:"0";s:9:"show_menu";s:1:"0";s:10:"components";a:1:{s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:11:"{{ :slug }}";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:13:"blog/category";s:8:"postPage";s:9:"blog/post";}}}s:4:"code";s:157:"
+function onEnd()
+{
+    // Optional - set the page title to the category name
+    if ($this->category)
+        $this->page->title = $this->category->name;
+}
+";s:6:"markup";s:278:"<div class="panel panel-default">
+  <div class="panel-body">
+  
+    {% if not category %}
+        <h2>Category not found</h2>
+    {% else %}
+        <h2>{{ category.name }}</h2>
+    
+        {% component 'blogPosts' %}
+    {% endif %}
+    
+  </div>    <!--/.panel-body-->
+</div>";}";

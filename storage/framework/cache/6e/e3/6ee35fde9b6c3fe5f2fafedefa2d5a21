@@ -1,0 +1,12 @@
+1448239246s:497:"a:6:{s:5:"mtime";i:1448001711;s:7:"content";s:155:"title = "spouse"
+url = "/spouse"
+layout = "default"
+is_hidden = 0
+
+[spouseform]
+==
+<div class="container">
+    {% component 'spouseform' %}
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:6:"spouse";s:3:"url";s:7:"/spouse";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:10:"components";a:1:{s:10:"spouseform";a:0:{}}}s:4:"code";N;s:6:"markup";s:65:"<div class="container">
+    {% component 'spouseform' %}
+</div>";}";

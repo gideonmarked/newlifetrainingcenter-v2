@@ -1,0 +1,16 @@
+columns:
+    first_name:
+        label: 'First Name'
+        type: text
+    middle_name:
+        label: 'Middle Name'
+        type: text
+    last_name:
+        label: 'Last Name'
+        type: text
+    study_program:
+        label: 'Study Program'
+        type: text
+    level:
+        label: Level
+        type: number

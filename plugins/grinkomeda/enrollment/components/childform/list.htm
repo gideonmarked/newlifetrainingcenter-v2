@@ -1,0 +1,22 @@
+<li class="list-group-item row">
+        <div class="col-lg-6"><b>Child's Name</b></div>
+        <div class="col-lg-2"><b>Child's Age</b></div>
+		<div class="col-lg-3"><b>Child's Gender</b></div>
+		<div class="col-lg-1"></div>
+    </li>
+{% for i in range(0,max-1) %}
+    <li class="list-group-item row">
+        <input type="hidden" name="childname[]" value="{{ cnames[i] }}" />
+        <input type="hidden" name="childage[]" value="{{ cages[i] }}" />
+        <input type="hidden" name="childgender[]" value="{{ cgenders[i] }}" />
+        <div class="col-lg-6">{{ cnames[i] }}</div>
+        <div class="col-lg-2">{{ cages[i] }}</div>
+		<div class="col-lg-3">{{ cgenders[i] }}</div>
+		<div class="col-lg-1">
+        <button type="button" 
+            class="close pull-right" 
+            aria-hidden="true" 
+            class="" 
+            onclick="$(this).closest('li').remove()">&times;</button></div>
+    </li>
+{% endfor %}

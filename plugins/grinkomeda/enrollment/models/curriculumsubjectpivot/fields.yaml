@@ -1,0 +1,10 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    pivot[level]:
+        label: Level
+        span: auto
+        type: relation
+        defaultFrom: level

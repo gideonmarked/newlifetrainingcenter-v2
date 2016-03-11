@@ -1,0 +1,71 @@
+1450939952s:2442:"a:6:{s:5:"mtime";i:1450443715;s:7:"content";s:1146:"
+    <!-- jQuery -->
+    <script src="{{ ['assets/javascript/jquery.js']|theme }}"></script>
+    
+    
+		{% framework %}
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ ['assets/javascript/bootstrap.min.js']|theme }}"></script>
+    
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="{{ ['assets/bower_components/metisMenu/dist/metisMenu.min.js']|theme }}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ ['assets/javascript/sb-admin-2.js']|theme }}"></script>
+    
+    <!-- DataTables JavaScript -->
+    <script src="{{ ['assets/bower_components/datatables/media/js/jquery.dataTables.min.js']|theme }}"></script>
+    <script src="{{ ['assets/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js']|theme }}"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#tbl-studEnrolledSubjects').DataTable({
+                responsive: true
+        });
+				
+        $('#tbl-studDownloadables').DataTable({
+                responsive: true
+        });
+    });
+    </script>
+    
+</body>
+
+</html>
+";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1140:"<!-- jQuery -->
+    <script src="{{ ['assets/javascript/jquery.js']|theme }}"></script>
+    
+    
+		{% framework %}
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ ['assets/javascript/bootstrap.min.js']|theme }}"></script>
+    
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="{{ ['assets/bower_components/metisMenu/dist/metisMenu.min.js']|theme }}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ ['assets/javascript/sb-admin-2.js']|theme }}"></script>
+    
+    <!-- DataTables JavaScript -->
+    <script src="{{ ['assets/bower_components/datatables/media/js/jquery.dataTables.min.js']|theme }}"></script>
+    <script src="{{ ['assets/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js']|theme }}"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#tbl-studEnrolledSubjects').DataTable({
+                responsive: true
+        });
+				
+        $('#tbl-studDownloadables').DataTable({
+                responsive: true
+        });
+    });
+    </script>
+    
+</body>
+
+</html>";}";

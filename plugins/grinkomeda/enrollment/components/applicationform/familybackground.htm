@@ -1,0 +1,63 @@
+<div class="form_wrapper">
+          <h3 class="gf_progressbar_title">Step 3 of 7 - STEP 3: Family Background</h3>
+          <div class="gf_progressbar">
+               <div class="gf_progressbar_percentage percentbar_green percentbar_0" style="width:0%;"><span>28%</span></div>
+          </div>
+          <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div>
+          <br/>
+          <form>
+               <div class="form-group row">
+                    <div class="col-md-6 pull-left">
+                         <label for="inputEmail">Name</label>
+                         <input type="email" id="inputApplication" class="form-control" placeholder="First Name" required="">
+                         <span>First</span>
+                    </div>
+                    <div class="col-md-6 pull-left">
+                         <label for="inputEmail"></label>
+                         <input type="email" id="inputApplication" class="form-control" placeholder="First Name" required="">
+                         <span>Last</span>
+                    </div>
+               </div>
+               <div class="form-group row">
+                    <div class="col-md-12 pull-left">
+                         <label for="inputEmail">Spouse's Occupation</label>
+                         <input type="email" id="inputApplication" class="form-control" placeholder="First Name" required="">
+                    </div>
+               </div>
+               <div class="form-group row">
+                    <div class="col-md-4 pull-left">
+                        <label for="inputEmail">Is your spouse (if married), or your parents / guardians (if not married), in agreement with you to enroll in NTC this school year?</label>
+                        <input type="radio" name="travelling" value="yes"> Yes<br>
+                        <input type="radio" name="travelling" value="no"> No
+                    </div>
+               </div>
+               <h3>Children</h3>
+               <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div>
+               <div class="form-group row" id="children">
+                    <div class="col-md-5 pull-left">
+                         <label for="inputEmail">Name</label>
+                         <input type="email" id="inputApplication" class="form-control" placeholder="First Name" required="">
+                    </div>
+                    <div class="col-md-3 pull-left">
+                         <label for="inputEmail">Age</label>
+                         <input type="email" id="inputApplication" class="form-control" placeholder="First Name" required="">
+                    </div>
+                    <div class="col-md-3 pull-left">
+                         <label for="inputEmail">Gender</label>
+                         <select name="input_20" id="input_1_20" class="medium form-control"><option value="Male" selected="selected">Male</option><option value="Female">Female</option></select>
+                    </div>
+                    <div class="col-md-1 pull-left">
+                         <br/>
+                         <button data-request="{{ __SELF__ }}::onSavePersonalInformation" data-request-update="'{{ __SELF__ }}::personalinformation': '.form_wrapper'" data-request-success="$('.input-item').val('')" class="btn btn-primary">+</button>
+                    </div>
+               </div>
+               <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div>
+               <br/>
+               <div class="form-group row">
+                    <div class="col-md-6 pull-left">
+                    <button data-request-update="'{{ __SELF__ }}::personalinformation': '.form_wrapper'" data-request-success="$('.input-item').val('')" class="btn btn-primary">Back: Personal Information</button>
+                         <button data-request="{{ __SELF__ }}::onSaveFamilyBackground" data-request-update="'{{ __SELF__ }}::educationalbackground': '.form_wrapper'" data-request-success="$('.input-item').val('')" class="btn btn-primary">Next: Educational Background</button>
+                    </div>
+               </div>
+          </form>
+</div>

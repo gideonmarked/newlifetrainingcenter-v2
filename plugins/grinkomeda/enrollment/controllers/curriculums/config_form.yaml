@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Curriculum
+
+# Model Form Field configuration
+form: $/grinkomeda/enrollment/models/curriculum/fields.yaml
+
+# Model Class name
+modelClass: Grinkomeda\Enrollment\Models\Curriculum
+
+# Default redirect location
+defaultRedirect: grinkomeda/enrollment/curriculums
+
+# Create page
+create:
+    title: Create Curriculum
+    redirect: grinkomeda/enrollment/curriculums/update/:id
+    redirectClose: grinkomeda/enrollment/curriculums
+
+# Update page
+update:
+    title: Edit Curriculum
+    redirect: grinkomeda/enrollment/curriculums
+    redirectClose: grinkomeda/enrollment/curriculums
+
+# Preview page
+preview:
+    title: Preview Curriculum

@@ -1,0 +1,26 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    name:
+        label: Name
+        description: Child's Name
+        type: text
+
+    age:
+        label: Age
+        description: Child's Age
+        type: text
+
+    gender:
+        label: Gender
+        description: Child's Gender
+        type: dropdown
+        options:
+            male: Male
+            female: Female

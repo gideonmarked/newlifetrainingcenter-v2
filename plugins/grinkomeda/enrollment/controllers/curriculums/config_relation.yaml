@@ -1,0 +1,15 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+subjects:
+    label: Subject
+    view:
+        list: $/grinkomeda/enrollment/models/curriculumsubjectpivot/columns.yaml
+        toolbarButtons: add|remove
+    manage:
+        showSearch: true
+        recordsPerPage: 10
+        list: $/grinkomeda/enrollment/models/curriculumsubjectpivot/columns.yaml
+    pivot:
+        form: $/grinkomeda/enrollment/models/curriculumsubjectpivot/fields.yaml

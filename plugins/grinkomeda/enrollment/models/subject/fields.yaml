@@ -1,0 +1,15 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Name
+        description: Subject Name
+        type: text
+
+    description:
+        label: Description
+        description: Subject Description
+        type: textarea
+        size: large

@@ -1,0 +1,34 @@
+1448594021s:1046:"a:2:{s:5:"mtime";i:1448592942;s:7:"content";s:992:"{% set MyM = __SELF__ %}
+{% set dayPointer = MyM.dayPointer %}
+{% set devents = MyM.events[MyM.year][MyM.monthNum] %}
+{% set dprops = MyM.dayprops[MyM.year][MyM.monthNum] %}
+<table class="mycal">
+    <tbody>
+{% for dayPointer in range(1,MyM.days_in_month) %}
+{% if devents[dayPointer] %}
+{% set dayProp = dprops[dayPointer] %}
+    	<tr data-request-data="year:{{ MyM.year }},month:{{ MyM.monthNum }},day:{{ dayPointer }}">
+    		<td class="list-icon">
+{% if dayProp.link %}<a {{ dayProp.link|raw }}>{% endif %}
+				<div class="holder">
+		    		<div class="month {{ MyM.color }}">
+		        		<p>{{ MyM.monthTitle }}</p>
+		    		</div>
+		    		<div class="day">
+		        		<p>{{ dayPointer }}</p>
+		    		</div>
+				</div>
+			</td>
+			<td class="list-event">
+{% if dayProp.link %}</a>{% endif %}
+        		<ul class="eventList">
+{% for ev in devents[dayPointer] %}
+    {% partial '@event' ev = ev %}
+{% endfor %}
+        		</ul>
+			</td>
+		</tr>
+{% endif %}
+{% endfor %}
+    </tbody>
+</table>";}";

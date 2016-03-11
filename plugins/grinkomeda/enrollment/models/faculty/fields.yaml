@@ -1,0 +1,29 @@
+fields:
+    email:
+        label: 'Email Address'
+        span: auto
+        type: text
+    prefix:
+        label: Prefix
+        options:
+            pastor: Ptr.
+            mister: Mr.
+            miss: Ms.
+        span: auto
+        type: dropdown
+    first_name:
+        label: 'Given Name'
+        span: auto
+        type: text
+    last_name:
+        label: 'Last Name'
+        span: auto
+        type: text
+    login:
+        label: Login
+        span: left
+        type: text
+    partial1:
+        span: auto
+        path: field_subjects
+        type: partial

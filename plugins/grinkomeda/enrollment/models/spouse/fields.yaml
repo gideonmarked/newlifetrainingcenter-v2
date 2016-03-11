@@ -1,0 +1,30 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    first_name:
+        label: First Name
+        description: First Name
+        type: text
+
+    last_name:
+        label: Last Name
+        description: Last Name
+        type: text
+
+    occupation:
+        label: Occupation
+        description: Occupation
+        type: text
+
+    allowed:
+        label: "Is your spouse (if married), or your parents / guardians (if not married), in agreement with you to enroll in NTC this school year?"
+        type: dropdown
+        options:
+            yes: Yes
+            no: No

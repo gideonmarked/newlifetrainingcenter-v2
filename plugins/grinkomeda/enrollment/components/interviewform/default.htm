@@ -1,0 +1,29 @@
+<form
+	data-request="{{ __SELF__ }}::onSaveInterview"
+	data-request-redirect="applicationsuccess"
+	>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Set for an Interview: Schedule Details</h3>
+		</div>
+		<div class="panel-body">
+			<div class="row top-buffer">
+				<div class="col-lg-6">
+        	<label for="interviewdate">Interview Date</label>
+					<input type="text" id="interviewdate" class="form-control" name="interview_date" value="" placeholder="Interview Date" />
+				</div>
+				<div class="col-lg-6">
+        	<label for="interviewtime">Interview Time</label>
+					<input type="text" id="interviewtime" class="form-control" name="interview_time" value="" placeholder="Interview Time" />
+				</div>
+				
+			</div>
+
+			<br>
+
+			<div class="row top-buffer">
+				<div class="col-lg-12"><button type="submit" class="btn btn-primary btn-block btn-success">Submit </button></div>
+			</div>
+		</div>
+	</div>
+</form>

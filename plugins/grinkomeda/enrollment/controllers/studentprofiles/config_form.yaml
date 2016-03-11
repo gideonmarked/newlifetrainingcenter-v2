@@ -1,0 +1,14 @@
+name: 'Student Profile'
+modelClass: Grinkomeda\Enrollment\Models\StudentProfile
+form: $/grinkomeda/enrollment/models/studentprofile/fields.yaml
+defaultRedirect: grinkomeda/enrollment/studentprofiles
+create:
+    title: 'Create Student Profile'
+    redirect: 'grinkomeda/enrollment/studentprofiles/update/:id'
+    redirectClose: grinkomeda/enrollment/studentprofiles
+update:
+    title: 'Edit Student Profile'
+    redirect: grinkomeda/enrollment/studentprofiles
+    redirectClose: grinkomeda/enrollment/studentprofiles
+preview:
+    title: 'Preview Student Profile'

@@ -1,0 +1,38 @@
+1.0.1: 'First version of Enrollment'
+1.0.2:
+    - 'Create Subjects Table'
+    - create_subjects_table.php
+1.0.3:
+    - 'Create Faculties Table'
+    - create_faculties_table.php
+1.0.4:
+    - 'Create Curriculums Table'
+    - create_curriculums_table.php
+1.0.6:
+    - 'Create Levels Table'
+    - create_levels_table.php
+1.0.7:
+    - 'Create Seeding Table'
+    - seed_all_tables.php
+1.0.8:
+    - 'Create Character References-Christianities-Education-Spouses-Student Profiles'
+    - create_character_references_table.php
+    - create_christianities_table.php
+    - create_education_table.php
+    - create_student_profiles_table.php
+    - create_spouses_table.php
+1.0.9:
+    - 'Create Childrens Table'
+    - create_childrens_table.php
+1.0.10:
+    - 'Create Interviews Table'
+    - create_interviews_table.php
+1.0.11:
+    - 'Updated table grinkomeda_enrollment_student_profiles'
+    - builder_table_update_grinkomeda_enrollment_student_profiles.php
+1.0.12:
+    - 'Created table grinkomeda_enrollment_classes'
+    - builder_table_create_grinkomeda_enrollment_classes.php
+1.0.13:
+    - 'Updated table grinkomeda_enrollment_classes'
+    - builder_table_update_grinkomeda_enrollment_class_records.php

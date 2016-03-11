@@ -1,0 +1,154 @@
+fields:
+    first_name:
+        label: 'First Name'
+        span: left
+        type: text
+    middle_name:
+        label: 'Middle Name'
+        description: 'Middle Name'
+        type: text
+        span: auto
+    last_name:
+        label: 'Last Name'
+        description: 'Last Name'
+        type: text
+        span: auto
+    nickname:
+        label: Nickname
+        description: Nickname
+        type: text
+        span: auto
+    study_program:
+        label: 'Study Program'
+        options:
+            day_school: 'Day School'
+        span: auto
+        type: dropdown
+    category:
+        label: Category
+        options:
+            first_time: 'First Time Student'
+            returning_student: 'Returning Student'
+        span: auto
+        type: dropdown
+    level:
+        label: Level
+        options:
+            first_year: 'First Year'
+            second_year: 'Second Year'
+            part_time: 'Part Time'
+        span: auto
+        type: dropdown
+    level_program:
+        label: 'Level Sub-Menu'
+        type: dropdown
+        dependsOn: level
+        options:
+            two_year: 'Two-Year Progam'
+            school_of_prayer: 'School of Prayer'
+            special_topics: 'Special Topics'
+    current_status:
+        label: 'Current Status'
+        options:
+            full_time: Full-Time
+        span: auto
+        type: dropdown
+    street:
+        label: Street
+        description: Street
+        type: text
+    city:
+        label: City
+        description: City
+        type: text
+    region:
+        label: Region
+        description: Region
+        type: text
+    postal_code:
+        label: 'Postal Code'
+        description: 'Postal Code'
+        type: text
+    country:
+        label: Country
+        description: Country
+        type: text
+    citizenship:
+        label: Citizenship
+        description: Citizenship
+        type: text
+    phone:
+        label: Phone
+        description: Phone
+        type: text
+    mobile:
+        label: Mobile
+        description: Mobile
+        type: text
+    email:
+        label: Email
+        description: Email
+        type: text
+    website:
+        label: Website
+        description: Website
+        type: text
+    facebook:
+        label: Facebook
+        description: Facebook
+        type: text
+    birth_date:
+        label: 'Birth Date'
+        description: 'Birth Date'
+        type: text
+    birth_place:
+        label: 'Birth Place'
+        description: 'Birth Place'
+        type: text
+    age:
+        label: Age
+        description: Age
+        type: text
+    gender:
+        label: Gender
+        description: Gender
+        type: dropdown
+        options:
+            male: Male
+            female: Female
+    civil_status:
+        label: 'Civil Status'
+        options:
+            single: Single
+            married: Married
+            separated: Separated
+            widowed: Widowed
+            remarried: Remarried
+        span: full
+        type: dropdown
+    occupation:
+        label: 'Occupation Field'
+        description: 'Occupation Field'
+        type: text
+    specific_function:
+        label: 'Specific Function / Role'
+        description: 'Specific Function / Role'
+        type: text
+    with_travel:
+        label: 'Does your present occupation involve travelling out of town / the country?'
+        span: full
+        type: text
+    travel_frequency:
+        label: 'How often?'
+        description: 'How often?'
+        type: dropdown
+        options:
+            weekly: Weekly
+            monthly: Monthly
+            quarterly: Quarterly
+    school_year:
+        label: 'School Year'
+        span: auto
+        default: SY2016-2017
+        disabled: 1
+        type: text

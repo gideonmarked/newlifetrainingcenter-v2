@@ -1,0 +1,19 @@
+{% for child in children %}
+     <div class="col-md-5 pull-left">
+          <label for="inputEmail">Name</label>
+          <input type="email" id="inputApplication" class="form-control" placeholder="First Name" required="">
+     </div>
+     <div class="col-md-3 pull-left">
+          <label for="inputEmail">Age</label>
+          <input type="email" id="inputApplication" class="form-control" placeholder="First Name" required="">
+     </div>
+     <div class="col-md-2 pull-left">
+          <label for="inputEmail">Gender</label>
+          <select name="input_20" id="input_1_20" class="medium form-control"><option value="Male" selected="selected">Male</option><option value="Female">Female</option></select>
+     </div>
+     <div class="col-md-2 pull-left">
+          <br/>
+          <button data-request="{{ __SELF__ }}::onSavePersonalInformation" data-request-update="'{{ __SELF__ }}::personalinformation': '.form_wrapper'" data-request-success="$('.input-item').val('')" class="btn btn-primary">+</button>
+          <button data-request="{{ __SELF__ }}::onSavePersonalInformation" data-request-update="'{{ __SELF__ }}::personalinformation': '.form_wrapper'" data-request-success="$('.input-item').val('')" class="btn btn-primary">-</button>
+     </div>
+{% endfor %}

@@ -1,0 +1,18 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    school_year:
+        label: School Year
+        type: dropdown
+        options:
+            2015: 2015
+
+    subject	:
+        type: partial
+        path: field_subjects

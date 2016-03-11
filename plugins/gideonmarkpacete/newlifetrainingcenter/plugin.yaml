@@ -1,0 +1,6 @@
+plugin:
+    name: 'gideonmarkpacete.newlifetrainingcenter::lang.plugin.name'
+    description: 'gideonmarkpacete.newlifetrainingcenter::lang.plugin.description'
+    author: 'Gideon Mark Pacete'
+    icon: oc-icon-building
+    homepage: ''

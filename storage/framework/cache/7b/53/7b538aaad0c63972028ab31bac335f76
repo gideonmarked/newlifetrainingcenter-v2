@@ -1,0 +1,129 @@
+1455587781s:5002:"a:6:{s:5:"mtime";i:1450443676;s:7:"content";s:2401:"title = "Admissions"
+url = "/admissions"
+layout = "full-width"
+is_hidden = 0
+show_menu = 0
+==
+<div class="panel panel-default">
+
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+  
+        <h4>Admission to NTC is open to:</h4>
+        
+        <ul>
+          <li>Members of Newlife Christian Center Alabang</li>
+          <li>Newlife satellite churches and affiliates,</li>
+          <li>Born-again Christian believers from other churches, both national and international.</li>
+        </ul>
+        
+				<hr />
+  
+        <h4>Admission Requirements:</h4>
+      
+        <h5>Day School (Full-time and Pastoral Track)</h5>
+        <ul>
+          <li>Online application form</li>
+          <li>Scanned Pastoral Recommendation</li>
+          <li>Scanned Commitment to Honor Form</li>
+          <li>Scanned NBI Clearance (issued within 3 months prior to enrollment)</li>
+          <li>Scanned Medical clearance (issued within 3 months prior to enrollment)</li>
+          <li>Interview</li>
+          <li>Training Fee: Php 1,800.00 monthly</li>
+        </ul>
+        
+				<hr />
+        
+        <h5>International Students</h5>
+        <ul>
+          <li>Would be required to show proof of legal permission to reside and/or study in the Philippines</li>
+          <li>Online application form</li>
+          <li>Scanned Pastoral Recommendation</li>
+          <li>Scanned Commitment to Honor Form</li>
+          <li>Scanned NBI Clearance (issued within 3 months prior to enrollment)</li>
+          <li>Scanned Medical clearance (issued within 3 months prior to enrollment)</li>
+          <li>Interview</li>
+          <li>Training Fee: Php 1,800.00 monthly</li>
+        </ul>
+        
+        <span class="label label-warning">Note</span> 
+        All international students bear the sole responsibility for compliance to Philippine immigration requirements. NTC is not responsible for monthly expenses, including food and lodging.
+        
+				<hr />
+        
+        <h5>Blockweek Nights @ NTC</h5>
+        <ul>
+          <li>Training Fee: PHP 400.00 per subject</li>
+        </ul>
+        
+        <span class="label label-warning">Note</span>
+        For NCC Alabang staff: NBI and Medical clearances are not required. NTC and its programs are not recognized by any Philippine educational regulatory body.
+        
+        
+      </div>
+    </div><!--/.row-->
+
+	</div>
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:10:"Admissions";s:3:"url";s:11:"/admissions";s:6:"layout";s:10:"full-width";s:9:"is_hidden";s:1:"0";s:9:"show_menu";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:2307:"<div class="panel panel-default">
+
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+  
+        <h4>Admission to NTC is open to:</h4>
+        
+        <ul>
+          <li>Members of Newlife Christian Center Alabang</li>
+          <li>Newlife satellite churches and affiliates,</li>
+          <li>Born-again Christian believers from other churches, both national and international.</li>
+        </ul>
+        
+				<hr />
+  
+        <h4>Admission Requirements:</h4>
+      
+        <h5>Day School (Full-time and Pastoral Track)</h5>
+        <ul>
+          <li>Online application form</li>
+          <li>Scanned Pastoral Recommendation</li>
+          <li>Scanned Commitment to Honor Form</li>
+          <li>Scanned NBI Clearance (issued within 3 months prior to enrollment)</li>
+          <li>Scanned Medical clearance (issued within 3 months prior to enrollment)</li>
+          <li>Interview</li>
+          <li>Training Fee: Php 1,800.00 monthly</li>
+        </ul>
+        
+				<hr />
+        
+        <h5>International Students</h5>
+        <ul>
+          <li>Would be required to show proof of legal permission to reside and/or study in the Philippines</li>
+          <li>Online application form</li>
+          <li>Scanned Pastoral Recommendation</li>
+          <li>Scanned Commitment to Honor Form</li>
+          <li>Scanned NBI Clearance (issued within 3 months prior to enrollment)</li>
+          <li>Scanned Medical clearance (issued within 3 months prior to enrollment)</li>
+          <li>Interview</li>
+          <li>Training Fee: Php 1,800.00 monthly</li>
+        </ul>
+        
+        <span class="label label-warning">Note</span> 
+        All international students bear the sole responsibility for compliance to Philippine immigration requirements. NTC is not responsible for monthly expenses, including food and lodging.
+        
+				<hr />
+        
+        <h5>Blockweek Nights @ NTC</h5>
+        <ul>
+          <li>Training Fee: PHP 400.00 per subject</li>
+        </ul>
+        
+        <span class="label label-warning">Note</span>
+        For NCC Alabang staff: NBI and Medical clearances are not required. NTC and its programs are not recognized by any Philippine educational regulatory body.
+        
+        
+      </div>
+    </div><!--/.row-->
+
+	</div>
+</div>";}";

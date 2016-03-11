@@ -1,0 +1,272 @@
+1455587780s:9204:"a:6:{s:5:"mtime";i:1450443678;s:7:"content";s:4459:"title = "New Life Training Center"
+url = "/home"
+layout = "index"
+is_hidden = 0
+
+[carousel ntcSlider]
+id = 1
+
+[blogPosts]
+pageNumber = 1
+categoryFilter = "announcements"
+postsPerPage = 3
+noPostsMessage = "No posts found"
+sortOrder = "created_at desc"
+categoryPage = "category"
+postPage = "post-single"
+==
+<!-- Content Row -->
+<div class="row">  
+    <!-- Call to Action Column -->
+    <div class="col-md-7">
+      <div class="panel panel-default">
+        <div class="panel-body">
+        {% component "ntcSlider" %}
+        </div>
+      </div>
+    </div>
+    
+    <!-- Video Column -->
+    <div class="col-md-5">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Video Announcements</h3>
+        </div>
+        <div class="panel-body">
+          <iframe  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  width="100%" height="310" src="https://www.youtube.com/embed/Ktq-aB1KlyQ?list=PLBkRqDNG_WBIV-iyLlqrrUfnURa5acBFF?autohide=1&autoplay=0&controls=2&fs=1&loop=0&modestbranding=0&playlist=F_OIscN3eN8%2CDdel2ht4LE0%2CurrolSLzRSU%2CasUvqqpCPb8%2C+ge4NPf7W_J0&rel=0&showinfo=1&theme=light&wmode=opaque" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+      </div>  
+    </div>
+</div>
+<!-- /.row -->
+
+
+<div class="row">
+    <!-- News Column -->
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><a href="news">News Events</a>
+          <div class="pull-right">
+              <div class="btn-group">
+                  <a class="btn btn-primary btn-xs" href="news">
+                      View All
+                  </a>
+              </div>
+          </div>
+          </h3>
+          
+        </div>
+        
+        {% if not category %}
+          <div class="panel-body"></div>
+        {% else %} 
+        
+        <div class="panel-body">
+            
+        	{% set posts = blogPosts.posts %}
+
+            <!-- News Row -->
+            <div class="row">
+    				
+            {% for post in posts %}
+                <div class="col-md-4 img-portfolio">
+                    {% if post.featured_images.count %}
+                        <div class="featured-images text-left">
+                            {% for image in post.featured_images %}
+                                <p>
+                                    <img
+                                        data-src="{{ image.filename }}"
+                                        src="{{ image.path }}"
+                                        alt="{{ image.description }}"
+                                        style="max-width: 100%" />
+                                </p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                   
+                    <h3>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </h3>
+                    
+                    <p class="info">
+                      Posted
+                      {% if post.categories.count %} in {% endif %}
+                      {% for category in post.categories %}
+                          <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                      {% endfor %}
+                      on {{ post.published_at|date('M d, Y') }}
+                    </p>
+                    
+                    <p class="excerpt">{{ post.summary }}</p>
+               </div>
+               <!--/.col-md-4 img-portfolio-->
+               
+               {% else %}
+               
+               <div class="col-md-4 img-portfolio">{{ noPostsMessage }}</div>
+               
+               {% endfor %} 
+                
+            </div>
+            <!-- /.row -->
+            
+            
+            <!-- Pagination -->
+            <div class="row text-center">
+                <div class="col-md-12">
+    
+               		<a class="btn btn-lg btn-default btn-block" href="news">View All</a>
+                
+                </div>
+                <!--/.col-md-12-->
+             </div>
+             <!-- /.row -->
+        </div>
+        <!--/.panel-body-->
+        
+        {% endif %}
+        
+        
+      </div>
+      <!--/.panel-->
+    </div>
+    <!--/.col-md-12-->
+</div>
+<!-- /.row -->
+
+
+<div class="row">
+    <!-- Slider Column -->
+    <div class="col-md-12">
+    	{% partial "calltoaction" %}
+    </div>
+</div>
+<!-- /.row -->";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:24:"New Life Training Center";s:3:"url";s:5:"/home";s:6:"layout";s:5:"index";s:9:"is_hidden";s:1:"0";s:10:"components";a:2:{s:18:"carousel ntcSlider";a:1:{s:2:"id";s:1:"1";}s:9:"blogPosts";a:7:{s:10:"pageNumber";s:1:"1";s:14:"categoryFilter";s:13:"announcements";s:12:"postsPerPage";s:1:"3";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:15:"created_at desc";s:12:"categoryPage";s:8:"category";s:8:"postPage";s:11:"post-single";}}}s:4:"code";N;s:6:"markup";s:4154:"<!-- Content Row -->
+<div class="row">  
+    <!-- Call to Action Column -->
+    <div class="col-md-7">
+      <div class="panel panel-default">
+        <div class="panel-body">
+        {% component "ntcSlider" %}
+        </div>
+      </div>
+    </div>
+    
+    <!-- Video Column -->
+    <div class="col-md-5">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Video Announcements</h3>
+        </div>
+        <div class="panel-body">
+          <iframe  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  width="100%" height="310" src="https://www.youtube.com/embed/Ktq-aB1KlyQ?list=PLBkRqDNG_WBIV-iyLlqrrUfnURa5acBFF?autohide=1&autoplay=0&controls=2&fs=1&loop=0&modestbranding=0&playlist=F_OIscN3eN8%2CDdel2ht4LE0%2CurrolSLzRSU%2CasUvqqpCPb8%2C+ge4NPf7W_J0&rel=0&showinfo=1&theme=light&wmode=opaque" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+      </div>  
+    </div>
+</div>
+<!-- /.row -->
+
+
+<div class="row">
+    <!-- News Column -->
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><a href="news">News Events</a>
+          <div class="pull-right">
+              <div class="btn-group">
+                  <a class="btn btn-primary btn-xs" href="news">
+                      View All
+                  </a>
+              </div>
+          </div>
+          </h3>
+          
+        </div>
+        
+        {% if not category %}
+          <div class="panel-body"></div>
+        {% else %} 
+        
+        <div class="panel-body">
+            
+        	{% set posts = blogPosts.posts %}
+
+            <!-- News Row -->
+            <div class="row">
+    				
+            {% for post in posts %}
+                <div class="col-md-4 img-portfolio">
+                    {% if post.featured_images.count %}
+                        <div class="featured-images text-left">
+                            {% for image in post.featured_images %}
+                                <p>
+                                    <img
+                                        data-src="{{ image.filename }}"
+                                        src="{{ image.path }}"
+                                        alt="{{ image.description }}"
+                                        style="max-width: 100%" />
+                                </p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                   
+                    <h3>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </h3>
+                    
+                    <p class="info">
+                      Posted
+                      {% if post.categories.count %} in {% endif %}
+                      {% for category in post.categories %}
+                          <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                      {% endfor %}
+                      on {{ post.published_at|date('M d, Y') }}
+                    </p>
+                    
+                    <p class="excerpt">{{ post.summary }}</p>
+               </div>
+               <!--/.col-md-4 img-portfolio-->
+               
+               {% else %}
+               
+               <div class="col-md-4 img-portfolio">{{ noPostsMessage }}</div>
+               
+               {% endfor %} 
+                
+            </div>
+            <!-- /.row -->
+            
+            
+            <!-- Pagination -->
+            <div class="row text-center">
+                <div class="col-md-12">
+    
+               		<a class="btn btn-lg btn-default btn-block" href="news">View All</a>
+                
+                </div>
+                <!--/.col-md-12-->
+             </div>
+             <!-- /.row -->
+        </div>
+        <!--/.panel-body-->
+        
+        {% endif %}
+        
+        
+      </div>
+      <!--/.panel-->
+    </div>
+    <!--/.col-md-12-->
+</div>
+<!-- /.row -->
+
+
+<div class="row">
+    <!-- Slider Column -->
+    <div class="col-md-12">
+    	{% partial "calltoaction" %}
+    </div>
+</div>
+<!-- /.row -->";}";

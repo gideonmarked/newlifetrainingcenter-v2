@@ -1,0 +1,86 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    year_received:
+        label: When did you receive Jesus as personal Lord and Savior?
+
+    place_received:
+        label: Where?
+
+    baptismal:
+        label: Have you been baptized in the Holy Spirit with the evidence of speaking with other tongues?
+
+    baptismal_date:
+        label: Date
+
+    baptismal_place:
+        label: Place
+
+    church_type:
+        label: Church *
+
+    church_name:
+        label: Newlife Churches *
+
+    ministry_type:
+        label: Indicate if you are *
+
+    ministry_title: 
+        label: Name of Ministry
+
+    ministry_head:
+        label: Ministry Head
+
+    ministry_fulltime:
+        label: Do you believe God is calling you to serve fulltime in any ministry?
+
+    ministry_training_type:
+        label: Type of Training
+
+    ministry_training_venue:
+        label: Venue of Training
+
+    ministry_training_date:
+        label: Date of Training
+
+    lifegroup_member:
+        label: Please check all that applies:
+
+    lifegroup_start_date:
+        label: Date Started
+
+    lifegroup_leader:
+        label: Name of Life Group Leader
+
+    lifegroup_own_start_date:
+        label: Date Started (Own Life Group)
+
+    constant_tither:
+        label: Are you a consistent tither?
+
+    reason:
+        label: Why do you want to attend NTC?
+
+    pastor_first_name:
+        label: What is the first name of your Senior Pastor?
+
+    pastor_last_name:
+        label: What is the surname of your Senior Pastor?
+
+    church_years:
+        label: How long have you been faithfully attending the said church?
+
+    volunteer:
+        label: Do you have any desire to volunteer in NTC?
+
+    areas_of_serving:
+        label: "If yes, please check the following areas that you see yourself serving?"
+
+    areas_of_serving_duration:
+        label: For how long?

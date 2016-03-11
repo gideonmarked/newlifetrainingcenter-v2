@@ -1,0 +1,94 @@
+title = "News"
+url = "/:page?"
+layout = "blog-home-1"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :category }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "category"
+postPage = "post-single"
+==
+<div class="panel panel-default">
+  
+  <div class="panel-body">
+    
+            <!-- News Row -->
+            <div class="row">
+    				
+            	{% for post in posts %}
+            
+            	<div class="col-md-12 img-portfolio">
+            	
+            		<div class="row">
+                
+                		<div class="col-md-3 img-portfolio">
+                      {% if post.featured_images.count %}
+                          <div class="featured-images text-left">
+                              {% for image in post.featured_images %}
+                                  <p>
+                                      <img
+                                          data-src="{{ image.filename }}"
+                                          src="{{ image.path }}"
+                                          alt="{{ image.description }}"
+                                          style="max-width: 100%" />
+                                  </p>
+                              {% endfor %}
+                          </div><!--/.featured-image-->
+                      {% endif %}
+                    </div><!--/.col-md-3 img-portfolio-->
+                   
+                    <div class="col-md-9 img-portfolio">
+                      
+                      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                      
+                      <p class="info">
+                        Posted
+                        {% if post.categories.count %} in {% endif %}
+                        {% for category in post.categories %}
+                            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                        on {{ post.published_at|date('M d, Y') }}
+                      </p>
+                      
+                      <p class="excerpt">{{ post.summary }}</p>
+                    </div><!--/.col-md-9 img-portfolio-->
+            		</div><!--/.row-->
+                
+               </div>
+               <!--/.col-md-12 img-portfolio-->
+               
+               {% else %}
+               
+               <div class="col-md-12 img-portfolio">{{ noPostsMessage }}</div>
+               
+               {% endfor %} 
+                
+            </div>
+            <!-- /.row -->
+
+{% if posts.lastPage > 1 %}
+    <ul class="pagination">
+        {% if posts.currentPage > 1 %}
+            <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
+        {% endif %}
+
+        {% for page in 1..posts.lastPage %}
+            <li class="{{ posts.currentPage == page ? 'active' : null }}">
+                <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+            </li>
+        {% endfor %}
+
+        {% if posts.lastPage > posts.currentPage %}
+            <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
+        {% endif %}
+    </ul>
+{% endif %}
+    
+  </div>    
+
+  
+</div>

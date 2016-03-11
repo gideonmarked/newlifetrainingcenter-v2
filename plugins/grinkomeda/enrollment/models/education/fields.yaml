@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    name:
+        label: Name
+        description: Name of School
+        type: text
+
+    year:
+        label: Year of Completion
+        description: Year of Completion
+        type: text
+
+    course:
+        label: Course
+        description: Course
+        type: text

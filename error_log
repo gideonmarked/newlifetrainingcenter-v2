@@ -1,0 +1,28 @@
+[05-Oct-2015 06:45:16 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\Level' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/updates/seed_all_tables.php on line 8
+[05-Oct-2015 07:57:42 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\Curriculum' not found in /home/newlifet/public_html/v2/modules/backend/behaviors/ListController.php on line 112
+[05-Oct-2015 07:57:48 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\Curriculum' not found in /home/newlifet/public_html/v2/modules/backend/behaviors/ListController.php on line 112
+[06-Oct-2015 03:19:04 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 104
+[06-Oct-2015 03:19:49 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 104
+[06-Oct-2015 03:20:02 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 104
+[06-Oct-2015 03:20:09 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 104
+[06-Oct-2015 03:20:13 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 104
+[06-Oct-2015 11:35:52 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 104
+[07-Oct-2015 02:35:21 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 104
+[07-Oct-2015 03:14:27 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 104
+[07-Oct-2015 07:32:01 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 104
+[07-Oct-2015 07:33:09 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 104
+[07-Oct-2015 07:34:41 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 104
+[07-Oct-2015 07:35:03 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 104
+[14-Oct-2015 13:52:24 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 118
+[14-Oct-2015 13:52:42 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 118
+[14-Oct-2015 13:54:16 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 118
+[14-Oct-2015 13:54:29 UTC] PHP Fatal error:  Class 'Grinkomeda\Enrollment\Models\HandledSubjects' not found in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/Plugin.php on line 118
+[14-Jan-2016 11:32:58 UTC] PHP Parse error:  syntax error, unexpected '.', expecting ']' in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/components/ApplicationForm.php on line 38
+[19-Jan-2016 09:47:17 UTC] PHP Parse error:  syntax error, unexpected '.', expecting ']' in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/components/ApplicationForm.php on line 38
+[19-Jan-2016 09:48:21 UTC] PHP Parse error:  syntax error, unexpected '.', expecting ']' in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/components/ApplicationForm.php on line 38
+[19-Jan-2016 09:49:28 UTC] PHP Parse error:  syntax error, unexpected '.', expecting ']' in /home/newlifet/public_html/v2/plugins/grinkomeda/enrollment/components/ApplicationForm.php on line 38
+[13-Feb-2016 03:57:27 UTC] PHP Fatal error:  Call to undefined method System\Classes\VersionManager::listNewVersions() in /home/newlifet/public_html/v2/plugins/rainlab/builder/widgets/VersionList.php on line 106
+[13-Feb-2016 03:57:37 UTC] PHP Fatal error:  Call to undefined method System\Classes\VersionManager::listNewVersions() in /home/newlifet/public_html/v2/plugins/rainlab/builder/widgets/VersionList.php on line 106
+[13-Feb-2016 03:57:41 UTC] PHP Fatal error:  Call to undefined method System\Classes\VersionManager::listNewVersions() in /home/newlifet/public_html/v2/plugins/rainlab/builder/widgets/VersionList.php on line 106
+[13-Feb-2016 03:57:54 UTC] PHP Fatal error:  Call to undefined method System\Classes\VersionManager::listNewVersions() in /home/newlifet/public_html/v2/plugins/rainlab/builder/widgets/VersionList.php on line 106
+[13-Feb-2016 05:04:15 UTC] PHP Fatal error:  Call to undefined method System\Classes\VersionManager::listNewVersions() in /home/newlifet/public_html/v2/plugins/rainlab/builder/widgets/VersionList.php on line 106

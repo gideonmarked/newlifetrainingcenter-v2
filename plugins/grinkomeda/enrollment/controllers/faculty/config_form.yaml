@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Faculty
+
+# Model Form Field configuration
+form: $/grinkomeda/enrollment/models/faculty/fields.yaml
+
+# Model Class name
+modelClass: Grinkomeda\Enrollment\Models\Faculty
+
+# Default redirect location
+defaultRedirect: grinkomeda/enrollment/faculty
+
+# Create page
+create:
+    title: Create Faculty
+    redirect: grinkomeda/enrollment/faculty/update/:id
+    redirectClose: grinkomeda/enrollment/faculty
+
+# Update page
+update:
+    title: Edit Faculty
+    redirect: grinkomeda/enrollment/faculty
+    redirectClose: grinkomeda/enrollment/faculty
+
+# Preview page
+preview:
+    title: Preview Faculty

@@ -1,0 +1,37 @@
+title = "News Category"
+url = "/:slug/:page?"
+layout = "blog-home-1"
+is_hidden = 0
+show_menu = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+<?php
+function onEnd()
+{
+    // Optional - set the page title to the category name
+    if ($this->category)
+        $this->page->title = $this->category->name;
+}
+?>
+==
+<div class="panel panel-default">
+  <div class="panel-body">
+  
+    {% if not category %}
+        <h2>Category not found</h2>
+    {% else %}
+        <h2>{{ category.name }}</h2>
+    
+        {% component 'blogPosts' %}
+    {% endif %}
+    
+  </div>    <!--/.panel-body-->
+</div>
