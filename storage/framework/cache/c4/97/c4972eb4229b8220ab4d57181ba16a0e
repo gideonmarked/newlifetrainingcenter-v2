@@ -1,0 +1,59 @@
+1465713305s:2437:"a:6:{s:5:"mtime";i:1450443679;s:7:"content";s:1119:"title = "Study Programs"
+url = "/programs"
+layout = "full-width"
+is_hidden = 0
+show_menu = 0
+==
+<div class="panel panel-default">
+  
+  <div class="panel-body">
+    <p align="justify">The annual school year, for both day school and blockweek nights, runs from June through March, divided into a quarterly system.<br /><br /></p>
+    <p>
+    
+    <h4><span class="glyphicon glyphicon-education"></span> Day School</h4>
+    Full time study <br />
+    The training period is a 10-month commitment <br />
+    Tuesdays to Fridays, 8:30 am – 12:30 pm <br />
+    Open to both Newlife and non-Newlife members <br /><br />
+    </p>
+    
+    <p>
+    <h4><span class="glyphicon glyphicon-calendar"></span> Pastoral Track</h4>
+    A study program for Senior Pastors of Newlife satellite churches. <br /><br />
+    </p>
+    
+    <p>
+    <h4><span class="glyphicon glyphicon-blackboard"></span> BlockWeek Nights @ NTC</h4>
+    Open to both Newlife and non-Newlife members <br />
+    Scheduled during one pre-selected week in a month <br />
+    Tuesday to Friday evenings, 7:00 pm – 9:00 pm <br /><br />
+    </p>
+  </div>
+  
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:14:"Study Programs";s:3:"url";s:9:"/programs";s:6:"layout";s:10:"full-width";s:9:"is_hidden";s:1:"0";s:9:"show_menu";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1023:"<div class="panel panel-default">
+  
+  <div class="panel-body">
+    <p align="justify">The annual school year, for both day school and blockweek nights, runs from June through March, divided into a quarterly system.<br /><br /></p>
+    <p>
+    
+    <h4><span class="glyphicon glyphicon-education"></span> Day School</h4>
+    Full time study <br />
+    The training period is a 10-month commitment <br />
+    Tuesdays to Fridays, 8:30 am – 12:30 pm <br />
+    Open to both Newlife and non-Newlife members <br /><br />
+    </p>
+    
+    <p>
+    <h4><span class="glyphicon glyphicon-calendar"></span> Pastoral Track</h4>
+    A study program for Senior Pastors of Newlife satellite churches. <br /><br />
+    </p>
+    
+    <p>
+    <h4><span class="glyphicon glyphicon-blackboard"></span> BlockWeek Nights @ NTC</h4>
+    Open to both Newlife and non-Newlife members <br />
+    Scheduled during one pre-selected week in a month <br />
+    Tuesday to Friday evenings, 7:00 pm – 9:00 pm <br /><br />
+    </p>
+  </div>
+  
+</div>";}";

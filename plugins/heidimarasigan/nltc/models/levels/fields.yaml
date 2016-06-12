@@ -1,0 +1,19 @@
+fields:
+    levels:
+        label: 'heidimarasigan.nltc::lang.levels.levels'
+        oc.commentPosition: ''
+        options:
+            'First Year': 'First Year'
+            'Second Year': 'Second Year'
+            'Pastoral Track': 'Pastoral Track'
+            'Block Nights': 'Block Nights'
+        span: auto
+        type: dropdown
+    subject_name:
+        label: 'Subject Finder'
+        oc.commentPosition: ''
+        nameFrom: 'heidimarasigan.nltc::lang.subject.subject_name'
+        descriptionFrom: 'Look for subjects'
+        list: $/heidimarasigan/nltc/models/applications/list.yaml
+        span: auto
+        type: recordfinder

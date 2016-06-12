@@ -1,0 +1,26 @@
+columns:
+    id:
+        label: ID
+        type: text
+        searchable: true
+        sortable: true
+    first_name:
+        label: 'heidimarasigan.nltc::lang.faculty.first_name'
+        type: text
+        searchable: true
+        sortable: true
+    middle_name:
+        label: 'heidimarasigan.nltc::lang.faculty.middle_name'
+        type: text
+        searchable: true
+        sortable: true
+    last_name:
+        label: 'heidimarasigan.nltc::lang.faculty.last_name'
+        type: text
+        searchable: true
+        sortable: true
+    email:
+        label: 'heidimarasigan.nltc::lang.faculty.email'
+        type: text
+        searchable: true
+        sortable: true

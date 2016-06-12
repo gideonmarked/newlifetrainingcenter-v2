@@ -1,0 +1,11 @@
+name: Levels
+modelClass: HeidiMarasigan\Nltc\Models\Levels
+form: $/heidimarasigan/nltc/models/levels/fields.yaml
+defaultRedirect: heidimarasigan/nltc/levels
+create:
+    redirect: 'heidimarasigan/nltc/levels/update/:id'
+    redirectClose: heidimarasigan/nltc/levels
+update:
+    redirect: heidimarasigan/nltc/levels
+    redirectClose: heidimarasigan/nltc/levels
+preview: {  }

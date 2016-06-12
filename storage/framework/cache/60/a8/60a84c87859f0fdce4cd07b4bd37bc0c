@@ -1,0 +1,29 @@
+1465627894s:757:"a:6:{s:5:"mtime";i:1450443670;s:7:"content";s:298:"description = "404 Layout"
+==
+{% partial "header" %}
+
+		{% partial "navigation" %}
+    
+    		{% partial "heading-breadcrumbs" %}
+
+        <!-- Content Row -->
+        <div class="row">
+            <div class="col-lg-12">
+			 				{% page %}
+            </div>
+        </div>
+
+{% partial "footer" %}";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:10:"404 Layout";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:268:"{% partial "header" %}
+
+		{% partial "navigation" %}
+    
+    		{% partial "heading-breadcrumbs" %}
+
+        <!-- Content Row -->
+        <div class="row">
+            <div class="col-lg-12">
+			 				{% page %}
+            </div>
+        </div>
+
+{% partial "footer" %}";}";

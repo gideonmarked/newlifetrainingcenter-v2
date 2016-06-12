@@ -1,0 +1,42 @@
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy 2015. New Life Training Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>	
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="{{ ['assets/javascript/jquery.js']|theme }}"></script>
+    
+    <!-- Date Picker -->
+    <script src="{{ ['assets/javascript/bootstrap-datepicker.js']|theme }}"></script>
+    
+		{% framework %}
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ ['assets/javascript/bootstrap.min.js']|theme }}"></script>
+    
+
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="{{ ['assets/javascript/jqBootstrapValidation.js']|theme }}"></script>
+    <script src="{{ ['assets/javascript/contact_me.js']|theme }}"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+                
+                $('.datepicker').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+            
+            }); 
+    </script>
+
+</body>
+
+</html>

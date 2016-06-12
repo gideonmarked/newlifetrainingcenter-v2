@@ -1,0 +1,4 @@
+title: Applicants
+modelClass: HeidiMarasigan\Nltc\Models\Applications
+toolbar:
+    buttons: reorder_toolbar

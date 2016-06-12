@@ -1,0 +1,717 @@
+1464934843s:48117:"a:2:{s:5:"mtime";i:1464929892;s:7:"content";s:48061:"<!--<div class="form_wrapper">-->
+<form 
+ data-request="{{ __SELF__ }}::onSaveProfile" 
+ data-request-update="'{{ __SELF__ }}::submitted': '.form_wrapper'" 
+ class="form_wrapper">
+
+     <br />
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div> 
+     <h3 class="gf_progressbar_title">Study Program</h3>
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div>
+     <br/>
+     
+     <div class="form-group row">
+     
+          <div class="col-md-3 pull-left">
+               <label for="inputSY">School Year</label>
+               <select name="school_year" id="school_year" class="form-control input-item" tabindex="5">
+                    <option value="SY2016-2017">SY2016-2017</option>
+                    <option value="SY2017-2018">SY2017-2018</option>
+                    <option value="SY2018-2019">SY2018-2019</option>
+                    <option value="SY2019-2020">SY2019-2020</option>
+                    <option value="SY2020-2021">SY2020-2021</option>
+                    <option value="SY2021-2022">SY2021-2022</option>
+                    <option value="SY2022-2023">SY2022-2023</option>
+                    <option value="SY2023-2024">SY2023-2024</option>
+                    <option value="SY2024-2025">SY2024-2025</option>
+                    <option value="SY2025-2026">SY2025-2026</option>
+                    <option value="SY2026-2027">SY2026-2027</option>
+                    <option value="SY2027-2028">SY2027-2028</option>
+                    <option value="SY2028-2029">SY2028-2029</option>
+                    <option value="SY2029-2030">SY2029-2030</option>
+                    <option value="SY2030-2031">SY2030-2031</option>
+                    <option value="SY2031-2032">SY2031-2032</option>
+                    <option value="SY2032-2033">SY2032-2033</option>
+                    <option value="SY2033-2034">SY2033-2034</option>
+                    <option value="SY2034-2035">SY2034-2035</option>
+               </select>
+          </div>
+     </div>
+     
+     <div class="form-group row">
+          <div class="col-md-3 pull-left">
+               <label for="level">Level</label>
+               <select name="level" id="level" class="form-control input-item" tabindex="4">
+                    <option value="First Year">First Year</option>
+                    <option value="Second Year">Second Year</option>
+                    <option value="Pastoral Track">Pastoral Track</option>
+              </select>
+          </div>
+     </div>
+
+     <div class="form-group row">
+          <div class="col-md-3 pull-left">
+               <label for="ApplicationType">Type</label>
+               <div class="radio">
+                <label class="radio-inline"><input type="radio" name="application_type" checked="checked">Regular</label>
+                <label class="radio-inline"><input type="radio" name="application_type">Irregular</label>
+               </div>
+          </div>
+     </div>
+
+     <br />
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div> 
+     <h3 class="gf_progressbar_title">Personal Information</h3>
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div>
+     <br/>
+     
+     <div class="form-group row">
+          <div class="col-md-12 pull-left">
+               <label for="inputName">Name</label>
+          </div>
+          <div class="col-md-4">
+              <input type="text" id="firstname" name="firstname" class="form-control" placeholder="First Name" required="">
+          </div>
+
+          <div class="col-md-4">
+              <input type="text" id="middlename" name="middlename" class="form-control" placeholder="Middle Name" required="">
+          </div>
+
+          <div class="col-md-4">
+              <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last Name" required="">
+          </div>
+     </div>
+
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="inputNickname">Nickname</label>
+               <input type="text" id="nickname" name="nickname" class="form-control" placeholder="Nickname" required="">
+          </div>
+     </div>
+
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="address">Address</label>
+               <input type="text" id="address" name="address" class="form-control" placeholder="Unit No. / Street Name" required="">
+          </div>
+          <div class="col-md-4 pull-left">
+               <label for="city">City</label>
+               <input type="text" id="city" name="city" class="form-control" placeholder="City" required="">
+          </div>
+          <div class="col-md-2 pull-left">
+               <label for="state">State / Province </label>
+               <input type="text" id="state" name="state" class="form-control" placeholder="State / Province / Region" required="">
+          </div>
+     </div>
+     
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+               <label for="country">Country</label>
+               <select name="country" id="country" class="form-control" ><option value=""></option><option value="Afghanistan">Afghanistan</option><option value="Albania">Albania</option><option value="Algeria">Algeria</option><option value="American Samoa">American Samoa</option><option value="Andorra">Andorra</option><option value="Angola">Angola</option><option value="Antigua and Barbuda">Antigua and Barbuda</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Bahamas">Bahamas</option><option value="Bahrain">Bahrain</option><option value="Bangladesh">Bangladesh</option><option value="Barbados">Barbados</option><option value="Belarus">Belarus</option><option value="Belgium">Belgium</option><option value="Belize">Belize</option><option value="Benin">Benin</option><option value="Bermuda">Bermuda</option><option value="Bhutan">Bhutan</option><option value="Bolivia">Bolivia</option><option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option value="Botswana">Botswana</option><option value="Brazil">Brazil</option><option value="Brunei">Brunei</option><option value="Bulgaria">Bulgaria</option><option value="Burkina Faso">Burkina Faso</option><option value="Burundi">Burundi</option><option value="Cambodia">Cambodia</option><option value="Cameroon">Cameroon</option><option value="Canada">Canada</option><option value="Cape Verde">Cape Verde</option><option value="Cayman Islands">Cayman Islands</option><option value="Central African Republic">Central African Republic</option><option value="Chad">Chad</option><option value="Chile">Chile</option><option value="China">China</option><option value="Colombia">Colombia</option><option value="Comoros">Comoros</option><option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option><option value="Congo, Republic of the">Congo, Republic of the</option><option value="Costa Rica">Costa Rica</option><option value="Côte d'Ivoire">Côte d'Ivoire</option><option value="Croatia">Croatia</option><option value="Cuba">Cuba</option><option value="Cyprus">Cyprus</option><option value="Czech Republic">Czech Republic</option><option value="Denmark">Denmark</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Dominican Republic">Dominican Republic</option><option value="East Timor">East Timor</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="El Salvador">El Salvador</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Eritrea">Eritrea</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="Fiji">Fiji</option><option value="Finland">Finland</option><option value="France">France</option><option value="French Polynesia">French Polynesia</option><option value="Gabon">Gabon</option><option value="Gambia">Gambia</option><option value="Georgia">Georgia</option><option value="Germany">Germany</option><option value="Ghana">Ghana</option><option value="Greece">Greece</option><option value="Greenland">Greenland</option><option value="Grenada">Grenada</option><option value="Guam">Guam</option><option value="Guatemala">Guatemala</option><option value="Guinea">Guinea</option><option value="Guinea-Bissau">Guinea-Bissau</option><option value="Guyana">Guyana</option><option value="Haiti">Haiti</option><option value="Honduras">Honduras</option><option value="Hong Kong">Hong Kong</option><option value="Hungary">Hungary</option><option value="Iceland">Iceland</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran">Iran</option><option value="Iraq">Iraq</option><option value="Ireland">Ireland</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Japan">Japan</option><option value="Jordan">Jordan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Kiribati">Kiribati</option><option value="North Korea">North Korea</option><option value="South Korea">South Korea</option><option value="Kosovo">Kosovo</option><option value="Kuwait">Kuwait</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Laos">Laos</option><option value="Latvia">Latvia</option><option value="Lebanon">Lebanon</option><option value="Lesotho">Lesotho</option><option value="Liberia">Liberia</option><option value="Libya">Libya</option><option value="Liechtenstein">Liechtenstein</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Macedonia">Macedonia</option><option value="Madagascar">Madagascar</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Maldives">Maldives</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Marshall Islands">Marshall Islands</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Mexico">Mexico</option><option value="Micronesia">Micronesia</option><option value="Moldova">Moldova</option><option value="Monaco">Monaco</option><option value="Mongolia">Mongolia</option><option value="Montenegro">Montenegro</option><option value="Morocco">Morocco</option><option value="Mozambique">Mozambique</option><option value="Myanmar">Myanmar</option><option value="Namibia">Namibia</option><option value="Nauru">Nauru</option><option value="Nepal">Nepal</option><option value="Netherlands">Netherlands</option><option value="New Zealand">New Zealand</option><option value="Nicaragua">Nicaragua</option><option value="Niger">Niger</option><option value="Nigeria">Nigeria</option><option value="Northern Mariana Islands">Northern Mariana Islands</option><option value="Norway">Norway</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Palau">Palau</option><option value="Palestine, State of">Palestine, State of</option><option value="Panama">Panama</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Paraguay">Paraguay</option><option value="Peru">Peru</option><option value="Philippines" selected="selected">Philippines</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Puerto Rico">Puerto Rico</option><option value="Qatar">Qatar</option><option value="Romania">Romania</option><option value="Russia">Russia</option><option value="Rwanda">Rwanda</option><option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option value="Saint Lucia">Saint Lucia</option><option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option value="Samoa">Samoa</option><option value="San Marino">San Marino</option><option value="Sao Tome and Principe">Sao Tome and Principe</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Senegal">Senegal</option><option value="Serbia and Montenegro">Serbia and Montenegro</option><option value="Seychelles">Seychelles</option><option value="Sierra Leone">Sierra Leone</option><option value="Singapore">Singapore</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Solomon Islands">Solomon Islands</option><option value="Somalia">Somalia</option><option value="South Africa">South Africa</option><option value="Spain">Spain</option><option value="Sri Lanka">Sri Lanka</option><option value="Sudan">Sudan</option><option value="Sudan, South">Sudan, South</option><option value="Suriname">Suriname</option><option value="Swaziland">Swaziland</option><option value="Sweden">Sweden</option><option value="Switzerland">Switzerland</option><option value="Syria">Syria</option><option value="Taiwan">Taiwan</option><option value="Tajikistan">Tajikistan</option><option value="Tanzania">Tanzania</option><option value="Thailand">Thailand</option><option value="Togo">Togo</option><option value="Tonga">Tonga</option><option value="Trinidad and Tobago">Trinidad and Tobago</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Turkmenistan">Turkmenistan</option><option value="Tuvalu">Tuvalu</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Kingdom</option><option value="United States">United States</option><option value="Uruguay">Uruguay</option><option value="Uzbekistan">Uzbekistan</option><option value="Vanuatu">Vanuatu</option><option value="Vatican City">Vatican City</option><option value="Venezuela">Venezuela</option><option value="Vietnam">Vietnam</option><option value="Virgin Islands, British">Virgin Islands, British</option><option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option><option value="Yemen">Yemen</option><option value="Zambia">Zambia</option><option value="Zimbabwe">Zimbabwe</option></select>
+          </div>
+          <div class="col-md-2 pull-left">
+               <label for="zip">Zip / Postal Code</label>
+               <input type="text" id="zip" name="zip" class="form-control" placeholder="ZIP / Postal Code" required="">
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+               <label for="inputCitizenship">Citizenship</label>
+               <input type="text" id="citizenship" name="citizenship" class="form-control" placeholder="Citizenship" required="">
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+               <label for="inputEmail">Email</label>
+               <input type="email" id="email" name="email" class="form-control" placeholder="Email" required="">
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+               <label for="inputPhone">Phone</label>
+               <input type="text" id="phone" name="phone" class="form-control" placeholder="Phone Number" required="">
+          </div>
+          <div class="col-md-4 pull-left">
+               <label for="inputMobile">Mobile</label>
+               <input type="text" id="mobile" name="mobile" class="form-control" placeholder="Mobile Number" required="">
+          </div>
+          <div class="col-md-4 pull-left">
+               <label for="inputWebsite">Website</label>
+               <input type="text" id="website" name="website" class="form-control" placeholder="http://" required="">
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+               <label for="inputFBl">Facebook</label>
+               <input type="text" id="facebook" name="facebook" class="form-control" placeholder="Facebook" required="">
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-1 pull-left">
+               <label for="inputAge">Age</label>
+               <input type="text" id="age" name="age" class="form-control" placeholder="Age" required="">
+          </div>
+          <div class="col-md-3 pull-left">
+               <label for="inputDOB">Date of Birth</label>
+               <input type="text" id="date_of_birth" name="date_of_birth" class="form-control datepicker" placeholder="DD/MM/YYYY" required="">
+          </div>
+          <div class="col-md-4 pull-left">
+               <label for="inputDOB">Birth Place</label>
+               <input type="text" id="place_of_birth" name="place_of_birth" class="form-control" placeholder="Birth Place" required="">
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+               <label for="inputGender">Gender</label>
+               <select name="gender" id="gender" name="gender" class="medium form-control"><option value="Male" selected="selected">Male</option><option value="Female">Female</option></select>
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+               <label for="inputCivilStatus">Civil Status</label>
+               <select name="civil_status" id="civil_status" name="civil_status" class="form-control">
+               <option value="Single" selected="selected">Single</option>
+               <option value="Married">Married</option>
+               <option value="Separated">Separated</option>
+               <option value="Widowed">Widowed</option>
+               <option value="Remarried">Remarried</option>
+               </select>
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+              <label for="inputOccupationalField">Occupational Field</label>
+              <select name="occupational_field" id="occupational_field" class="form-control" required="">
+              	<option value=""></option>
+                <option value="Accounting / Finance">Accounting / Finance</option>
+                <option value="Admin &amp; Office Services">Admin &amp; Office Services</option>
+                <option value="Advertising / Promotions / Events">Advertising / Promotions / Events</option>
+                <option value="Audit / Taxation">Audit / Taxation</option>
+                <option value="Beauty / Personal Care">Beauty / Personal Care</option>
+                <option value="Corporate Planning / Business Dev.">Corporate Planning / Business Dev.</option>
+                <option value="Customer Service">Customer Service</option>
+                <option value="Data / Statistical Analysis">Data / Statistical Analysis</option>
+                <option value="Design / Specifications">Design / Specifications</option>
+                <option value="Education / Training &amp; Development">Education / Training &amp; Development</option>
+                <option value="Engineering / Technical">Engineering / Technical</option>
+                <option value="Environment / Health &amp; Safety">Environment / Health &amp; Safety</option>
+                <option value="Hospitality and Tourism">Hospitality and Tourism</option>
+                <option value="Human Resources">Human Resources</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Legal / Secretarial Services">Legal / Secretarial Services</option><br />
+                <option value="Logistics / Supply Chain Management">Logistics / Supply Chain Management</option>
+                <option value="Management">Management</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Merchandising / Purchasing">Merchandising / Purchasing</option>
+                <option value="Nursing">Nursing</option>
+                <option value="Operations">Operations</option>
+                <option value="Product Development">Product Development</option>
+                <option value="Production / Manufacturing">Production / Manufacturing</option>
+                <option value="Project Management">Project Management</option>
+                <option value="Public Relations / Communication">Public Relations / Communication</option>
+                <option value="Quality Control / Assurance">Quality Control / Assurance</option>
+                <option value="R&amp;D / Sciences / Laboratory">R&amp;D / Sciences / Laboratory</option>
+                <option value="Sales">Sales</option>
+                <option value="Others">Others</option>
+              </select>
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+               <label for="inputRole">Specific Function / Role</label>
+               <input type="text" id="role" name="role" class="form-control" placeholder="Specific Function / Role" required="">
+               <span>e.g. Finance Manager</span>
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-12 pull-left">
+              <label for="inputTravelling">Does your present occupation involve travelling out of town / the country?</label>
+              <div class="radio">
+                <label class="radio-inline"><input type="radio" name="travelling" value="yes" onclick="if (this.checked) { document.getElementById('toggleTravelFrequency').style.visibility = 'visible'; }"> Yes </label>
+                <label class="radio-inline"><input type="radio" name="travelling" value="no" onclick="if (this.checked) { document.getElementById('toggleTravelFrequency').style.visibility = 'hidden';}"> No </label>
+              </label>
+             	</div>
+          </div>
+     </div>
+		 
+     <div id="toggleTravelFrequency" style="visibility:hidden">
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+              <label for="inputTravelTimes">How often (Please specify)?</label>
+              <select name="travelling_frequency" id="travelling_frequency" class="medium form-control">
+                  <option value=""></option>
+                  <option value="Weekly">Weekly</option>
+                  <option value="Monthly">Monthly</option>
+                  <option value="Quarterly">Quarterly</option>
+              </select>
+          </div>
+     </div>
+     </div>
+     
+     <br />
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div> 
+     <h3 class="gf_progressbar_title">Family Background</h3>
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div>
+     <br/>
+     
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="inputSpouseName">Spouse Name</label>
+               <input type="text" id="spouse_name" name="spouse_name" class="form-control" placeholder="Spouse's Name" required="">
+               <!--<span>First</span> -->
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="inputSpouseOccupation">Spouse's Occupation</label>
+               <input type="text" id="spouse_occupation" name="spouse_occupation" class="form-control" placeholder="Occupation" required="">
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-12 pull-left">
+              <label for="inputInAgreement">Is your spouse (if married), or your parents / guardians (if not married), in agreement with you to enroll in NTC this school year?</label><br />
+              <div class="radio">
+                <label class="radio-inline"><input type="radio" name="inagreement" value="yes"> Yes </label>
+              	<label class="radio-inline"><input type="radio" name="inagreement" value="no"> No </label>
+              </div>
+          </div>
+     </div>
+     
+     <div class="form-group row">
+          <div class="col-md-12 pull-left">
+          		<form>
+              <label for="children">Children</label>
+              <div class="panel-body">
+                  <div class="row top-buffer">
+                      <div class="col-lg-5">
+                        <input type="text" id="newchildname" class="form-control input-item" value="" name="newchildname" placeholder="Child's Name">
+                      </div>
+                      <div class="col-lg-2">
+                        <input type="text" id="newchildage" class="form-control input-item" value="" name="newchildage" placeholder="Child's Age">
+                      </div> 
+                      <div class="col-lg-3">
+                        <!--<input type="text" id="input-item" class="form-control input-item" value="" name="newchildgender" placeholder="Child's Gender"> -->
+                        <select name="newchildgender" class="form-control" name="newchildgender" placeholder="Gender" id="newchildgender">
+                        <option value=""></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-1">
+                        <!--<button data-request="{{ __SELF__ }}::onAddChild" data-request-update="'{{ __SELF__ }}::childrenlist': '#childrenresult'" data-request-success="$('.input-item').val('')" class="btn btn-primary">Add</button>-->
+                        <button data-request="{{ __SELF__ }}::onAddChild" data-request-update="'{{ __SELF__ }}::childrenlist': '#childrenresult'" data-request-success="$('.input-item').val('')" class="btn btn-primary">Add</button>
+                      </div>
+                  </div><!--/.row-top-buffer-->
+                  
+                  <br />
+                  <ul class="list-group" id="childrenresult"></ul>
+                  <br />
+                  
+              </div><!--/.panel-body-->
+              </form>
+          </div>
+     </div>
+                          
+     <div class="form-group row">               
+          <div class="col-md-12 pull-left">
+               <label for="children">Children</label>
+               <textarea id="children" name="children" class="form-control" rows="5" cols="10" placeholder="Name / Age / Gender"></textarea>
+          </div> 
+     </div>
+     
+     <div class="form-group row">
+          <div class="col-md-12 pull-left">
+               <label for="inputEmergency">Person to notify in case of emergency:</label>
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="emergency_contact_name">Name</label>
+               <input type="text" id="emergency_name" name="emergency_name" class="form-control" placeholder="Contact Name" required="">
+               <!--<span>First</span> -->
+          </div>
+          <div class="col-md-4 pull-left">
+               <label for="emergency_contact_relation">Relation</label>
+               <input type="text" id="emergency_relation" name="emergency_relation" class="form-control" placeholder="Relationship" required="">
+               <!--<span>First</span> -->
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="emergency_contact_address">Address</label>
+               <input type="text" id="emergency_address" name="emergency_address" class="form-control" placeholder="Address" required="">
+               <!--<span>First</span> -->
+          </div>
+          <div class="col-md-2 pull-left">
+               <label for="emergency_contact_telno">Tel. No.</label>
+               <input type="text" id="emergency_telno" name="emergency_telno" class="form-control" placeholder="Tel. No" required="">
+               <!--<span>First</span> -->
+          </div>
+          <div class="col-md-2 pull-left">
+               <label for="emergency_contact_mobile">Mobile</label>
+               <input type="text" id="emergency_mobile" name="emergency_mobile" class="form-control" placeholder="Mobile No." required="">
+               <!--<span>First</span> -->
+          </div>
+     </div>
+     
+     <br />
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div> 
+     <h3 class="gf_progressbar_title">Educational Background</h3>
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div>
+     <br/>
+
+     <div class="form-group row">
+          <div class="col-md-12 pull-left">
+               <label>Name of School</label>
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+               <label for="schoolname1">Primary</label>
+               <input type="text" name="education_primary" id="education_primary" class="form-control" placeholder="Primary" required="">
+          </div>
+          <div class="col-md-2 pull-left">
+               <label for="schoolyear1">Year of Completion</label>
+               <input type="text" name="education_primary_year" id="education_primary_year"  class="form-control" placeholder="Year of Completion" required="">
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+               <label for="schoolname2">Secondary</label>
+               <input type="text"  name="education_secondary" id="education_secondary" class="form-control" placeholder="Secondary" required="">
+          </div>
+          <div class="col-md-2 pull-left">
+               <label for="schoolyear2">Year of Completion</label>
+               <input type="text" name="education_secondary_year" id="education_secondary_year" class="form-control" placeholder="Year of Completion" required="">
+          </div>
+     </div>
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+               <label for="schoolname3">Tertiary</label>
+               <input type="text" name="education_tertiary" id="education_tertiary" class="form-control" placeholder="Tertiary" required="">
+          </div>
+          <div class="col-md-2">
+               <label for="schoolyear3">Year of Completion</label>
+               <input type="text" name="education_tertiary_year" id="education_tertiary_year" class="form-control" placeholder="Year of Completion" required="">
+          </div>
+     </div>
+
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="course">Course/Program</label>
+               <input type="text" name="course" id="course" class="form-control" placeholder="Course / Program">
+          </div>
+		 </div>
+
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="other_course">Others</label>
+               <input type="text" name="other_course" id="other_course" class="form-control" placeholder="Other Course">
+          </div>
+     </div>
+
+
+     <br />
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div> 
+     <h3 class="gf_progressbar_title">Christian Life Information</h3>
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div>
+     <br/>
+     
+     <div class="form-group row">
+          <div class="col-md-8 pull-left">
+               <label for="christian_when_saved">When did you receive Jesus as personal Lord and Savior?</label>
+               <input type="text" name="christian_when_saved" id="christian_when_saved" class="form-control" placeholder="">
+          </div>
+     </div>
+          
+     <div class="form-group row">
+          <div class="col-md-8 pull-left">
+               <label for="christian_baptized">Have you been baptized in the Holy Spirit with the evidence of speaking with other tongues?</label>
+               <div class="radio">
+                <label class="radio-inline"><input type="radio" name="christian_baptized" onclick="if (this.checked) { document.getElementById('toggleTongues').style.visibility = 'visible'; }"> Yes</label>
+                <label class="radio-inline"><input type="radio" name="christian_baptized" onclick="if (this.checked) { document.getElementById('toggleTongues').style.visibility = 'hidden'; }">No</label>
+               </div>
+          </div>
+          
+          <div id="toggleTongues" style="visibility:hidden">
+          <div class="col-md-2 pull-left">
+               <label for="christian_baptized_date">Date</label>
+               <input type="text" name="christian_baptized_date" id="christian_baptized_date" class="form-control datepicker" placeholder="Date">
+          </div>
+          <div class="col-md-2 pull-left">
+               <label for="christian_baptized_place">Place</label>
+               <input type="text" name="christian_baptized_place" id="christian_baptized_place" class="form-control" placeholder="Place">
+          </div>
+          </div>
+     </div>
+     
+     <div class="form-group row">
+          <div class="col-md-12 pull-left">
+          		<label>Please indicate which church you attend</label>
+          </div>
+     </div>
+     
+     <div class="form-group row">
+          <div class="col-md-2 pull-left">
+               <label for="christian_church">Church</label>
+								<select name="christian_church" id="christian_church" class="form-control" onchange="if (this.options[christian_church.selectedIndex].value == 'newlife') { document.getElementById('toggleNewLifeChurches').style.visibility = 'visible'; document.getElementById('toggleNonNewLifeChurches').style.visibility = 'hidden'; } else { document.getElementById('toggleNewLifeChurches').style.visibility = 'hidden'; document.getElementById('toggleNonNewLifeChurches').style.visibility = 'visible'; }">
+                    <option value=''></option>
+                    <option value='newlife'>New Life</option>
+                    <option value='non-newlife' >Non-New Life</option>
+                </select>
+          </div>
+					
+          <div class="col-md-4 pull-left">
+          		 <div id="toggleNewLifeChurches" style="visibility:hidden">
+               <label>Select Satellite Church:</label>
+               <select name="christian_church_name" id="christian_church_name" class="form-control">
+                    <option value='New Life, Alabang' >New Life, Alabang</option>
+                    <option value='New Life, Bacoor' >New Life, Bacoor</option>
+                    <option value='New Life, Baguio' >New Life, Baguio</option>
+                    <option value='New Life, Balingasag' >New Life, Balingasag</option>
+                    <option value='New Life, Bontoc' >New Life, Bontoc</option>
+                    <option value='New Life, Borongan' >New Life, Borongan</option>
+                    <option value='New Life, Burauen' >New Life, Burauen</option>
+                    <option value='New Life, Cadiz' >New Life, Cadiz</option>
+                    <option value='New Life, Cagayan De Oro'>New Life, Cagayan De Oro</option>
+                    <option value='New Life, Calapan' >New Life, Calapan</option>
+                    <option value='New Life, Calbayog' >New Life, Calbayog</option>
+                    <option value='New Life, Carigara' >New Life, Carigara</option>
+                    <option value='New Life, Catbalogan' >New Life, Catbalogan</option>
+                    <option value='New Life, Catubig' >New Life, Catubig</option>
+                    <option value='New Life, Danao' >New Life, Danao</option>
+                    <option value='New Life, Hibubullao' >New Life, Hibubullao</option>
+                    <option value='New Life, Hinunangan' >New Life, Hinunangan</option>
+                    <option value='New Life, Iligan' >New Life, Iligan</option>
+                    <option value='New Life, La Trinidad' >New Life, La Trinidad</option>
+                    <option value='New Life, Maydolong' >New Life, Maydolong</option>
+                    <option value='New Life, North Metro' >New Life, North Metro</option>
+                    <option value='New Life, Port Area (BASECO)' >New Life, Port Area (BASECO)</option>
+                    <option value='New Life, San Jose' >New Life, San Jose</option>
+                    <option value='New Life, San Roque' >New Life, San Roque</option>
+                    <option value='New Life, Sorsogon' >New Life, Sorsogon</option>
+                    <option value='New Life, Sta.Rosa' >New Life, Sta.Rosa</option>
+                    <option value='New Life, Surigao' >New Life, Surigao</option>
+                    <option value='New Life, Tacloban' >New Life, Tacloban</option>
+                    <option value='New Life, Taguig' >New Life, Taguig</option>
+                    <option value='New Life, Tagum' >New Life, Tagum</option>
+                    <option value='New Life, Tanza' >New Life, Tanza</option>
+                    <option value='New Life, The Fort' >New Life, The Fort</option>
+                    <option value='New Life, Tondo' >New Life, Tondo</option>
+                    <option value='New Life, Kathmandu Nepal' >New Life, Kathmandu Nepal</option>
+                    <option value='New Life, Yangoon Myanmar' >New Life, Yangoon Myanmar</option>
+               </select>
+          		 </div>
+          </div>
+          
+          <div class="col-md-4 pull-left">
+               <div id="toggleNonNewLifeChurches" style="visibility:hidden">
+               <label>Church Name</label>
+               <input type="text" name="christian_nonnewlife" id="christian_nonnewlife" class="form-control" placeholder="Name of Church">
+               </div>
+     			</div>
+     </div>
+     
+     <div class="form-group row">
+          <div class="col-md-4 pull-left">
+               <label for="christian_position">Indicate if you are*</label>
+								<select name="christian_position" id="christian_position" class="form-control">
+                		<option value=""></option>
+                    <option value="Senior Pastor">Senior Pastor</option>
+                    <option value="Pastoral Staff">Pastoral Staff</option>
+                    <option value="Staff/Church Worker">Staff/Church Worker</option>
+                    <option value="Member">Member</option>
+                </select>
+          </div>
+     </div>
+     
+     <div class="form-group row">               
+          <div class="col-md-6 pull-left">
+               <label for="christian_whyattend">Why do you want to attend NLTC?</label>
+               <textarea id="christian_whyattend" name="christian_whyattend" class="form-control" rows="5" cols="10" placeholder="Limit your answer to 2-3 sentences or 100 characters."></textarea>
+          </div> 
+     </div>
+     
+     <div class="form-group row">
+          <div class="col-md-3 pull-left">
+               <label for="christian_senior_pastor">What is the name of your Senior Pastor?</label>
+               <input type="text" name="christian_senior_pastor" id="christian_senior_pastor" class="form-control" placeholder="Senior Pastor">
+          </div>
+          <div class="col-md-3 pull-left">
+               <label for="christian_length_attend">How long have you been faithfully attending the said church?</label>
+               <input type="text" name="christian_length_attend" id="christian_length_attend" class="form-control">
+          </div>
+     </div>
+     
+     <div class="form-group row">
+          <div class="col-md-3 pull-left">
+               <label for="christian_ministry_name">Name of Ministry</label>
+               <input type="text" name="christian_ministry_name" id="christian_ministry_name" class="form-control" placeholder="Name of Ministry">
+          </div>
+          <div class="col-md-3 pull-left">
+               <label for="christian_ministry_head">Ministry Head</label>
+               <input type="text" name="christian_ministry_head" id="christian_ministry_head" class="form-control" placeholder="Ministry Head">
+          </div>
+     </div>
+     
+     <div class="form-group row">
+          <div class="col-md-12 pull-left">
+               <label for="christian_lifegroup">Please check all that applies:</label>
+               <div class="checkbox">
+                 <label>
+                    <input type="checkbox" id="christian_lifegroup" value="I am a member of a Life Group"> I am a member of a Life Group <br />
+                    <input type="checkbox" id="christian_lifegroup" value="I lead a Life Group"> I lead a Life Group
+                 </label>
+               </div>
+          </div>
+     </div>
+     
+     <div class="form-group row">
+          <div class="col-md-12 pull-left">
+               <label for="christian_fulltime">Do you believe God is calling you to serve fulltime in any ministry?</label>
+               <div class="radio">
+               		<label class="radio-inline"><input type="radio" name="christian_fulltime">Yes</label>
+               		<label class="radio-inline"><input type="radio" name="christian_fulltime">No</label>
+               </div>
+          </div>
+     </div>
+     
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="christian_tither">Are you a consistent tither?</label>
+               <div class="radio">
+               		<label class="radio-inline"><input type="radio" name="christian_tither">Yes</label>
+               		<label class="radio-inline"><input type="radio" name="christian_tither">No</label>
+               </div>
+          </div>
+     </div>     
+
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="christian_trainings">What other ministry trainings have you attended prior to application at NLTC?</label>
+               <textarea id="christian_trainings" name="christian_trainings" class="form-control" rows="5" cols="10" placeholder="Type of Training / Venue / Date (One line for multiple inputs)"></textarea>
+          </div>
+     </div>    
+     
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="christian_ntc_volunteer">Do you have any desire to volunteer in NLTC?</label>
+               <div class="radio">
+               		<label class="radio-inline"><input type="radio" name="christian_ntc_volunteer">Yes</label>
+               		<label class="radio-inline"><input type="radio" name="christian_ntc_volunteer">No</label>
+               </div>
+          </div>
+     </div>  
+
+     <div class="form-group row">
+          <div class="col-md-12 pull-left">
+              <label>If yes, please check the following areas that you see yourself serving?</label>
+              <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="christian_ntc_volunteer_area" value="Teacher’s Assistant"> Teacher’s Assistant <br />
+                    <input type="checkbox" id="christian_ntc_volunteer_area" value="Sound System"> Sound System <br />
+                    <input type="checkbox" id="christian_ntc_volunteer_area" value="Praise and Worship"> Praise and Worship <br />
+                    <input type="checkbox" id="christian_ntc_volunteer_area" value="Ushers/Usherettes"> Ushers/Usherettes <br />
+                  </label>
+              </div>
+          </div>
+     </div>
+
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="christian_currently_serving">Are you currently serving in any ministry?</label>
+               <div class="radio">
+               		<label class="radio-inline"><input type="radio" name="christian_currently_serving">Yes</label>
+               		<label class="radio-inline"><input type="radio" name="christian_currently_serving">No</label>
+               </div>
+          </div>
+     </div> 
+     
+     <br />
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div> 
+     <h3 class="gf_progressbar_title">Physical / Health Condition</h3>
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div>
+     <br/>
+     
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="physical_handicap">Do you have any physical handicaps or illnesses?</label>
+               <div class="radio">
+               		<label class="radio-inline"><input type="radio" name="physical_handicap">Yes</label>
+               		<label class="radio-inline"><input type="radio" name="physical_handicap">No</label>
+               </div>
+          </div>
+     </div> 
+     
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="physical_criminal">Have you ever been convicted of any criminal offense?</label>
+               <div class="radio">
+               		<label class="radio-inline"><input type="radio" name="physical_criminal">Yes</label>
+               		<label class="radio-inline"><input type="radio" name="physical_criminal">No</label>
+               </div>
+          </div>
+     </div> 
+     
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="physical_abuse">Have you undergone rehabilitation for substance abuse?</label>
+               <div class="radio">
+               		<label class="radio-inline"><input type="radio" name="physical_abuse">Yes</label>
+               		<label class="radio-inline"><input type="radio" name="physical_abuse">No</label>
+               </div>
+          </div>
+     </div> 
+     
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+               <label for="physical_phsychological">Have you undergone or still in any psychological and/or psychiatric therapy/medication?</label>
+               <div class="radio">
+               		<label class="radio-inline"><input type="radio" name="physical_phsychological">Yes</label>
+               		<label class="radio-inline"><input type="radio" name="physical_phsychological">No</label>
+               </div>
+          </div>
+     </div> 
+          
+     
+     <br />
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div> 
+     <h3 class="gf_progressbar_title">Book Interview</h3>
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div>
+     <br/>
+
+     <div class="form-group row">
+          <div class="col-md-2 pull-left">
+               <label for="interview_date">Interview Date</label>
+               <input type="text" name="interview_date" id="interview_date" class="form-control datepicker" placeholder="DD/MM/YYYY" required="">
+               <span></span>
+          </div>
+          <div class="col-md-3 pull-left">
+          		<label>
+                Available Dates:  June 1-2, 8-9, 15-16, 22-23, 29-30 /  July 6-7, 13-14, 20-21, 27-28 [Days: every Wednesdays and Thursdays only]
+              </label>
+          </div>
+          <div class="col-md-2 pull-left">
+               <label for="interview_time">Interview Time</label>
+							 <select name="interview_time" id="interview_time" class="form-control">
+                  <option value="9:00 am">9:00 am</option>
+                  <option value="10:00 am">10:00 am</option>
+                  <option value="11:00 am">11:00 am</option>
+                  <option value="2:00 pm">2:00 pm</option>
+                  <option value="3:00 pm">3:00 pm</option>
+                  <option value="4:00 pm">4:00 pm</option>
+               </select>
+          </div>
+     </div>
+     
+     <br />
+     <div style="width:100%;border-bottom: 1px dashed black;padding:10px 0px;"></div>
+     <br />
+ 
+     <div class="form-group row">
+          <div class="col-md-6 pull-left">
+              <button type="submit" class="btn btn-primary">Submit Application</button>
+          </div>
+     </div>
+</form>
+<!--</div>-->";}";

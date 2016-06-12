@@ -1,0 +1,45 @@
+columns:
+    id:
+        label: 'heidimarasigan.nltc::lang.nltc.application_no'
+        type: number
+        searchable: true
+        sortable: true
+    first_name:
+        label: 'heidimarasigan.nltc::lang.nltc.first_name'
+        type: text
+        searchable: true
+        sortable: true
+    last_name:
+        label: 'heidimarasigan.nltc::lang.nltc.last_name'
+        type: text
+        searchable: true
+        sortable: true
+    email:
+        label: 'heidimarasigan.nltc::lang.nltc.email'
+        type: text
+        searchable: true
+        sortable: true
+    level:
+        label: 'heidimarasigan.nltc::lang.nltc.level'
+        type: text
+        searchable: true
+        sortable: true
+    city:
+        label: 'heidimarasigan.nltc::lang.nltc.city'
+        type: text
+        searchable: true
+        sortable: true
+    country:
+        label: 'heidimarasigan.nltc::lang.nltc.country'
+        type: text
+        searchable: true
+        sortable: true
+    interview_date:
+        label: 'heidimarasigan.nltc::lang.nltc.interview_date'
+        type: text
+        searchable: true
+    interview_time:
+        label: 'heidimarasigan.nltc::lang.nltc.interview_time'
+        type: text
+        searchable: true
+        sortable: true

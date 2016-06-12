@@ -1,0 +1,11 @@
+name: Subjects
+modelClass: HeidiMarasigan\Nltc\Models\Subjects
+form: $/heidimarasigan/nltc/models/subjects/fields.yaml
+defaultRedirect: heidimarasigan/nltc/subjects
+create:
+    redirect: 'heidimarasigan/nltc/subjects/update/:id'
+    redirectClose: heidimarasigan/nltc/subjects
+update:
+    redirect: heidimarasigan/nltc/subjects
+    redirectClose: heidimarasigan/nltc/subjects
+preview: {  }

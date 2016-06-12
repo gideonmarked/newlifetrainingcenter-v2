@@ -1,0 +1,46 @@
+description = "Blog 1 Layout"
+==
+{% partial "header" %}
+
+		{% partial "navigation-top" %}
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Content Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="home"><img src="{{ 'assets/images/NTC-Web-Banner.png'|theme }}" width="800" height="231" class="img-responsive"></a> 
+            </div>
+        </div>
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">{{ this.page.title }}
+                    <!--<small>Subheading</small> -->
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="home">Home</a>
+                    </li>
+                    <li class="active">{{ this.page.title }}</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-8">
+
+  						{% page %}
+
+            </div>
+
+						{% partial "blog-sidebar" %}
+        
+        </div>
+        <!-- /.row -->
+        
+{% partial "footer" %}

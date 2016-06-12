@@ -1,0 +1,45 @@
+1464932948s:1019:"a:6:{s:5:"mtime";i:1442282924;s:7:"content";s:422:"title = "Home"
+url = "/"
+is_hidden = "0"
+==
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newlife Training Center</title>
+    <style>
+        body {
+    background-color: #FBFBF9;
+}
+p {
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+}
+    </style>
+</head>
+<body>
+    <p>
+        <img src="http://v2.newlifetrainingcenter.ph/storage/app/media/NTC-login-logo.png" />
+    </p>
+</body>
+</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:4:{s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:378:"<!DOCTYPE html>
+<html>
+<head>
+    <title>Newlife Training Center</title>
+    <style>
+        body {
+    background-color: #FBFBF9;
+}
+p {
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+}
+    </style>
+</head>
+<body>
+    <p>
+        <img src="http://v2.newlifetrainingcenter.ph/storage/app/media/NTC-login-logo.png" />
+    </p>
+</body>
+</html>";}";

@@ -1,0 +1,708 @@
+fields:
+    study_program:
+        label: 'Study Program'
+        span: full
+        type: section
+    application_type:
+        label: 'heidimarasigan.nltc::lang.nltc.applicationtype'
+        oc.commentPosition: ''
+        options:
+            Regular: Regular
+            Irregular: 'Irregular (Students with incomplete subjects in their year level)'
+        span: full
+        required: 1
+        type: radio
+    school_year:
+        label: 'heidimarasigan.nltc::lang.nltc.school_year'
+        oc.commentPosition: ''
+        options:
+            2016-2017: 2016-2017
+            2017-2018: 2017-2018
+            2018-2019: 2018-2019
+            2019-2020: 2019-2020
+            2020-2021: 2020-2021
+            2021-2022: 2021-2022
+            2022-2023: 2022-2023
+            2023-2024: 2023-2024
+            2024-2025: 2024-2025
+            2025-2026: 2025-2026
+            2026-2027: 2026-2027
+            2027-2028: 2027-2028
+            2028-2029: 2028-2029
+            2029-2030: 2029-2030
+        span: auto
+        required: 1
+        type: dropdown
+    level:
+        label: 'heidimarasigan.nltc::lang.nltc.level'
+        oc.commentPosition: ''
+        options:
+            'First Year': 'First Year'
+            'Second Year': 'Second Year'
+            'Pastoral Track': 'Pastoral Track'
+        span: auto
+        required: 1
+        type: dropdown
+    personal_information:
+        label: 'Personal Information'
+        span: full
+        type: section
+    first_name:
+        label: 'heidimarasigan.nltc::lang.nltc.first_name'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    middle_name:
+        label: 'heidimarasigan.nltc::lang.nltc.middle_name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    last_name:
+        label: 'heidimarasigan.nltc::lang.nltc.last_name'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    address:
+        label: 'heidimarasigan.nltc::lang.nltc.address'
+        oc.commentPosition: ''
+        span: full
+        type: text
+    city:
+        label: 'heidimarasigan.nltc::lang.nltc.city'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'
+    state:
+        label: 'heidimarasigan.nltc::lang.nltc.state'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'
+    country:
+        label: 'heidimarasigan.nltc::lang.nltc.country'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    citizenship:
+        label: 'heidimarasigan.nltc::lang.nltc.citizenship'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'
+    phone:
+        label: 'heidimarasigan.nltc::lang.nltc.phone'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'
+    mobile:
+        label: 'heidimarasigan.nltc::lang.nltc.mobile'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    facebook:
+        label: 'heidimarasigan.nltc::lang.nltc.facebook'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'
+    email:
+        label: 'heidimarasigan.nltc::lang.nltc.email'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        defaultFrom: email
+        type: text
+    website:
+        label: 'heidimarasigan.nltc::lang.nltc.website'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'
+    age:
+        label: 'heidimarasigan.nltc::lang.nltc.age'
+        oc.commentPosition: ''
+        span: auto
+        placeholder: ''
+        required: 1
+        type: text
+    date_of_birth:
+        label: 'heidimarasigan.nltc::lang.nltc.date_of_birth'
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        placeholder: DD/MM/YYYY
+        required: 1
+        type: datepicker
+    place_of_birth:
+        label: 'heidimarasigan.nltc::lang.nltc.place_of_birth'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'
+    gender:
+        label: 'heidimarasigan.nltc::lang.nltc.gender'
+        oc.commentPosition: ''
+        options:
+            male: Male
+            female: Female
+        span: auto
+        type: radio
+        tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'
+    civil_status:
+        label: 'heidimarasigan.nltc::lang.nltc.civil_status'
+        oc.commentPosition: ''
+        options:
+            single: Single
+            married: Married
+            separated: Separated
+            widowed: Widowed
+            remarried: Remarried
+        span: auto
+        type: dropdown
+        tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'
+    occupational_field:
+        label: 'heidimarasigan.nltc::lang.nltc.occupational_field'
+        oc.commentPosition: ''
+        options:
+            'Accounting / Finance': 'Accounting / Finance'
+            'Admin & Office Services': 'Admin & Office Services'
+            'Advertising / Promotions / Events': 'Advertising / Promotions / Events'
+            'Audit / Taxation': 'Audit / Taxation'
+            'Beauty / Personal Care': 'Beauty / Personal Care'
+            'Corporate Planning / Business Dev.': 'Corporate Planning / Business Dev.'
+            'Customer Service': 'Customer Service'
+            'Data / Statistical Analysis': 'Data / Statistical Analysis'
+            'Design / Specifications': 'Design / Specifications'
+            'Education / Training & Development': 'Education / Training & Development'
+            'Engineering / Technical': 'Engineering / Technical'
+            'Environment / Health & Safety': 'Environment / Health & Safety'
+            'Hospitality / Tourism': 'Hospitality / Tourism'
+            'Human Resources': 'Human Resources'
+            'Information Technology': 'Information Technology'
+            'Legal / Secretarial Services': 'Legal / Secretarial Services'
+            'Logistics / Supply Chain Management': 'Logistics / Supply Chain Management'
+            Management: Management
+            Marketing: Marketing
+            'Merchandising / Purchasing': 'Merchandising / Purchasing'
+            Nursing: Nursing
+            Operations: Operations
+            'Product Development': 'Product Development'
+            'Production / Manufacturing': 'Production / Manufacturing'
+            'Project Management': 'Project Management'
+            'Public Relations / Communications': 'Public Relations / Communications'
+            'Quality Control / Assurance': 'Quality Control / Assurance'
+            'R&D / Sciences / Laboratory': 'R&D / Sciences / Laboratory'
+            Sales: Sales
+            Others: Others
+        span: auto
+        type: dropdown
+        tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'
+    role:
+        label: 'heidimarasigan.nltc::lang.nltc.role'
+        oc.commentPosition: ''
+        span: auto
+        placeholder: 'eg. Finance Manager'
+        type: text
+        tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'
+    travelling:
+        label: 'heidimarasigan.nltc::lang.nltc.travelling'
+        oc.commentPosition: ''
+        options:
+            'yes': 'Yes'
+            'no': 'No'
+        span: auto
+        type: radio
+    travelling_frequency:
+        label: 'heidimarasigan.nltc::lang.nltc.travelling_frequency'
+        oc.commentPosition: ''
+        options:
+            Weekly: Weekly
+            Monthly: Monthly
+            Annually: Annually
+        span: auto
+        hidden: 0
+        trigger:
+            action: show
+            field: travelling
+            condition: 'value[yes]'
+        type: dropdown
+    family_background:
+        label: 'Family Background'
+        span: full
+        type: section
+    spouse_name:
+        label: 'heidimarasigan.nltc::lang.nltc.spouse_name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    spouse_occupation:
+        label: 'heidimarasigan.nltc::lang.nltc.spouse_occupation'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'Family Background'
+    children:
+        label: 'heidimarasigan.nltc::lang.nltc.children'
+        oc.commentPosition: ''
+        prompt: 'Add new item'
+        span: full
+        type: repeater
+        form:
+            fields:
+                child_name:
+                    label: 'heidimarasigan.nltc::lang.nltc.child_name'
+                    oc.commentPosition: ''
+                    span: auto
+                    type: text
+                child_age:
+                    label: 'heidimarasigan.nltc::lang.nltc.child_age'
+                    oc.commentPosition: ''
+                    span: auto
+                    type: number
+                child_gender:
+                    label: 'heidimarasigan.nltc::lang.nltc.child_gender'
+                    oc.commentPosition: ''
+                    options:
+                        Male: Male
+                        Female: Female
+                    span: auto
+                    type: dropdown
+    in_agreement:
+        label: 'heidimarasigan.nltc::lang.nltc.in_agreement'
+        oc.commentPosition: ''
+        options:
+            'yes': 'Yes'
+            'no': 'No'
+        span: full
+        type: radio
+    educational_background:
+        label: 'Educational Background'
+        span: full
+        type: section
+    education_primary:
+        label: 'heidimarasigan.nltc::lang.nltc.education_primary'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'Educational Background'
+    education_primary_year:
+        label: 'heidimarasigan.nltc::lang.nltc.education_primary_year'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'Educational Background'
+    education_secondary:
+        label: 'heidimarasigan.nltc::lang.nltc.education_secondary'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'Educational Background'
+    education_secondary_year:
+        label: 'heidimarasigan.nltc::lang.nltc.education_secondary_year'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'Educational Background'
+    education_tertiary:
+        label: 'heidimarasigan.nltc::lang.nltc.education_tertiary'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'Educational Background'
+    education_tertiary_year:
+        label: 'heidimarasigan.nltc::lang.nltc.education_tertiary_year'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'Educational Background'
+    course:
+        label: 'heidimarasigan.nltc::lang.nltc.course'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'Educational Background'
+    other_course:
+        label: 'heidimarasigan.nltc::lang.nltc.other_course'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'Educational Background'
+    christian_life:
+        label: 'Christian Life'
+        span: full
+        type: section
+    christian_when_saved:
+        label: 'When did you receive Jesus as personal Lord and Savior?'
+        span: auto
+        type: text
+        tab: 'Christian Life'
+    christian_baptized:
+        label: 'Have you been baptized in the Holy Spirit with the evidence of speaking with other tongues?'
+        oc.commentPosition: ''
+        options:
+            'yes': 'Yes'
+            'no': 'No'
+        span: full
+        type: radio
+    christian_baptized_date:
+        label: Date
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        hidden: 0
+        trigger:
+            action: show
+            field: christian_baptized
+            condition: 'value[yes]'
+        type: datepicker
+    christian_baptized_place:
+        label: 'heidimarasigan.nltc::lang.nltc.baptized_place'
+        oc.commentPosition: ''
+        span: auto
+        hidden: 0
+        trigger:
+            action: show
+            field: christian_baptized
+            condition: 'value[yes]'
+        type: text
+    christian_church:
+        label: 'heidimarasigan.nltc::lang.nltc.christian_church'
+        oc.commentPosition: ''
+        options:
+            'New Life': 'New Life'
+            'Non-New Life': 'Non-New Life'
+        span: auto
+        type: dropdown
+    christian_church_name:
+        label: 'heidimarasigan.nltc::lang.nltc.christian_church_name'
+        oc.commentPosition: ''
+        options:
+            'New Life, Alabang': 'New Life, Alabang'
+            'New Life, Bacoor': 'New Life, Bacoor'
+            'New Life, Balingasag': 'New Life, Balingasag'
+            'New Life, Baguio': 'New Life, Baguio'
+            'New Life, Bontoc': 'New Life, Bontoc'
+            'New Life, Boracay': 'New Life, Boracay'
+            'New Life, Borongan': 'New Life, Borongan'
+            'New Life, Burauen': 'New Life, Burauen'
+            'New Life, Cadiz': 'New Life, Cadiz'
+            'New Life, Cagayan de Oro': 'New Life, Cagayan de Oro'
+            'New Life, Calapan': 'New Life, Calapan'
+            'New Life, Calbayog': 'New Life, Calbayog'
+            'New Life, Carigara': 'New Life, Carigara'
+            'New Life, Catbalogan': 'New Life, Catbalogan'
+            'New Life, Catubig': 'New Life, Catubig'
+            'New Life, Danao': 'New Life, Danao'
+            'New Life, Hibubulyao': 'New Life, Hibubulyao'
+            'New Life, Hinunangan': 'New Life, Hinunangan'
+            'New Life, Iligan': 'New Life, Iligan'
+            'New Life, La Trinidad': 'New Life, La Trinidad'
+            'New Life, Maydolong': 'New Life, Maydolong'
+            'New Life, North Metro': 'New Life, North Metro'
+            'New Life, Port Area (BASECO)': 'New Life, Port Area (BASECO)'
+            'New Life, San Jose': 'New Life, San Jose'
+            'New Life, San Roque': 'New Life, San Roque'
+            'New Life, Sorsogon': 'New Life, Sorsogon'
+            'New Life, Sta.Rosa': 'New Life, Sta.Rosa'
+            'New Life, Surigao': 'New Life, Surigao'
+            'New Life, Tacloban': 'New Life, Tacloban'
+            'New Life, Taguig': 'New Life, Taguig'
+            'New Life, Tagum': 'New Life, Tagum'
+            'New Life, Tanza': 'New Life, Tanza'
+            'New Life, The Fort': 'New Life, The Fort'
+            'New Life, Tondo': 'New Life, Tondo'
+            'New Life, Kathmandu - Nepal': 'New Life, Kathmandu - Nepal'
+            'New Life, Yangoon - Myanmar': 'New Life, Yangoon - Myanmar'
+        span: auto
+        hidden: 0
+        dependsOn: {  }
+        trigger:
+            action: show
+            field: christian_church
+            condition: 'value[New Life]'
+        type: dropdown
+    christian_nonnewlife:
+        label: 'heidimarasigan.nltc::lang.nltc.christian_nonnewlife'
+        oc.commentPosition: ''
+        span: auto
+        trigger:
+            action: show
+            field: christian_church
+            condition: 'value[Non-New Life]'
+        type: text
+    christian_position:
+        label: 'heidimarasigan.nltc::lang.nltc.christian_position'
+        oc.commentPosition: ''
+        options:
+            'Senior Pastor': 'Senior Pastor'
+            'Lead Pastor': 'Lead Pastor'
+            'Ministry Head': 'Ministry Head'
+            'Pastoral Staff': 'Pastoral Staff'
+            'Staff / Church Worker': 'Staff / Church Worker'
+            Member: Member
+        span: auto
+        default: Member
+        type: dropdown
+    christian_senior_pastor:
+        label: 'What is the name of your senior pastor or lead pastor?'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    christian_length_attend:
+        label: 'heidimarasigan.nltc::lang.nltc.christian_length_attend'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    ministry:
+        label: 'Ministry Involvement'
+        span: full
+        type: section
+    christian_ministry_name:
+        label: 'heidimarasigan.nltc::lang.nltc.christian_ministry_name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    christian_ministry_head:
+        label: 'heidimarasigan.nltc::lang.nltc.christian_ministry_head'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        tab: 'Christian Life'
+    christian_years_of_stay:
+        label: 'Years of Stay'
+        span: auto
+        type: text
+    christian_ministry_responsibilities:
+        label: Responsibilities
+        span: auto
+        size: small
+        type: textarea
+    christian_whyattend:
+        label: 'Why do you want to attend NLTC?'
+        size: small
+        oc.commentPosition: ''
+        span: full
+        placeholder: 'Limit your answer to 2-3 sentences or 100 characters.'
+        type: textarea
+    christian_lifegroup_lead:
+        label: 'I am a leader of a Life Group'
+        span: auto
+        type: checkbox
+    christian_lifegroup_lead_started:
+        label: 'Date Started (Life Group Leader)'
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        placeholder: DD/MM/YYYY
+        hidden: 0
+        trigger:
+            action: show
+            field: christian_lifegroup_lead
+            condition: checked
+        type: datepicker
+    christian_lifegroup_member:
+        label: 'I am a member of a Life Group'
+        span: auto
+        type: checkbox
+    christian_lifegroup_member_started:
+        label: 'Date Started (Life Group Member)'
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        placeholder: DD/MM/YYYY
+        hidden: 0
+        dependsOn: {  }
+        trigger:
+            action: show
+            field: christian_lifegroup_member
+            condition: checked
+        type: datepicker
+    christian_fulltime:
+        label: 'heidimarasigan.nltc::lang.nltc.christian_fulltime'
+        oc.commentPosition: ''
+        options:
+            'Yes': 'Yes'
+            'No': 'No'
+        span: full
+        type: radio
+    christian_tither:
+        label: 'heidimarasigan.nltc::lang.nltc.christian_tither'
+        oc.commentPosition: ''
+        options:
+            'Yes': 'Yes'
+            'No': 'No'
+        span: auto
+        type: radio
+    christian_trainings:
+        label: 'What other ministry trainings have you attended prior to application at NLTC?'
+        oc.commentPosition: ''
+        prompt: 'Add new item'
+        span: full
+        type: repeater
+        form:
+            fields:
+                christian_training_type:
+                    label: 'heidimarasigan.nltc::lang.nltc.christian_training_type'
+                    oc.commentPosition: ''
+                    span: auto
+                    type: text
+                christian_training_venue:
+                    label: 'heidimarasigan.nltc::lang.nltc.christian_training_venue'
+                    oc.commentPosition: ''
+                    span: auto
+                    type: text
+                christian_training_date:
+                    label: 'heidimarasigan.nltc::lang.nltc.christian_training_date'
+                    oc.commentPosition: ''
+                    mode: date
+                    span: auto
+                    placeholder: DD/MM/YYYY
+                    type: datepicker
+    christian_ntc_volunteer:
+        label: 'Do you have any desire to volunteer in NLTC?'
+        oc.commentPosition: ''
+        options:
+            'Yes': 'Yes'
+            'No': 'No'
+        span: auto
+        type: radio
+    christian_ntc_volunteer_area:
+        label: 'heidimarasigan.nltc::lang.nltc.volunteer_area_checkbox'
+        oc.commentPosition: ''
+        options:
+            'Teachers Assistant': 'Teachers Assistant'
+            'Sound System': 'Sound System'
+            'Praise and Worship': 'Praise and Worship'
+            'Ushers or Usherettes': 'Ushers or Usherettes'
+        span: auto
+        type: checkboxlist
+    training_fee:
+        label: 'How do you plan to settle training fees on time?'
+        size: small
+        span: full
+        type: textarea
+    physical:
+        label: 'Physical and Health Condition'
+        span: full
+        type: section
+    physical_handicap:
+        label: 'Do you have any physical handicaps or illnesses?'
+        oc.commentPosition: ''
+        options:
+            'Yes': 'Yes'
+            'No': 'No'
+        span: full
+        type: radio
+    physical_criminal:
+        label: 'Have you ever been convicted of any criminal offense?'
+        oc.commentPosition: ''
+        options:
+            'Yes': 'Yes'
+            'No': 'No'
+        span: full
+        type: radio
+    physical_abuse:
+        label: 'Have you undergone rehabilitation for substance abuse?'
+        oc.commentPosition: ''
+        options:
+            'Yes': 'Yes'
+            'No': 'No'
+        span: full
+        type: radio
+    physical_phsychological:
+        label: 'Have you undergone or still in any psychological and/or psychiatric therapy/medication?'
+        oc.commentPosition: ''
+        options:
+            'Yes': 'Yes'
+            'No': 'No'
+        span: full
+        type: radio
+    reference:
+        label: 'Personal References'
+        span: full
+        type: section
+        comment: 'Please list two (2) references of people who personally know you for at least 2 years'
+    references:
+        label: 'heidimarasigan.nltc::lang.nltc.references'
+        oc.commentPosition: ''
+        prompt: 'Add new item'
+        span: full
+        type: repeater
+        form:
+            fields:
+                references:
+                    label: Name
+                    oc.commentPosition: ''
+                    span: auto
+                    type: text
+                reference_address:
+                    label: 'heidimarasigan.nltc::lang.nltc.reference_address'
+                    oc.commentPosition: ''
+                    span: auto
+                    type: text
+                reference_relationship:
+                    label: 'heidimarasigan.nltc::lang.nltc.rference_relationship'
+                    oc.commentPosition: ''
+                    span: auto
+                    type: text
+                reference_contactno:
+                    label: 'heidimarasigan.nltc::lang.nltc.reference_contactno'
+                    oc.commentPosition: ''
+                    span: auto
+                    type: text
+    interview_details:
+        label: 'Interview Details'
+        span: full
+        type: section
+    interview_date:
+        label: 'heidimarasigan.nltc::lang.nltc.interview_date'
+        mode: date
+        minDate: '2016-06-01'
+        maxDate: '2016-07-30'
+        span: auto
+        placeholder: DD/MM/YYYY
+        default: '2016-06-01'
+        required: 1
+        type: datepicker
+        comment: 'Available Dates:  June 1-2, 8-9, 15-16, 22-23, 29-30 /  July 6-7, 13-14, 20-21, 27-28 [Days: every Wednesdays and Thursdays only]'
+    interview_time:
+        label: 'heidimarasigan.nltc::lang.nltc.interview_time'
+        oc.commentPosition: ''
+        options:
+            '9:00 am': '9:00 am'
+            '10:00 am': '10:00 am'
+            '11:00 am': '11:00 am'
+            '2:00 pm': '2:00 pm'
+            '3:00 pm': '3:00 pm'
+            '4:00 pm': '4:00 pm'
+        span: auto
+        required: 1
+        type: dropdown
+    confirmation:
+        label: Confirmation
+        span: full
+        type: section
+    acknowledgement:
+        label: 'I hereby state that the information provided in this online application is true and correct to the best of my knowledge. I acknowledge that if NLTC is notified that any information given in this registration is false, it will be grounds for either denial of admission or immediate dismissal from NLTC. I affirm my commitment and willingness to abide to all the policies and procedures of NLTC.'
+        span: full
+        required: 1
+        type: checkbox
+    interview_notes:
+        label: 'heidimarasigan.nltc::lang.nltc.interview_notes'
+        size: huge
+        span: full
+        hidden: 1
+        type: textarea
+    interviewer_name:
+        label: 'heidimarasigan.nltc::lang.nltc.interviewer_name'
+        oc.commentPosition: ''
+        span: auto
+        placeholder: ''
+        default: ''
+        hidden: 1
+        type: text

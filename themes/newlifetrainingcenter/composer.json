@@ -1,0 +1,28 @@
+{
+    "name": "october/newlifetrainingcenter-theme",
+    "type": "newlifetrainingcenter-theme",
+    "description": "New Life Training Center theme",
+    "keywords": ["newlife", "ntc", "cms", "newlifetrainingcenter", "theme"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Heidi Marasigan",
+            "email": "me@iamheidi.com",
+            "role": "Co-founder"
+        },
+        {
+            "name": "Gideon Pacete",
+            "email": "gideonmarkpacete@gmail.com",
+            "role": "Co-founder"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

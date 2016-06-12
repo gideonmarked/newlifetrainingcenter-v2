@@ -1,0 +1,5 @@
+title: Levels
+modelClass: HeidiMarasigan\Nltc\Models\Levels
+nameFrom: levels
+toolbar:
+    buttons: reorder_toolbar

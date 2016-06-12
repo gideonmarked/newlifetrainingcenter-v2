@@ -1,0 +1,16 @@
+columns:
+    id:
+        label: 'heidimarasigan.nltc::lang.students.id'
+        type: number
+        searchable: true
+        sortable: true
+    application_no:
+        label: 'heidimarasigan.nltc::lang.students.application_no'
+        type: number
+        searchable: true
+        sortable: true
+    first_name:
+        label: 'First Name'
+        type: text
+        searchable: true
+        sortable: true

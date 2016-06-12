@@ -1,0 +1,3 @@
+1460963425s:110:"a:2:{s:5:"mtime";i:1460011223;s:7:"content";s:57:"<div>
+     {% partial __SELF__~'::studyprogram' %}
+</div>";}";

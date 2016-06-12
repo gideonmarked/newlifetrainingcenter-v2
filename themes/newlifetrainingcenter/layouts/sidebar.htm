@@ -1,0 +1,40 @@
+description = "Sidebar Layout"
+==
+{% partial "header" %}
+
+		{% partial "navigation" %}
+    
+    		{% partial "heading-breadcrumbs" %}
+        
+
+        <!-- Content Row -->
+        <div class="row">
+            <!-- Sidebar Column -->
+            <div class="col-md-3">
+                {% partial "sidebar-left" %}
+            </div>
+            
+            <!-- Content Column -->
+            <div class="col-md-9">
+                {% page %}
+						    {% partial "calltoaction" %}		
+								{% partial "footer-sidebar" %}        	
+            </div>
+        </div>
+        <!-- /.row -->
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="{{ ['assets/javascript/jquery.js']|theme }}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ ['assets/javascript/bootstrap.min.js']|theme }}"></script>
+
+
+
+</body>
+
+</html>

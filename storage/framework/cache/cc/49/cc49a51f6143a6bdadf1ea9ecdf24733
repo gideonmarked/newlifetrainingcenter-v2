@@ -1,0 +1,205 @@
+1448861811s:9951:"a:6:{s:5:"mtime";i:1448597715;s:7:"content";s:4882:"title = "Contact Us"
+url = "/contact"
+layout = "default"
+is_hidden = 0
+==
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Location Map</h2>
+  </div>
+  
+  <div class="panel-body">
+    <div class="container-fluid">
+      <div class="row">
+      	<div class="col-md-6">
+          <h4>Alabang Newlife Christian Center</h4>
+          2 Don Manolo Boulevard, <br />
+          Alabang, Muntinlupa City, <br />
+          Metro Manila, <br />
+          Philippines 1780 <br /><br />
+        
+          Telephone Number: (+632) 809-1542 extension 301 <br />
+          Mobile Numbers: (+63928) 559-5476 / (+63998) 975-2453 <br />
+          Fax: (+632) 809-7125 <br />
+          Email: <a href="mailto:ntc@newlife.ph">ntc@newlife.ph</a> <br />
+          Facebook: Newlife Training Center <br /><br />
+        </div>
+        <div class="col-md-6">
+        	<iframe class="col-lg-12 col-md-12 col-sm-12 col-xs-12" width="900" height="320" src="http://maps.google.com/maps?q=2+Don+Manolo+Blvd+Muntinlupa+Metro+Manila&amp;output=embed" frameborder="0" marginwidth="0"></iframe>
+    		</div>
+      </div>
+    </div>
+  
+    
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Contact Form</h2>
+  </div>
+  
+  <div class="panel-body">
+  
+    <form role="form" id="feedbackForm">
+      <div class="form-group">
+        <label class="control-label" for="name">Name *</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" />
+          <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+        </div>
+        <span class="help-block" style="display: none;">Please enter your name.</span>
+      </div>
+      <!-- UNCOMMENT HERE IF YOU WANT TITLE, COMPANY, WEBSITE OR PHONE FIELDS - you must also uncomment values in $fields_req in sendmail.php
+      <div class="form-group">
+        <label class="control-label" for="title">Title</label>
+        <input type="text" class="form-control optional" id="title" name="title" />
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="company">Company</label>
+        <input type="text" class="form-control optional" id="company" name="company" />
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="website">Website</label>
+        <input type="url" class="form-control optional" id="website" name="website" />
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="phone">Phone</label>
+        <input type="tel" class="form-control optional" id="phone" name="phone" placeholder="Enter your phone (Optional)"/>
+        <span class="help-block" style="display: none;">Please enter a valid phone number.</span>
+      </div>
+      -->
+      <div class="form-group">
+        <label class="control-label" for="email">Reason for Contact *</label>
+        <select name="reason" class="form-control">
+          <option value="General Inquiry">General Inquiry</option>
+          <option value="Application Form Inquiry">Application Form Inquiry</option>
+        </select>
+        <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="email">Email Address *</label>
+        <div class="input-group">
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" />
+          <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+        </div>
+        <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="message">Message *</label>
+        <div class="input-group">
+          <textarea rows="5" cols="30" class="form-control" id="message" name="message" placeholder="Enter your message" ></textarea>
+          <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+        </div>
+        <span class="help-block" style="display: none;">Please enter a message.</span>
+      </div>
+      <div class="form-group">
+        <div class="g-recaptcha" data-sitekey="6LdWTgkTAAAAAGKrAUJV55zGhVhik0J2T5hnHtgO"></div>
+        <span class="help-block" style="display: none;">Please check that you are not a robot.</span>
+      </div>
+      <span class="help-block" style="display: none;">Please enter a the security code.</span>
+      <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" data-loading-text="Sending..." style="display: block; margin-top: 10px;">Send Feedback</button>
+    </form>
+          
+  </div>
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:10:"Contact Us";s:3:"url";s:8:"/contact";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:4807:"<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Location Map</h2>
+  </div>
+  
+  <div class="panel-body">
+    <div class="container-fluid">
+      <div class="row">
+      	<div class="col-md-6">
+          <h4>Alabang Newlife Christian Center</h4>
+          2 Don Manolo Boulevard, <br />
+          Alabang, Muntinlupa City, <br />
+          Metro Manila, <br />
+          Philippines 1780 <br /><br />
+        
+          Telephone Number: (+632) 809-1542 extension 301 <br />
+          Mobile Numbers: (+63928) 559-5476 / (+63998) 975-2453 <br />
+          Fax: (+632) 809-7125 <br />
+          Email: <a href="mailto:ntc@newlife.ph">ntc@newlife.ph</a> <br />
+          Facebook: Newlife Training Center <br /><br />
+        </div>
+        <div class="col-md-6">
+        	<iframe class="col-lg-12 col-md-12 col-sm-12 col-xs-12" width="900" height="320" src="http://maps.google.com/maps?q=2+Don+Manolo+Blvd+Muntinlupa+Metro+Manila&amp;output=embed" frameborder="0" marginwidth="0"></iframe>
+    		</div>
+      </div>
+    </div>
+  
+    
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Contact Form</h2>
+  </div>
+  
+  <div class="panel-body">
+  
+    <form role="form" id="feedbackForm">
+      <div class="form-group">
+        <label class="control-label" for="name">Name *</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" />
+          <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+        </div>
+        <span class="help-block" style="display: none;">Please enter your name.</span>
+      </div>
+      <!-- UNCOMMENT HERE IF YOU WANT TITLE, COMPANY, WEBSITE OR PHONE FIELDS - you must also uncomment values in $fields_req in sendmail.php
+      <div class="form-group">
+        <label class="control-label" for="title">Title</label>
+        <input type="text" class="form-control optional" id="title" name="title" />
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="company">Company</label>
+        <input type="text" class="form-control optional" id="company" name="company" />
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="website">Website</label>
+        <input type="url" class="form-control optional" id="website" name="website" />
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="phone">Phone</label>
+        <input type="tel" class="form-control optional" id="phone" name="phone" placeholder="Enter your phone (Optional)"/>
+        <span class="help-block" style="display: none;">Please enter a valid phone number.</span>
+      </div>
+      -->
+      <div class="form-group">
+        <label class="control-label" for="email">Reason for Contact *</label>
+        <select name="reason" class="form-control">
+          <option value="General Inquiry">General Inquiry</option>
+          <option value="Application Form Inquiry">Application Form Inquiry</option>
+        </select>
+        <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="email">Email Address *</label>
+        <div class="input-group">
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" />
+          <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+        </div>
+        <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="message">Message *</label>
+        <div class="input-group">
+          <textarea rows="5" cols="30" class="form-control" id="message" name="message" placeholder="Enter your message" ></textarea>
+          <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+        </div>
+        <span class="help-block" style="display: none;">Please enter a message.</span>
+      </div>
+      <div class="form-group">
+        <div class="g-recaptcha" data-sitekey="6LdWTgkTAAAAAGKrAUJV55zGhVhik0J2T5hnHtgO"></div>
+        <span class="help-block" style="display: none;">Please check that you are not a robot.</span>
+      </div>
+      <span class="help-block" style="display: none;">Please enter a the security code.</span>
+      <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" data-loading-text="Sending..." style="display: block; margin-top: 10px;">Send Feedback</button>
+    </form>
+          
+  </div>
+</div>";}";

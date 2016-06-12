@@ -1,0 +1,14 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+applicant:
+    label: applicant
+    view:
+        list: $/heidimarasigan/nltc/models/applications/columns.yaml
+        toolbarButtons: create|delete
+    manage:
+        showSearch: true
+        list: $/heidimarasigan/nltc/models/applications/columns.yaml
+        form: $/heidimarasigan/nltc/models/applications/fields.yaml
+        recordsPerPage: 10

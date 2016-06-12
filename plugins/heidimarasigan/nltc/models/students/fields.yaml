@@ -1,0 +1,8 @@
+fields:
+    applicant:
+        label: Applicant
+        nameFrom: 'heidimarasigan.nltc::lang.nltc.first_name'
+        descriptionFrom: 'heidimarasigan.nltc::lang.nltc.first_name'
+        emptyOption: 'Select applicant'
+        span: auto
+        type: relation

@@ -1,0 +1,33 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    faculty_id:
+        label: Faculty
+        description: Assigned Faculty
+        type: text
+
+    schedule:
+        label: Schedule
+        description: Subject Schedule
+        type: text
+
+    level:
+        label: Level
+        description: Subject Schedule
+        type: dropdown
+        options:
+            first_year: First Year
+            second_year: Second Year
+
+    name:
+        label: Name
+        description: Subject Name
+        type: text
+
+    description:
+        label: Description
+        description: Subject Description
+        type: textarea
+        size: large

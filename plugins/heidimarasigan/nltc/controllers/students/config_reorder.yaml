@@ -1,0 +1,5 @@
+title: Students
+modelClass: HeidiMarasigan\Nltc\Models\Students
+nameFrom: first_name
+toolbar:
+    buttons: reorder_toolbar

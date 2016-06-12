@@ -1,0 +1,13 @@
+name: Applicants
+modelClass: HeidiMarasigan\Nltc\Models\Applications
+form: $/heidimarasigan/nltc/models/applications/fields.yaml
+defaultRedirect: heidimarasigan/nltc/applicants
+create:
+    title: 'New Applicant'
+    redirect: 'heidimarasigan/nltc/applicants/update/:id'
+    redirectClose: heidimarasigan/nltc/applicants/create
+    flashSave: 'Thank you for applying at NLTC.'
+update:
+    redirect: heidimarasigan/nltc/applicants
+    redirectClose: heidimarasigan/nltc/applicants
+preview: {  }

@@ -1,0 +1,58 @@
+plugin:
+    name: 'NLTC Bible School'
+    description: 'New Life Training Center Bible School'
+    author: 'Heidi Marasigan'
+    icon: oc-icon-institution
+    homepage: ''
+permissions:
+    heidimarasigan.nltc.manage_applications:
+        tab: 'Manage Applications'
+        label: 'Manage NLTC Applicants'
+    heidimarasigan.nltc.new_applicant:
+        tab: 'Manage Applications'
+        label: 'NLTC Application Form'
+    heidimarasigan.nltc.manage_nltcportal:
+        tab: 'NLTC Portal'
+        label: 'Manage NLTC Portal'
+navigation:
+    NLTC:
+        label: NLTC
+        url: heidimarasigan/nltc/applicants
+        icon: icon-institution
+        permissions:
+            - heidimarasigan.nltc.manage_nltcportal
+        sideMenu:
+            Applicants:
+                label: Applicants
+                url: heidimarasigan/nltc/applicants
+                icon: icon-group
+                permissions: {  }
+            subjects:
+                label: Subjects
+                url: heidimarasigan/nltc/subjects
+                icon: icon-list-ul
+                permissions: {  }
+            faculty:
+                label: Faculty
+                url: heidimarasigan/nltc/faculty
+                icon: icon-bookmark
+                permissions: {  }
+            levels:
+                label: Levels
+                url: heidimarasigan/nltc/levels
+                icon: icon-sitemap
+            enrolled_students:
+                label: Students
+                url: heidimarasigan/nltc/students
+                icon: icon-child
+    'Application Form':
+        label: 'Application Form'
+        url: heidimarasigan/nltc/applicants/create
+        icon: icon-pencil-square-o
+        permissions:
+            - heidimarasigan.nltc.new_applicant
+        sideMenu:
+            'Fill Up Form':
+                label: 'Fill Up Form'
+                url: heidimarasigan/nltc/applicants/create
+                icon: icon-file

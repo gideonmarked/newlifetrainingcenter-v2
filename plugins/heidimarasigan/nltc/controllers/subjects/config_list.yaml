@@ -1,0 +1,11 @@
+title: Subjects
+modelClass: HeidiMarasigan\Nltc\Models\Subjects
+list: $/heidimarasigan/nltc/models/subjects/columns.yaml
+recordUrl: 'heidimarasigan/nltc/subjects/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
