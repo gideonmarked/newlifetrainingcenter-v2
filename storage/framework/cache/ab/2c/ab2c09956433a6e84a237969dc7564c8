@@ -1,0 +1,95 @@
+1465775032s:3792:"a:6:{s:5:"mtime";i:1465181294;s:7:"content";s:1792:"title = "New Life Training Center"
+url = "/home"
+layout = "index"
+is_hidden = 0
+
+[carousel ntcSlider]
+id = 1
+==
+<!-- Content Row -->
+<div class="row">  
+    <!-- Call to Action Column -->
+    <div class="col-md-7">
+      <div class="panel panel-default">
+        <div class="panel-body">
+        {% component "ntcSlider" %}
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-5">
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <iframe  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  width="100%" height="350" src="https://www.youtube.com/embed/Ktq-aB1KlyQ?list=PLBkRqDNG_WBIV-iyLlqrrUfnURa5acBFF?autohide=1&autoplay=0&controls=2&fs=1&loop=0&modestbranding=0&playlist=F_OIscN3eN8%2CDdel2ht4LE0%2CurrolSLzRSU%2CasUvqqpCPb8%2C+ge4NPf7W_J0&rel=0&showinfo=1&theme=light&wmode=opaque" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Video Column
+    <div class="col-md-5">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Video Announcements</h3>
+        </div>
+        <div class="panel-body">
+          <iframe  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  width="100%" height="310" src="https://www.youtube.com/embed/Ktq-aB1KlyQ?list=PLBkRqDNG_WBIV-iyLlqrrUfnURa5acBFF?autohide=1&autoplay=0&controls=2&fs=1&loop=0&modestbranding=0&playlist=F_OIscN3eN8%2CDdel2ht4LE0%2CurrolSLzRSU%2CasUvqqpCPb8%2C+ge4NPf7W_J0&rel=0&showinfo=1&theme=light&wmode=opaque" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+      </div>  
+    </div>
+    -->
+     
+     
+</div>
+<!-- /.row -->
+
+
+<div class="row">
+    <!-- Slider Column -->
+    <div class="col-md-12">
+    	{% partial "calltoaction" %}
+    </div>
+</div>
+<!-- /.row -->";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:24:"New Life Training Center";s:3:"url";s:5:"/home";s:6:"layout";s:5:"index";s:9:"is_hidden";s:1:"0";s:10:"components";a:1:{s:18:"carousel ntcSlider";a:1:{s:2:"id";s:1:"1";}}}s:4:"code";N;s:6:"markup";s:1680:"<!-- Content Row -->
+<div class="row">  
+    <!-- Call to Action Column -->
+    <div class="col-md-7">
+      <div class="panel panel-default">
+        <div class="panel-body">
+        {% component "ntcSlider" %}
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-5">
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <iframe  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  width="100%" height="350" src="https://www.youtube.com/embed/Ktq-aB1KlyQ?list=PLBkRqDNG_WBIV-iyLlqrrUfnURa5acBFF?autohide=1&autoplay=0&controls=2&fs=1&loop=0&modestbranding=0&playlist=F_OIscN3eN8%2CDdel2ht4LE0%2CurrolSLzRSU%2CasUvqqpCPb8%2C+ge4NPf7W_J0&rel=0&showinfo=1&theme=light&wmode=opaque" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Video Column
+    <div class="col-md-5">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Video Announcements</h3>
+        </div>
+        <div class="panel-body">
+          <iframe  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  width="100%" height="310" src="https://www.youtube.com/embed/Ktq-aB1KlyQ?list=PLBkRqDNG_WBIV-iyLlqrrUfnURa5acBFF?autohide=1&autoplay=0&controls=2&fs=1&loop=0&modestbranding=0&playlist=F_OIscN3eN8%2CDdel2ht4LE0%2CurrolSLzRSU%2CasUvqqpCPb8%2C+ge4NPf7W_J0&rel=0&showinfo=1&theme=light&wmode=opaque" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+      </div>  
+    </div>
+    -->
+     
+     
+</div>
+<!-- /.row -->
+
+
+<div class="row">
+    <!-- Slider Column -->
+    <div class="col-md-12">
+    	{% partial "calltoaction" %}
+    </div>
+</div>
+<!-- /.row -->";}";
