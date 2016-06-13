@@ -1,0 +1,65 @@
+1465775032s:2314:"a:6:{s:5:"mtime";i:1464988956;s:7:"content";s:1063:"title = "Application"
+url = "/application"
+layout = "application-form"
+is_hidden = 0
+
+==
+<div class="panel panel-default">
+  
+  <div class="panel-body">
+
+    <!-- Content Row -->
+    <div class="row">
+        <div class="col-lg-12">
+          <p>Welcome to Newlife Training Center! We offer a one-year and two-year Bible training program.</p>
+          <p>We are so glad that you have made this quality decision to enroll at Newlife Training Center. Our online procedure will help facilitate and guide you through the application process quickly and easily.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            
+        To apply, fill up the application form below: <br /><br />
+        
+        <a href="http://v2.newlifetrainingcenter.ph/dashboard" target="_blank">Open Application Form</a><br /><br />
+        
+        Login using the following credentials:<br /><br />
+        
+        <b>Username: apply@nltc <br />
+        Password: 2016</b>
+        <br />
+          
+        </div>
+    </div>
+    
+  <div>
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:11:"Application";s:3:"url";s:12:"/application";s:6:"layout";s:16:"application-form";s:9:"is_hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:974:"<div class="panel panel-default">
+  
+  <div class="panel-body">
+
+    <!-- Content Row -->
+    <div class="row">
+        <div class="col-lg-12">
+          <p>Welcome to Newlife Training Center! We offer a one-year and two-year Bible training program.</p>
+          <p>We are so glad that you have made this quality decision to enroll at Newlife Training Center. Our online procedure will help facilitate and guide you through the application process quickly and easily.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            
+        To apply, fill up the application form below: <br /><br />
+        
+        <a href="http://v2.newlifetrainingcenter.ph/dashboard" target="_blank">Open Application Form</a><br /><br />
+        
+        Login using the following credentials:<br /><br />
+        
+        <b>Username: apply@nltc <br />
+        Password: 2016</b>
+        <br />
+          
+        </div>
+    </div>
+    
+  <div>
+</div>";}";
