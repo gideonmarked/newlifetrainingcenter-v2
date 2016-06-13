@@ -54,4 +54,14 @@ class Plugin extends PluginBase
 				});*/
 		}
 
+	public function registerFormWidgets()
+	{
+	    return [
+	        'HeidiMarasigan\Nltc\FormWidgets\CustomDatePicker' => [
+	            'label' => 'Custom Date Picker',
+	            'code'  => 'customdatepicker'
+	        ]
+	    ];
+	}
+
 }

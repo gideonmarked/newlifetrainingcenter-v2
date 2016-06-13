@@ -1,0 +1,215 @@
+1465855575s:7841:"a:2:{s:5:"mtime";i:1465805746;s:7:"content";s:7786:"<div class="panel panel-default">
+	<div class="wrapper panel-body">
+		<h3>Personal Information</h3>
+		<form>
+			<div class="row">
+		 		<div class="col-md-6">
+			 			<div class="form-group">
+			 				<h5>First Name</h5>
+			 				<input type="text" class="form-control">
+			 			</div>
+		 		</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Middel Name</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Last Name</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-12">
+		 			<div class="form-group">
+		 				<h5>Address</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+			 			<div class="form-group">
+			 				<h5>City</h5>
+			 				<input type="text" class="form-control">
+			 			</div>
+		 		</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>State</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+			 			<div class="form-group">
+			 				<h5>Country</h5>
+			 				<input type="text" class="form-control">
+			 			</div>
+		 		</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Citizenship</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+			 			<div class="form-group">
+			 				<h5>Phone</h5>
+			 				<input type="text" class="form-control">
+			 			</div>
+		 		</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Mobile</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+			 			<div class="form-group">
+			 				<h5>Facebook</h5>
+			 				<input type="text" class="form-control">
+			 			</div>
+		 		</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Email</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+			 			<div class="form-group">
+			 				<h5>Website</h5>
+			 				<input type="text" class="form-control">
+			 			</div>
+		 		</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Age</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+			 			<div class="form-group">
+			 				<h5>Date of Birth</h5>			 				       
+			 				<div class='input-group date' id='datepicker'>
+			                    <input type='text' class="form-control" />
+			                    <span class="input-group-addon">
+			                    	<span class="glyphicon glyphicon-calendar"></span>
+                    			</span>
+                			</div>
+            			</div>
+        		</div>			 							
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Place of Birth</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Gender</h5>
+		 				<div class="radio">
+			 				<label>
+			 					<input type="radio" name="gender_type">Male
+			 				</label>
+			 			</div>
+			 			<div class="radio">
+			 				<label>
+			 					<input type="radio" name="gender_type">Female
+			 				</label>
+			 			</div>			 			
+		 			</div>
+				</div>
+				<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Civil Status</h5>
+		 				<div class="dropdown">	
+		 					<select name="civil-status" class="form-control">
+		 						<option>Single</option>
+						        <option>Married</option>
+						        <option>Separated</option>
+						        <option>Widowed</option>
+						        <option>Remarried</option>
+		 					</select>
+		 				</div>
+		 			</div>
+		 		</div>	
+		 		<div class="row">
+		 			<div class=" col-md-12">
+			 		<div class="col-md-6">
+			 			<div class="form-group">
+			 				<h5>Occupational Field</h5>
+			 				<div class="dropdown">	
+			 					<select name="occupational-field" class="form-control">
+			 						<option>Accounting / Finance</option>
+							        <option>Admin & Office Services</option>
+							        <option>Advertising / Promotions / Events</option>
+							        <option>Audit / Taxation</option>
+							        <option>Beauty / Personal Care</option>
+							        <option>Corporate Planning / Business Dev.</option>
+							        <option>Customer Service</option>
+							        <option>Data / Statistical Analysis</option>
+							        <option>Design / Specifications</option>
+							        <option>Education / Training & Development</option>
+							        <option>Engineering / Technical</option>
+							        <option>Environment / Health & Safety</option>
+							        <option>Hospitality / Tourism</option>
+							        <option>Human Resources</option>
+							        <option>Information Technology</option>
+							        <option>Legal / Secretarial Services</option>
+							        <option>Logistics / Supply Chain Management</option>
+							        <option>Management</option>
+							        <option>Marketing</option>
+							        <option>Merchandising / Purchasing</option>
+							        <option>Nursing</option>
+							        <option>Operations</option>
+							        <option>Product Development</option>
+							        <option>Production / Manufacturing</option>
+							        <option>Project Management</option>
+							        <option>Public Relations / Communications</option>
+							        <option>Quality Control / Assurance</option>
+							        <option>R&D / Sciences / Laboratory</option>
+							        <option>Sales</option>
+							        <option>Others</option>
+			 					</select>
+			 				</div>
+			 			</div>		 			
+		 			</div>		 				
+			 		<div class="col-md-6">
+			 			<div class="form-group">        
+			 				<h5>Specific Function / Role</h5>
+			 				<input type="text" splaceholder="eg. Finance Manager" class="form-control" autocomplete="off" maxlength="255">
+			 			</div>
+			 		</div>	
+			 		</div> 	
+		 		</div>
+		 		<div class="col-md-6">
+		 			<div class="form-group" id="Form-field-Applications-travelling-group">
+		 				<h5>Does your present occupation involve travelling out of town / the country?</h5>
+		 				<div class="radio">
+			 				<label>
+			 					<input type="radio" name="application_travelling" value="yes">Yes
+			 				</label>
+			 			</div>
+			 			<div class="radio">
+			 				<label>
+			 					<input type="radio" name="application_travelling" value="no">No
+			 				</label>
+			 			</div>			 			
+		 			</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group  dropdown-field span-right hide" data-field-name="travelling_frequency" data-trigger="[name="application_travelling"]" data-trigger-action="show" data-trigger-condition="value[yes]" data-trigger-closest-parent="form" id="Form-field-Applications-travelling_frequency-group">
+					<h5>How often (Please specify)?</h5>
+               <!-- Dropdown -->
+    				<select id="Form-field-Applications-travelling_frequency" name="Applications[travelling_frequency]" class="form-control custom-select select2-hidden-accessible" data-disposable="data-disposable" tabindex="-1" aria-hidden="true">
+                        <option value="Weekly">                    Weekly            </option>
+                        <option value="Monthly">                    Monthly            </option>
+                        <option value="Annually">                    Annually            </option>
+            		</select>
+            		
+            		</div>
+            	</div>
+		 	</div>
+		 </form>		
+	</div>
+</div>";}";
