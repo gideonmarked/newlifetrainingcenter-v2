@@ -1,0 +1,151 @@
+<div class="panel panel-default">
+	<div class="wrapper panel-body">
+		<h3>Christian Life</h3>
+		<form>
+		 	<div class="row">
+		 		<div class="col-md-12">
+		 			<div class="form-group">
+		 				<h5>When did you receive Jesus as personal Lord and Savior?</h5>
+			 			<input type="text" class="form-control">
+		 			</div>
+		 		</div>
+		 	</div>
+			<div class="row">
+				<div class="col-md-12">
+		 			<div class="form-group">
+		 				<h5>Have you been baptized in the Holy Spirit with the evidence of speaking with other tongues?</h5>
+			 			<div class="radio">
+		 				<label>
+		 					<input type="radio" name="application_baptized">Yes
+		 				</label>
+		 			</div>
+		 			<div class="radio">
+		 				<label>
+		 					<input type="radio" name="application_baptized">No
+		 				</label>
+		 			</div>		
+		 			</div>
+		 		</div>
+		
+				<div class="col-md-6">
+					<div class="form-group">
+						<h5>Date</h5>		 					 				       
+		 				<div class='input-group date'>
+		                    <input type='date' class="form-control" id='datepicker'>
+		                    <span class="input-group-addon">
+			                    	<span class="glyphicon glyphicon-calendar"></span>
+                    		</span>		                    	
+	        			</div>
+	    			</div>
+	        	</div>
+	        	<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Place</h5>
+			 			<input type="text" class="form-control">
+		 			</div>
+		 		</div>
+		 		<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Church</h5>
+		 				<div class="dropdown-toggle" data-toggle="dropdown">	
+		 					<select id="church" name="church" class="form-control">
+		 						<option> --Select item from list--</option>
+		 						<option value="new_life">New Life</option>
+						        <option value="non_new_life">Non-New Life</option>						        
+		 					</select>
+		 				</div>
+		 			</div>
+		 		</div>	
+		 		<div class="col-md-6 col-md-offset-6" id="church_hide">
+		 			
+		 		</div>		 		
+    			<div class="col-md-6" id="NewLifeChurches"S style="display:none;">
+		 			<div class="form-group">
+		 				<h5>Church Name</h5>
+		 				<div class="dropdown">	
+		 					<select name="church-name" class="form-control">
+			                    <option value='New Life, Alabang' >New Life, Alabang</option>
+			                    <option value='New Life, Bacoor' >New Life, Bacoor</option>
+			                    <option value='New Life, Baguio' >New Life, Baguio</option>
+			                    <option value='New Life, Balingasag' >New Life, Balingasag</option>
+			                    <option value='New Life, Bontoc' >New Life, Bontoc</option>
+			                    <option value='New Life, Borongan' >New Life, Borongan</option>
+			                    <option value='New Life, Burauen' >New Life, Burauen</option>
+			                    <option value='New Life, Cadiz' >New Life, Cadiz</option>
+			                    <option value='New Life, Cagayan De Oro'>New Life, Cagayan De Oro</option>
+			                    <option value='New Life, Calapan' >New Life, Calapan</option>
+			                    <option value='New Life, Calbayog' >New Life, Calbayog</option>
+			                    <option value='New Life, Carigara' >New Life, Carigara</option>
+			                    <option value='New Life, Catbalogan' >New Life, Catbalogan</option>
+			                    <option value='New Life, Catubig' >New Life, Catubig</option>
+			                    <option value='New Life, Danao' >New Life, Danao</option>
+			                    <option value='New Life, Hibubullao' >New Life, Hibubullao</option>
+			                    <option value='New Life, Hinunangan' >New Life, Hinunangan</option>
+			                    <option value='New Life, Iligan' >New Life, Iligan</option>
+			                    <option value='New Life, La Trinidad' >New Life, La Trinidad</option>
+			                    <option value='New Life, Maydolong' >New Life, Maydolong</option>
+			                    <option value='New Life, North Metro' >New Life, North Metro</option>
+			                    <option value='New Life, Port Area (BASECO)' >New Life, Port Area (BASECO)</option>
+			                    <option value='New Life, San Jose' >New Life, San Jose</option>
+			                    <option value='New Life, San Roque' >New Life, San Roque</option>
+			                    <option value='New Life, Sorsogon' >New Life, Sorsogon</option>
+			                    <option value='New Life, Sta.Rosa' >New Life, Sta.Rosa</option>
+			                    <option value='New Life, Surigao' >New Life, Surigao</option>
+			                    <option value='New Life, Tacloban' >New Life, Tacloban</option>
+			                    <option value='New Life, Taguig' >New Life, Taguig</option>
+			                    <option value='New Life, Tagum' >New Life, Tagum</option>
+			                    <option value='New Life, Tanza' >New Life, Tanza</option>
+			                    <option value='New Life, The Fort' >New Life, The Fort</option>
+			                    <option value='New Life, Tondo' >New Life, Tondo</option>
+			                    <option value='New Life, Kathmandu Nepal' >New Life, Kathmandu Nepal</option>
+			                    <option value='New Life, Yangoon Myanmar' >New Life, Yangoon Myanmar</option>
+               				</select>
+		 				</div>
+		 			</div>
+		 		</div>	
+     			<div class="col-md-6" id="NonNewLifeChurches" style="display:none;">
+	             	<div class="form-group">
+		               <h5>Name of Church (Non-New Life)</h5>
+		               <input type="text" name="nonnewlife" id="non_new_life" class="form-control" placeholder="Name of Church">
+	                </div>
+     			</div>	     		
+     			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Indicate if you are a</h5>
+		 				<div class="dropdown">	
+		 					<select name="church-position" class="form-control">
+		 						<option>Senior Pastor</option>
+						        <option>Lead Pastor</option>
+						        <option>Ministry Head</option>
+						        <option>Pastoral Staff</option>
+						        <option>Staff / Church Worker</option>
+						        <option>Member</option>		
+		 					</select>
+		 				</div>
+		 			</div>
+		 		</div>
+		 		<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>What is the name of your senior pastor or lead pastor?</h5>
+			 			<input type="text" class="form-control">
+		 			</div>
+		 		</div>	
+		 		<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>How long have you been faithfully attending the said church?</h5>
+			 			<input type="text" class="form-control">
+		 			</div>
+		 		</div>	
+	        </div>
+	    <div class="col-md-12">
+      		<div class="pull-right">
+				<div class="btn-group" role="group" aria-label="align-right">
+					<button type="button" class="btn btn-default"><a href="#">Back</a></button>
+					<button type="button" class="btn btn-default"><a href="#">Next:Ministry Life</a></button>
+				</div>
+			</div>
+		</div>
+        </div>    	
+		</form>
+	</div>
+</div>

@@ -191,6 +191,9 @@ class ApplicationForm extends ComponentBase
         }
     }
 
-	
+	public function onSave()
+    {
+        dump(post());
+    }
 
 }
