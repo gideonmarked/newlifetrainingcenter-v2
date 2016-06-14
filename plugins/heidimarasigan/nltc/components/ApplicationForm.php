@@ -11,6 +11,8 @@ use Session;
 class ApplicationForm extends ComponentBase
 {
 
+    public $children;
+
     public function componentDetails()
     {
         return [
@@ -29,39 +31,38 @@ class ApplicationForm extends ComponentBase
 
     }
 
-		public function onRun()
-		{
-            $this->addCss('formwidgets/customdatepicker/assets/css/jquery-ui.css');
-            $this->addCss('formwidgets/customdatepicker/assets/css/jquery-ui.structure.css');
-            $this->addJs('formwidgets/customdatepicker/assets/js/jquery-1.10.2.js');
-            $this->addJs('formwidgets/customdatepicker/assets/js/jquery-ui.js');
+	public function onRun()
+	{
+        $this->addCss('formwidgets/customdatepicker/assets/css/jquery-ui.css');
+        $this->addCss('formwidgets/customdatepicker/assets/css/jquery-ui.structure.css');
+        $this->addJs('formwidgets/customdatepicker/assets/js/jquery-1.10.2.js');
+        $this->addJs('formwidgets/customdatepicker/assets/js/jquery-ui.js');
 
-            $this->addJs('assets/js/my_script.js');
-		/*$user = BackendAuth::getUser();
-		$this->last_edited_by = $user->first_name;
-		
-		return $user;*/
-		
-		// This code will be executed when the page or layout is
-    // loaded and the component is attached to it.
+        $this->addJs('assets/js/my_script.js');
 
-    //$student_id = $this->page['student_id'] = 'value'; // Inject some variable to the page
-		}
+        $this->page['children'] = array(
+                array(
+                    'child_name' => '',
+                    'child_age' => '',
+                    'child_gender' => ''
+                    )
+            );
+	/*$user = BackendAuth::getUser();
+	$this->last_edited_by = $user->first_name;
+	
+	return $user;*/
+	
+	// This code will be executed when the page or layout is
+// loaded and the component is attached to it.
+
+//$student_id = $this->page['student_id'] = 'value'; // Inject some variable to the page
+	}
 
 
     public function getDropdownOptions($fieldName = null, $keyValue = null)
     {
-        var_dump($fieldName . 'yahoooo!');
-        // if ($fieldName == 'status')
-        //     return ['all' => 'All'];
-        // else
-        //     return ['' => '-- none --'];
+        
     }
-
-		//protected function getidApplicationIds()
-//		{
-//			return Applications::select('id', 'email')->orderBy('email')->get()->lists('email', 'id');
-//		}
 
     public function onSaveProfile()
     {
@@ -151,26 +152,68 @@ class ApplicationForm extends ComponentBase
 		
     public function onAddChild()
     {
-        $cnames 	= post('childname', []);
-        $cages 		= post('childage', []);
-        $cgenders = post('childgender', []);
+        // // we get the values of name array children
+        // $child_names = post('childname', []); 
+        // // we get the values of age array children
+        // $child_ages = post('childage', []); 
+        // // we get the values of array children
+        // $child_genders = post('childgender', []); 
 
-        if (($childname = post('newchildname')) != '') {
-            $cnames[] = $childname;
+        // if (($childname = post('newchildname')) != '') {
+        //     $cnames[] = $childname;
+        // }
+
+        // if (($childage = post('newchildage')) != '') {
+        //     $cages[] = $childage;
+        // }
+        // if (($childgender = post('newchildgender')) != '') {
+        //     $cgenders[] = $childgender;
+        // }
+
+        // $this->page['cnames'] 	= $cnames;
+        // $this->page['cages'] 		= $cages;
+        // $this->page['cgenders'] = $cgenders;
+        // $this->page['max'] 			= count($cnames);
+
+		$children = $this->setChildrenData( post() );
+
+        $children[] = array(
+                    'child_name' => '',
+                    'child_age' => '',
+                    'child_gender' => ''
+                    );
+
+        $this->page['children'] = $children;
+    }
+
+    public function onDeleteChild()
+    {
+        $children = $this->setChildrenData( post() );
+        unset( $children[post('data_id')] );
+        $this->page['children'] = $children;
+    }
+
+    private function setChildrenData( $post )
+    {
+        // we get the values of name array children
+        $child_names = $post['child_name']; 
+        // we get the values of age array children
+        $child_ages = $post['child_age']; 
+        // we get the values of array children
+        $child_genders = isset($post['child_gender']) ? $post['child_gender'] : null;
+
+
+        $children = array();
+
+        for ($i=0; $i < count($child_names); $i++) {
+            $children[] = array(
+                    'child_name' => isset($child_names[$i]) ? $child_names[$i] : '',
+                    'child_age' => isset($child_ages[$i]) ? $child_ages[$i] : '',
+                    'child_gender' => isset($child_genders[$i]) ? $child_genders[$i] : ''
+                    );
         }
 
-        if (($childage = post('newchildage')) != '') {
-            $cages[] = $childage;
-        }
-        if (($childgender = post('newchildgender')) != '') {
-            $cgenders[] = $childgender;
-        }
-
-        $this->page['cnames'] 	= $cnames;
-        $this->page['cages'] 		= $cages;
-        $this->page['cgenders'] = $cgenders;
-        $this->page['max'] 			= count($cnames);
-				
+        return $children;
     }
 
     public function onSaveChildren()
