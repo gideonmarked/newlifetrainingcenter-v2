@@ -1,0 +1,65 @@
+1465865398s:1912:"a:2:{s:5:"mtime";i:1465864793;s:7:"content";s:1857:"<div class="panel panel-default">
+	<div class="wrapper panel-body">
+		<h3>Educational Background</h3>
+		<form>
+			<div class="row">
+				<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Primary</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+		 		</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Year of Completion</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Secondary</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Year of Completion</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Tertiary</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+		 		</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Year of Completion</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Course</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+		 		</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Other Course</h5>
+		 				<input type="text" class="form-control">
+		 			</div>
+	 			</div>
+			</div>
+			<div class="col-md-12">
+	      		<div class="pull-right">
+					<div class="btn-group" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-default"><a href="#">Back</a></button>
+						<button type="button" class="btn btn-default"><a href="#">Next:Christian Life</a></button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>";}";

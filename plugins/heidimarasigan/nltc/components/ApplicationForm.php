@@ -31,7 +31,12 @@ class ApplicationForm extends ComponentBase
 
 		public function onRun()
 		{
-			
+            $this->addCss('formwidgets/customdatepicker/assets/css/jquery-ui.css');
+            $this->addCss('formwidgets/customdatepicker/assets/css/jquery-ui.structure.css');
+            $this->addJs('formwidgets/customdatepicker/assets/js/jquery-1.10.2.js');
+            $this->addJs('formwidgets/customdatepicker/assets/js/jquery-ui.js');
+
+            $this->addJs('assets/js/my_script.js');
 		/*$user = BackendAuth::getUser();
 		$this->last_edited_by = $user->first_name;
 		
@@ -186,6 +191,6 @@ class ApplicationForm extends ComponentBase
         }
     }
 
-		
+	
 
 }

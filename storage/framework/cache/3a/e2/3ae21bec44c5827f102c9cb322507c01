@@ -1,4 +1,4 @@
-1465855574s:1781:"a:6:{s:5:"mtime";i:1450501278;s:7:"content";s:755:"title = "News Category"
+1465867340s:1781:"a:6:{s:5:"mtime";i:1450501278;s:7:"content";s:755:"title = "News Category"
 url = "/:slug/:page?"
 layout = "blog-home-1"
 is_hidden = 0

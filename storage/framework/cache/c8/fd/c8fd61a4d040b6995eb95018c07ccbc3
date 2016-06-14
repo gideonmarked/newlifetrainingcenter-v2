@@ -1,4 +1,4 @@
-1465855575s:3296:"a:6:{s:5:"mtime";i:1450501280;s:7:"content";s:1542:"title = "News Post"
+1465867340s:3296:"a:6:{s:5:"mtime";i:1450501280;s:7:"content";s:1542:"title = "News Post"
 url = "/post/:slug"
 layout = "blog-home-1"
 is_hidden = 0

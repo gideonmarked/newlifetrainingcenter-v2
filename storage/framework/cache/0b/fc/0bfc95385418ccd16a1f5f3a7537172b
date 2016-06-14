@@ -1,4 +1,4 @@
-1465855575s:7841:"a:2:{s:5:"mtime";i:1465805746;s:7:"content";s:7786:"<div class="panel panel-default">
+1465867677s:8122:"a:2:{s:5:"mtime";i:1465866782;s:7:"content";s:8067:"<div class="panel panel-default">
 	<div class="wrapper panel-body">
 		<h3>Personal Information</h3>
 		<form>
@@ -11,7 +11,7 @@
 		 		</div>
 	 			<div class="col-md-6">
 		 			<div class="form-group">
-		 				<h5>Middel Name</h5>
+		 				<h5>Middle Name</h5>
 		 				<input type="text" class="form-control">
 		 			</div>
 	 			</div>
@@ -90,8 +90,8 @@
 	 			<div class="col-md-6">
 			 			<div class="form-group">
 			 				<h5>Date of Birth</h5>			 				       
-			 				<div class='input-group date' id='datepicker'>
-			                    <input type='text' class="form-control" />
+			 				<div class='input-group date' >
+			                    <input type='date' class="form-control" id='datepicker'>
 			                    <span class="input-group-addon">
 			                    	<span class="glyphicon glyphicon-calendar"></span>
                     			</span>
@@ -177,7 +177,7 @@
 			 		<div class="col-md-6">
 			 			<div class="form-group">        
 			 				<h5>Specific Function / Role</h5>
-			 				<input type="text" splaceholder="eg. Finance Manager" class="form-control" autocomplete="off" maxlength="255">
+			 				<input type="text" placeholder="eg. Finance Manager" class="form-control" autocomplete="off" maxlength="255">
 			 			</div>
 			 		</div>	
 			 		</div> 	
@@ -187,29 +187,36 @@
 		 				<h5>Does your present occupation involve travelling out of town / the country?</h5>
 		 				<div class="radio">
 			 				<label>
-			 					<input type="radio" name="application_travelling" value="yes">Yes
+			 					<input type="radio" name="application_travelling" value="yes"  onclick="$('#travel_details').show();">Yes
 			 				</label>
 			 			</div>
 			 			<div class="radio">
 			 				<label>
-			 					<input type="radio" name="application_travelling" value="no">No
+			 					<input type="radio" name="application_travelling" value="no" onclick="$('#travel_details').hide();">No
 			 				</label>
 			 			</div>			 			
 		 			</div>
 				</div>
-				<div class="col-md-6">
-					<div class="form-group  dropdown-field span-right hide" data-field-name="travelling_frequency" data-trigger="[name="application_travelling"]" data-trigger-action="show" data-trigger-condition="value[yes]" data-trigger-closest-parent="form" id="Form-field-Applications-travelling_frequency-group">
+				<div class="col-md-6" id="travel_details" style="display:none;">
+					<div class="form-group  dropdown-field span-right" data-field-name="travel_details" data-trigger="[name="application_travelling"]" data-trigger-action="show" data-trigger-condition="value[yes]" data-trigger-closest-parent="form" id="Form-field-Applications-travelling_frequency-group">
 					<h5>How often (Please specify)?</h5>
-               <!-- Dropdown -->
-    				<select id="Form-field-Applications-travelling_frequency" name="Applications[travelling_frequency]" class="form-control custom-select select2-hidden-accessible" data-disposable="data-disposable" tabindex="-1" aria-hidden="true">
-                        <option value="Weekly">                    Weekly            </option>
-                        <option value="Monthly">                    Monthly            </option>
-                        <option value="Annually">                    Annually            </option>
-            		</select>
-            		
-            		</div>
+					<!-- Dropdown -->
+						<select id="Form-field-Applications-travelling_frequency" name="travel_details" class="form-control custom-select select2-hidden-accessible" data-disposable="data-disposable" tabindex="-1" aria-hidden="true">
+					        <option value="Weekly">Weekly</option>
+					        <option value="Monthly">Monthly</option>
+					        <option value="Annually">Annually</option>
+						</select>            		
+					</div>	
             	</div>
 		 	</div>
+		 	<div class="col-md-12">
+	      		<div class="pull-right">
+					<div class="btn-group" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-default"><a href="#">Back</a></button>
+						<button type="button" class="btn btn-default"><a href="#">Next:Family Background</a></button>
+					</div>
+				</div>
+			</div>
 		 </form>		
 	</div>
 </div>";}";
