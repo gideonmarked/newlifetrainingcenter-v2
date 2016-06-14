@@ -13,4 +13,17 @@
     	 	
     	 }
     });
-  });
+    $('#life_group').click(function() {
+    
+    	if ( this.value == ('leader').checked) {
+    		$("#date_leader").show();
+    	}
+    	else if ( this.value == ('member').checked) {  
+    		$("#date_member").show();
+    	}
+    	// else if ( this.value == ('leader').checked) && ( this.value == ('member').checked) {
+    	// 	$("#date_leader").show();
+    	// 	$("#date_member").show();
+    	// }
+    });
+  });	
