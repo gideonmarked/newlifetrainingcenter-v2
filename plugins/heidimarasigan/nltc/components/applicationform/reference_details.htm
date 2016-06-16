@@ -1,0 +1,56 @@
+<div class="col-md-1">
+	<h5 style="margin-left: 5px;">No.</h5>
+</div>
+<div class="col-md-3">
+	<h5 class="text-center">Name</h5>
+</div>
+<div class="col-md-2">
+	<h5 class="text-center">Relationship</h5>
+</div>
+<div class="col-md-3">
+	<h5 class="text-center">Address</h5>
+</div>
+<div class="col-md-2">
+	<h5 class="text-center">Contact No.</h5>
+</div>
+<div class="col-md-1">
+	<h5 class="text-center">Remove</h5>
+</div>
+
+{% for details in reference %}
+
+<div class="row">
+	<div class="col-md-1 text-center" style="padding-top: 8px">{{ loop.index }}. </div>
+		<div class="col-md-3">
+			<div class="form-group">			
+				<input type="text" class="form-control"  name="reference_name[]" value="{{ reference.reference_name }}">
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="form-group">
+				<input type="text" class="form-control" name="reference_relation[]" value="{{ reference.reference_relation }}">		
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="form-group">
+				<input type="text" class="form-control" name="reference_address[]" value="{{ reference.reference_address }}">
+			</div>
+		</div>
+		
+		<div class="col-md-2">
+			<div class="form-group">
+				<input type="text" class="form-control" name="reference_contactno[]" value="{{ reference.reference_contactno }}">		
+			</div>
+		</div>
+		<div class="col-md-1 text-center">
+		{% if loop.index0 > 0 %}
+			<a href="#"
+			data-request-data="data_id : {{ loop.index0 }}"
+			data-request="{{ __SELF__ }}::onDeleteReference"
+			data-request-update="'{{ __SELF__ }}::reference_details':'#reference_wrapper'"
+			data-request-confirm="Are you sure you want to delete this item?"
+			style="font-size: 20px;padding-top: 8px;display: block; margin-left: -30px;" ><i class="glyphicon glyphicon-minus-sign"></i></a>
+		{% endif %}
+	</div>
+</div>
+{% endfor %}

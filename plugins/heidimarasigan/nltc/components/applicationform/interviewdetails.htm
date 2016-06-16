@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+	<div class="wrapper panel-body">
+		<h3>Interview Details</h3>
+		<form>
+			<div class="col-md-12">
+	      		<div class="pull-right">
+					<div class="btn-group" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-primary"
+							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 9" data-request-update="'{{ __SELF__ }}::personalreferences':'#form_wrapper'"
+							>Back</button>
+							<button type="button" class="btn btn-primary"
+							data-request-data="page: 8"
+							data-request="{{ __SELF__ }}::onSave"
+							data-request-update="'{{ __SELF__ }}::interviewdetails':'#form_wrapper'">Confirm</button> 
+					</div>
+				</div>
+			</div>
+
+		</form>
+	</div>
+</div>

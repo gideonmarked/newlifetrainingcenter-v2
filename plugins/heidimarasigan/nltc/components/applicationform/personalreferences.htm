@@ -5,37 +5,28 @@
 		<form>
 			<div class="col-md-12">
 	 			<div class="form-group">
-	 				<h5>References</h5>
-	 				<div class="col-md-12" align="center">
-		 				<a class="btn" href="#">
+	 				<h5>References</h5>	 			
+		 				<a class="btn" href="#" data-request="{{ __SELF__ }}::onAddReference"
+		 				data-request-update="'{{ __SELF__ }}::reference_details':'#reference_wrapper'">
 	  						<i class="glyphicon glyphicon-plus-sign"></i> Add </a>
-	  					<a class="btn" href="#">
-	  						<i class="glyphicon glyphicon-minus-sign"></i> Remove </a>
-	  				</div>
-	  			</div>
-				<div class="col-md-6">
-		 			<div class="form-group">
-		 				<h5>Name</h5>
-		 				<input type="text" class="form-control">
-		 			</div>
-		 		</div>
-				<div class="col-md-6">
-		 			<div class="form-group">
-		 				<h5>Address</h5>
-		 				<input type="text" class="form-control">
-		 			</div>
-				</div>
-				<div class="col-md-6">
-		 			<div class="form-group">
-		 				<h5>Relationship</h5>
-		 				<input type="text" class="form-control">		
-		 			</div>
-				</div>
-				<div class="col-md-6">
-		 			<div class="form-group">
-		 				<h5>Contact No.</h5>
-		 				<input type="text" class="form-control">		
-		 			</div>
+	  			</div>				
+			</div>
+			<!-- wrapper of all reference details -->
+			<div id="reference_wrapper">
+				{% partial __SELF__~'::reference_details' %}
+			</div>
+			<!-- end of wrapper of all reference details -->
+			<div class="col-md-12">
+	      		<div class="pull-right">
+					<div class="btn-group" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-primary"
+							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 8" data-request-update="'{{ __SELF__ }}::physicalhealthcondition':'#form_wrapper'"
+							>Back</button>
+							<button type="button" class="btn btn-primary"
+							data-request-data="page: 8"
+							data-request="{{ __SELF__ }}::onSave"
+							data-request-update="'{{ __SELF__ }}::interviewdetails':'#form_wrapper'">Next:Interview Details</button>
+					</div>
 				</div>
 			</div>
 		</form>
