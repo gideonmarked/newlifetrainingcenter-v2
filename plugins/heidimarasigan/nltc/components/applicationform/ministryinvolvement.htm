@@ -36,16 +36,20 @@
  				<div class="form-group" > 				
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox" value="leader">I am a leader of a Life Group
+		 					<input type="checkbox" id="lg_leader" value="leader">I am a leader of a Life Group
 		 				</label>
-		 			</div>
-		 			<div class="checkbox custom-checkbox" id="life_group">
+		 			</div>	
+		    	</div>
+		    </div>	
+		    <div class="col-md-6" id="life_group">
+ 				<div class="form-group" > 				
+		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox" value="member">I am a member of a Life Group
+		 					<input type="checkbox" id="lg_member" value="member">I am a member of a Life Group
 		 				</label>
 		 			</div>		
 		    	</div>
-		    </div>	
+		    </div>	 
 		    <div class="col-md-6" id="date_leader" style="display:none;">
 	 			<div class="form-group">
 	 				<h5>Date Started (Life Group Leader)</h5>
@@ -56,7 +60,7 @@
 	            		</span>	
 	            	</div>
 	 			</div>
-	 		</div>
+	 		</div>	 		
  			<div class="col-md-6 pull-right" id="date_member" style="display:none;">
 	 			<div class="form-group">
 	 				<h5>Date Started (Life Group Member)</h5>
@@ -68,6 +72,7 @@
 	            	</div>
 	 			</div>
 	 		</div>
+	 		
 	 		<div class="col-md-12">
 	 			<div class="form-group">
 	 				<h5>Do you believe God is calling you to serve full time in any ministry?</h5>
@@ -101,37 +106,18 @@
 			<div class="col-md-12">
 	 			<div class="form-group">
 	 				<h5>What other ministry trainings have you attended prior to application at NLTC?</h5>
-	 				<div class="col-md-12" align="center">
-		 				<a class="btn" href="#">
-	  						<i class="glyphicon glyphicon-plus-sign"></i> Add </a>
-	  					<a class="btn" href="#">
-	  						<i class="glyphicon glyphicon-minus-sign"></i> Remove </a>
-	  				</div>
-	  			</div>
-				<div class="col-md-6">
-		 			<div class="form-group">
-		 				<h5>Training Type</h5>
-		 				<input type="text" class="form-control">
-		 			</div>
-		 		</div>
-					<div class="col-md-6">
-		 			<div class="form-group">
-		 				<h5>Venue</h5>
-		 				<input type="text" class="form-control">
-		 			</div>
-					</div>
-					<div class="col-md-6">
-		 			<div class="form-group">
-		 				<h5>Date</h5>
-		 				<div class='input-group date' >
-		                    <input type='date' class="form-control" id='datepicker'>
-		                    <span class="input-group-addon">
-		                    	<span class="glyphicon glyphicon-calendar"></span>
-		        			</span>
-						</div>	 			
-		 			</div>
-				</div>
+		 				<a class="btn" href="#" data-request="{{ __SELF__ }}::onAddTraining"
+		 				data-request-update="'{{ __SELF__ }}::training_attended':'#training_wrapper'">
+	  						<i class="glyphicon glyphicon-plus-sign"></i> Add </a>	  				
+	  			</div>				
 			</div>
+
+			<!-- wrapper of all training attended -->
+			<div id="training_wrapper">
+				{% partial __SELF__~'::training_attended' %}
+			</div>
+			<!-- end of wrapper of all training attended -->
+
 	 		<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Do you have any desire to volunteer in NLTC?</h5>
@@ -155,7 +141,7 @@
 		 					<input type="checkbox">Teachers Assistant
 		 				</label>
 		 			</div>
-		 			<div class="checkbox custom-checkbox" id="life_group">
+		 			<div class="checkbox custom-checkbox">
 		 				<label>
 		 					<input type="checkbox">Sound System
 		 				</label>
@@ -165,7 +151,7 @@
 		 					<input type="checkbox">Praise and Worship
 		 				</label>
 		 			</div>
-		 			<div class="checkbox custom-checkbox" id="life_group">
+		 			<div class="checkbox custom-checkbox">
 		 				<label>
 		 					<input type="checkbox">Ushers or Usherettes
 		 				</label>		
@@ -178,6 +164,25 @@
 	 				<textarea name="why_attend" class="form-control" rows="5" cols="10"></textarea>	 				
 	 			</div>
  			</div> 
+ 			<div class="col-md-6">
+	      		<div class="pull-left">
+					<div class="btn-group" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-primary"
+							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 6" data-request-update="'{{ __SELF__ }}::christianlife':'#form_wrapper'"
+							>Back:Christian Life</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+	      		<div class="pull-right">
+					<div class="btn-group" role="group" aria-label="align-right">
+							<button type="button" class="btn btn-primary"
+							data-request-data="page: 6"
+							data-request="{{ __SELF__ }}::onSave"
+							data-request-update="'{{ __SELF__ }}::physicalhealthcondition':'#form_wrapper'">Next:Physical and Health Condition</button>
+					</div>
+				</div>
+			</div>
  		</form>
  	</div>
  </div>

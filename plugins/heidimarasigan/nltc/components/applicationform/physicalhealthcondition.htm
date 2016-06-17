@@ -1,6 +1,6 @@
 <div class="panel panel-default">
 	<div class="wrapper panel-body">
-		<h3>Ministry Involvement</h3>
+		<h3>Physical and Health Condition</h3>
 		<form>
 			<div class="col-md-12">
 	 			<div class="form-group">
@@ -62,11 +62,22 @@
 		 			</div>			 			
 	 			</div>
 			</div>
-			<div class="col-md-12">
+			<div class="col-md-6">
+	      		<div class="pull-left">
+					<div class="btn-group" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-primary"
+							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 7" data-request-update="'{{ __SELF__ }}::ministryinvolvement':'#form_wrapper'"
+							>Back:Ministry Involvement</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
 	      		<div class="pull-right">
 					<div class="btn-group" role="group" aria-label="align-right">
-						<button type="submit" class="btn btn-primary">Back</button>
-						<button type="submit" class="btn btn-primary">Next:Personal References</button>
+							<button type="button" class="btn btn-primary"
+							data-request-data="page: 7"
+							data-request="{{ __SELF__ }}::onSave"
+							data-request-update="'{{ __SELF__ }}::personalreferences':'#form_wrapper'">Next:Personal References</button>
 					</div>
 				</div>
 			</div>

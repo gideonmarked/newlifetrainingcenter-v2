@@ -137,11 +137,22 @@
 		 			</div>
 		 		</div>	
 	        </div>
-	    <div class="col-md-12">
+	    <div class="col-md-6">
+      		<div class="pull-left">
+				<div class="btn-group" role="group" aria-label="align-right">
+					<button type="button" class="btn btn-primary"
+						data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 5" data-request-update="'{{ __SELF__ }}::educationalbackground':'#form_wrapper'"
+						>Back:Educational Background</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
       		<div class="pull-right">
 				<div class="btn-group" role="group" aria-label="align-right">
-					<button type="button" class="btn btn-default"><a href="#">Back</a></button>
-					<button type="button" class="btn btn-default"><a href="#">Next:Ministry Life</a></button>
+						<button type="button" class="btn btn-primary"
+						data-request-data="page: 5"
+						data-request="{{ __SELF__ }}::onSave"
+						data-request-update="'{{ __SELF__ }}::ministryinvolvement':'#form_wrapper'">Next:Ministry Involvement
 				</div>
 			</div>
 		</div>
