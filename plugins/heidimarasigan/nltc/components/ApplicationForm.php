@@ -60,9 +60,6 @@ class ApplicationForm extends ComponentBase
                     'reference_contactno' => ''
                     )
             );
-
-        $this->page['study_progam'] = 'yahoo';
-
     }
 
         
@@ -109,24 +106,6 @@ class ApplicationForm extends ComponentBase
         }
 
         return $children;
-    }
-
-    public function onSaveChildren()
-    {
-        $cnames = post('childname', []);
-        $cages = post('childage', []);
-        $cgenders = post('childgender', []);
-
-        //$id = Session::get('application_id');
-        
-        foreach ($cnames as $key => $cname) {
-            $child = new Children;
-            $child->student_profile_id = $id;
-            $child->name = $cname;
-            $child->age = $cages[$key];
-            $child->gender = $cgenders[$key];
-            $child->save();
-        }
     }
 
     //this is for Training Attended
@@ -222,26 +201,50 @@ class ApplicationForm extends ComponentBase
         $this->page['reference'] = $reference;
     }
 
-
-    public function onSave()
+    private function onRetainArrays()
     {
-        $this->page['children'] = array(
+        $family_background = Session::get('family_background');
+        if(empty($family_background['child_name']))
+        {
+            $this->page['children'] = array(
                 array(
                     'child_name' => '',
                     'child_age' => '',
                     'child_gender' => ''
                     )
             );
+        } else {
+            $temp_array = array(
+                    "child_name" => $family_background['child_name'],
+                    "child_age" => $family_background['child_age'],
+                    "child_gender" => $family_background['child_gender']
+                );
+           $this->page['children'] = $this->setChildrenData( $temp_array );
+        }
 
-        $this->page['training'] = array(
+        $ministry_involvement = Session::get('ministry_involvement');
+        if(empty($ministry_involvement['christian_training_type']))
+        {
+            $this->page['training'] = array(
                 array(
-                    'training_type' => '',
-                    'training_venue' => '',
-                    'training_date' => ''
+                    'christian_training_type' => '',
+                    'christian_training_venue' => '',
+                    'christian_training_date' => ''
                     )
             );
+        } else {
+            $temp_array = array(
+                    "christian_training_type" => $ministry_involvement['christian_training_type'],
+                    "christian_training_venue" => $ministry_involvement['christian_training_venue'],
+                    "christian_training_date" => $ministry_involvement['christian_training_date']
+                );
+           $this->page['training'] = $this->setTrainingData( $temp_array );
+        }
 
-         $this->page['reference'] = array(
+        $personal_references = Session::get('personal_references');
+        if(empty($personal_references_values['christian_training_type']))
+        {
+            $this->page['reference'] = array(
                 array(
                     'reference_name' => '',
                     'reference_relation' => '',
@@ -249,6 +252,20 @@ class ApplicationForm extends ComponentBase
                     'reference_contactno' => ''
                     )
             );
+        } else {
+            $temp_array = array(
+                    "reference_name" => $personal_references_values['reference_name'],
+                    "reference_relation" => $personal_references_values['reference_relation'],
+                    "reference_address" => $personal_references_values['reference_address'],
+                    "reference_contactno" => $personal_references_values['reference_contactno']
+                );
+           $this->page['reference'] = $this->setTrainingData( $temp_array );
+        }
+    }
+
+
+    public function onSave()
+    {
         $page = post('page');
 
         switch ($page) {
@@ -313,7 +330,7 @@ class ApplicationForm extends ComponentBase
 
                 break;
         }
-
+        $this->onRetainArrays();
         $this->refreshValues();
     }
 
@@ -553,6 +570,8 @@ class ApplicationForm extends ComponentBase
         $this->page['physical_health_condition_values'] = Session::get('physical_health_condition');
         $this->page['personal_references_values'] = Session::get('personal_references');
         $this->page['interview_details_values'] = Session::get('interview_details');
+
+        $this->onSave();
     }
 
 }

@@ -5,38 +5,42 @@
 			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Name of Ministry</h5>
-	 				<input type="text" name="christian_ministry_name" class="form-control">
+	 				<input type="text" values="{{ ministry_involvement_values.christian_ministry_name }}" name="christian_ministry_name" class="form-control">
 	 			</div>
 	 		</div>
  			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Ministry Head</h5>
-	 				<input type="text" name="christian_ministry_head" class="form-control">
+	 				<input type="text" values="{{ ministry_involvement_values.christian_ministry_head }}" name="christian_ministry_head" class="form-control">
 	 			</div>
  			</div>
  			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Years of Stay</h5>
-	 				<input type="text" name="christian_years_of_stay" class="form-control">
+	 				<input type="text" values="{{ ministry_involvement_values.christian_years_of_stay }}" name="christian_years_of_stay" class="form-control">
 	 			</div>
 	 		</div>
  			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Responsibilities</h5>
-	 				<textarea name="christian_ministry_responsibilities" class="form-control" rows="5" cols="10"></textarea>	 				
+	 				<textarea name="christian_ministry_responsibilities" values="{{ ministry_involvement_values.christian_ministry_responsibilities }}" class="form-control" rows="5" cols="10"></textarea>	 				
 	 			</div>
  			</div>
  			<div class="col-md-12">
 	 			<div class="form-group" >
 	 				<h5>Why do you want to attend NLTC?</h5>
-	 				<textarea name="christian_whyattend" placeholder="Limit your answer to 2-3 sentences or 100 characters." class="form-control" rows="5" cols="10"></textarea>	 				
+	 				<textarea name="christian_whyattend" values="{{ ministry_involvement_values.christian_ministry_responsibilities }}" placeholder="Limit your answer to 2-3 sentences or 100 characters." class="form-control" rows="5" cols="10"></textarea>	 				
 	 			</div>
  			</div> 		
  			<div class="col-md-6" id="life_group">
  				<div class="form-group" > 				
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox" id="lg_leader" name="christian_lifegroup_lead" value="leader">I am a leader of a Life Group
+		 					<input type="checkbox" id="lg_leader" name="christian_lifegroup_lead" value="leader"
+		 					{% if ministry_involvement_values.christian_lifegroup_lead == "leader" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>I am a leader of a Life Group
 		 				</label>
 		 			</div>	
 		    	</div>
@@ -45,27 +49,43 @@
  				<div class="form-group" > 				
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox" id="lg_member" name="christian_lifegroup_member" value="member">I am a member of a Life Group
+		 					<input type="checkbox" id="lg_member" name="christian_lifegroup_member" value="member"
+		 					{% if ministry_involvement_values.christian_lifegroup_member == "member" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>I am a member of a Life Group
 		 				</label>
 		 			</div>		
 		    	</div>
 		    </div>	 
-		    <div class="col-md-6" id="date_leader" style="display:none;">
+		    <div class="col-md-6" id="date_leader" 
+		    {% if ministry_involvement_values.christian_lifegroup_lead != "leader" %}
+				style="display:none;"
+			{% endif %}
+		    >
 	 			<div class="form-group">
 	 				<h5>Date Started (Life Group Leader)</h5>
 	 				<div class='input-group date'>
-		 				<input type='date' name="christian_lifegroup_lead_started" class="form-control" id='datepicker'>
+		 				<input type='text'
+		 				value="{{ ministry_involvement_values.christian_lifegroup_lead_started }}"
+		 				 name="christian_lifegroup_lead_started" class="form-control"  data-control="custom_picker">
 	                    <span class="input-group-addon">
 		                    	<span class="glyphicon glyphicon-calendar"></span>
 	            		</span>	
 	            	</div>
 	 			</div>
 	 		</div>	 		
- 			<div class="col-md-6 pull-right" id="date_member" style="display:none;">
+ 			<div class="col-md-6 pull-right" id="date_member" 
+ 			{% if ministry_involvement_values.christian_lifegroup_member != "member" %}
+				style="display:none;"
+			{% endif %}
+ 			>
 	 			<div class="form-group">
 	 				<h5>Date Started (Life Group Member)</h5>
 	 				<div class='input-group date'>
-		 				<input type='date' name="christian_lifegroup_member_started" class="form-control" id='datepicker'>
+		 				<input type='text'
+		 				value="{{ ministry_involvement_values.christian_lifegroup_member_started }}"
+		 				name="christian_lifegroup_member_started" class="form-control" data-control="custom_picker">
 	                    <span class="input-group-addon">
 		                    	<span class="glyphicon glyphicon-calendar"></span>
 	            		</span>	
@@ -78,12 +98,20 @@
 	 				<h5>Do you believe God is calling you to serve full time in any ministry?</h5>
 	 				<div class="radio">
 		 				<label>
-		 					<input type="radio" name="christian_fulltime">Yes
+		 					<input type="radio" name="christian_fulltime" value="yes"
+		 					{% if ministry_involvement_values.christian_fulltime == "yes" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>Yes
 		 				</label>
 		 			</div>
 		 			<div class="radio">
 		 				<label>
-		 					<input type="radio" name="christian_fulltime">No
+		 					<input type="radio" name="christian_fulltime" value="no"
+		 					{% if ministry_involvement_values.christian_fulltime == "no" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>No
 		 				</label>
 		 			</div>			 			
 	 			</div>
@@ -93,12 +121,20 @@
 	 				<h5>Are you a consistent tither?</h5>
 	 				<div class="radio">
 		 				<label>
-		 					<input type="radio" name="christian_tither">Yes
+		 					<input type="radio" name="christian_tither"
+		 					{% if ministry_involvement_values.christian_tither == "yes" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					value="yes">Yes
 		 				</label>
 		 			</div>
 		 			<div class="radio">
 		 				<label>
-		 					<input type="radio" name="christian_tither">No
+		 					<input type="radio" name="christian_tither"
+		 					{% if ministry_involvement_values.christian_tither == "no" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					value="no">No
 		 				</label>
 		 			</div>			 			
 	 			</div>
