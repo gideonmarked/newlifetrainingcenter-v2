@@ -1,0 +1,231 @@
+1466198035s:8811:"a:6:{s:5:"mtime";i:1450501316;s:7:"content";s:4272:"title = "Student Dashboard"
+url = "/student-dashboard"
+layout = "admin/index"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 3
+categoryFilter = "students-only"
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+<div class="row">
+    <div class="col-lg-6">
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-desktop fa-fw"></i> Announcements
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body"><a id="announcements"></a>
+                
+    	    {% set posts = blogPosts.posts %}
+    
+            <!-- News Row -->
+            <div class="row">
+    				
+            	{% for post in posts %}
+            
+            	<div class="col-md-12 img-portfolio">
+            	
+            		<div class="row">
+                
+                		<div class="col-md-3 img-portfolio">
+                      {% if post.featured_images.count %}
+                          <div class="featured-images text-left">
+                              {% for image in post.featured_images %}
+                                  <p>
+                                      <img
+                                          data-src="{{ image.filename }}"
+                                          src="{{ image.path }}"
+                                          alt="{{ image.description }}"
+                                          style="max-width: 100%" />
+                                  </p>
+                              {% endfor %}
+                          </div><!--/.featured-image-->
+                      {% endif %}
+                    </div><!--/.col-md-3 img-portfolio-->
+                   
+                    <div class="col-md-9 img-portfolio">
+                      
+                      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                      
+                      <p class="info">
+                        Posted
+                        {% if post.categories.count %} in {% endif %}
+                        {% for category in post.categories %}
+                            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                        on {{ post.published_at|date('M d, Y') }}
+                      </p>
+                      
+                      <p class="excerpt">{{ post.summary }}</p>
+                    </div><!--/.col-md-9 img-portfolio-->
+            		</div><!--/.row-->
+                
+               </div>
+               <!--/.col-md-12 img-portfolio-->
+               
+               {% else %}
+               
+               <div class="col-md-12 img-portfolio">{{ noPostsMessage }}</div>
+               
+               {% endfor %} 
+                
+            </div>
+            <!-- /.row -->
+
+            {% if posts.lastPage > 1 %}
+                <ul class="pagination">
+                    {% if posts.currentPage > 1 %}
+                        <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
+                    {% endif %}
+            
+                    {% for page in 1..posts.lastPage %}
+                        <li class="{{ posts.currentPage == page ? 'active' : null }}">
+                            <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+                        </li>
+                    {% endfor %}
+            
+                    {% if posts.lastPage > posts.currentPage %}
+                        <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
+                    {% endif %}
+                </ul>
+            {% endif %}
+
+                
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+      
+      
+      
+		</div>
+    <!-- /.col-lg-8 -->
+    
+    <div class="col-lg-6">
+			{% partial 'admin/student-downloadables' %}
+    </div>
+    <!-- /.col-lg-4 -->
+</div>
+<!-- /.row -->
+
+{% partial 'admin/student-subjects' %}";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:17:"Student Dashboard";s:3:"url";s:18:"/student-dashboard";s:6:"layout";s:11:"admin/index";s:9:"is_hidden";s:1:"0";s:10:"components";a:1:{s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:12:"postsPerPage";s:1:"3";s:14:"categoryFilter";s:13:"students-only";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:13:"blog/category";s:8:"postPage";s:9:"blog/post";}}}s:4:"code";N;s:6:"markup";s:3967:"<div class="row">
+    <div class="col-lg-6">
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-desktop fa-fw"></i> Announcements
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body"><a id="announcements"></a>
+                
+    	    {% set posts = blogPosts.posts %}
+    
+            <!-- News Row -->
+            <div class="row">
+    				
+            	{% for post in posts %}
+            
+            	<div class="col-md-12 img-portfolio">
+            	
+            		<div class="row">
+                
+                		<div class="col-md-3 img-portfolio">
+                      {% if post.featured_images.count %}
+                          <div class="featured-images text-left">
+                              {% for image in post.featured_images %}
+                                  <p>
+                                      <img
+                                          data-src="{{ image.filename }}"
+                                          src="{{ image.path }}"
+                                          alt="{{ image.description }}"
+                                          style="max-width: 100%" />
+                                  </p>
+                              {% endfor %}
+                          </div><!--/.featured-image-->
+                      {% endif %}
+                    </div><!--/.col-md-3 img-portfolio-->
+                   
+                    <div class="col-md-9 img-portfolio">
+                      
+                      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                      
+                      <p class="info">
+                        Posted
+                        {% if post.categories.count %} in {% endif %}
+                        {% for category in post.categories %}
+                            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                        on {{ post.published_at|date('M d, Y') }}
+                      </p>
+                      
+                      <p class="excerpt">{{ post.summary }}</p>
+                    </div><!--/.col-md-9 img-portfolio-->
+            		</div><!--/.row-->
+                
+               </div>
+               <!--/.col-md-12 img-portfolio-->
+               
+               {% else %}
+               
+               <div class="col-md-12 img-portfolio">{{ noPostsMessage }}</div>
+               
+               {% endfor %} 
+                
+            </div>
+            <!-- /.row -->
+
+            {% if posts.lastPage > 1 %}
+                <ul class="pagination">
+                    {% if posts.currentPage > 1 %}
+                        <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
+                    {% endif %}
+            
+                    {% for page in 1..posts.lastPage %}
+                        <li class="{{ posts.currentPage == page ? 'active' : null }}">
+                            <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+                        </li>
+                    {% endfor %}
+            
+                    {% if posts.lastPage > posts.currentPage %}
+                        <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
+                    {% endif %}
+                </ul>
+            {% endif %}
+
+                
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+      
+      
+      
+		</div>
+    <!-- /.col-lg-8 -->
+    
+    <div class="col-lg-6">
+			{% partial 'admin/student-downloadables' %}
+    </div>
+    <!-- /.col-lg-4 -->
+</div>
+<!-- /.row -->
+
+{% partial 'admin/student-subjects' %}";}";

@@ -10,6 +10,7 @@ use Session;
 
 class ApplicationForm extends ComponentBase
 {
+    public $children;
 
     public function componentDetails()
     {
@@ -307,7 +308,7 @@ class ApplicationForm extends ComponentBase
         $reference = array();
 
         for ($i=0; $i < count($reference_names); $i++) {
-            $training[] = array(
+            $reference[] = array(
                     'reference_name' => isset($reference_names[$i]) ? $reference_names[$i] : '',
                     'reference_relation' => isset($reference_relations[$i]) ? $reference_relations[$i] : '',
                     'reference_address' => isset($reference_addresses[$i]) ? $reference_addresses[$i] : '',
@@ -321,13 +322,37 @@ class ApplicationForm extends ComponentBase
     public function onDeleteReference()
     {
         $reference = $this->setReferenceDetails( post() );
-        unset( $training[post('data_id')] );
+        unset( $reference[post('data_id')] );
         $this->page['reference'] = $reference;
     }
 
 
     public function onSave()
     {
+        $this->page['children'] = array(
+                array(
+                    'child_name' => '',
+                    'child_age' => '',
+                    'child_gender' => ''
+                    )
+            );
+
+        $this->page['training'] = array(
+                array(
+                    'training_type' => '',
+                    'training_venue' => '',
+                    'training_date' => ''
+                    )
+            );
+
+         $this->page['reference'] = array(
+                array(
+                    'reference_name' => '',
+                    'reference_relation' => '',
+                    'reference_address' => '',
+                    'reference_contactno' => ''
+                    )
+            );
         $page = post('page');
 
         switch ($page) {

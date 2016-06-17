@@ -46,11 +46,22 @@
 		 			</div>			 			
 	 			</div>
 			</div>
-			<div class="col-md-12">
+			<div class="col-md-6">
+	      		<div class="pull-left">
+					<div class="btn-group" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-primary"
+							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 3" data-request-update="'{{ __SELF__ }}::personalinformation':'#form_wrapper'"
+							>Back:Personal Information</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
 	      		<div class="pull-right">
 					<div class="btn-group" role="group" aria-label="align-right">
-						<button type="button" class="btn btn-default"><a href="#">Back</a></button>
-						<button type="button" class="btn btn-default"><a href="#">Next:Educational Background</a></button>
+							<button type="button" class="btn btn-primary"
+							data-request-data="page: 3"
+							data-request="{{ __SELF__ }}::onSave"
+							data-request-update="'{{ __SELF__ }}::educationalbackground':'#form_wrapper'">Next:Educational Background</button> 
 					</div>
 				</div>
 			</div>

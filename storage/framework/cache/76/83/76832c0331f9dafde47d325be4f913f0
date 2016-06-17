@@ -1,0 +1,86 @@
+1466136939s:2756:"a:2:{s:5:"mtime";i:1466136337;s:7:"content";s:2701:"<div class="panel panel-default">
+	<div class="wrapper panel-body">
+		<h3>Physical and Health Condition</h3>
+		<form>
+			<div class="col-md-12">
+	 			<div class="form-group">
+	 				<h5>Do you have any physical handicaps or illnesses?</h5>
+	 				<div class="radio">
+		 				<label>
+		 					<input type="radio" name="physical_illness">Yes
+		 				</label>
+		 			</div>
+		 			<div class="radio">
+		 				<label>
+		 					<input type="radio" name="physical_illness">No
+		 				</label>
+		 			</div>			 			
+	 			</div>
+			</div>
+			<div class="col-md-12">
+	 			<div class="form-group">
+	 				<h5>Have you ever been convicted of any criminal offense?</h5>
+	 				<div class="radio">
+		 				<label>
+		 					<input type="radio" name="criminal_offense">Yes
+		 				</label>
+		 			</div>
+		 			<div class="radio">
+		 				<label>
+		 					<input type="radio" name="criminal_offense">No
+		 				</label>
+		 			</div>			 			
+	 			</div>
+			</div>
+			<div class="col-md-12">
+	 			<div class="form-group">
+	 				<h5>Have you undergone rehabilitation for substance abuse?</h5>
+	 				<div class="radio">
+		 				<label>
+		 					<input type="radio" name="substance_abuse">Yes
+		 				</label>
+		 			</div>
+		 			<div class="radio">
+		 				<label>
+		 					<input type="radio" name="substance_abuse">No
+		 				</label>
+		 			</div>			 			
+	 			</div>
+			</div>
+			<div class="col-md-12">
+	 			<div class="form-group">
+	 				<h5>Have you undergone or still in any psychological and/or psychiatric therapy/medication?</h5>
+	 				<div class="radio">
+		 				<label>
+		 					<input type="radio" name="theraphy_medication">Yes
+		 				</label>
+		 			</div>
+		 			<div class="radio">
+		 				<label>
+		 					<input type="radio" name="theraphy_medication">No
+		 				</label>
+		 			</div>			 			
+	 			</div>
+			</div>
+			<div class="col-md-6">
+	      		<div class="pull-left">
+					<div class="btn-group" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-primary"
+							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 7" data-request-update="'{{ __SELF__ }}::ministryinvolvement':'#form_wrapper'"
+							>Back:Ministry Involvement</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+	      		<div class="pull-right">
+					<div class="btn-group" role="group" aria-label="align-right">
+							<button type="button" class="btn btn-primary"
+							data-request-data="page: 7"
+							data-request="{{ __SELF__ }}::onSave"
+							data-request-update="'{{ __SELF__ }}::personalreferences':'#form_wrapper'">Next:Personal References</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>";}";

@@ -91,7 +91,7 @@
 		 			<div class="form-group">
 		 				<h5>Date of Birth</h5>			 				       
 		 				<div class='input-group date' >
-		                    <input type='date' class="form-control" id='datepicker'>
+		                    <input type='text' class="form-control" id='datepicker'>
 		                    <span class="input-group-addon">
 		                    	<span class="glyphicon glyphicon-calendar"></span>
                 			</span>
@@ -208,15 +208,24 @@
 						</select>            		
 					</div>	
             	</div>
-		 	</div>
-		 	<div class="col-md-12">
-	      		<div class="pull-right">
-					<div class="btn-group" role="group" aria-label="align-right">
-						<button type="button" class="btn btn-default"><a href="#">Back</a></button>
-						<button type="button" class="btn btn-default"><a href="#">Next:Family Background</a></button>
+		 	</div>	
+		  
+	      		<div class="col-md-6">
+					<div class="btn-group  pull-left" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-primary"
+							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 2" data-request-update="'{{ __SELF__ }}::studyprogram':'#form_wrapper'"
+							>Back:Study Program</button>
 					</div>
 				</div>
-			</div>
+				<div class="col-md-6">
+					<div class="btn-group  pull-right" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-primary"
+						data-request-data="page: 2"
+						data-request="{{ __SELF__ }}::onSave"
+						data-request-update="'{{ __SELF__ }}::familybackground':'#form_wrapper'">Next:Family Background</button> 
+					</div>
+				</div>
+			
 		 </form>		
 	</div>
 </div>
