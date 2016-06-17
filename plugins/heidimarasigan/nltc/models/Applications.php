@@ -15,6 +15,20 @@ class Applications extends Model
      * Validation
      */
     public $rules = [
+
+    	'application_type' => 'required',
+    	'school_year' => 'required',
+    	'level' => 'required',
+    	'first_name' => 'required',
+    	'last_name' => 'required',
+    	'mobile' => 'required|numeric'
+    	'email' => 'required|email|unique:users', 
+    	'age' => 'required|numeric',
+    	'date_of_birth' => 'required|before:date',
+    	'interview_date' => 'required',
+    	'interview_time' => 'required'
+
+
 				//email'   								=> 'required|between:3,255|email',
         //'email'   								=> 'required|between:3,255|email|unique:users',
         //'interview_date' 					=> 'required|between:2,64',

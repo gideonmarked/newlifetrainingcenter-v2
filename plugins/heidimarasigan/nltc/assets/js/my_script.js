@@ -26,7 +26,7 @@
         ); 
 
 
-    $('#church').change(function() { 
+    $('#christian_church').change(function() { 
     	 if( this.value == 'non_new_life' )	{
     	 	$("#NonNewLifeChurches").show();
     	 	$("#NewLifeChurches").hide();

@@ -5,18 +5,18 @@
 			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Spouse Name</h5>
-	 				<input type="text" class="form-control">
+	 				<input type="text" name="spouse_name" class="form-control">
 	 			</div>
 	 		</div>
  			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Spouse Occupation</h5>
-	 				<input type="text" class="form-control">
+	 				<input type="text" name="spose_occupation" class="form-control">
 	 			</div>
  			</div>
  			<div class="col-md-12">
 	 			<div class="form-group">
-	 				<h5>Children <a class="btn" href="#"
+	 				<h5>Children <a class="btn" name="children" href="#"
 		 				data-request="{{ __SELF__ }}::onAddChild"
 		 				data-request-update="'{{ __SELF__ }}::child_item':'#children_wrapper'"
 		 				> 
@@ -36,12 +36,12 @@
 	 				<h5>Is your spouse (if married), or your parents / guardians (if not married), in agreement with you to enroll in NTC this school year?</h5>
 	 				<div class="radio">
 		 				<label>
-		 					<input type="radio" name="application_agreement">Yes
+		 					<input type="radio" name="in_agreement">Yes
 		 				</label>
 		 			</div>
 		 			<div class="radio">
 		 				<label>
-		 					<input type="radio" name="application_agreement">No
+		 					<input type="radio" name="in_agreement">No
 		 				</label>
 		 			</div>			 			
 	 			</div>
