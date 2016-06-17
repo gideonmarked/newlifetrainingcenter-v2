@@ -1,0 +1,76 @@
+1466175478s:2513:"a:2:{s:5:"mtime";i:1466168869;s:7:"content";s:2458:"<div class="panel panel-default">
+	<div class="wrapper panel-body">
+		<h3>Educational Background</h3>
+		<form>
+			<div class="row">
+				<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Primary</h5>
+		 				<input type="text" name="education_primary" class="form-control">
+		 			</div>
+		 		</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Year of Completion</h5>
+		 				<input type="text" name="education_primary_year" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Secondary</h5>
+		 				<input type="text" name="education_secondary" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Year of Completion</h5>
+		 				<input type="text" name="education_secondary_year" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Tertiary</h5>
+		 				<input type="text" name="education_tertiary" class="form-control">
+		 			</div>
+		 		</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Year of Completion</h5>
+		 				<input type="text" name="education_tertiary_year" class="form-control">
+		 			</div>
+	 			</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Course</h5>
+		 				<input type="text" name="course" class="form-control">
+		 			</div>
+		 		</div>
+	 			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Other Course</h5>
+		 				<input type="text" name="other_course" class="form-control">
+		 			</div>
+	 			</div>
+			</div>
+			<div class="col-md-6">
+	      		<div class="pull-left">
+					<div class="btn-group" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-primary"
+							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 4" data-request-update="'{{ __SELF__ }}::familybackground':'#form_wrapper'"
+							>Back:Family Background</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+	      		<div class="pull-right">
+					<div class="btn-group" role="group" aria-label="align-right">
+							<button type="button" class="btn btn-primary"
+							data-request-data="page: 4"
+							data-request="{{ __SELF__ }}::onSave"
+							data-request-update="'{{ __SELF__ }}::christianlife':'#form_wrapper'">Next:Christian Life</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>";}";

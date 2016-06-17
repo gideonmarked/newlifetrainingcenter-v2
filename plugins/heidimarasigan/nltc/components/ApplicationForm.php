@@ -33,8 +33,6 @@ class ApplicationForm extends ComponentBase
 	{
         $this->addCss('formwidgets/customdatepicker/assets/css/jquery-ui.css');
         $this->addCss('formwidgets/customdatepicker/assets/css/jquery-ui.structure.css');
-        $this->addJs('formwidgets/customdatepicker/assets/js/jquery-1.10.2.js');
-        $this->addJs('formwidgets/customdatepicker/assets/js/jquery-ui.js');
 
         $this->addJs('assets/js/my_script.js');
 
@@ -266,25 +264,24 @@ class ApplicationForm extends ComponentBase
                 if( $this->formFamilyBackgroundValidation( post() ) )
                 {    
                     $this->storeFamilyBackground( post() );
-                    $post = post();
-                    $children_json = "{";
-                    $last_key = count($post["child_name"]);
-                    foreach ($post["child_name"] as $key => $child_name) {
-                        $children_json .= "" . "\"" . ($key+1) . "\":";
-                        $children_json .= "{";
-                        $children_json .= "\"" . "child_name" . "\":";
-                        $children_json .= "\"" . $post["child_name"][$key] . "\",";
-                        $children_json .= "\"" . "child_age" . "\":";
-                        $children_json .= "\"" . $post["child_age"][$key] . "\",";
-                        $children_json .= "\"" . "child_gender" . "\":";
-                        $children_json .= "\"" . $post["child_gender"][$key] . "\"";
-                        $children_json .= "}";
-                        if ($key < $last_key-1) {
-                            $children_json .= ",";
-                        }
-                    }
-                    $children_json .= "}";
-                    var_dump($children_json);
+                    // $post = post();
+                    // $children_json = "{";
+                    // $last_key = count($post["child_name"]);
+                    // foreach ($post["child_name"] as $key => $child_name) {
+                    //     $children_json .= "" . "\"" . ($key+1) . "\":";
+                    //     $children_json .= "{";
+                    //     $children_json .= "\"" . "child_name" . "\":";
+                    //     $children_json .= "\"" . $post["child_name"][$key] . "\",";
+                    //     $children_json .= "\"" . "child_age" . "\":";
+                    //     $children_json .= "\"" . $post["child_age"][$key] . "\",";
+                    //     $children_json .= "\"" . "child_gender" . "\":";
+                    //     $children_json .= "\"" . $post["child_gender"][$key] . "\"";
+                    //     $children_json .= "}";
+                    //     if ($key < $last_key-1) {
+                    //         $children_json .= ",";
+                    //     }
+                    // }
+                    // $children_json .= "}";
                 }
                 break;
             case 4:
@@ -316,6 +313,21 @@ class ApplicationForm extends ComponentBase
 
                 break;
         }
+
+        $this->refreshValues();
+    }
+
+    private function refreshValues()
+    {
+        $this->page['study_program'] = Session::get('study_program');
+        $this->page['personal_information'] = Session::get('personal_information');
+        $this->page['family_bakcground'] = Session::get('family_background');
+        $this->page['educational_background'] = Session::get('educational_background');
+        $this->page['christian_life'] = Session::get('christian_life');
+        $this->page['ministry_involvement'] = Session::get('ministry_involvement');
+        $this->page['physical_health_condition'] = Session::get('physical_health_condition');
+        $this->page['personal_references'] = Session::get('personal_references');
+        $this->page['interview_details'] = Session::get('interview_details');
     }
 
 // start function validation
@@ -532,43 +544,15 @@ class ApplicationForm extends ComponentBase
 
     public function onRedirect()
     {
-        switch ( post('page') ) {
-            case 1:
-                $this->page['study_program_values'] = Session::get('study_program');
-                break;
-       
-            case 2:
-                $this->page['personal_information_values'] = Session::get('personal_information');
-                break;
-       
-            case 3:
-                $this->page['family_background_values'] = Session::get('family_background');
-                break;
-       
-            case 4:
-                $this->page['educational_background_values'] = Session::get('educational_background');
-                break;
-       
-            case 5:
-                $this->page['christian_life_values'] = Session::get('christian_life');
-                break;
-       
-            case 6:
-                $this->page['ministry_involvement_values'] = Session::get('ministry_involvement');
-                break;
-       
-            case 7:
-                $this->page['physical_health_condition_values'] = Session::get('physical_health_condition');
-                break;
-       
-            case 8:
-                $this->page['personal_references_values'] = Session::get('personal_references');
-                break;
-
-            case 9:
-                $this->page['interview_details_values'] = Session::get('interview_details');
-                break;
-        }
+        $this->page['study_program_values'] = Session::get('study_program');
+        $this->page['personal_information_values'] = Session::get('personal_information');
+        $this->page['family_background_values'] = Session::get('family_background');
+        $this->page['educational_background_values'] = Session::get('educational_background');
+        $this->page['christian_life_values'] = Session::get('christian_life');
+        $this->page['ministry_involvement_values'] = Session::get('ministry_involvement');
+        $this->page['physical_health_condition_values'] = Session::get('physical_health_condition');
+        $this->page['personal_references_values'] = Session::get('personal_references');
+        $this->page['interview_details_values'] = Session::get('interview_details');
     }
 
 }

@@ -5,15 +5,22 @@
 		 	<div class="row">
 		 		<div class="col-md-12">
 		 			<div class="form-group">
-		 				<h5>Application Type</h5>
+		 				<h5>Application Type</h5>{{ study_program_values.application_type }}
 		 				<div class="radio">
 			 				<label>
-			 					<input type="radio" name="application_type">Regular
+			 					{% if study_program_values.application_type == "Regular" %}
+			 					{% set app_regular_default_value = 'checked="checked"' %}
+			 					{% endif %}
+			 					<input type="radio" name="application_type" value="Regular" {{ app_regular_default_value }} >Regular
 			 				</label>
 			 			</div>
 			 			<div class="radio">
 			 				<label>
-			 					<input type="radio" name="application_type">Irregular (Students with incomplete subjects in their year level)
+			 					
+			 					{% if study_program_values.application_type == "Irregular" %}
+			 					{% set app_irregular_default_value = 'checked="checked"' %}
+			 					{% endif %}
+			 					<input type="radio" name="application_type" value="Irregular" {{ app_irregular_default_value }} >Irregular (Students with incomplete subjects in their year level)
 			 				</label>
 			 			</div>			 			
 		 			</div>
@@ -58,7 +65,10 @@
 	      		<div class="pull-right">
 					<div class="btn-group" role="group" aria-label="align-right">
 						<!-- <button type="button" class="btn btn-default"><a href="#">Back</a></button> -->
-						<button type="submit" class="btn btn-primary" form="form1" value="Submit"   data-request="{{ __SELF__ }}::onSave" data-request-update="'{{ __SELF__ }}::personalinformation':'#form_wrapper'">Next:Personal Information</button>
+						<button type="submit" class="btn btn-primary" form="form1" value="Submit"
+						data-request-data="page: 1"
+						data-request="{{ __SELF__ }}::onSave"
+						data-request-update="'{{ __SELF__ }}::personalinformation':'#form_wrapper'">Next:Personal Information</button>
 					</div>
 				</div>
 			</div>			
