@@ -1,0 +1,50 @@
+9999999999s:1866:"a:2:{s:5:"mtime";i:1466236542;s:7:"content";s:1811:"<div class="col-md-1">
+	<h5 style="margin-left: 5px;">No.</h5>
+</div>
+<div class="col-md-4">
+	<h5 class="text-center">Training Type</h5>
+</div>
+<div class="col-md-3">
+	<h5 class="text-center">Training Venue</h5>
+</div>
+<div class="col-md-3">
+	<h5 class="text-center">Training Date</h5>
+</div>
+<div class="col-md-1">
+	<h5 class="text-center">Remove</h5>
+</div>
+{% for item in training %}
+<div class="row">
+	<div class="col-md-1 text-center" style="padding-top: 8px">{{ loop.index }}. </div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<input type="text" class="form-control" name="christian_training_type[]" value="{{ item.christian_training_type }}">
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="form-group">
+			<input type="text" class="form-control" name="christian_training_venue[]" value="{{ item.christian_training_venue }}">
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="form-group">
+			<div class='input-group date' >
+		        <input type='text' class="form-control" data-control="custom_picker" name="christian_training_date[]" value="{{ item.christian_training_date }}">
+		        <span class="input-group-addon">
+		        	<span class="glyphicon glyphicon-calendar"></span>
+				</span>
+			</div>	 			
+		</div>
+	</div>
+	<div class="col-md-1 text-center">
+		{% if loop.index0 > 0 %}
+			<a href="#"
+			data-request-data="data_id : {{ loop.index0 }}"
+			data-request="{{ __SELF__ }}::onDeleteTraining"
+			data-request-update="'{{ __SELF__ }}::training_attended':'#training_wrapper'"
+			data-request-confirm="Are you sure you want to delete this item?"
+			style="font-size: 20px;padding-top: 8px;display: block; margin-left: -30px;" ><i class="glyphicon glyphicon-minus-sign"></i></a>
+		{% endif %}
+	</div>
+</div>
+{% endfor %}";}";

@@ -5,31 +5,34 @@
 			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Name of Ministry</h5>
-	 				<input type="text" values="{{ ministry_involvement_values.christian_ministry_name }}" name="christian_ministry_name" class="form-control">
+	 				<input type="text" name="christian_ministry_name" class="form-control" 
+	 				value="{{ ministry_involvement_values.christian_ministry_name }}">
 	 			</div>
 	 		</div>
  			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Ministry Head</h5>
-	 				<input type="text" values="{{ ministry_involvement_values.christian_ministry_head }}" name="christian_ministry_head" class="form-control">
+	 				<input type="text" name="christian_ministry_head" class="form-control" 
+	 				value="{{ ministry_involvement_values.christian_ministry_head }}">
 	 			</div>
  			</div>
  			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Years of Stay</h5>
-	 				<input type="text" values="{{ ministry_involvement_values.christian_years_of_stay }}" name="christian_years_of_stay" class="form-control">
+	 				<input type="text" name="christian_years_of_stay" class="form-control" 
+	 				value="{{ ministry_involvement_values.christian_years_of_stay }}">
 	 			</div>
 	 		</div>
  			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Responsibilities</h5>
-	 				<textarea name="christian_ministry_responsibilities" values="{{ ministry_involvement_values.christian_ministry_responsibilities }}" class="form-control" rows="5" cols="10"></textarea>	 				
+	 				<textarea name="christian_ministry_responsibilities" class="form-control" rows="5" cols="10">{{ ministry_involvement_values.christian_ministry_responsibilities }}</textarea>	 				
 	 			</div>
  			</div>
  			<div class="col-md-12">
 	 			<div class="form-group" >
 	 				<h5>Why do you want to attend NLTC?</h5>
-	 				<textarea name="christian_whyattend" values="{{ ministry_involvement_values.christian_ministry_responsibilities }}" placeholder="Limit your answer to 2-3 sentences or 100 characters." class="form-control" rows="5" cols="10"></textarea>	 				
+	 				<textarea name="christian_whyattend" placeholder="Limit your answer to 2-3 sentences or 100 characters." class="form-control" rows="5" cols="10">{{ ministry_involvement_values.christian_whyattend }}</textarea>	 				
 	 			</div>
  			</div> 		
  			<div class="col-md-6" id="life_group">
@@ -159,12 +162,18 @@
 	 				<h5>Do you have any desire to volunteer in NLTC?</h5>
 	 				<div class="radio">
 		 				<label>
-		 					<input type="radio" name="christian_ntc_volunteer">Yes
+		 					<input type="radio" name="christian_ntc_volunteer" value="yes"
+		 					{% if ministry_involvement_values.christian_ntc_volunteer == "yes" %}
+		 						checked="checked"
+		 					{% endif %}>Yes
 		 				</label>
 		 			</div>
 		 			<div class="radio">
 		 				<label>
-		 					<input type="radio" name="christian_ntc_volunteer">No
+		 					<input type="radio" name="christian_ntc_volunteer" value="no"
+		 					{% if ministry_involvement_values.christian_ntc_volunteer == "no" %}
+		 						checked="checked"
+		 					{% endif %}>No
 		 				</label>
 		 			</div>			 			
 	 			</div>
@@ -174,22 +183,34 @@
 		 			<div class="checkbox custom-checkbox">
 		 				<h5>If yes, please check the following areas that you see yourself serving?</h5>
 		 				<label>
-		 					<input type="checkbox" name="christian_ntc_volunteer_area">Teachers Assistant
+		 					<input type="checkbox" name="christian_ntc_volunteer_area[0]" value="Teachers Assistant"
+		 					{% if ministry_involvement_values.christian_ntc_volunteer_area[0] == "Teachers Assistant" %}
+		 						checked="checked"
+		 					{% endif %}>Teachers Assistant
 		 				</label>
 		 			</div>
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox" name="christian_ntc_volunteer_area">Sound System
+		 					<input type="checkbox" name="christian_ntc_volunteer_area[1]" value="Sound System"
+		 					{% if ministry_involvement_values.christian_ntc_volunteer_area[1] == "Sound System" %}
+		 						checked="checked"
+		 					{% endif %}>Sound System
 		 				</label>
 		 			</div>	
 		 			<div class="checkbox custom-checkbox">		 			
 		 				<label>
-		 					<input type="checkbox" name="christian_ntc_volunteer_area">Praise and Worship
+		 					<input type="checkbox" name="christian_ntc_volunteer_area[2]" value="Praise and Worship"
+		 					{% if ministry_involvement_values.christian_ntc_volunteer_area[2] == "Praise and Worship" %}
+		 						checked="checked"
+		 					{% endif %}>Praise and Worship
 		 				</label>
 		 			</div>
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox" name="christian_ntc_volunteer_area">Ushers or Usherettes
+		 					<input type="checkbox" name="christian_ntc_volunteer_area[3]" value="Ushers or Usherettes"
+		 					{% if ministry_involvement_values.christian_ntc_volunteer_area[3] == "Ushers or Usherettes" %}
+		 						checked="checked"
+		 					{% endif %}>Ushers or Usherettes
 		 				</label>		
 		 			</div>			
 		    	</div>
@@ -197,7 +218,7 @@
 		    <div class="col-md-12">
 	 			<div class="form-group" >
 	 				<h5>How do you plan to settle training fees on time?</h5>
-	 				<textarea name="training_fee" class="form-control" rows="5" cols="10"></textarea>	 				
+	 				<textarea name="training_fee" class="form-control" rows="5" cols="10">{{ ministry_involvement_values.training_fee }}</textarea>	 				
 	 			</div>
  			</div> 
  			<div class="col-md-6">

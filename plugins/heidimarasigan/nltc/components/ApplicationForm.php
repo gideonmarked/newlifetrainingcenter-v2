@@ -6,6 +6,7 @@ use heidimarasigan\nltc\Models\Applications as ApplicationModel;
 use BackendAuth;
 use Mail;
 use Session;
+use Redirect;
 
 
 class ApplicationForm extends ComponentBase
@@ -60,10 +61,87 @@ class ApplicationForm extends ComponentBase
                     'reference_contactno' => ''
                     )
             );
+     }
+
+    public function getChurchList()
+    {
+        $church_list = array();
+        $church_list[] = "New Life, Alabang";
+        $church_list[] = "New Life, Bacoor";
+        $church_list[] = "New Life, Baguio";
+        $church_list[] = "New Life, Balingasag";
+        $church_list[] = "New Life, Bontoc";
+        $church_list[] = "New Life, Borongan";
+        $church_list[] = "New Life, Burauen";
+        $church_list[] = "New Life, Cadiz";
+        $church_list[] = "New Life, Cagayan De Oro";
+        $church_list[] = "New Life, Calapan";
+        $church_list[] = "New Life, Calbayog";
+        $church_list[] = "New Life, Carigara";
+        $church_list[] = "New Life, Catbalogan";
+        $church_list[] = "New Life, Catubig";
+        $church_list[] = "New Life, Danao";
+        $church_list[] = "New Life, Hibubullao";
+        $church_list[] = "New Life, Hinunangan";
+        $church_list[] = "New Life, Iligan";
+        $church_list[] = "New Life, La Trinidad";
+        $church_list[] = "New Life, Maydolong";
+        $church_list[] = "New Life, North Metro";
+        $church_list[] = "New Life, Port Area (BASECO)";
+        $church_list[] = "New Life, San Jose";
+        $church_list[] = "New Life, San Roque";
+        $church_list[] = "New Life, Sorsogon";
+        $church_list[] = "New Life, Sta.Rosa";
+        $church_list[] = "New Life, Surigao";
+        $church_list[] = "New Life, Tacloban";
+        $church_list[] = "New Life, Taguig";
+        $church_list[] = "New Life, Tagum";
+        $church_list[] = "New Life, Tanza";
+        $church_list[] = "New Life, The Fort";
+        $church_list[] = "New Life, Tondo";
+        $church_list[] = "New Life, Kathmandu Nepal";
+        $church_list[] = "New Life, Yangoon Myanmar";
+        return $church_list;
+    }
+      
+    public function getOccupationList()
+    {
+        $occupation_list = array();
+        $occupation_list[] = "Accounting / Finance";
+        $occupation_list[] = "Admin & Office Services";
+        $occupation_list[] = "Advertising / Promotions / Events";
+        $occupation_list[] = "Audit / Taxation";
+        $occupation_list[] = "Beauty / Personal Care";
+        $occupation_list[] = "Corporate Planning / Business Dev.";
+        $occupation_list[] = "Customer Service";
+        $occupation_list[] = "Data / Statistical Analysis";
+        $occupation_list[] = "Design / Specifications";
+        $occupation_list[] = "Education / Training & Developmen";
+        $occupation_list[] = "Engineering / Technical";
+        $occupation_list[] = "Environment / Health & Safety";
+        $occupation_list[] = "Hospitality / Tourism";
+        $occupation_list[] = "Human Resources";
+        $occupation_list[] = "Information Technology";
+        $occupation_list[] = "Legal / Secretarial Services";
+        $occupation_list[] = "Logistics / Supply Chain Management";
+        $occupation_list[] = "Management";
+        $occupation_list[] = "Marketing";
+        $occupation_list[] = "Merchandising / Purchasing";
+        $occupation_list[] = "Nursing";
+        $occupation_list[] = "Operations";
+        $occupation_list[] = "Product Development";
+        $occupation_list[] = "Production / Manufacturing";
+        $occupation_list[] = "Project Management";
+        $occupation_list[] = "Public Relations / Communications";
+        $occupation_list[] = "Quality Control / Assurance";
+        $occupation_list[] = "R&D / Sciences / Laboratory";
+        $occupation_list[] = "Sales";
+        $occupation_list[] = "Others";
+
+        return $occupation_list;
+
     }
 
-        
-        
     public function onAddChild()
     {
 
@@ -106,6 +184,24 @@ class ApplicationForm extends ComponentBase
         }
 
         return $children;
+    }
+
+    public function onSaveChildren()
+    {
+        $cnames = post('childname', []);
+        $cages = post('childage', []);
+        $cgenders = post('childgender', []);
+
+        //$id = Session::get('application_id');
+        
+        foreach ($cnames as $key => $cname) {
+            $child = new Children;
+            $child->student_profile_id = $id;
+            $child->name = $cname;
+            $child->age = $cages[$key];
+            $child->gender = $cgenders[$key];
+            $child->save();
+        }
     }
 
     //this is for Training Attended
@@ -160,7 +256,7 @@ class ApplicationForm extends ComponentBase
 
         $reference[] = array(
             'reference_name' => '',
-            'reference_relation' => '',
+            'reference_relationship' => '',
             'reference_address' => '',
             'reference_contactno' => ''
             );
@@ -170,6 +266,7 @@ class ApplicationForm extends ComponentBase
 
     private function setReferenceDetails( $post )
     {
+        // var_dump($post);
           // we get the values of name array reference
         $reference_names = $post['reference_name']; 
         // we get the values of relation array reference
@@ -217,7 +314,9 @@ class ApplicationForm extends ComponentBase
             $temp_array = array(
                     "child_name" => $family_background['child_name'],
                     "child_age" => $family_background['child_age'],
-                    "child_gender" => $family_background['child_gender']
+                    "child_gender" => isset($family_background['child_gender'])
+                                        ? $family_background['child_gender'] 
+                                        : ''
                 );
            $this->page['children'] = $this->setChildrenData( $temp_array );
         }
@@ -242,30 +341,30 @@ class ApplicationForm extends ComponentBase
         }
 
         $personal_references = Session::get('personal_references');
-        if(empty($personal_references_values['christian_training_type']))
+        if(empty($personal_references['reference_name']))
         {
             $this->page['reference'] = array(
                 array(
                     'reference_name' => '',
-                    'reference_relation' => '',
+                    'reference_relationship' => '',
                     'reference_address' => '',
                     'reference_contactno' => ''
                     )
             );
         } else {
             $temp_array = array(
-                    "reference_name" => $personal_references_values['reference_name'],
-                    "reference_relation" => $personal_references_values['reference_relation'],
-                    "reference_address" => $personal_references_values['reference_address'],
-                    "reference_contactno" => $personal_references_values['reference_contactno']
+                    "reference_name" => $personal_references['reference_name'],
+                    "reference_relationship" => $personal_references['reference_relationship'],
+                    "reference_address" => $personal_references['reference_address'],
+                    "reference_contactno" => $personal_references['reference_contactno']
                 );
-           $this->page['reference'] = $this->setTrainingData( $temp_array );
+           $this->page['reference'] = $this->setReferenceDetails( $temp_array );
         }
     }
 
-
     public function onSave()
     {
+
         $page = post('page');
 
         switch ($page) {
@@ -323,15 +422,21 @@ class ApplicationForm extends ComponentBase
                 break;
             case 9: 
                 if( $this->formInterviewDetailsValidation( post() ) )
-                {
                     $this->storeInterviewDetails( post() );
-                    $this->saveData();
-                }
-
                 break;
         }
+        $this->page['study_program_values'] = Session::get('study_program');
+        $this->page['personal_information_values'] = Session::get('personal_information');
+        $this->page['family_background_values'] = Session::get('family_background');
+        $this->page['educational_background_values'] = Session::get('educational_background');
+        $this->page['christian_life_values'] = Session::get('christian_life');
+        $this->page['ministry_involvement_values'] = Session::get('ministry_involvement');
+        $this->page['physical_health_condition_values'] = Session::get('physical_health_condition');
+        $this->page['personal_references_values'] = Session::get('personal_references');
+        $this->page['interview_details_values'] = Session::get('interview_details');
+
         $this->onRetainArrays();
-        $this->refreshValues();
+        // $this->refreshValues();
     }
 
     private function refreshValues()
@@ -447,6 +552,7 @@ class ApplicationForm extends ComponentBase
     private function storeInterviewDetails( $post )
     {
         Session::put('interview_details', $post);
+        $this->saveData();
     }
 
 // end function stores
@@ -456,7 +562,7 @@ class ApplicationForm extends ComponentBase
     {
         $study_program = Session::get('study_program');
         $personal_information = Session::get('personal_information');
-        $family_bakcground = Session::get('family_background');
+        $family_background = Session::get('family_background');
         $educational_background = Session::get('educational_background');
         $christian_life = Session::get('christian_life');
         $ministry_involvement = Session::get('ministry_involvement');
@@ -491,14 +597,14 @@ class ApplicationForm extends ComponentBase
         $application_model->occupational_field = $personal_information['occupational_field'];
         $application_model->role = $personal_information['role'];
         $application_model->travelling = $personal_information['travelling'];
-        $application_model->travelling_frequency = $personal_information['travelling_frequency'];
+        $application_model->travelling_frequency = $personal_information['travel_details'];
 
         $application_model->spouse_name = $family_background['spouse_name'];
         $application_model->spouse_occupation = $family_background['spouse_occupation'];
-        $application_model->children = $family_background['children'];
-        $application_model->child_name = $family_background['child_name'];
-        $application_model->child_age = $family_background['child_age'];
-        $application_model->child_gender = $family_background['child_gender'];
+        // // $application_model->children = $family_background['children'];
+        // $application_model->child_name = $family_background['child_name'];
+        // $application_model->child_age = $family_background['child_age'];
+        // $application_model->child_gender = $family_background['child_gender'];
         $application_model->in_agreement = $family_background['in_agreement'];
 
         $application_model->education_primary = $educational_background['education_primary'];
@@ -532,10 +638,10 @@ class ApplicationForm extends ComponentBase
         $application_model->christian_lifegroup_member_started = $ministry_involvement['christian_lifegroup_member_started'];
         $application_model->christian_fulltime = $ministry_involvement['christian_fulltime'];
         $application_model->christian_tither = $ministry_involvement['christian_tither'];
-        $application_model->christian_trainings = $ministry_involvement['christian_trainings'];
-        $application_model->christian_training_type = $ministry_involvement['christian_training_type'];
-        $application_model->christian_training_venue = $ministry_involvement['christian_training_venue'];
-        $application_model->christian_training_date = $ministry_involvement['christian_training_date'];
+        // $application_model->christian_trainings = $ministry_involvement['christian_trainings'];
+        // $application_model->christian_training_type = $ministry_involvement['christian_training_type'];
+        // $application_model->christian_training_venue = $ministry_involvement['christian_training_venue'];
+        // $application_model->christian_training_date = $ministry_involvement['christian_training_date'];
         $application_model->christian_ntc_volunteer = $ministry_involvement['christian_ntc_volunteer'];
         $application_model->christian_ntc_volunteer_area = $ministry_involvement['christian_ntc_volunteer_area'];
         $application_model->training_fee = $ministry_involvement['training_fee'];
@@ -543,12 +649,12 @@ class ApplicationForm extends ComponentBase
         $application_model->physical_handicap = $physical_health_condition['physical_handicap'];
         $application_model->physical_criminal = $physical_health_condition['physical_criminal'];
         $application_model->physical_abuse = $physical_health_condition['physical_abuse'];
-        $application_model->physical_phsychological = $physical_health_condition['physical_phsychological'];
+        $application_model->physical_phsychological = $physical_health_condition['physical_psychological'];
 
-        $application_model->reference_name = $personal_references['reference_name'];
-        $application_model->reference_address = $personal_references['reference_address'];
-        $application_model->reference_relationship = $personal_references['reference_relationship'];
-        $application_model->reference_contactno = $personal_references['reference_contactno'];
+        // $application_model->reference_name = $personal_references['reference_name'];
+        // $application_model->reference_address = $personal_references['reference_address'];
+        // $application_model->reference_relationship = $personal_references['reference_relationship'];
+        // $application_model->reference_contactno = $personal_references['reference_contactno'];
 
         $application_model->interview_date = $interview_details['interview_date'];
         $application_model->interview_time = $interview_details['interview_time']; 
@@ -556,7 +662,8 @@ class ApplicationForm extends ComponentBase
 
 
         $application_model->save();
-
+        Session::flush();
+        // return Redirect::to('/thank-you');
     }
 
     public function onRedirect()

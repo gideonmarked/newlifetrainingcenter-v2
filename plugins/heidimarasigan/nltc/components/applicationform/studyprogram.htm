@@ -5,7 +5,7 @@
 		 	<div class="row">
 		 		<div class="col-md-12">
 		 			<div class="form-group">
-		 				<h5>Application Type</h5>{{ study_program_values.application_type }}
+		 				<h5>Application Type</h5>
 		 				<div class="radio">
 			 				<label>
 			 					{% if study_program_values.application_type == "Regular" %}
@@ -31,19 +31,18 @@
 		 			<div class="form-group">
 		 				<h5>School Year</h5>
 		 				<div class="dropdown">	
+		 				
             				<select name="school_year"  class="form-control">
-								<option>2016-2017</option>
-						        <option>2017-2018</option>
-						        <option>2018-2019</option>
-						        <option>2019-2020</option>    
-						        <option>2020-2021</option>
-						        <option>2021-2022</option>
-						        <option>2022-2023</option>
-						        <option>2024-2025</option>      
-						        <option>2025-2026</option>
-						        <option>2027-2028</option>
-						        <option>2028-2029</option>    
-						        <option>2029-2030</option>         
+
+            				{% for start_year in 2016..2029 %}
+							    <option value="{{ start_year }}-{{ start_year + 1 }}"
+							    {% if study_program_values.school_year == (start_year ~ "-" ~ (start_year + 1) ) %}
+			 					selected="selected"
+			 					{% endif %}
+							     >
+							    {{ start_year }}-{{ start_year + 1 }}
+							    </option>
+							{% endfor %}       
         					</select>
 		 				</div>
 		 			</div>
@@ -53,9 +52,21 @@
 		 				<h5>Level</h5>
 		 				<div class="dropdown">	
 		 					<select name="level" class="form-control">
-		 						<option>First Year</option>
-						        <option>Second Year</option>
-						        <option>Pastoral Track</option>
+		 						<option
+		 						{% if study_program_values.level == "First Year" %}
+			 					selected="selected"
+			 					{% endif %}
+		 						>First Year</option>
+						        <option
+						        {% if study_program_values.level == "Second Year" %}
+			 					selected="selected"
+			 					{% endif %}
+						        >Second Year</option>
+						        <option
+						        {% if study_program_values.level == "Pastoral Track" %}
+			 					selected="selected"
+			 					{% endif %}
+						        >Pastoral Track</option>
 		 					</select>
 		 				</div>
 		 			</div>

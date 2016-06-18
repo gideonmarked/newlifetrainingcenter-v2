@@ -6,92 +6,122 @@
 		 		<div class="col-md-6">
 			 			<div class="form-group">
 			 				<h5>First Name</h5>
-			 				<input type="text" name="first_name" class="form-control">
+			 				<input type="text" 
+			 				name="first_name" 
+			 				class="form-control" value="{{ personal_information_values.first_name }}">
 			 			</div>
 		 		</div>
 	 			<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>Middle Name</h5>
-		 				<input type="text" name="middle_name" class="form-control">
+		 				<input type="text" 
+		 				name="middle_name" 
+		 				class="form-control" value="{{ personal_information_values.middle_name }}">
 		 			</div>
 	 			</div>
 	 			<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>Last Name</h5>
-		 				<input type="text" name="last_name" class="form-control">
+		 				<input type="text" 
+		 				name="last_name" 
+		 				class="form-control" value="{{ personal_information_values.last_name }}">
 		 			</div>
 	 			</div>
 	 			<div class="col-md-12">
 		 			<div class="form-group">
 		 				<h5>Address</h5>
-		 				<input type="text" name="address" class="form-control">
+		 				<input type="text" 
+		 				name="address" 
+		 				class="form-control" value="{{ personal_information_values.address }}">
 		 			</div>
 	 			</div>
 	 			<div class="col-md-6">
 			 			<div class="form-group">
 			 				<h5>City</h5>
-			 				<input type="text" name="city" class="form-control">
+			 				<input type="text" 
+			 				name="city" 
+			 				class="form-control" value="{{ personal_information_values.city }}">
 			 			</div>
 		 		</div>
 	 			<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>State</h5>
-		 				<input type="text" name="state" class="form-control">
+		 				<input type="text" 
+		 				name="state" 
+		 				class="form-control" value="{{ personal_information_values.state }}">
 		 			</div>
 	 			</div>
 	 			<div class="col-md-6">
 			 			<div class="form-group">
 			 				<h5>Country</h5>
-			 				<input type="text" name="country" class="form-control">
+			 				<input type="text" 
+			 				name="country" 
+			 				class="form-control" value="{{ personal_information_values.country }}">
 			 			</div>
 		 		</div>
 	 			<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>Citizenship</h5>
-		 				<input type="text" name="citizenship" class="form-control">
+		 				<input type="text" 
+		 				name="citizenship" 
+		 				class="form-control" value="{{ personal_information_values.citizenship }}">
 		 			</div>
 	 			</div>
 	 			<div class="col-md-6">
 			 			<div class="form-group">
 			 				<h5>Phone</h5>
-			 				<input type="text" name="phone" class="form-control">
+			 				<input type="text" 
+			 				name="phone" 
+			 				class="form-control" value="{{ personal_information_values.phone }}">
 			 			</div>
 		 		</div>
 	 			<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>Mobile</h5>
-		 				<input type="text" name="mobile" class="form-control">
+		 				<input type="text" 
+		 				name="mobile" 
+		 				class="form-control" value="{{ personal_information_values.mobile }}">
 		 			</div>
 	 			</div>
 	 			<div class="col-md-6">
 			 			<div class="form-group">
 			 				<h5>Facebook</h5>
-			 				<input type="text" name="facebook" class="form-control">
+			 				<input type="text" 
+			 				name="facebook" 
+			 				class="form-control" value="{{ personal_information_values.facebook }}">
 			 			</div>
 		 		</div>
 	 			<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>Email</h5>
-		 				<input type="text" name="email" class="form-control">
+		 				<input type="text" 
+		 				name="email" 
+		 				class="form-control" value="{{ personal_information_values.email }}">
 		 			</div>
 	 			</div>
 	 			<div class="col-md-6">
 			 			<div class="form-group">
 			 				<h5>Website</h5>
-			 				<input type="text" name="website" class="form-control">
+			 				<input type="text" 
+			 				name="website" 
+			 				class="form-control" value="{{ personal_information_values.website }}">
 			 			</div>
 		 		</div>
 	 			<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>Age</h5>
-		 				<input type="text" name="age" class="form-control">
+		 				<input type="text" 
+		 				name="age" 
+		 				class="form-control" value="{{ personal_information_values.age }}">
 		 			</div>
 	 			</div>
 	 			<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>Date of Birth</h5>			 				       
 		 				<div class='input-group date' >
-		                    <input type='text' name="date_of_birth" class="form-control" id='datepicker' data-control="custom_picker">
+		                    <input type='text' name="date_of_birth" 
+		                    class="form-control" id='datepicker' data-control="custom_picker"
+		                    value="{{ personal_information_values.date_of_birth }}">
 		                    <span class="input-group-addon">
 		                    	<span class="glyphicon glyphicon-calendar"></span>
                 			</span>
@@ -101,7 +131,9 @@
 	 			<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>Place of Birth</h5>
-		 				<input type="text" name="place_of_birth" class="form-control">
+		 				<input type="text" 
+		 				name="place_of_birth" 
+		 				class="form-control" value="{{ personal_information_values.place_of_birth }}">
 		 			</div>
 	 			</div>
 	 			<div class="col-md-6">
@@ -109,12 +141,20 @@
 		 				<h5>Gender</h5>
 		 				<div class="radio">
 			 				<label>
-			 					<input type="radio" name="gender">Male
+			 					<input type="radio" name="gender" value="Male"  
+			 					{% if personal_information_values.gender == "Male" %}
+				    			checked="checked"
+				    			{% endif %}
+				    			>Male
 			 				</label>
 			 			</div>
 			 			<div class="radio">
 			 				<label>
-			 					<input type="radio" name="gender">Female
+			 					<input type="radio" name="gender" value="Female" 
+			 					{% if personal_information_values.gender == "Female" %}
+			 					checked="checked"
+				    			{% endif %}
+			 					>Female
 			 				</label>
 			 			</div>			 			
 		 			</div>
@@ -123,12 +163,34 @@
 		 			<div class="form-group">
 		 				<h5>Civil Status</h5>
 		 				<div class="dropdown">	
-		 					<select name="civil_status" class="form-control">
-		 						<option>Single</option>
-						        <option>Married</option>
-						        <option>Separated</option>
-						        <option>Widowed</option>
-						        <option>Remarried</option>
+		 					<select name="civil_status" 
+		 					class="form-control">
+		 						<option> --Select item from list--</option>
+		 						<option value = "Single"
+		 						{% if personal_information_values.civil_status == "Single" %}
+			 					selected="selected"
+				    			{% endif %}
+		 						>Single</option>
+						        <option value = "Married"
+						        {% if personal_information_values.civil_status == "Married" %}
+			 					selected="selected"
+				    			{% endif %}
+						        >Married</option>
+						        <option value = "Separated"
+						        {% if personal_information_values.civil_status == "Separated" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>Separated</option>
+						        <option value = "Widowed"
+						        {% if personal_information_values.civil_status == "Widowed" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>Widowed</option>
+						        <option value = "Remarried" 
+						        {% if personal_information_values.civil_status == "Remarried" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>Remarried</option>
 		 					</select>
 		 				</div>
 		 			</div>
@@ -140,36 +202,15 @@
 			 				<h5>Occupational Field</h5>
 			 				<div class="dropdown">	
 			 					<select name="occupational_field" class="form-control">
-			 						<option>Accounting / Finance</option>
-							        <option>Admin & Office Services</option>
-							        <option>Advertising / Promotions / Events</option>
-							        <option>Audit / Taxation</option>
-							        <option>Beauty / Personal Care</option>
-							        <option>Corporate Planning / Business Dev.</option>
-							        <option>Customer Service</option>
-							        <option>Data / Statistical Analysis</option>
-							        <option>Design / Specifications</option>
-							        <option>Education / Training & Development</option>
-							        <option>Engineering / Technical</option>
-							        <option>Environment / Health & Safety</option>
-							        <option>Hospitality / Tourism</option>
-							        <option>Human Resources</option>
-							        <option>Information Technology</option>
-							        <option>Legal / Secretarial Services</option>
-							        <option>Logistics / Supply Chain Management</option>
-							        <option>Management</option>
-							        <option>Marketing</option>
-							        <option>Merchandising / Purchasing</option>
-							        <option>Nursing</option>
-							        <option>Operations</option>
-							        <option>Product Development</option>
-							        <option>Production / Manufacturing</option>
-							        <option>Project Management</option>
-							        <option>Public Relations / Communications</option>
-							        <option>Quality Control / Assurance</option>
-							        <option>R&D / Sciences / Laboratory</option>
-							        <option>Sales</option>
-							        <option>Others</option>
+			 						{% for occupational_field in __SELF__.getOccupationList() %}
+			                    	<option value="{{ occupational_field }}"
+			                    	{% if personal_information_values.occupational_field == occupational_field %} 
+			                    	selected="selected" 
+			                    	{% endif %}
+			                    	>
+			                    	{{ occupational_field }}
+			                    	</option>
+			                    {% endfor %}
 			 					</select>
 			 				</div>
 			 			</div>		 			
@@ -177,7 +218,8 @@
 			 		<div class="col-md-6">
 			 			<div class="form-group">        
 			 				<h5>Specific Function / Role</h5>
-			 				<input type="text" name="role" placeholder="eg. Finance Manager" class="form-control" autocomplete="off" maxlength="255">
+			 				<input type="text" name="role" placeholder="eg. Finance Manager" 
+			 				class="form-control" autocomplete="off" maxlength="255" value="{{ personal_information_values.role }}">
 			 			</div>
 			 		</div>	
 			 		</div> 	
@@ -187,24 +229,46 @@
 		 				<h5>Does your present occupation involve travelling out of town / the country?</h5>
 		 				<div class="radio">
 			 				<label>
-			 					<input type="radio" name="travelling" value="yes"  onclick="$('#travel_details').show();">Yes
+			 					<input type="radio" name="travelling" value="yes"  onclick="$('#travel_details').show();" 
+			 					{% if personal_information_values.travelling == "yes" %}
+				    			checked="checked"
+				    			{% endif %}
+				    			>Yes
 			 				</label>
 			 			</div>
 			 			<div class="radio">
 			 				<label>
-			 					<input type="radio" name="travelling" value="no" onclick="$('#travel_details').hide();">No
+			 					<input type="radio" name="travelling" value="no" onclick="$('#travel_details').hide();" 
+			 					{% if personal_information_values.travelling == "no" %}
+				    			checked="checked"
+				    			{% endif %}
+				    			>No
 			 				</label>
 			 			</div>			 			
 		 			</div>
 				</div>
-				<div class="col-md-6" id="travel_details" style="display:none;">
+				<div class="col-md-6" id="travel_details" 
+				{% if personal_information_values.travelling  != "yes" %}
+				style="display:none;"
+				{% endif %}	>			
 					<div class="form-group  dropdown-field span-right" name="travelling_frequency" data-field-name="travel_details" data-trigger="[name="application_travelling"]" data-trigger-action="show" data-trigger-condition="value[yes]" data-trigger-closest-parent="form" id="Form-field-Applications-travelling_frequency-group">
 					<h5>How often (Please specify)?</h5>
 					<!-- Dropdown -->
 						<select id="Form-field-Applications-travelling_frequency" name="travel_details" class="form-control custom-select select2-hidden-accessible" data-disposable="data-disposable" tabindex="-1" aria-hidden="true">
-					        <option value="Weekly">Weekly</option>
-					        <option value="Monthly">Monthly</option>
-					        <option value="Annually">Annually</option>
+					        <option value="Weekly"
+					        {% if personal_information_values.travel_details == "Weekly" %}
+		 					selected="selected"
+			    			{% endif %}
+			    			>Weekly</option>
+					        <option value="Monthly" 
+					        {% if personal_information_values.travel_details == "Monthly" %}
+		 					selected="selected"
+			    			{% endif %}
+			    			>Monthly</option>
+					        <option value="Annually"  {% if personal_information_values.travel_details == "Annually" %}
+		 					selected="selected"
+			    			{% endif %}
+			    			>Annually</option>
 						</select>            		
 					</div>	
             	</div>

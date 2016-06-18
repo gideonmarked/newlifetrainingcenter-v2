@@ -1,0 +1,178 @@
+9999999999s:7241:"a:2:{s:5:"mtime";i:1466241538;s:7:"content";s:7186:"<div class="panel panel-default">
+	<div class="wrapper panel-body">
+		<h3>Christian Life</h3>
+		<form>
+		 	<div class="row">
+		 		<div class="col-md-12">
+		 			<div class="form-group">
+		 				<h5>When did you receive Jesus as personal Lord and Savior?</h5>
+			 			<input type="text" name="christian_when_saved" class="form-control" value="{{ christian_life_values.christian_when_saved }}">
+		 			</div>
+		 		</div>
+		 	</div>
+			<div class="row">
+				<div class="col-md-12">
+		 			<div class="form-group">
+		 				<h5>Have you been baptized in the Holy Spirit with the evidence of speaking with other tongues?</h5>
+			 			<div class="radio">
+		 				<label>
+		 					<input type="radio" name="christian_baptized" value='yes' 
+		 					{% if christian_life_values.christian_baptized == "yes" %}
+			    			checked="checked"
+			    			{% endif %}>Yes
+		 				</label>
+		 			</div>
+		 			<div class="radio">
+		 				<label>
+		 					<input type="radio" name="christian_baptized" value='no'
+		 					{% if christian_life_values.christian_baptized == "no" %}
+			    			checked="checked"
+			    			{% endif %}>No
+		 				</label>
+		 			</div>		
+		 			</div>
+		 		</div>
+		
+				<div class="col-md-6">
+					<div class="form-group">
+						<h5>Date</h5>		 					 				       
+		 				<div class='input-group date'>
+		                    <input type='text' name="christian_baptized_date" class="form-control" data-control="custom_picker" value="{{ christian_life_values.christian_baptized_date }}">
+		                    <span class="input-group-addon">
+			                    	<span class="glyphicon glyphicon-calendar"></span>
+                    		</span>		                    	
+	        			</div>
+	    			</div>
+	        	</div>
+	        	<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Place</h5>
+			 			<input type="text" name="christian_baptized_place" class="form-control" value="{{ christian_life_values.christian_baptized_place }}">
+		 			</div>
+		 		</div>
+		 		<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Church</h5>
+		 				<div class="dropdown-toggle" data-toggle="dropdown">	
+		 					<select id="church" name="christian_church" class="form-control">
+		 						<option> --Select item from list--</option>
+		 						<option value="new_life"
+		 						{% if christian_life_values.christian_church == "new_life" %}
+				    			selected="selected"
+				    			{% endif %}
+		 						>New Life</option>
+						        <option value="non_new_life"
+						        {% if christian_life_values.christian_church == "non_new_life" %}
+				    			selected="selected"
+				    			{% endif %}
+						        >Non-New Life</option>						        
+		 					</select>
+		 				</div>
+		 			</div>
+		 		</div>	
+		 		<div class="col-md-6 col-md-offset-6" id="church_hide">
+		 			
+		 		</div>		 		
+    			<div class="col-md-6" id="NewLifeChurches"
+    			{% if christian_life_values.christian_church  != "new_life" %}
+    			style="display:none;"
+    			{% endif %}
+    			>
+		 			<div class="form-group">
+		 				<h5>Church Name</h5>
+		 				<div class="dropdown">
+		 					<select name="christian_church_name" class="form-control">
+			                    {% for church in __SELF__.getChurchList() %}
+			                    	<option value="{{ church }}"
+			                    	{% if christian_life_values.christian_church_name == church %}
+			                    		selected="selected" 
+			                    	{% endif %}
+			                    	>
+			                    	{{ church }}
+			                    	</option>
+			                    {% endfor %}
+               				</select>
+		 				</div>
+		 			</div>
+		 		</div>	
+     			<div class="col-md-6" id="NonNewLifeChurches" style="display:none;">
+	             	<div class="form-group">
+		               <h5>Name of Church (Non-New Life)</h5>
+		               <input type="text" name="christian_nonnewlife" id="non_new_life" class="form-control" placeholder="Name of Church" value="{{ christian_life_values.christian_nonnewlife }}">
+	                </div>
+     			</div>	     		
+     			<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>Indicate if you are a</h5>
+		 				<div class="dropdown">	
+		 					<select name="christian_position" class="form-control">
+		 						<option value="Senior Pastor" 
+		 						{% if christian_life_values.christian_position == "Senior Pastor" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>Senior Pastor</option>
+						        <option value="Lead Pastor"
+						        {% if christian_life_values.christian_position == "Lead Pastor" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>Lead Pastor</option>
+						        <option value="Ministry Head"
+						        {% if christian_life_values.christian_position == "Ministry Head" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>Ministry Head</option>
+						        <option value="Pastoral Staff" 
+						        {% if christian_life_values.christian_position == "Pastoral Staff" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>Pastoral Staff</option>
+						        <option value="Staff / Church Worker" 
+						        {% if christian_life_values.christian_position == "Staff / Church Worker" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>Staff / Church Worker</option>
+						        <option value="Member" 
+						        {% if christian_life_values.christian_position == "Member" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>Member</option>		
+		 					</select>
+		 				</div>
+		 			</div>
+		 		</div>
+		 		<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>What is the name of your senior pastor or lead pastor?</h5>
+			 			<input type="text" name="christian_senior_pastor" class="form-control" value="{{ christian_life_values.christian_senior_pastor }}">
+		 			</div>
+		 		</div>	
+		 		<div class="col-md-6">
+		 			<div class="form-group">
+		 				<h5>How long have you been faithfully attending the said church?</h5>
+			 			<input type="text" name="christian_length_attend" class="form-control" value="{{ christian_life_values.christian_length_attend }}">
+		 			</div>
+		 		</div>	
+	        </div>
+	    <div class="col-md-6">
+      		<div class="pull-left">
+				<div class="btn-group" role="group" aria-label="align-right">
+					<button type="button" class="btn btn-primary"
+						data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 5" data-request-update="'{{ __SELF__ }}::educationalbackground':'#form_wrapper'"
+						>Back:Educational Background</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+      		<div class="pull-right">
+				<div class="btn-group" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-primary"
+						data-request-data="page: 5"
+						data-request="{{ __SELF__ }}::onSave"
+						data-request-update="'{{ __SELF__ }}::ministryinvolvement':'#form_wrapper'">Next:Ministry Involvement
+				</div>
+			</div>
+		</div>
+        </div>    	
+		</form>
+	</div>
+</div>";}";

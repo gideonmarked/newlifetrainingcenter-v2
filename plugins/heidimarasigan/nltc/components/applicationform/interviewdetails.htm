@@ -7,7 +7,7 @@
 		 			<div class="form-group">
 		 				<h5>Interview Date</h5>			 				       
 		 				<div class='input-group date' id='scheduled_date'>
-		                    <input type='text' class="form-control datepicker" name="interview_date">
+		                    <input type='text' class="form-control datepicker" name="interview_date" value="{{ interview_details_values.interview_date }}">
 		                    <span class="input-group-addon">
 		                    	<span class="glyphicon glyphicon-calendar"></span>
                 			</span>
@@ -21,13 +21,36 @@
 		 				<div class="dropdown-toggle" data-toggle="dropdown">	
 		 					<select id="appt_time" name="interview_time" class="form-control">
 		 						<option> --Select time from list--</option>
-		 						<option>09:00 am</option>
-						        <option>10:00am</option>
-						        <option>11:00 am</option>
-						        <option>02:00 pm</option>
-						        <option>03:00 pm</option>
-						        <option>03:00 pm</option>
-						        <option>04:00 pm</option>						        
+		 						<option value="09:00 am" 
+		 						{% if interview_details_values.interview_time == "09:00 am" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>09:00 am</option>
+						        <option value="10:00am" 
+		 						{% if interview_details_values.interview_time == "10:00am" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>10:00am</option>
+						        <option value="11:00 am" 
+		 						{% if interview_details_values.interview_time == "11:00 am" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>11:00 am</option>
+						        <option value="02:00 pm" 
+		 						{% if interview_details_values.interview_time == "02:00 pm" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>02:00 pm</option>
+						        <option value="03:00 pm" 
+		 						{% if interview_details_values.interview_time == "03:00 pm" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>03:00 pm</option>						        
+						        <option value="04:00 pm" 
+		 						{% if interview_details_values.interview_time == "04:00 pm" %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>04:00 pm</option>						        
 		 					</select>
 		 				</div>
 	            	</div> 
@@ -37,7 +60,7 @@
 	      		<div class="pull-left">
 					<div class="btn-group" role="group" aria-label="align-right">
 						<button type="button" class="btn btn-primary"
-							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 8" data-request-update="'{{ __SELF__ }}::personalreferences':'#form_wrapper'"
+							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 9" data-request-update="'{{ __SELF__ }}::personalreferences':'#form_wrapper'"
 							>Back:Personal References</button>
 					</div>
 				</div>
@@ -47,6 +70,7 @@
 					<div class="btn-group" role="group" aria-label="align-right">
 							<button type="button" class="btn btn-primary"
 							data-request-data="page: 9"
+							data-request-redirect="thank-you"
 							data-request="{{ __SELF__ }}::onSave">Confirm</button> 
 					</div>
 				</div>

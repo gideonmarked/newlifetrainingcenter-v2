@@ -1,0 +1,118 @@
+9999999999s:3952:"a:2:{s:5:"mtime";i:1466242859;s:7:"content";s:3897:"<div class="panel panel-default">
+	<div class="wrapper panel-body">
+		<h3>Physical and Health Condition</h3>
+		<form>
+			<div class="col-md-12">
+	 			<div class="form-group">
+	 				<h5>Do you have any physical handicaps or illnesses?</h5>
+	 				<div class="radio">
+		 				<label>
+		 					<input type="radio" name="physical_handicap" value="yes"
+		 					{% if physical_health_condition_values.physical_handicap == "yes" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>Yes
+		 				</label>
+		 			</div>
+		 			<div class="radio">
+		 				<label>
+		 					<input type="radio" name="physical_handicap" value="no"
+		 					{% if physical_health_condition_values.physical_handicap == "no" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>No
+		 				</label>
+		 			</div>			 			
+	 			</div>
+			</div>
+			<div class="col-md-12">
+	 			<div class="form-group">
+	 				<h5>Have you ever been convicted of any criminal offense?</h5>
+	 				<div class="radio">
+		 				<label>
+		 					<input type="radio" name="physical_criminal" value="yes"
+		 					{% if physical_health_condition_values.physical_criminal == "yes" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>Yes
+		 				</label>
+		 			</div>
+		 			<div class="radio">
+		 				<label>
+		 					<input type="radio" name="physical_criminal" value="no"
+		 					{% if physical_health_condition_values.physical_criminal == "no" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>No
+		 				</label>
+		 			</div>			 			
+	 			</div>
+			</div>
+			<div class="col-md-12">
+	 			<div class="form-group">
+	 				<h5>Have you undergone rehabilitation for substance abuse?</h5>
+	 				<div class="radio">
+		 				<label>
+		 					<input type="radio" name="physical_abuse" value="yes"
+		 					{% if physical_health_condition_values.physical_abuse == "yes" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>Yes
+		 				</label>
+		 			</div>
+		 			<div class="radio">
+		 				<label>
+		 					<input type="radio" name="physical_abuse" value="no"
+		 					{% if physical_health_condition_values.physical_abuse == "no" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>No
+		 				</label>
+		 			</div>			 			
+	 			</div>
+			</div>
+			<div class="col-md-12">
+	 			<div class="form-group">
+	 				<h5>Have you undergone or still in any psychological and/or psychiatric therapy/medication?</h5>
+	 				<div class="radio">
+		 				<label>
+		 					<input type="radio" name="physical_psychological" value="yes"
+		 					{% if physical_health_condition_values.physical_psychological == "yes" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>Yes
+		 				</label>
+		 			</div>
+		 			<div class="radio">
+		 				<label>
+		 					<input type="radio" name="physical_psychological" value="no"
+		 					{% if physical_health_condition_values.physical_psychological == "no" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>No
+		 				</label>
+		 			</div>			 			
+	 			</div>
+			</div>
+			<div class="col-md-6">
+	      		<div class="pull-left">
+					<div class="btn-group" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-primary"
+							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 7" data-request-update="'{{ __SELF__ }}::ministryinvolvement':'#form_wrapper'"
+							>Back:Ministry Involvement</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+	      		<div class="pull-right">
+					<div class="btn-group" role="group" aria-label="align-right">
+							<button type="button" class="btn btn-primary"
+							data-request-data="page: 7"
+							data-request="{{ __SELF__ }}::onSave"
+							data-request-update="'{{ __SELF__ }}::personalreferences':'#form_wrapper'">Next:Personal References</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>";}";

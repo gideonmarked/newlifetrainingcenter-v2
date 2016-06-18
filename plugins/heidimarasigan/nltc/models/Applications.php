@@ -16,17 +16,17 @@ class Applications extends Model
      */
     public $rules = [
 
-    	'application_type' => 'required',
-    	'school_year' => 'required',
-    	'level' => 'required',
-    	'first_name' => 'required',
-    	'last_name' => 'required',
-    	'mobile' => 'required|numeric'
-    	'email' => 'required|email|unique:users', 
-    	'age' => 'required|numeric',
-    	'date_of_birth' => 'required|before:date',
-    	'interview_date' => 'required',
-    	'interview_time' => 'required'
+    	// 'application_type' => 'required',
+    	// 'school_year' => 'required',
+    	// 'level' => 'required',
+    	// 'first_name' => 'required',
+    	// 'last_name' => 'required',
+    	// 'mobile' => 'required|numeric',
+    	// 'email' => 'required|email|unique:users', 
+    	// 'age' => 'required|numeric',
+    	// 'date_of_birth' => 'required|before:date',
+    	// 'interview_date' => 'required',
+    	// 'interview_time' => 'required'
 
 
 				//email'   								=> 'required|between:3,255|email',
@@ -110,15 +110,15 @@ class Applications extends Model
 			'interview_time' => $this->interview_time
 			];
 			
-			Mail::send('heidimarasigan.nltc.application', $vars, function($message) {
+			// Mail::send('heidimarasigan.nltc.application', $vars, function($message) {
 			
-					$message->to($this->email, $this->first_name);
-					$message->cc('nltc@newlife.ph', 'New Life Training center');
-					$message->bcc('loisjune@gmail.com', 'webmaster');
-					$message->replyTo('nltc@newlife.ph', 'New Life Training center');
-					$message->subject('[NLTC] Application Details');
+			// 		$message->to($this->email, $this->first_name);
+			// 		$message->cc('nltc@newlife.ph', 'New Life Training center');
+			// 		$message->bcc('loisjune@gmail.com', 'webmaster');
+			// 		$message->replyTo('nltc@newlife.ph', 'New Life Training center');
+			// 		$message->subject('[NLTC] Application Details');
 			
-			});
+			// });
 		}
 		
 }
