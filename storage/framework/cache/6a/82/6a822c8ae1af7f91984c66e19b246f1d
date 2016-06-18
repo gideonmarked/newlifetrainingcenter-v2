@@ -1,0 +1,40 @@
+9999999999s:1656:"a:2:{s:5:"mtime";i:1466168869;s:7:"content";s:1601:"<div class="panel panel-default">
+	<div class="wrapper panel-body">
+		<h3>Personal References</h3>
+		<p>Please list two (2) references of people who personally know you for at least 2 years</p>
+		<form>
+			<div class="col-md-12">
+	 			<div class="form-group">
+	 				<h5>References</h5>	 			
+		 				<a class="btn" href="#" data-request="{{ __SELF__ }}::onAddReference"
+		 				data-request-update="'{{ __SELF__ }}::reference_details':'#reference_wrapper'" name="references">
+	  						<i class="glyphicon glyphicon-plus-sign"></i> Add </a>
+	  			</div>				
+			</div>
+			<!-- wrapper of all reference details -->
+			<div id="reference_wrapper">
+				{% partial __SELF__~'::reference_details' %}
+			</div>
+			<!-- end of wrapper of all reference details -->
+			<div class="col-md-6">
+	      		<div class="pull-left">
+					<div class="btn-group" role="group" aria-label="align-right">
+						<button type="button" class="btn btn-primary"
+							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 8" data-request-update="'{{ __SELF__ }}::physicalhealthcondition':'#form_wrapper'"
+							>Back:Physical and Health Condition</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+	      		<div class="pull-right">
+					<div class="btn-group" role="group" aria-label="align-right">
+							<button type="button" class="btn btn-primary"
+							data-request-data="page: 8"
+							data-request="{{ __SELF__ }}::onSave"
+							data-request-update="'{{ __SELF__ }}::interviewdetails':'#form_wrapper'">Next:Interview Details</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>";}";

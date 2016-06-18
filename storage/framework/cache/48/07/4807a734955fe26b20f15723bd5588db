@@ -1,0 +1,102 @@
+9999999999s:3275:"a:6:{s:5:"mtime";i:1466258697;s:7:"content";s:1562:"    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy 2015. New Life Training Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>	
+
+    </div>
+    <!-- /.container -->
+
+    
+		{% framework extras%}
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ ['assets/javascript/bootstrap.min.js']|theme }}"></script>
+    
+
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="{{ ['assets/javascript/jqBootstrapValidation.js']|theme }}"></script>
+    <script src="{{ ['assets/javascript/contact_me.js']|theme }}"></script>
+    <!-- jQuery UI -->
+    <script src="{{ ['assets/javascript/sweetalert.min.js']|theme }}"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+                
+                $('.datepicker').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+            
+            }); 
+
+          $(document).on('ajaxErrorMessage', function(event, message){
+
+              // This can be any custom JavaScript you want
+              // var resp = jQuery.parseJSON(message);
+              alert(message);
+            // swal("Something wrong happened.", resp['X_OCTOBER_ERROR_MESSAGE'], "error")
+
+              // This will stop the default alert() message
+              event.preventDefault();
+
+          });
+  </script>
+
+</body>
+
+</html>
+";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1557:"<!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy 2015. New Life Training Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>	
+
+    </div>
+    <!-- /.container -->
+
+    
+		{% framework extras%}
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ ['assets/javascript/bootstrap.min.js']|theme }}"></script>
+    
+
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="{{ ['assets/javascript/jqBootstrapValidation.js']|theme }}"></script>
+    <script src="{{ ['assets/javascript/contact_me.js']|theme }}"></script>
+    <!-- jQuery UI -->
+    <script src="{{ ['assets/javascript/sweetalert.min.js']|theme }}"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+                
+                $('.datepicker').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+            
+            }); 
+
+          $(document).on('ajaxErrorMessage', function(event, message){
+
+              // This can be any custom JavaScript you want
+              // var resp = jQuery.parseJSON(message);
+              alert(message);
+            // swal("Something wrong happened.", resp['X_OCTOBER_ERROR_MESSAGE'], "error")
+
+              // This will stop the default alert() message
+              event.preventDefault();
+
+          });
+  </script>
+
+</body>
+
+</html>";}";

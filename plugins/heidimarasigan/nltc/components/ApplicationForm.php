@@ -370,16 +370,16 @@ class ApplicationForm extends ComponentBase
         switch ($page) {
             case 1:
                 if( $this->formStudyProgramValidation( post() ) )
-                    $this->storeStudyProgram( post() );
+                    $this->storeStudyProgram( post(), $page );
                 break;
             case 2:
                 if( $this->formPersonalInfomationValidation( post() ) )
-                    $this->storePersonalInformation( post() );
+                    $this->storePersonalInformation( post(), $page );
                 break;
             case 3:
                 if( $this->formFamilyBackgroundValidation( post() ) )
                 {    
-                    $this->storeFamilyBackground( post() );
+                    $this->storeFamilyBackground( post(), $page );
                     // $post = post();
                     // $children_json = "{";
                     // $last_key = count($post["child_name"]);
@@ -402,27 +402,27 @@ class ApplicationForm extends ComponentBase
                 break;
             case 4:
                 if( $this->formEducationalBackgroundValidation( post() ) )
-                    $this->storeEducationalBackground( post() );
+                    $this->storeEducationalBackground( post(), $page );
                 break;
             case 5:
                 if( $this->formChristianLifeValidation( post() ) )
-                    $this->storeChristianLife( post() );
+                    $this->storeChristianLife( post(), $page );
                 break;
             case 6:
                 if( $this->formMinistryInvolvementValidation( post() ) )
-                    $this->storeMinistryInvolvement( post() );
+                    $this->storeMinistryInvolvement( post(), $page );
                 break;
             case 7:
                 if( $this->formPhysicalHealthConditionValidation( post() ) )
-                    $this->storePhysicalHealthCondition( post() );
+                    $this->storePhysicalHealthCondition( post(), $page );
                 break;
             case 8:
                 if( $this->formPersonalReferencesValidation( post() ) )
-                    $this->storePersonalReferences( post() );
+                    $this->storePersonalReferences( post(), $page );
                 break;
             case 9: 
                 if( $this->formInterviewDetailsValidation( post() ) )
-                    $this->storeInterviewDetails( post() );
+                    $this->storeInterviewDetails( post(), $page );
                 break;
         }
         $this->page['study_program_values'] = Session::get('study_program');
@@ -509,14 +509,32 @@ class ApplicationForm extends ComponentBase
 // end function validation
 
 // start function stores
-    private function storeStudyProgram( $post )
+    private function storeStudyProgram( $post, $page )
     {
-        Session::put('study_program', $post);
+        // var_dump($post);storeStudyProgram
+        $application = new ApplicationModel;
+        $application->current_page = $page;
+        $application->application_type = isset($post['application_type']) ? $post['application_type'] : '';
+        $application->school_year = $post['school_year'];
+        $application->level = $post['level'];
+        if($application->validate())
+            Session::put('study_program', $post);
     }
 
-    private function storePersonalInformation( $post )
+    private function storePersonalInformation( $post, $page)
     {
-        Session::put('personal_information', $post);
+        $application = new ApplicationModel;
+        $application->current_page = $page;
+        $application->first_name = $post['first_name'];
+        $application->last_name = $post['last_name'];
+        $application->mobile = $post['mobile'];
+        $application->email = $post['email'];
+        $application->age = $post['age'];
+        $application->date_of_birth = $post['date_of_birth'];
+        if($application->validate())
+            Session::put('personal_information', $post);
+        else
+            throw new ApplicationException('You need to input a valid number!');
     }
 
      private function storeFamilyBackground( $post )
@@ -526,6 +544,7 @@ class ApplicationForm extends ComponentBase
 
     private function storeEducationalBackground( $post )
     {
+       
         Session::put('educational_background', $post);
     }
 
@@ -549,10 +568,19 @@ class ApplicationForm extends ComponentBase
         Session::put('personal_references', $post);
     }
 
-    private function storeInterviewDetails( $post )
+    private function storeInterviewDetails( $post, $page )
     {
-        Session::put('interview_details', $post);
-        $this->saveData();
+        $application = new ApplicationModel();
+        $application->current_page = $page;
+        $applicatiom->interview_date = $post['interview_date'];
+        $applicatiom->interview_time = $post['interview_time'];
+        if($application->validate()) 
+        {
+            Session::put('interview_details', $post);
+            $this->saveData();
+
+        }
+            
     }
 
 // end function stores

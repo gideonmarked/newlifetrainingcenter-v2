@@ -3,6 +3,12 @@
     $(document).on('render',function (){
         $('[data-control="custom_picker"]').datepicker();
 
+        $('#date_of_birth').datepicker({
+            maxDate: "-14y",
+            min: "-90y",
+            default: "-14y"
+        });      
+
         $('#scheduled_date .datepicker').datepicker({
             beforeShowDay: function(date) {
                 var day = date.getDay();

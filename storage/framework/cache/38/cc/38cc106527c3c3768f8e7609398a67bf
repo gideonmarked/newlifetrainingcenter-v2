@@ -1,0 +1,12 @@
+9999999999s:528:"a:6:{s:5:"mtime";i:1466144556;s:7:"content";s:166:"title = "application"
+url = "/application"
+layout = "default"
+is_hidden = 0
+
+[applicationform]
+==
+<div class="container">
+    {% component 'applicationform' %}
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:11:"application";s:3:"url";s:12:"/application";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:10:"components";a:1:{s:15:"applicationform";a:0:{}}}s:4:"code";N;s:6:"markup";s:68:"<div class="container">
+    {% component 'applicationform' %}
+</div>";}";
