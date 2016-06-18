@@ -1,4 +1,4 @@
-1466137137s:7672:"a:2:{s:5:"mtime";i:1466135911;s:7:"content";s:7617:"<div class="panel panel-default">
+1466222518s:7854:"a:2:{s:5:"mtime";i:1466202362;s:7:"content";s:7799:"<div class="panel panel-default">
 	<div class="wrapper panel-body">
 		<h3>Christian Life</h3>
 		<form>
@@ -6,7 +6,7 @@
 		 		<div class="col-md-12">
 		 			<div class="form-group">
 		 				<h5>When did you receive Jesus as personal Lord and Savior?</h5>
-			 			<input type="text" class="form-control">
+			 			<input type="text" name="christian_when_saved" class="form-control">
 		 			</div>
 		 		</div>
 		 	</div>
@@ -16,12 +16,12 @@
 		 				<h5>Have you been baptized in the Holy Spirit with the evidence of speaking with other tongues?</h5>
 			 			<div class="radio">
 		 				<label>
-		 					<input type="radio" name="application_baptized">Yes
+		 					<input type="radio" name="christian_baptized">Yes
 		 				</label>
 		 			</div>
 		 			<div class="radio">
 		 				<label>
-		 					<input type="radio" name="application_baptized">No
+		 					<input type="radio" name="christian_baptized">No
 		 				</label>
 		 			</div>		
 		 			</div>
@@ -31,7 +31,7 @@
 					<div class="form-group">
 						<h5>Date</h5>		 					 				       
 		 				<div class='input-group date'>
-		                    <input type='date' class="form-control" id='datepicker'>
+		                    <input type='date' name="christian_baptized_date" class="form-control" id='datepicker'>
 		                    <span class="input-group-addon">
 			                    	<span class="glyphicon glyphicon-calendar"></span>
                     		</span>		                    	
@@ -41,14 +41,14 @@
 	        	<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>Place</h5>
-			 			<input type="text" class="form-control">
+			 			<input type="text" name="christian_baptized_place" class="form-control">
 		 			</div>
 		 		</div>
 		 		<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>Church</h5>
 		 				<div class="dropdown-toggle" data-toggle="dropdown">	
-		 					<select id="church" name="church" class="form-control">
+		 					<select id="church" name="christian_church" class="form-control">
 		 						<option> --Select item from list--</option>
 		 						<option value="new_life">New Life</option>
 						        <option value="non_new_life">Non-New Life</option>						        
@@ -63,7 +63,7 @@
 		 			<div class="form-group">
 		 				<h5>Church Name</h5>
 		 				<div class="dropdown">	
-		 					<select name="church-name" class="form-control">
+		 					<select name="christian_church_name" class="form-control">
 			                    <option value='New Life, Alabang' >New Life, Alabang</option>
 			                    <option value='New Life, Bacoor' >New Life, Bacoor</option>
 			                    <option value='New Life, Baguio' >New Life, Baguio</option>
@@ -106,14 +106,14 @@
      			<div class="col-md-6" id="NonNewLifeChurches" style="display:none;">
 	             	<div class="form-group">
 		               <h5>Name of Church (Non-New Life)</h5>
-		               <input type="text" name="nonnewlife" id="non_new_life" class="form-control" placeholder="Name of Church">
+		               <input type="text" name="christian_nonnewlife" id="non_new_life" class="form-control" placeholder="Name of Church">
 	                </div>
      			</div>	     		
      			<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>Indicate if you are a</h5>
 		 				<div class="dropdown">	
-		 					<select name="church-position" class="form-control">
+		 					<select name="christian_position" class="form-control">
 		 						<option>Senior Pastor</option>
 						        <option>Lead Pastor</option>
 						        <option>Ministry Head</option>
@@ -127,13 +127,13 @@
 		 		<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>What is the name of your senior pastor or lead pastor?</h5>
-			 			<input type="text" class="form-control">
+			 			<input type="text" name="christian_senior_pastor" class="form-control">
 		 			</div>
 		 		</div>	
 		 		<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>How long have you been faithfully attending the said church?</h5>
-			 			<input type="text" class="form-control">
+			 			<input type="text" name="christian_length_attend" class="form-control">
 		 			</div>
 		 		</div>	
 	        </div>

@@ -24,7 +24,7 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 \t\t \t\t<div class=\"col-md-12\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>When did you receive Jesus as personal Lord and Savior?</h5>
-\t\t\t \t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t \t\t\t<input type=\"text\" name=\"christian_when_saved\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t\t \t\t</div>
 \t\t \t</div>
@@ -34,12 +34,12 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 \t\t \t\t\t\t<h5>Have you been baptized in the Holy Spirit with the evidence of speaking with other tongues?</h5>
 \t\t\t \t\t\t<div class=\"radio\">
 \t\t \t\t\t\t<label>
-\t\t \t\t\t\t\t<input type=\"radio\" name=\"application_baptized\">Yes
+\t\t \t\t\t\t\t<input type=\"radio\" name=\"christian_baptized\">Yes
 \t\t \t\t\t\t</label>
 \t\t \t\t\t</div>
 \t\t \t\t\t<div class=\"radio\">
 \t\t \t\t\t\t<label>
-\t\t \t\t\t\t\t<input type=\"radio\" name=\"application_baptized\">No
+\t\t \t\t\t\t\t<input type=\"radio\" name=\"christian_baptized\">No
 \t\t \t\t\t\t</label>
 \t\t \t\t\t</div>\t\t
 \t\t \t\t\t</div>
@@ -49,7 +49,7 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 \t\t\t\t\t<div class=\"form-group\">
 \t\t\t\t\t\t<h5>Date</h5>\t\t \t\t\t\t\t \t\t\t\t       
 \t\t \t\t\t\t<div class='input-group date'>
-\t\t                    <input type='date' class=\"form-control\" id='datepicker'>
+\t\t                    <input type='date' name=\"christian_baptized_date\" class=\"form-control\" id='datepicker'>
 \t\t                    <span class=\"input-group-addon\">
 \t\t\t                    \t<span class=\"glyphicon glyphicon-calendar\"></span>
                     \t\t</span>\t\t                    \t
@@ -59,14 +59,14 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 \t        \t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Place</h5>
-\t\t\t \t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t \t\t\t<input type=\"text\" name=\"christian_baptized_place\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t\t \t\t</div>
 \t\t \t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Church</h5>
 \t\t \t\t\t\t<div class=\"dropdown-toggle\" data-toggle=\"dropdown\">\t
-\t\t \t\t\t\t\t<select id=\"church\" name=\"church\" class=\"form-control\">
+\t\t \t\t\t\t\t<select id=\"church\" name=\"christian_church\" class=\"form-control\">
 \t\t \t\t\t\t\t\t<option> --Select item from list--</option>
 \t\t \t\t\t\t\t\t<option value=\"new_life\">New Life</option>
 \t\t\t\t\t\t        <option value=\"non_new_life\">Non-New Life</option>\t\t\t\t\t\t        
@@ -81,7 +81,7 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Church Name</h5>
 \t\t \t\t\t\t<div class=\"dropdown\">\t
-\t\t \t\t\t\t\t<select name=\"church-name\" class=\"form-control\">
+\t\t \t\t\t\t\t<select name=\"christian_church_name\" class=\"form-control\">
 \t\t\t                    <option value='New Life, Alabang' >New Life, Alabang</option>
 \t\t\t                    <option value='New Life, Bacoor' >New Life, Bacoor</option>
 \t\t\t                    <option value='New Life, Baguio' >New Life, Baguio</option>
@@ -124,14 +124,14 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
      \t\t\t<div class=\"col-md-6\" id=\"NonNewLifeChurches\" style=\"display:none;\">
 \t             \t<div class=\"form-group\">
 \t\t               <h5>Name of Church (Non-New Life)</h5>
-\t\t               <input type=\"text\" name=\"nonnewlife\" id=\"non_new_life\" class=\"form-control\" placeholder=\"Name of Church\">
+\t\t               <input type=\"text\" name=\"christian_nonnewlife\" id=\"non_new_life\" class=\"form-control\" placeholder=\"Name of Church\">
 \t                </div>
      \t\t\t</div>\t     \t\t
      \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Indicate if you are a</h5>
 \t\t \t\t\t\t<div class=\"dropdown\">\t
-\t\t \t\t\t\t\t<select name=\"church-position\" class=\"form-control\">
+\t\t \t\t\t\t\t<select name=\"christian_position\" class=\"form-control\">
 \t\t \t\t\t\t\t\t<option>Senior Pastor</option>
 \t\t\t\t\t\t        <option>Lead Pastor</option>
 \t\t\t\t\t\t        <option>Ministry Head</option>
@@ -145,13 +145,13 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 \t\t \t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>What is the name of your senior pastor or lead pastor?</h5>
-\t\t\t \t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t \t\t\t<input type=\"text\" name=\"christian_senior_pastor\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t\t \t\t</div>\t
 \t\t \t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>How long have you been faithfully attending the said church?</h5>
-\t\t\t \t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t \t\t\t<input type=\"text\" name=\"christian_length_attend\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t\t \t\t</div>\t
 \t        </div>
@@ -214,7 +214,7 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 /* 		 		<div class="col-md-12">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>When did you receive Jesus as personal Lord and Savior?</h5>*/
-/* 			 			<input type="text" class="form-control">*/
+/* 			 			<input type="text" name="christian_when_saved" class="form-control">*/
 /* 		 			</div>*/
 /* 		 		</div>*/
 /* 		 	</div>*/
@@ -224,12 +224,12 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 /* 		 				<h5>Have you been baptized in the Holy Spirit with the evidence of speaking with other tongues?</h5>*/
 /* 			 			<div class="radio">*/
 /* 		 				<label>*/
-/* 		 					<input type="radio" name="application_baptized">Yes*/
+/* 		 					<input type="radio" name="christian_baptized">Yes*/
 /* 		 				</label>*/
 /* 		 			</div>*/
 /* 		 			<div class="radio">*/
 /* 		 				<label>*/
-/* 		 					<input type="radio" name="application_baptized">No*/
+/* 		 					<input type="radio" name="christian_baptized">No*/
 /* 		 				</label>*/
 /* 		 			</div>		*/
 /* 		 			</div>*/
@@ -239,7 +239,7 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 /* 					<div class="form-group">*/
 /* 						<h5>Date</h5>		 					 				       */
 /* 		 				<div class='input-group date'>*/
-/* 		                    <input type='date' class="form-control" id='datepicker'>*/
+/* 		                    <input type='date' name="christian_baptized_date" class="form-control" id='datepicker'>*/
 /* 		                    <span class="input-group-addon">*/
 /* 			                    	<span class="glyphicon glyphicon-calendar"></span>*/
 /*                     		</span>		                    	*/
@@ -249,14 +249,14 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 /* 	        	<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Place</h5>*/
-/* 			 			<input type="text" class="form-control">*/
+/* 			 			<input type="text" name="christian_baptized_place" class="form-control">*/
 /* 		 			</div>*/
 /* 		 		</div>*/
 /* 		 		<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Church</h5>*/
 /* 		 				<div class="dropdown-toggle" data-toggle="dropdown">	*/
-/* 		 					<select id="church" name="church" class="form-control">*/
+/* 		 					<select id="church" name="christian_church" class="form-control">*/
 /* 		 						<option> --Select item from list--</option>*/
 /* 		 						<option value="new_life">New Life</option>*/
 /* 						        <option value="non_new_life">Non-New Life</option>						        */
@@ -271,7 +271,7 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Church Name</h5>*/
 /* 		 				<div class="dropdown">	*/
-/* 		 					<select name="church-name" class="form-control">*/
+/* 		 					<select name="christian_church_name" class="form-control">*/
 /* 			                    <option value='New Life, Alabang' >New Life, Alabang</option>*/
 /* 			                    <option value='New Life, Bacoor' >New Life, Bacoor</option>*/
 /* 			                    <option value='New Life, Baguio' >New Life, Baguio</option>*/
@@ -314,14 +314,14 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 /*      			<div class="col-md-6" id="NonNewLifeChurches" style="display:none;">*/
 /* 	             	<div class="form-group">*/
 /* 		               <h5>Name of Church (Non-New Life)</h5>*/
-/* 		               <input type="text" name="nonnewlife" id="non_new_life" class="form-control" placeholder="Name of Church">*/
+/* 		               <input type="text" name="christian_nonnewlife" id="non_new_life" class="form-control" placeholder="Name of Church">*/
 /* 	                </div>*/
 /*      			</div>	     		*/
 /*      			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Indicate if you are a</h5>*/
 /* 		 				<div class="dropdown">	*/
-/* 		 					<select name="church-position" class="form-control">*/
+/* 		 					<select name="christian_position" class="form-control">*/
 /* 		 						<option>Senior Pastor</option>*/
 /* 						        <option>Lead Pastor</option>*/
 /* 						        <option>Ministry Head</option>*/
@@ -335,13 +335,13 @@ class __TwigTemplate_13133b2ebea1e5debc54ebe1af639ae8ec5a30c080a3583912acebdee58
 /* 		 		<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>What is the name of your senior pastor or lead pastor?</h5>*/
-/* 			 			<input type="text" class="form-control">*/
+/* 			 			<input type="text" name="christian_senior_pastor" class="form-control">*/
 /* 		 			</div>*/
 /* 		 		</div>	*/
 /* 		 		<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>How long have you been faithfully attending the said church?</h5>*/
-/* 			 			<input type="text" class="form-control">*/
+/* 			 			<input type="text" name="christian_length_attend" class="form-control">*/
 /* 		 			</div>*/
 /* 		 		</div>	*/
 /* 	        </div>*/

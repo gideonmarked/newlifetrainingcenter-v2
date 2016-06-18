@@ -1,4 +1,4 @@
-1466137329s:2378:"a:2:{s:5:"mtime";i:1466136726;s:7:"content";s:2323:"<div class="panel panel-default">
+1466221935s:2324:"a:2:{s:5:"mtime";i:1466205440;s:7:"content";s:2269:"<div class="panel panel-default">
 	<div class="wrapper panel-body">
 		<h3>Interview Details</h3>
 		<form>
@@ -7,7 +7,7 @@
 		 			<div class="form-group">
 		 				<h5>Interview Date</h5>			 				       
 		 				<div class='input-group date' id='scheduled_date'>
-		                    <input type='text' class="form-control datepicker">
+		                    <input type='text' class="form-control datepicker" name="interview_date">
 		                    <span class="input-group-addon">
 		                    	<span class="glyphicon glyphicon-calendar"></span>
                 			</span>
@@ -19,7 +19,7 @@
 	            	<div class="form-group">
 		 				<h5>Interview Time</h5>	
 		 				<div class="dropdown-toggle" data-toggle="dropdown">	
-		 					<select id="appt_time" name="appt_time" class="form-control">
+		 					<select id="appt_time" name="interview_time" class="form-control">
 		 						<option> --Select time from list--</option>
 		 						<option>09:00 am</option>
 						        <option>10:00am</option>
@@ -47,8 +47,7 @@
 					<div class="btn-group" role="group" aria-label="align-right">
 							<button type="button" class="btn btn-primary"
 							data-request-data="page: 9"
-							data-request="{{ __SELF__ }}::onSave"
-							data-request-update="'{{ __SELF__ }}::interviewdetails':'#form_wrapper'">Confirm</button> 
+							data-request="{{ __SELF__ }}::onSave">Confirm</button> 
 					</div>
 				</div>
 			</div>

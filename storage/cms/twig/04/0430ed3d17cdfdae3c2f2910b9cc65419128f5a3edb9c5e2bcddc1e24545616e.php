@@ -23,18 +23,18 @@ class __TwigTemplate_8cf1b44f2e2e0a425b20ce725cab4145be7be53f000136dffa13cbb3442
 \t\t\t<div class=\"col-md-6\">
 \t \t\t\t<div class=\"form-group\">
 \t \t\t\t\t<h5>Spouse Name</h5>
-\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t \t\t\t\t<input type=\"text\" name=\"spouse_name\" class=\"form-control\">
 \t \t\t\t</div>
 \t \t\t</div>
  \t\t\t<div class=\"col-md-6\">
 \t \t\t\t<div class=\"form-group\">
 \t \t\t\t\t<h5>Spouse Occupation</h5>
-\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t \t\t\t\t<input type=\"text\" name=\"spose_occupation\" class=\"form-control\">
 \t \t\t\t</div>
  \t\t\t</div>
  \t\t\t<div class=\"col-md-12\">
 \t \t\t\t<div class=\"form-group\">
-\t \t\t\t\t<h5>Children <a class=\"btn\" href=\"#\"
+\t \t\t\t\t<h5>Children <a class=\"btn\" name=\"children\" href=\"#\"
 \t\t \t\t\t\tdata-request=\"";
         // line 20
         echo twig_escape_filter($this->env, (isset($context["__SELF__"]) ? $context["__SELF__"] : null), "html", null, true);
@@ -65,12 +65,12 @@ class __TwigTemplate_8cf1b44f2e2e0a425b20ce725cab4145be7be53f000136dffa13cbb3442
 \t \t\t\t\t<h5>Is your spouse (if married), or your parents / guardians (if not married), in agreement with you to enroll in NTC this school year?</h5>
 \t \t\t\t\t<div class=\"radio\">
 \t\t \t\t\t\t<label>
-\t\t \t\t\t\t\t<input type=\"radio\" name=\"application_agreement\">Yes
+\t\t \t\t\t\t\t<input type=\"radio\" name=\"in_agreement\">Yes
 \t\t \t\t\t\t</label>
 \t\t \t\t\t</div>
 \t\t \t\t\t<div class=\"radio\">
 \t\t \t\t\t\t<label>
-\t\t \t\t\t\t\t<input type=\"radio\" name=\"application_agreement\">No
+\t\t \t\t\t\t\t<input type=\"radio\" name=\"in_agreement\">No
 \t\t \t\t\t\t</label>
 \t\t \t\t\t</div>\t\t\t \t\t\t
 \t \t\t\t</div>
@@ -132,18 +132,18 @@ class __TwigTemplate_8cf1b44f2e2e0a425b20ce725cab4145be7be53f000136dffa13cbb3442
 /* 			<div class="col-md-6">*/
 /* 	 			<div class="form-group">*/
 /* 	 				<h5>Spouse Name</h5>*/
-/* 	 				<input type="text" class="form-control">*/
+/* 	 				<input type="text" name="spouse_name" class="form-control">*/
 /* 	 			</div>*/
 /* 	 		</div>*/
 /*  			<div class="col-md-6">*/
 /* 	 			<div class="form-group">*/
 /* 	 				<h5>Spouse Occupation</h5>*/
-/* 	 				<input type="text" class="form-control">*/
+/* 	 				<input type="text" name="spose_occupation" class="form-control">*/
 /* 	 			</div>*/
 /*  			</div>*/
 /*  			<div class="col-md-12">*/
 /* 	 			<div class="form-group">*/
-/* 	 				<h5>Children <a class="btn" href="#"*/
+/* 	 				<h5>Children <a class="btn" name="children" href="#"*/
 /* 		 				data-request="{{ __SELF__ }}::onAddChild"*/
 /* 		 				data-request-update="'{{ __SELF__ }}::child_item':'#children_wrapper'"*/
 /* 		 				> */
@@ -163,12 +163,12 @@ class __TwigTemplate_8cf1b44f2e2e0a425b20ce725cab4145be7be53f000136dffa13cbb3442
 /* 	 				<h5>Is your spouse (if married), or your parents / guardians (if not married), in agreement with you to enroll in NTC this school year?</h5>*/
 /* 	 				<div class="radio">*/
 /* 		 				<label>*/
-/* 		 					<input type="radio" name="application_agreement">Yes*/
+/* 		 					<input type="radio" name="in_agreement">Yes*/
 /* 		 				</label>*/
 /* 		 			</div>*/
 /* 		 			<div class="radio">*/
 /* 		 				<label>*/
-/* 		 					<input type="radio" name="application_agreement">No*/
+/* 		 					<input type="radio" name="in_agreement">No*/
 /* 		 				</label>*/
 /* 		 			</div>			 			*/
 /* 	 			</div>*/

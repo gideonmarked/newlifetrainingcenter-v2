@@ -57,26 +57,26 @@ class __TwigTemplate_7e1541510209a91f5ce37a742cbd184dd400c726868ca536223344f6ed1
             echo ". </div>
 \t<div class=\"col-md-4\">
 \t\t<div class=\"form-group\">
-\t\t\t<input type=\"text\" class=\"form-control\" name=\"training_type[]\" value=\"";
+\t\t\t<input type=\"text\" class=\"form-control\" name=\"christian_training_type[]\" value=\"";
             // line 21
-            echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "training_type", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "christian_training_type", array()), "html", null, true);
             echo "\">
 \t\t</div>
 \t</div>
 \t<div class=\"col-md-3\">
 \t\t<div class=\"form-group\">
-\t\t\t<input type=\"text\" class=\"form-control\" name=\"training_venue[]\" value=\"";
+\t\t\t<input type=\"text\" class=\"form-control\" name=\"christian_training_venue[]\" value=\"";
             // line 26
-            echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "training_venue", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "christian_training_venue", array()), "html", null, true);
             echo "\">
 \t\t</div>
 \t</div>
 \t<div class=\"col-md-3\">
 \t\t<div class=\"form-group\">
 \t\t\t<div class='input-group date' >
-\t\t        <input type='date' class=\"form-control\" id='datepicker' name=\"training_date[]\" value=\"";
+\t\t        <input type='date' class=\"form-control\" id='datepicker' name=\"christian_training_date[]\" value=\"";
             // line 32
-            echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "training_date", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "christian_training_date", array()), "html", null, true);
             echo "\">
 \t\t        <span class=\"input-group-addon\">
 \t\t        \t<span class=\"glyphicon glyphicon-calendar\"></span>
@@ -159,18 +159,18 @@ class __TwigTemplate_7e1541510209a91f5ce37a742cbd184dd400c726868ca536223344f6ed1
 /* 	<div class="col-md-1 text-center" style="padding-top: 8px">{{ loop.index }}. </div>*/
 /* 	<div class="col-md-4">*/
 /* 		<div class="form-group">*/
-/* 			<input type="text" class="form-control" name="training_type[]" value="{{ item.training_type }}">*/
+/* 			<input type="text" class="form-control" name="christian_training_type[]" value="{{ item.christian_training_type }}">*/
 /* 		</div>*/
 /* 	</div>*/
 /* 	<div class="col-md-3">*/
 /* 		<div class="form-group">*/
-/* 			<input type="text" class="form-control" name="training_venue[]" value="{{ item.training_venue }}">*/
+/* 			<input type="text" class="form-control" name="christian_training_venue[]" value="{{ item.christian_training_venue }}">*/
 /* 		</div>*/
 /* 	</div>*/
 /* 	<div class="col-md-3">*/
 /* 		<div class="form-group">*/
 /* 			<div class='input-group date' >*/
-/* 		        <input type='date' class="form-control" id='datepicker' name="training_date[]" value="{{ item.training_date }}">*/
+/* 		        <input type='date' class="form-control" id='datepicker' name="christian_training_date[]" value="{{ item.christian_training_date }}">*/
 /* 		        <span class="input-group-addon">*/
 /* 		        	<span class="glyphicon glyphicon-calendar"></span>*/
 /* 				</span>*/

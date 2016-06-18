@@ -24,92 +24,92 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 \t\t \t\t<div class=\"col-md-6\">
 \t\t\t \t\t\t<div class=\"form-group\">
 \t\t\t \t\t\t\t<h5>First Name</h5>
-\t\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t \t\t\t\t<input type=\"text\" name=\"first_name\" class=\"form-control\">
 \t\t\t \t\t\t</div>
 \t\t \t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Middle Name</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"middle_name\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Last Name</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"last_name\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-12\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Address</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"address\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t\t \t\t\t<div class=\"form-group\">
 \t\t\t \t\t\t\t<h5>City</h5>
-\t\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t \t\t\t\t<input type=\"text\" name=\"city\" class=\"form-control\">
 \t\t\t \t\t\t</div>
 \t\t \t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>State</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"state\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t\t \t\t\t<div class=\"form-group\">
 \t\t\t \t\t\t\t<h5>Country</h5>
-\t\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t \t\t\t\t<input type=\"text\" name=\"country\" class=\"form-control\">
 \t\t\t \t\t\t</div>
 \t\t \t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Citizenship</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"citizenship\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t\t \t\t\t<div class=\"form-group\">
 \t\t\t \t\t\t\t<h5>Phone</h5>
-\t\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t \t\t\t\t<input type=\"text\" name=\"phone\" class=\"form-control\">
 \t\t\t \t\t\t</div>
 \t\t \t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Mobile</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"mobile\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t\t \t\t\t<div class=\"form-group\">
 \t\t\t \t\t\t\t<h5>Facebook</h5>
-\t\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t \t\t\t\t<input type=\"text\" name=\"facebook\" class=\"form-control\">
 \t\t\t \t\t\t</div>
 \t\t \t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Email</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"email\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t\t \t\t\t<div class=\"form-group\">
 \t\t\t \t\t\t\t<h5>Website</h5>
-\t\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t \t\t\t\t<input type=\"text\" name=\"website\" class=\"form-control\">
 \t\t\t \t\t\t</div>
 \t\t \t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Age</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"age\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Date of Birth</h5>\t\t\t \t\t\t\t       
 \t\t \t\t\t\t<div class='input-group date' >
-\t\t                    <input type='text' class=\"form-control\" id='datepicker'>
+\t\t                    <input type='text' name=\"date_of_birth\" class=\"form-control\" id='datepicker'>
 \t\t                    <span class=\"input-group-addon\">
 \t\t                    \t<span class=\"glyphicon glyphicon-calendar\"></span>
                 \t\t\t</span>
@@ -119,7 +119,7 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Place of Birth</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"place_of_birth\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
@@ -127,12 +127,12 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 \t\t \t\t\t\t<h5>Gender</h5>
 \t\t \t\t\t\t<div class=\"radio\">
 \t\t\t \t\t\t\t<label>
-\t\t\t \t\t\t\t\t<input type=\"radio\" name=\"gender_type\">Male
+\t\t\t \t\t\t\t\t<input type=\"radio\" name=\"gender\">Male
 \t\t\t \t\t\t\t</label>
 \t\t\t \t\t\t</div>
 \t\t\t \t\t\t<div class=\"radio\">
 \t\t\t \t\t\t\t<label>
-\t\t\t \t\t\t\t\t<input type=\"radio\" name=\"gender_type\">Female
+\t\t\t \t\t\t\t\t<input type=\"radio\" name=\"gender\">Female
 \t\t\t \t\t\t\t</label>
 \t\t\t \t\t\t</div>\t\t\t \t\t\t
 \t\t \t\t\t</div>
@@ -141,7 +141,7 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Civil Status</h5>
 \t\t \t\t\t\t<div class=\"dropdown\">\t
-\t\t \t\t\t\t\t<select name=\"civil-status\" class=\"form-control\">
+\t\t \t\t\t\t\t<select name=\"civil_status\" class=\"form-control\">
 \t\t \t\t\t\t\t\t<option>Single</option>
 \t\t\t\t\t\t        <option>Married</option>
 \t\t\t\t\t\t        <option>Separated</option>
@@ -157,7 +157,7 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 \t\t\t \t\t\t<div class=\"form-group\">
 \t\t\t \t\t\t\t<h5>Occupational Field</h5>
 \t\t\t \t\t\t\t<div class=\"dropdown\">\t
-\t\t\t \t\t\t\t\t<select name=\"occupational-field\" class=\"form-control\">
+\t\t\t \t\t\t\t\t<select name=\"occupational_field\" class=\"form-control\">
 \t\t\t \t\t\t\t\t\t<option>Accounting / Finance</option>
 \t\t\t\t\t\t\t        <option>Admin & Office Services</option>
 \t\t\t\t\t\t\t        <option>Advertising / Promotions / Events</option>
@@ -195,7 +195,7 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 \t\t\t \t\t<div class=\"col-md-6\">
 \t\t\t \t\t\t<div class=\"form-group\">        
 \t\t\t \t\t\t\t<h5>Specific Function / Role</h5>
-\t\t\t \t\t\t\t<input type=\"text\" placeholder=\"eg. Finance Manager\" class=\"form-control\" autocomplete=\"off\" maxlength=\"255\">
+\t\t\t \t\t\t\t<input type=\"text\" name=\"role\" placeholder=\"eg. Finance Manager\" class=\"form-control\" autocomplete=\"off\" maxlength=\"255\">
 \t\t\t \t\t\t</div>
 \t\t\t \t\t</div>\t
 \t\t\t \t\t</div> \t
@@ -205,18 +205,18 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 \t\t \t\t\t\t<h5>Does your present occupation involve travelling out of town / the country?</h5>
 \t\t \t\t\t\t<div class=\"radio\">
 \t\t\t \t\t\t\t<label>
-\t\t\t \t\t\t\t\t<input type=\"radio\" name=\"application_travelling\" value=\"yes\"  onclick=\"\$('#travel_details').show();\">Yes
+\t\t\t \t\t\t\t\t<input type=\"radio\" name=\"travelling\" value=\"yes\"  onclick=\"\$('#travel_details').show();\">Yes
 \t\t\t \t\t\t\t</label>
 \t\t\t \t\t\t</div>
 \t\t\t \t\t\t<div class=\"radio\">
 \t\t\t \t\t\t\t<label>
-\t\t\t \t\t\t\t\t<input type=\"radio\" name=\"application_travelling\" value=\"no\" onclick=\"\$('#travel_details').hide();\">No
+\t\t\t \t\t\t\t\t<input type=\"radio\" name=\"travelling\" value=\"no\" onclick=\"\$('#travel_details').hide();\">No
 \t\t\t \t\t\t\t</label>
 \t\t\t \t\t\t</div>\t\t\t \t\t\t
 \t\t \t\t\t</div>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"col-md-6\" id=\"travel_details\" style=\"display:none;\">
-\t\t\t\t\t<div class=\"form-group  dropdown-field span-right\" data-field-name=\"travel_details\" data-trigger=\"[name=\"application_travelling\"]\" data-trigger-action=\"show\" data-trigger-condition=\"value[yes]\" data-trigger-closest-parent=\"form\" id=\"Form-field-Applications-travelling_frequency-group\">
+\t\t\t\t\t<div class=\"form-group  dropdown-field span-right\" name=\"travelling_frequency\" data-field-name=\"travel_details\" data-trigger=\"[name=\"application_travelling\"]\" data-trigger-action=\"show\" data-trigger-condition=\"value[yes]\" data-trigger-closest-parent=\"form\" id=\"Form-field-Applications-travelling_frequency-group\">
 \t\t\t\t\t<h5>How often (Please specify)?</h5>
 \t\t\t\t\t<!-- Dropdown -->
 \t\t\t\t\t\t<select id=\"Form-field-Applications-travelling_frequency\" name=\"travel_details\" class=\"form-control custom-select select2-hidden-accessible\" data-disposable=\"data-disposable\" tabindex=\"-1\" aria-hidden=\"true\">
@@ -283,92 +283,92 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 /* 		 		<div class="col-md-6">*/
 /* 			 			<div class="form-group">*/
 /* 			 				<h5>First Name</h5>*/
-/* 			 				<input type="text" class="form-control">*/
+/* 			 				<input type="text" name="first_name" class="form-control">*/
 /* 			 			</div>*/
 /* 		 		</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Middle Name</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="middle_name" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Last Name</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="last_name" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-12">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Address</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="address" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 			 			<div class="form-group">*/
 /* 			 				<h5>City</h5>*/
-/* 			 				<input type="text" class="form-control">*/
+/* 			 				<input type="text" name="city" class="form-control">*/
 /* 			 			</div>*/
 /* 		 		</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>State</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="state" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 			 			<div class="form-group">*/
 /* 			 				<h5>Country</h5>*/
-/* 			 				<input type="text" class="form-control">*/
+/* 			 				<input type="text" name="country" class="form-control">*/
 /* 			 			</div>*/
 /* 		 		</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Citizenship</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="citizenship" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 			 			<div class="form-group">*/
 /* 			 				<h5>Phone</h5>*/
-/* 			 				<input type="text" class="form-control">*/
+/* 			 				<input type="text" name="phone" class="form-control">*/
 /* 			 			</div>*/
 /* 		 		</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Mobile</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="mobile" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 			 			<div class="form-group">*/
 /* 			 				<h5>Facebook</h5>*/
-/* 			 				<input type="text" class="form-control">*/
+/* 			 				<input type="text" name="facebook" class="form-control">*/
 /* 			 			</div>*/
 /* 		 		</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Email</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="email" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 			 			<div class="form-group">*/
 /* 			 				<h5>Website</h5>*/
-/* 			 				<input type="text" class="form-control">*/
+/* 			 				<input type="text" name="website" class="form-control">*/
 /* 			 			</div>*/
 /* 		 		</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Age</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="age" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Date of Birth</h5>			 				       */
 /* 		 				<div class='input-group date' >*/
-/* 		                    <input type='text' class="form-control" id='datepicker'>*/
+/* 		                    <input type='text' name="date_of_birth" class="form-control" id='datepicker'>*/
 /* 		                    <span class="input-group-addon">*/
 /* 		                    	<span class="glyphicon glyphicon-calendar"></span>*/
 /*                 			</span>*/
@@ -378,7 +378,7 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Place of Birth</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="place_of_birth" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-6">*/
@@ -386,12 +386,12 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 /* 		 				<h5>Gender</h5>*/
 /* 		 				<div class="radio">*/
 /* 			 				<label>*/
-/* 			 					<input type="radio" name="gender_type">Male*/
+/* 			 					<input type="radio" name="gender">Male*/
 /* 			 				</label>*/
 /* 			 			</div>*/
 /* 			 			<div class="radio">*/
 /* 			 				<label>*/
-/* 			 					<input type="radio" name="gender_type">Female*/
+/* 			 					<input type="radio" name="gender">Female*/
 /* 			 				</label>*/
 /* 			 			</div>			 			*/
 /* 		 			</div>*/
@@ -400,7 +400,7 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Civil Status</h5>*/
 /* 		 				<div class="dropdown">	*/
-/* 		 					<select name="civil-status" class="form-control">*/
+/* 		 					<select name="civil_status" class="form-control">*/
 /* 		 						<option>Single</option>*/
 /* 						        <option>Married</option>*/
 /* 						        <option>Separated</option>*/
@@ -416,7 +416,7 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 /* 			 			<div class="form-group">*/
 /* 			 				<h5>Occupational Field</h5>*/
 /* 			 				<div class="dropdown">	*/
-/* 			 					<select name="occupational-field" class="form-control">*/
+/* 			 					<select name="occupational_field" class="form-control">*/
 /* 			 						<option>Accounting / Finance</option>*/
 /* 							        <option>Admin & Office Services</option>*/
 /* 							        <option>Advertising / Promotions / Events</option>*/
@@ -454,7 +454,7 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 /* 			 		<div class="col-md-6">*/
 /* 			 			<div class="form-group">        */
 /* 			 				<h5>Specific Function / Role</h5>*/
-/* 			 				<input type="text" placeholder="eg. Finance Manager" class="form-control" autocomplete="off" maxlength="255">*/
+/* 			 				<input type="text" name="role" placeholder="eg. Finance Manager" class="form-control" autocomplete="off" maxlength="255">*/
 /* 			 			</div>*/
 /* 			 		</div>	*/
 /* 			 		</div> 	*/
@@ -464,18 +464,18 @@ class __TwigTemplate_4ef3fdeba6ff80e42bbde86750f6165e71645099264ada8b311c422723f
 /* 		 				<h5>Does your present occupation involve travelling out of town / the country?</h5>*/
 /* 		 				<div class="radio">*/
 /* 			 				<label>*/
-/* 			 					<input type="radio" name="application_travelling" value="yes"  onclick="$('#travel_details').show();">Yes*/
+/* 			 					<input type="radio" name="travelling" value="yes"  onclick="$('#travel_details').show();">Yes*/
 /* 			 				</label>*/
 /* 			 			</div>*/
 /* 			 			<div class="radio">*/
 /* 			 				<label>*/
-/* 			 					<input type="radio" name="application_travelling" value="no" onclick="$('#travel_details').hide();">No*/
+/* 			 					<input type="radio" name="travelling" value="no" onclick="$('#travel_details').hide();">No*/
 /* 			 				</label>*/
 /* 			 			</div>			 			*/
 /* 		 			</div>*/
 /* 				</div>*/
 /* 				<div class="col-md-6" id="travel_details" style="display:none;">*/
-/* 					<div class="form-group  dropdown-field span-right" data-field-name="travel_details" data-trigger="[name="application_travelling"]" data-trigger-action="show" data-trigger-condition="value[yes]" data-trigger-closest-parent="form" id="Form-field-Applications-travelling_frequency-group">*/
+/* 					<div class="form-group  dropdown-field span-right" name="travelling_frequency" data-field-name="travel_details" data-trigger="[name="application_travelling"]" data-trigger-action="show" data-trigger-condition="value[yes]" data-trigger-closest-parent="form" id="Form-field-Applications-travelling_frequency-group">*/
 /* 					<h5>How often (Please specify)?</h5>*/
 /* 					<!-- Dropdown -->*/
 /* 						<select id="Form-field-Applications-travelling_frequency" name="travel_details" class="form-control custom-select select2-hidden-accessible" data-disposable="data-disposable" tabindex="-1" aria-hidden="true">*/

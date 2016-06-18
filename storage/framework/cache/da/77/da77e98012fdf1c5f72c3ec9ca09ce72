@@ -1,4 +1,4 @@
-1466137139s:1793:"a:2:{s:5:"mtime";i:1466130373;s:7:"content";s:1738:"<div class="col-md-1">
+1466222507s:1853:"a:2:{s:5:"mtime";i:1466206312;s:7:"content";s:1798:"<div class="col-md-1">
 	<h5 style="margin-left: 5px;">No.</h5>
 </div>
 <div class="col-md-4">
@@ -18,18 +18,18 @@
 	<div class="col-md-1 text-center" style="padding-top: 8px">{{ loop.index }}. </div>
 	<div class="col-md-4">
 		<div class="form-group">
-			<input type="text" class="form-control" name="training_type[]" value="{{ item.training_type }}">
+			<input type="text" class="form-control" name="christian_training_type[]" value="{{ item.christian_training_type }}">
 		</div>
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
-			<input type="text" class="form-control" name="training_venue[]" value="{{ item.training_venue }}">
+			<input type="text" class="form-control" name="christian_training_venue[]" value="{{ item.christian_training_venue }}">
 		</div>
 	</div>
 	<div class="col-md-3">
 		<div class="form-group">
 			<div class='input-group date' >
-		        <input type='date' class="form-control" id='datepicker' name="training_date[]" value="{{ item.training_date }}">
+		        <input type='date' class="form-control" id='datepicker' name="christian_training_date[]" value="{{ item.christian_training_date }}">
 		        <span class="input-group-addon">
 		        	<span class="glyphicon glyphicon-calendar"></span>
 				</span>

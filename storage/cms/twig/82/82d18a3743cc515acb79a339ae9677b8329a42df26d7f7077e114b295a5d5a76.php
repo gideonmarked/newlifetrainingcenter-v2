@@ -24,49 +24,49 @@ class __TwigTemplate_e176f1752a1876fc1bd2cc3d6a47830fb69cab7ea65fa3f038ec8c354df
 \t\t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Primary</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"education_primary\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t\t \t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Year of Completion</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"education_primary_year\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Secondary</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"education_secondary\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Year of Completion</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"education_secondary_year\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Tertiary</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"education_tertiary\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t\t \t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Year of Completion</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"education_tertiary_year\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Course</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"course\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t\t \t\t</div>
 \t \t\t\t<div class=\"col-md-6\">
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Other Course</h5>
-\t\t \t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t \t\t\t\t<input type=\"text\" name=\"other_course\" class=\"form-control\">
 \t\t \t\t\t</div>
 \t \t\t\t</div>
 \t\t\t</div>
@@ -128,49 +128,49 @@ class __TwigTemplate_e176f1752a1876fc1bd2cc3d6a47830fb69cab7ea65fa3f038ec8c354df
 /* 				<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Primary</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="education_primary" class="form-control">*/
 /* 		 			</div>*/
 /* 		 		</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Year of Completion</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="education_primary_year" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Secondary</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="education_secondary" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Year of Completion</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="education_secondary_year" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Tertiary</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="education_tertiary" class="form-control">*/
 /* 		 			</div>*/
 /* 		 		</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Year of Completion</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="education_tertiary_year" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Course</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="course" class="form-control">*/
 /* 		 			</div>*/
 /* 		 		</div>*/
 /* 	 			<div class="col-md-6">*/
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Other Course</h5>*/
-/* 		 				<input type="text" class="form-control">*/
+/* 		 				<input type="text" name="other_course" class="form-control">*/
 /* 		 			</div>*/
 /* 	 			</div>*/
 /* 			</div>*/

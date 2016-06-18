@@ -1,4 +1,4 @@
-1466137268s:1916:"a:2:{s:5:"mtime";i:1466136662;s:7:"content";s:1861:"<div class="col-md-1">
+1466221926s:1920:"a:2:{s:5:"mtime";i:1466205154;s:7:"content";s:1865:"<div class="col-md-1">
 	<h5 style="margin-left: 5px;">No.</h5>
 </div>
 <div class="col-md-3">
@@ -28,7 +28,7 @@
 		</div>
 		<div class="col-md-2">
 			<div class="form-group">
-				<input type="text" class="form-control" name="reference_relation[]" value="{{ details.reference_relation }}">		
+				<input type="text" class="form-control" name="reference_relationship[]" value="{{ details.reference_relation }}">		
 			</div>
 		</div>
 		<div class="col-md-3">

@@ -31,7 +31,7 @@ class __TwigTemplate_b2f0d279b5993dfb5425faea1cdba2ce39250657e1f5271a288ab07e688
 \t\t \t\t\t\tdata-request-update=\"'";
         // line 10
         echo twig_escape_filter($this->env, (isset($context["__SELF__"]) ? $context["__SELF__"] : null), "html", null, true);
-        echo "::reference_details':'#reference_wrapper'\">
+        echo "::reference_details':'#reference_wrapper'\" name=\"references\">
 \t  \t\t\t\t\t\t<i class=\"glyphicon glyphicon-plus-sign\"></i> Add </a>
 \t  \t\t\t</div>\t\t\t\t
 \t\t\t</div>
@@ -104,7 +104,7 @@ class __TwigTemplate_b2f0d279b5993dfb5425faea1cdba2ce39250657e1f5271a288ab07e688
 /* 	 			<div class="form-group">*/
 /* 	 				<h5>References</h5>	 			*/
 /* 		 				<a class="btn" href="#" data-request="{{ __SELF__ }}::onAddReference"*/
-/* 		 				data-request-update="'{{ __SELF__ }}::reference_details':'#reference_wrapper'">*/
+/* 		 				data-request-update="'{{ __SELF__ }}::reference_details':'#reference_wrapper'" name="references">*/
 /* 	  						<i class="glyphicon glyphicon-plus-sign"></i> Add </a>*/
 /* 	  			</div>				*/
 /* 			</div>*/

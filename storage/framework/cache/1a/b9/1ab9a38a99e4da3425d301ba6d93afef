@@ -1,42 +1,42 @@
-1466136623s:6440:"a:2:{s:5:"mtime";i:1466136019;s:7:"content";s:6385:"<div class="panel panel-default">
+1466222507s:6902:"a:2:{s:5:"mtime";i:1466205828;s:7:"content";s:6847:"<div class="panel panel-default">
 	<div class="wrapper panel-body">
 		<h3>Ministry Involvement</h3>
 		<form>		
 			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Name of Ministry</h5>
-	 				<input type="text" class="form-control">
+	 				<input type="text" name="christian_ministry_name" class="form-control">
 	 			</div>
 	 		</div>
  			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Ministry Head</h5>
-	 				<input type="text" class="form-control">
+	 				<input type="text" name="christian_ministry_head" class="form-control">
 	 			</div>
  			</div>
  			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Years of Stay</h5>
-	 				<input type="text" class="form-control">
+	 				<input type="text" name="christian_years_of_stay" class="form-control">
 	 			</div>
 	 		</div>
  			<div class="col-md-6">
 	 			<div class="form-group">
 	 				<h5>Responsibilities</h5>
-	 				<textarea name="responsibilities" class="form-control" rows="5" cols="10"></textarea>	 				
+	 				<textarea name="christian_ministry_responsibilities" class="form-control" rows="5" cols="10"></textarea>	 				
 	 			</div>
  			</div>
  			<div class="col-md-12">
 	 			<div class="form-group" >
 	 				<h5>Why do you want to attend NLTC?</h5>
-	 				<textarea name="why_attend" placeholder="Limit your answer to 2-3 sentences or 100 characters." class="form-control" rows="5" cols="10"></textarea>	 				
+	 				<textarea name="christian_whyattend" placeholder="Limit your answer to 2-3 sentences or 100 characters." class="form-control" rows="5" cols="10"></textarea>	 				
 	 			</div>
  			</div> 		
  			<div class="col-md-6" id="life_group">
  				<div class="form-group" > 				
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox" id="lg_leader" value="leader">I am a leader of a Life Group
+		 					<input type="checkbox" id="lg_leader" name="christian_lifegroup_lead" value="leader">I am a leader of a Life Group
 		 				</label>
 		 			</div>	
 		    	</div>
@@ -45,7 +45,7 @@
  				<div class="form-group" > 				
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox" id="lg_member" value="member">I am a member of a Life Group
+		 					<input type="checkbox" id="lg_member" name="christian_lifegroup_member" value="member">I am a member of a Life Group
 		 				</label>
 		 			</div>		
 		    	</div>
@@ -54,7 +54,7 @@
 	 			<div class="form-group">
 	 				<h5>Date Started (Life Group Leader)</h5>
 	 				<div class='input-group date'>
-		 				<input type='date' class="form-control" id='datepicker'>
+		 				<input type='date' name="christian_lifegroup_lead_started" class="form-control" id='datepicker'>
 	                    <span class="input-group-addon">
 		                    	<span class="glyphicon glyphicon-calendar"></span>
 	            		</span>	
@@ -65,7 +65,7 @@
 	 			<div class="form-group">
 	 				<h5>Date Started (Life Group Member)</h5>
 	 				<div class='input-group date'>
-		 				<input type='date' class="form-control" id='datepicker'>
+		 				<input type='date' name="christian_lifegroup_member_started" class="form-control" id='datepicker'>
 	                    <span class="input-group-addon">
 		                    	<span class="glyphicon glyphicon-calendar"></span>
 	            		</span>	
@@ -78,12 +78,12 @@
 	 				<h5>Do you believe God is calling you to serve full time in any ministry?</h5>
 	 				<div class="radio">
 		 				<label>
-		 					<input type="radio" name="serve_ministry">Yes
+		 					<input type="radio" name="christian_fulltime">Yes
 		 				</label>
 		 			</div>
 		 			<div class="radio">
 		 				<label>
-		 					<input type="radio" name="serve_ministry">No
+		 					<input type="radio" name="christian_fulltime">No
 		 				</label>
 		 			</div>			 			
 	 			</div>
@@ -93,12 +93,12 @@
 	 				<h5>Are you a consistent tither?</h5>
 	 				<div class="radio">
 		 				<label>
-		 					<input type="radio" name="consistent_tither">Yes
+		 					<input type="radio" name="christian_tither">Yes
 		 				</label>
 		 			</div>
 		 			<div class="radio">
 		 				<label>
-		 					<input type="radio" name="consistent_tither">No
+		 					<input type="radio" name="christian_tither">No
 		 				</label>
 		 			</div>			 			
 	 			</div>
@@ -106,7 +106,7 @@
 			<div class="col-md-12">
 	 			<div class="form-group">
 	 				<h5>What other ministry trainings have you attended prior to application at NLTC?</h5>
-		 				<a class="btn" href="#" data-request="{{ __SELF__ }}::onAddTraining"
+		 				<a class="btn" href="#" name="christian_trainings" data-request="{{ __SELF__ }}::onAddTraining"
 		 				data-request-update="'{{ __SELF__ }}::training_attended':'#training_wrapper'">
 	  						<i class="glyphicon glyphicon-plus-sign"></i> Add </a>	  				
 	  			</div>				
@@ -123,12 +123,12 @@
 	 				<h5>Do you have any desire to volunteer in NLTC?</h5>
 	 				<div class="radio">
 		 				<label>
-		 					<input type="radio" name="desire_volunteer">Yes
+		 					<input type="radio" name="christian_ntc_volunteer">Yes
 		 				</label>
 		 			</div>
 		 			<div class="radio">
 		 				<label>
-		 					<input type="radio" name="desire_volunteer">No
+		 					<input type="radio" name="christian_ntc_volunteer">No
 		 				</label>
 		 			</div>			 			
 	 			</div>
@@ -138,22 +138,22 @@
 		 			<div class="checkbox custom-checkbox">
 		 				<h5>If yes, please check the following areas that you see yourself serving?</h5>
 		 				<label>
-		 					<input type="checkbox">Teachers Assistant
+		 					<input type="checkbox" name="christian_ntc_volunteer_area">Teachers Assistant
 		 				</label>
 		 			</div>
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox">Sound System
+		 					<input type="checkbox" name="christian_ntc_volunteer_area">Sound System
 		 				</label>
 		 			</div>	
 		 			<div class="checkbox custom-checkbox">		 			
 		 				<label>
-		 					<input type="checkbox">Praise and Worship
+		 					<input type="checkbox" name="christian_ntc_volunteer_area">Praise and Worship
 		 				</label>
 		 			</div>
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox">Ushers or Usherettes
+		 					<input type="checkbox" name="christian_ntc_volunteer_area">Ushers or Usherettes
 		 				</label>		
 		 			</div>			
 		    	</div>
@@ -161,7 +161,7 @@
 		    <div class="col-md-12">
 	 			<div class="form-group" >
 	 				<h5>How do you plan to settle training fees on time?</h5>
-	 				<textarea name="why_attend" class="form-control" rows="5" cols="10"></textarea>	 				
+	 				<textarea name="training_fee" class="form-control" rows="5" cols="10"></textarea>	 				
 	 			</div>
  			</div> 
  			<div class="col-md-6">

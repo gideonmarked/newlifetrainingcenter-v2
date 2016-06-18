@@ -25,7 +25,7 @@ class __TwigTemplate_365a163238c6e03430b96a90bb7ac124f031842e451556097634e1bd090
 \t\t \t\t\t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Interview Date</h5>\t\t\t \t\t\t\t       
 \t\t \t\t\t\t<div class='input-group date' id='scheduled_date'>
-\t\t                    <input type='text' class=\"form-control datepicker\">
+\t\t                    <input type='text' class=\"form-control datepicker\" name=\"interview_date\">
 \t\t                    <span class=\"input-group-addon\">
 \t\t                    \t<span class=\"glyphicon glyphicon-calendar\"></span>
                 \t\t\t</span>
@@ -37,7 +37,7 @@ class __TwigTemplate_365a163238c6e03430b96a90bb7ac124f031842e451556097634e1bd090
 \t            \t<div class=\"form-group\">
 \t\t \t\t\t\t<h5>Interview Time</h5>\t
 \t\t \t\t\t\t<div class=\"dropdown-toggle\" data-toggle=\"dropdown\">\t
-\t\t \t\t\t\t\t<select id=\"appt_time\" name=\"appt_time\" class=\"form-control\">
+\t\t \t\t\t\t\t<select id=\"appt_time\" name=\"interview_time\" class=\"form-control\">
 \t\t \t\t\t\t\t\t<option> --Select time from list--</option>
 \t\t \t\t\t\t\t\t<option>09:00 am</option>
 \t\t\t\t\t\t        <option>10:00am</option>
@@ -73,11 +73,7 @@ class __TwigTemplate_365a163238c6e03430b96a90bb7ac124f031842e451556097634e1bd090
 \t\t\t\t\t\t\tdata-request=\"";
         // line 50
         echo twig_escape_filter($this->env, (isset($context["__SELF__"]) ? $context["__SELF__"] : null), "html", null, true);
-        echo "::onSave\"
-\t\t\t\t\t\t\tdata-request-update=\"'";
-        // line 51
-        echo twig_escape_filter($this->env, (isset($context["__SELF__"]) ? $context["__SELF__"] : null), "html", null, true);
-        echo "::interviewdetails':'#form_wrapper'\">Confirm</button> 
+        echo "::onSave\">Confirm</button> 
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -99,7 +95,7 @@ class __TwigTemplate_365a163238c6e03430b96a90bb7ac124f031842e451556097634e1bd090
 
     public function getDebugInfo()
     {
-        return array (  79 => 51,  75 => 50,  60 => 40,  19 => 1,);
+        return array (  75 => 50,  60 => 40,  19 => 1,);
     }
 }
 /* <div class="panel panel-default">*/
@@ -111,7 +107,7 @@ class __TwigTemplate_365a163238c6e03430b96a90bb7ac124f031842e451556097634e1bd090
 /* 		 			<div class="form-group">*/
 /* 		 				<h5>Interview Date</h5>			 				       */
 /* 		 				<div class='input-group date' id='scheduled_date'>*/
-/* 		                    <input type='text' class="form-control datepicker">*/
+/* 		                    <input type='text' class="form-control datepicker" name="interview_date">*/
 /* 		                    <span class="input-group-addon">*/
 /* 		                    	<span class="glyphicon glyphicon-calendar"></span>*/
 /*                 			</span>*/
@@ -123,7 +119,7 @@ class __TwigTemplate_365a163238c6e03430b96a90bb7ac124f031842e451556097634e1bd090
 /* 	            	<div class="form-group">*/
 /* 		 				<h5>Interview Time</h5>	*/
 /* 		 				<div class="dropdown-toggle" data-toggle="dropdown">	*/
-/* 		 					<select id="appt_time" name="appt_time" class="form-control">*/
+/* 		 					<select id="appt_time" name="interview_time" class="form-control">*/
 /* 		 						<option> --Select time from list--</option>*/
 /* 		 						<option>09:00 am</option>*/
 /* 						        <option>10:00am</option>*/
@@ -151,8 +147,7 @@ class __TwigTemplate_365a163238c6e03430b96a90bb7ac124f031842e451556097634e1bd090
 /* 					<div class="btn-group" role="group" aria-label="align-right">*/
 /* 							<button type="button" class="btn btn-primary"*/
 /* 							data-request-data="page: 9"*/
-/* 							data-request="{{ __SELF__ }}::onSave"*/
-/* 							data-request-update="'{{ __SELF__ }}::interviewdetails':'#form_wrapper'">Confirm</button> */
+/* 							data-request="{{ __SELF__ }}::onSave">Confirm</button> */
 /* 					</div>*/
 /* 				</div>*/
 /* 			</div>*/

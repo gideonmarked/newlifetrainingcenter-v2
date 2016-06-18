@@ -70,7 +70,7 @@ class __TwigTemplate_428e6b2ac996c6a9244ff6da1df15a90471e860dce316ae5d6ef14aee7e
 \t\t</div>
 \t\t<div class=\"col-md-2\">
 \t\t\t<div class=\"form-group\">
-\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"reference_relation[]\" value=\"";
+\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"reference_relationship[]\" value=\"";
             // line 31
             echo twig_escape_filter($this->env, $this->getAttribute($context["details"], "reference_relation", array()), "html", null, true);
             echo "\">\t\t
@@ -178,7 +178,7 @@ class __TwigTemplate_428e6b2ac996c6a9244ff6da1df15a90471e860dce316ae5d6ef14aee7e
 /* 		</div>*/
 /* 		<div class="col-md-2">*/
 /* 			<div class="form-group">*/
-/* 				<input type="text" class="form-control" name="reference_relation[]" value="{{ details.reference_relation }}">		*/
+/* 				<input type="text" class="form-control" name="reference_relationship[]" value="{{ details.reference_relation }}">		*/
 /* 			</div>*/
 /* 		</div>*/
 /* 		<div class="col-md-3">*/
