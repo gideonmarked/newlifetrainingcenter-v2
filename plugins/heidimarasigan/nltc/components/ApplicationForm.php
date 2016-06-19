@@ -380,24 +380,7 @@ class ApplicationForm extends ComponentBase
                 if( $this->formFamilyBackgroundValidation( post() ) )
                 {    
                     $this->storeFamilyBackground( post(), $page );
-                    // $post = post();
-                    // $children_json = "{";
-                    // $last_key = count($post["child_name"]);
-                    // foreach ($post["child_name"] as $key => $child_name) {
-                    //     $children_json .= "" . "\"" . ($key+1) . "\":";
-                    //     $children_json .= "{";
-                    //     $children_json .= "\"" . "child_name" . "\":";
-                    //     $children_json .= "\"" . $post["child_name"][$key] . "\",";
-                    //     $children_json .= "\"" . "child_age" . "\":";
-                    //     $children_json .= "\"" . $post["child_age"][$key] . "\",";
-                    //     $children_json .= "\"" . "child_gender" . "\":";
-                    //     $children_json .= "\"" . $post["child_gender"][$key] . "\"";
-                    //     $children_json .= "}";
-                    //     if ($key < $last_key-1) {
-                    //         $children_json .= ",";
-                    //     }
-                    // }
-                    // $children_json .= "}";
+                    
                 }
                 break;
             case 4:
@@ -570,10 +553,11 @@ class ApplicationForm extends ComponentBase
 
     private function storeInterviewDetails( $post, $page )
     {
+        
         $application = new ApplicationModel();
         $application->current_page = $page;
-        $applicatiom->interview_date = $post['interview_date'];
-        $applicatiom->interview_time = $post['interview_time'];
+        $application->interview_date = $post['interview_date'];
+        $application->interview_time = $post['interview_time'];
         if($application->validate()) 
         {
             Session::put('interview_details', $post);
@@ -620,20 +604,37 @@ class ApplicationForm extends ComponentBase
         $application_model->age = $personal_information['age'];
         $application_model->date_of_birth = $personal_information['date_of_birth'];
         $application_model->place_of_birth = $personal_information['place_of_birth'];
-        $application_model->gender = $personal_information['gender'];
+        $application_model->gender = isset($personal_information['gender'])?$personal_information['gender']:"";
         $application_model->civil_status = $personal_information['civil_status'];
         $application_model->occupational_field = $personal_information['occupational_field'];
         $application_model->role = $personal_information['role'];
-        $application_model->travelling = $personal_information['travelling'];
+        $application_model->travelling = isset($personal_information['travelling'])?$personal_information['travelling']:"";
         $application_model->travelling_frequency = $personal_information['travel_details'];
 
         $application_model->spouse_name = $family_background['spouse_name'];
         $application_model->spouse_occupation = $family_background['spouse_occupation'];
-        // // $application_model->children = $family_background['children'];
+        $children_json = "{";
+        $last_key = count($family_background["child_name"]);
+        foreach ($family_background["child_name"] as $key => $child_name) {
+            $children_json .= "" . "\"" . ($key+1) . "\":";
+            $children_json .= "{";
+            $children_json .= "\"" . "child_name" . "\":";
+            $children_json .= "\"" . $family_background["child_name"][$key] . "\",";
+            $children_json .= "\"" . "child_age" . "\":";
+            $children_json .= "\"" . $family_background["child_age"][$key] . "\",";
+            $children_json .= "\"" . "child_gender" . "\":";
+            $children_json .= "\"" . $family_background["child_gender"][$key] . "\"";
+            $children_json .= "}";
+            if ($key < $last_key-1) {
+                $children_json .= ",";
+            }
+        }
+        $children_json .= "}";
+        $application_model->children = $children_json;
         // $application_model->child_name = $family_background['child_name'];
         // $application_model->child_age = $family_background['child_age'];
         // $application_model->child_gender = $family_background['child_gender'];
-        $application_model->in_agreement = $family_background['in_agreement'];
+        $application_model->in_agreement = isset($family_background['in_agreement'])?$family_background['in_agreement']:"";
 
         $application_model->education_primary = $educational_background['education_primary'];
         $application_model->education_primary_year = $educational_background['education_primary_year'];
@@ -645,7 +646,7 @@ class ApplicationForm extends ComponentBase
         $application_model->other_course = $educational_background['other_course'];
 
         $application_model->christian_when_saved = $christian_life['christian_when_saved'];
-        $application_model->christian_baptized = $christian_life['christian_baptized'];
+        $application_model->christian_baptized = isset($christian_life['christian_baptized'])?$christian_life['christian_baptized']:"";
         $application_model->christian_baptized_date = $christian_life['christian_baptized_date'];
         $application_model->christian_baptized_place = $christian_life['christian_baptized_place'];
         $application_model->christian_church = $christian_life['christian_church'];
@@ -660,29 +661,62 @@ class ApplicationForm extends ComponentBase
         $application_model->christian_years_of_stay = $ministry_involvement['christian_years_of_stay'];
         $application_model->christian_ministry_responsibilities = $ministry_involvement['christian_ministry_responsibilities'];
         $application_model->christian_whyattend = $ministry_involvement['christian_whyattend'];
-        $application_model->christian_lifegroup_lead = $ministry_involvement['christian_lifegroup_lead'];
+        $application_model->christian_lifegroup_lead = isset($ministry_involvement['christian_lifegroup_lead'])?$ministry_involvement['christian_lifegroup_lead']:"";
         $application_model->christian_lifegroup_lead_started = $ministry_involvement['christian_lifegroup_lead_started'];
-        $application_model->christian_lifegroup_member = $ministry_involvement['christian_lifegroup_member'];
+        $application_model->christian_lifegroup_member = isset($ministry_involvement['christian_lifegroup_member'])?$ministry_involvement['christian_lifegroup_member']:"";
         $application_model->christian_lifegroup_member_started = $ministry_involvement['christian_lifegroup_member_started'];
-        $application_model->christian_fulltime = $ministry_involvement['christian_fulltime'];
-        $application_model->christian_tither = $ministry_involvement['christian_tither'];
-        // $application_model->christian_trainings = $ministry_involvement['christian_trainings'];
-        // $application_model->christian_training_type = $ministry_involvement['christian_training_type'];
-        // $application_model->christian_training_venue = $ministry_involvement['christian_training_venue'];
-        // $application_model->christian_training_date = $ministry_involvement['christian_training_date'];
-        $application_model->christian_ntc_volunteer = $ministry_involvement['christian_ntc_volunteer'];
-        $application_model->christian_ntc_volunteer_area = $ministry_involvement['christian_ntc_volunteer_area'];
+        $application_model->christian_fulltime = isset($ministry_involvement['christian_fulltime'])?$ministry_involvement['christian_fulltime']:"";
+        $application_model->christian_tither = isset($ministry_involvement['christian_tither'])?$ministry_involvement['christian_tither']:"";
+
+        $ministry_involvement_json = "{";        
+        $last_key = count($ministry_involvement["christian_training_type"]);
+        foreach ($ministry_involvement["christian_training_type"] as $key => $christian_training_type) {
+            $ministry_involvement_json .= "" . "\"" . ($key+1) . "\":";
+            $ministry_involvement_json .= "{";
+            $ministry_involvement_json .= "\"" . "christian_training_type" . "\":";
+            $ministry_involvement_json .= "\"" . $ministry_involvement["christian_training_type"][$key] . "\",";
+            $ministry_involvement_json .= "\"" . "christian_training_venue" . "\":";
+            $ministry_involvement_json .= "\"" . $ministry_involvement["christian_training_venue"][$key] . "\",";
+            $ministry_involvement_json .= "\"" . "christian_training_date" . "\":";
+            $ministry_involvement_json .= "\"" . $ministry_involvement["christian_training_date"][$key] . "\"";
+            $ministry_involvement_json .= "}";
+            if ($key < $last_key-1) {
+                $ministry_involvement_json .= ",";
+            }
+        }
+        $ministry_involvement_json .= "}";
+        $application_model->christian_trainings = $ministry_involvement_json;
+       
+        $application_model->christian_ntc_volunteer = isset($ministry_involvement['christian_ntc_volunteer'])?$ministry_involvement['christian_ntc_volunteer']:"";
+        $application_model->christian_ntc_volunteer_area = isset($ministry_involvement['christian_ntc_volunteer_area'])?$ministry_involvement['christian_ntc_volunteer_area']:"";
         $application_model->training_fee = $ministry_involvement['training_fee'];
 
-        $application_model->physical_handicap = $physical_health_condition['physical_handicap'];
-        $application_model->physical_criminal = $physical_health_condition['physical_criminal'];
-        $application_model->physical_abuse = $physical_health_condition['physical_abuse'];
-        $application_model->physical_phsychological = $physical_health_condition['physical_psychological'];
+        $application_model->physical_handicap = isset($physical_health_condition['physical_handicap'])?$physical_health_condition['physical_handicap']:"";
+        $application_model->physical_criminal = isset($physical_health_condition['physical_criminal'])?$physical_health_condition['physical_criminal']:"";
+        $application_model->physical_abuse = isset($physical_health_condition['physical_abuse'])?$physical_health_condition['physical_abuse']:"";
+        $application_model->physical_phsychological = isset($physical_health_condition['physical_phsychological'])?$physical_health_condition['physical_psychological']:"";
 
-        // $application_model->reference_name = $personal_references['reference_name'];
-        // $application_model->reference_address = $personal_references['reference_address'];
-        // $application_model->reference_relationship = $personal_references['reference_relationship'];
-        // $application_model->reference_contactno = $personal_references['reference_contactno'];
+        $personal_references_json = "{";
+        $last_key = count($personal_references["reference_name"]);
+        foreach ($personal_references["reference_name"] as $key => $reference_name) {
+            $personal_references_json .= "" . "\"" . ($key+1) . "\":";
+            $personal_references_json .= "{";
+            $personal_references_json .= "\"" . "reference_name" . "\":";
+            $personal_references_json .= "\"" . $personal_references["reference_name"][$key] . "\",";
+            $personal_references_json .= "\"" . "reference_address" . "\":";
+            $personal_references_json .= "\"" . $personal_references["reference_address"][$key] . "\",";
+            $personal_references_json .= "\"" . "reference_relationship" . "\":";
+            $personal_references_json .= "\"" . $personal_references["reference_relationship"][$key] . "\"";
+             $personal_references_json .= "\"" . "reference_contactno" . "\":";
+            $personal_references_json .= "\"" . $personal_references["reference_contactno"][$key] . "\"";
+            $personal_references_json .= "}";
+            if ($key < $last_key-1) {
+                $personal_references_json .= ",";
+            }
+        }
+        $personal_references_json .= "}";
+        $application_model->reference_name = $personal_references_json;
+    
 
         $application_model->interview_date = $interview_details['interview_date'];
         $application_model->interview_time = $interview_details['interview_time']; 
