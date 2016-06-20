@@ -71,8 +71,7 @@ class Applications extends Model
 				'christian_trainings',
 				'christian_lifegroup',
 				'christian_ntc_volunteer_area',
-				'references',
-				'date_of_birth',
+				'references'
     ];
 
     /*
@@ -118,7 +117,7 @@ class Applications extends Model
     			break;
 
     	}
-    }		
+    }
 		
 	public function afterCreate() 
 	{
@@ -160,7 +159,8 @@ class Applications extends Model
 		
 		// });
 	}
-		
+
+	
 }
 
 

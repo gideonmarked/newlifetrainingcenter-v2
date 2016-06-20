@@ -61,6 +61,30 @@ class ApplicationForm extends ComponentBase
                     'reference_contactno' => ''
                     )
             );
+
+         // the var needed is $interview_date
+        //you will have to convert it from mm/dd/yyyy to yyyy-mm-dd format
+        // $applications = ApplicationModel::where('interview_date','2016-06-01')->get();
+        // $time_list = array();
+        // $time_original_list = [
+        //     '09:00 am',
+        //     '10:00 am',
+        //     '11:00 am',
+        //     '02:00 pm',
+        //     '03:00 pm',
+        //     '04:00 pm'
+        //     ];
+        // foreach ($applications as $key => $application) {
+        //     $time_list[] = $application['interview_time'];
+        // }
+
+        // $time_count_list = array_count_values($time_list);
+        // foreach ($applications as $key => $application) {
+        //     if( $time_count_list[ $application['interview_time'] ] >= 2 )
+        //     {
+        //         unset( $time_original_list[ array_search($application['interview_time'], $time_original_list ) ] );
+        //     }
+        // }
      }
 
     public function getChurchList()
@@ -602,7 +626,9 @@ class ApplicationForm extends ComponentBase
         $application_model->email = $personal_information['email'];
         $application_model->website = $personal_information['website'];
         $application_model->age = $personal_information['age'];
-        $application_model->date_of_birth = $personal_information['date_of_birth'];
+        $date_of_birth = explode("/", $personal_information['date_of_birth']);
+        $date_of_birth = $date_of_birth[2] . "-" . $date_of_birth[0] . "-" . $date_of_birth[1];
+        $application_model->date_of_birth = $date_of_birth;
         $application_model->place_of_birth = $personal_information['place_of_birth'];
         $application_model->gender = isset($personal_information['gender'])?$personal_information['gender']:"";
         $application_model->civil_status = $personal_information['civil_status'];
@@ -613,23 +639,14 @@ class ApplicationForm extends ComponentBase
 
         $application_model->spouse_name = $family_background['spouse_name'];
         $application_model->spouse_occupation = $family_background['spouse_occupation'];
-        $children_json = "{";
-        $last_key = count($family_background["child_name"]);
-        foreach ($family_background["child_name"] as $key => $child_name) {
-            $children_json .= "" . "\"" . ($key+1) . "\":";
-            $children_json .= "{";
-            $children_json .= "\"" . "child_name" . "\":";
-            $children_json .= "\"" . $family_background["child_name"][$key] . "\",";
-            $children_json .= "\"" . "child_age" . "\":";
-            $children_json .= "\"" . $family_background["child_age"][$key] . "\",";
-            $children_json .= "\"" . "child_gender" . "\":";
-            $children_json .= "\"" . $family_background["child_gender"][$key] . "\"";
-            $children_json .= "}";
-            if ($key < $last_key-1) {
-                $children_json .= ",";
-            }
+        $children_json = array();        
+        foreach ($family_background['child_name'] as $key => $child_name) {
+            $children_json[$key+1] = array(
+                'child_name' => $family_background['child_name'][$key],
+                'child_age' => $family_background['child_age'][$key],
+                'child_gender' => $family_background['child_gender'][$key],
+            );
         }
-        $children_json .= "}";
         $application_model->children = $children_json;
         // $application_model->child_name = $family_background['child_name'];
         // $application_model->child_age = $family_background['child_age'];
@@ -647,7 +664,10 @@ class ApplicationForm extends ComponentBase
 
         $application_model->christian_when_saved = $christian_life['christian_when_saved'];
         $application_model->christian_baptized = isset($christian_life['christian_baptized'])?$christian_life['christian_baptized']:"";
-        $application_model->christian_baptized_date = $christian_life['christian_baptized_date'];
+
+        $christian_baptized_date = explode("/", $christian_life['christian_baptized_date']);
+        $christian_baptized_date = $christian_baptized_date[2] . "-" . $christian_baptized_date[0] . "-" . $christian_baptized_date[1];
+        $application_model->christian_baptized_date = $christian_baptized_date;
         $application_model->christian_baptized_place = $christian_life['christian_baptized_place'];
         $application_model->christian_church = $christian_life['christian_church'];
         $application_model->christian_church_name = $christian_life['christian_church_name'];
@@ -668,23 +688,18 @@ class ApplicationForm extends ComponentBase
         $application_model->christian_fulltime = isset($ministry_involvement['christian_fulltime'])?$ministry_involvement['christian_fulltime']:"";
         $application_model->christian_tither = isset($ministry_involvement['christian_tither'])?$ministry_involvement['christian_tither']:"";
 
-        $ministry_involvement_json = "{";        
-        $last_key = count($ministry_involvement["christian_training_type"]);
+        $ministry_involvement_json = array();        
         foreach ($ministry_involvement["christian_training_type"] as $key => $christian_training_type) {
-            $ministry_involvement_json .= "" . "\"" . ($key+1) . "\":";
-            $ministry_involvement_json .= "{";
-            $ministry_involvement_json .= "\"" . "christian_training_type" . "\":";
-            $ministry_involvement_json .= "\"" . $ministry_involvement["christian_training_type"][$key] . "\",";
-            $ministry_involvement_json .= "\"" . "christian_training_venue" . "\":";
-            $ministry_involvement_json .= "\"" . $ministry_involvement["christian_training_venue"][$key] . "\",";
-            $ministry_involvement_json .= "\"" . "christian_training_date" . "\":";
-            $ministry_involvement_json .= "\"" . $ministry_involvement["christian_training_date"][$key] . "\"";
-            $ministry_involvement_json .= "}";
-            if ($key < $last_key-1) {
-                $ministry_involvement_json .= ",";
-            }
+
+        $christian_training_date = explode("/", $ministry_involvement['christian_training_date'][$key]);
+        $christian_training_date = $christian_training_date[2] . "-" . $christian_training_date[0] . "-" . $christian_training_date[1];
+
+            $ministry_involvement_json[$key+1] = array(
+                'christian_training_type' => $ministry_involvement['christian_training_type'][$key],
+                'christian_training_venue' => $ministry_involvement['christian_training_venue'][$key],
+                'christian_training_date' => $christian_training_date,
+            );
         }
-        $ministry_involvement_json .= "}";
         $application_model->christian_trainings = $ministry_involvement_json;
        
         $application_model->christian_ntc_volunteer = isset($ministry_involvement['christian_ntc_volunteer'])?$ministry_involvement['christian_ntc_volunteer']:"";
@@ -696,35 +711,26 @@ class ApplicationForm extends ComponentBase
         $application_model->physical_abuse = isset($physical_health_condition['physical_abuse'])?$physical_health_condition['physical_abuse']:"";
         $application_model->physical_phsychological = isset($physical_health_condition['physical_phsychological'])?$physical_health_condition['physical_psychological']:"";
 
-        $personal_references_json = "{";
-        $last_key = count($personal_references["reference_name"]);
+        $personal_references_json = array();
         foreach ($personal_references["reference_name"] as $key => $reference_name) {
-            $personal_references_json .= "" . "\"" . ($key+1) . "\":";
-            $personal_references_json .= "{";
-            $personal_references_json .= "\"" . "reference_name" . "\":";
-            $personal_references_json .= "\"" . $personal_references["reference_name"][$key] . "\",";
-            $personal_references_json .= "\"" . "reference_address" . "\":";
-            $personal_references_json .= "\"" . $personal_references["reference_address"][$key] . "\",";
-            $personal_references_json .= "\"" . "reference_relationship" . "\":";
-            $personal_references_json .= "\"" . $personal_references["reference_relationship"][$key] . "\"";
-             $personal_references_json .= "\"" . "reference_contactno" . "\":";
-            $personal_references_json .= "\"" . $personal_references["reference_contactno"][$key] . "\"";
-            $personal_references_json .= "}";
-            if ($key < $last_key-1) {
-                $personal_references_json .= ",";
-            }
+            $personal_references_json[$key+1] = array(
+                'references' => $personal_references['reference_name'][$key],
+                'reference_address' => $personal_references['reference_address'][$key],
+                'reference_relationship' => $personal_references['reference_relationship'][$key],
+                'reference_contactno' => $personal_references['reference_contactno'][$key],
+             );
         }
-        $personal_references_json .= "}";
-        $application_model->reference_name = $personal_references_json;
+        $application_model->references = $personal_references_json;
     
-
+        $interview_date = explode("/", $interview_details['interview_date']);
+        $interview_date = $interview_date[2] . "-" . $interview_date[0] . "-" . $interview_date[1];
         $application_model->interview_date = $interview_details['interview_date'];
         $application_model->interview_time = $interview_details['interview_time']; 
 
 
 
         $application_model->save();
-        Session::flush();
+        //Session::flush();
         // return Redirect::to('/thank-you');
     }
 
