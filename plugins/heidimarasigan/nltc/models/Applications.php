@@ -51,7 +51,7 @@ class Applications extends Model
     	'first_name' => 'required',
     	'last_name' => 'required',
     	'mobile' => 'required|numeric|min:11',
-    	'email' => 'required|email|unique:users', 
+    	'email' => 'required|email|unique:heidimarasigan_nltc_applications,email',      
     	'age' => 'required|numeric|min:14|max:90',
     	'date_of_birth' => 'required',
     ];
@@ -149,15 +149,15 @@ class Applications extends Model
 		'interview_time' => $this->interview_time
 		];
 		
-		// Mail::send('heidimarasigan.nltc.application', $vars, function($message) {
+		Mail::send('heidimarasigan.nltc.application', $vars, function($message) {
 		
-		// 		$message->to($this->email, $this->first_name);
-		// 		$message->cc('nltc@newlife.ph', 'New Life Training center');
-		// 		$message->bcc('loisjune@gmail.com', 'webmaster');
-		// 		$message->replyTo('nltc@newlife.ph', 'New Life Training center');
-		// 		$message->subject('[NLTC] Application Details');
+				$message->to($this->email, $this->first_name);
+				$message->cc('nltc@newlife.ph', 'New Life Training center');
+				$message->bcc('loisjune@gmail.com', 'webmaster');
+				$message->replyTo('nltc@newlife.ph', 'New Life Training center');
+				$message->subject('[NLTC] Application Details');
 		
-		// });
+		});
 	}
 
 	
