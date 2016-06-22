@@ -63,31 +63,7 @@ class ApplicationForm extends ComponentBase
                     )
             );
 
-         // the var needed is $interview_date
-        //you will have to convert it from mm/dd/yyyy to yyyy-mm-dd format
-        // $applications = ApplicationModel::where('interview_date','2016-06-01')->get();
-        // $time_list = array();
-        // $time_original_list = [
-        //     '09:00 am',
-        //     '10:00 am',
-        //     '11:00 am',
-        //     '02:00 pm',
-        //     '03:00 pm',
-        //     '04:00 pm'
-        //     ];
-        // foreach ($applications as $key => $application) {
-        //     $time_list[] = $application['interview_time'];
-        // }
-
-        // $time_count_list = array_count_values($time_list);
-        // foreach ($applications as $key => $application) {
-        //     if( $time_count_list[ $application['interview_time'] ] >= 2 )
-        //     {
-        //         unset( $time_original_list[ array_search($application['interview_time'], $time_original_list ) ] );
-        //     }
-        // }
-
-        // $this['timeslots']
+         Session::put('pages_total',0);
      }
 
     public function onLoadTime()
@@ -423,7 +399,6 @@ class ApplicationForm extends ComponentBase
     {
 
         $page = post('page');
-        $this->pages_total += $page;
 
         switch ($page) {
             case 1:
@@ -611,7 +586,6 @@ class ApplicationForm extends ComponentBase
 
     private function storeInterviewDetails( $post, $page )
     {
-        
         $application = new ApplicationModel();
         $application->current_page = $page;
         $application->interview_date = $post['interview_date'];
@@ -619,7 +593,7 @@ class ApplicationForm extends ComponentBase
         if($application->validate()) 
         {
             Session::put('interview_details', $post);
-            if($this->pages_total == (1+2+3+4+5+6+7+8+9))
+            if($this->pages_total == (1+2+3+4+5+6+7+8+9) || true)
                 $this->saveData();
         }
             
@@ -775,7 +749,7 @@ class ApplicationForm extends ComponentBase
 
         $application_model->save();
         Session::flush();
-        return Redirect::to('/thank-you');
+        // return Redirect::to('/thank-you');
     }
 
     public function onRedirect()
