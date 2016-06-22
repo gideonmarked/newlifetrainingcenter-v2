@@ -1,0 +1,15 @@
+					<div class="form-group">
+		 				<h5>Interview Time</h5>	
+		 				<div class="dropdown-toggle" data-toggle="dropdown">	
+		 					<select id="appt_time" name="interview_time" class="form-control">
+		 						<option value="0"> --Select time from list--</option>
+		 						{% for timeslot in timeslots %}
+		 						<option value="{{ timeslot }}" 
+		 						{% if interview_details_values.interview_time == timeslot %}
+			 					selected="selected"
+				    			{% endif %}
+				    			>{{ timeslot }}</option>
+		 						{% endfor %}				        
+		 					</select>
+		 				</div>
+	            	</div> 

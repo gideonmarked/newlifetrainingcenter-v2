@@ -1,13 +1,13 @@
 <div class="panel panel-default">
 	<div class="wrapper panel-body">
 		<h3>Interview Details</h3>
-		<form>
+		<form id="superform">
 			<div class="row">
 		 	 	<div class="col-md-6">
 		 			<div class="form-group">
 		 				<h5>Interview Date</h5>			 				       
 		 				<div class='input-group date' id='scheduled_date'>
-		                    <input type='text' class="form-control datepicker" name="interview_date" value="{{ interview_details_values.interview_date }}">
+		                    <input type='text' class="form-control datepicker" name="interview_date" value="{{ interview_details_values.interview_date }}" data-request="{{ __SELF__ }}::onLoadTime">
 		                    <span class="input-group-addon">
 		                    	<span class="glyphicon glyphicon-calendar"></span>
                 			</span>
@@ -15,45 +15,8 @@
         			</div>
         			<p class="help-block">Available Dates:  June 1-2, 8-9, 15-16, 22-23, 29-30 /  July 6-7, 13-14, 20-21, 27-28 [Days: every Wednesdays and Thursdays only]</p>
 	            </div>			 							
-	            <div class="col-md-6">
-	            	<div class="form-group">
-		 				<h5>Interview Time</h5>	
-		 				<div class="dropdown-toggle" data-toggle="dropdown">	
-		 					<select id="appt_time" name="interview_time" class="form-control">
-		 						<option> --Select time from list--</option>
-		 						<option value="09:00 am" 
-		 						{% if interview_details_values.interview_time == "09:00 am" %}
-			 					selected="selected"
-				    			{% endif %}
-				    			>09:00 am</option>
-						        <option value="10:00am" 
-		 						{% if interview_details_values.interview_time == "10:00am" %}
-			 					selected="selected"
-				    			{% endif %}
-				    			>10:00am</option>
-						        <option value="11:00 am" 
-		 						{% if interview_details_values.interview_time == "11:00 am" %}
-			 					selected="selected"
-				    			{% endif %}
-				    			>11:00 am</option>
-						        <option value="02:00 pm" 
-		 						{% if interview_details_values.interview_time == "02:00 pm" %}
-			 					selected="selected"
-				    			{% endif %}
-				    			>02:00 pm</option>
-						        <option value="03:00 pm" 
-		 						{% if interview_details_values.interview_time == "03:00 pm" %}
-			 					selected="selected"
-				    			{% endif %}
-				    			>03:00 pm</option>						        
-						        <option value="04:00 pm" 
-		 						{% if interview_details_values.interview_time == "04:00 pm" %}
-			 					selected="selected"
-				    			{% endif %}
-				    			>04:00 pm</option>						        
-		 					</select>
-		 				</div>
-	            	</div> 
+	            <div class="col-md-6" id="interview_time_wrapper">
+	            	{% partial __SELF__~'::interview_time' %}
         		</div>        
             </div>
             <div class="col-md-6">
@@ -79,4 +42,13 @@
 		</form>
 	</div>
 </div>
-
+<script type="text/javascript">
+	$(document).ready(function(){
+		var object = $(this);
+		$('#scheduled_date input').change(function(){
+			$('#superform').request('onLoadTime', {
+			    update: {'@interview_time': '#interview_time_wrapper'}
+			});
+		});
+	});
+</script>
