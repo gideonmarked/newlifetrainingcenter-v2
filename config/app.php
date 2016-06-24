@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'url' => 'http://v2.newlifetrainingcenter.ph/',
+    'url' => 'http://localhost/newlifetrainingcenter-v2/',
 
     /*
     |--------------------------------------------------------------------------
