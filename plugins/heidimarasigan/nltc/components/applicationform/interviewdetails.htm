@@ -19,26 +19,46 @@
 	            	{% partial __SELF__~'::interview_time' %}
         		</div>        
             </div>
-            <div class="col-md-6">
-	      		<div class="pull-left">
-					<div class="btn-group" role="group" aria-label="align-right">
-						<button type="button" class="btn btn-primary"
-							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 9" data-request-update="'{{ __SELF__ }}::personalreferences':'#form_wrapper'"
-							>Back:Personal References</button>
-					</div>
-				</div>
+	        <div class="form-group row">
+		        <div class="col-md-12" id="id_acknowledge">	 								
+		 			<div class="checkbox custom-checkbox">
+		 				<label>
+		 					<input type="checkbox" id="id_confirm" name="acknowledgement" style="margin-top:9px;" value="confirm"
+		 					{% if interview_details_values.acknowledgement == "confirm" %}
+		 						checked="checked"
+		 					{% endif %}
+		 					>
+		 					<p class="help-block">I hereby state that the information provided in this online application is true and correct to the best of my knowledge. I acknowledge that if NLTC is notified that any information given in this registration is false, it will be grounds for either denial of admission or immediate dismissal from NLTC. I affirm my commitment and willingness to abide to all the policies and procedures of NLTC.</p>	
+		 				</label>
+		 			</div>
+			    </div>
 			</div>
-			<div class="col-md-6">
-	      		<div class="pull-right">
-					<div class="btn-group" role="group" aria-label="align-right">
+			<div class="form-group row">
+				<div class="col-md-6">
+		      		<div class="pull-left">
+						<div class="btn-group" role="group" aria-label="align-right">
 							<button type="button" class="btn btn-primary"
-							data-request-redirect="thank-you"
-							data-request-data="page: 9"	
-							data-request="{{ __SELF__ }}::onSave">Confirm</button> 
+								data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 9" data-request-update="'{{ __SELF__ }}::personalreferences':'#form_wrapper'"
+								>Back : Personal References</button>
+						</div>
 					</div>
 				</div>
-			</div>
-
+			    <div class="col-md-6" id="btn_apply" 
+			    {% if interview_details_values.acknowledgement != "confirm" %}
+					style="display:none;"
+				{% endif %}
+			    >
+		 			
+	 				<div class="pull-right">
+						<div class="btn-group" role="group" aria-label="align-right" >
+								<button type="button" class="btn btn-primary"
+								data-request-redirect="thank-you"
+								data-request-data="page: 9"	
+								data-request="{{ __SELF__ }}::onSave">Apply</button> 
+						</div>
+					</div>		 					 		
+		 		</div>	        	
+	        </div>	       	
 		</form>
 	</div>
 </div>

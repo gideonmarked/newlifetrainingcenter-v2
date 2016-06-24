@@ -1,27 +1,22 @@
 <div class="panel panel-default">
 	<div class="wrapper panel-body">
 		<h3>Family Background</h3>
-		<form>		
-			<div class="col-md-6">
-	 			<div class="form-group">
-	 				<h5>Spouse Name</h5>
-	 				<input type="text" name="spouse_name" class="form-control" value="{{ family_background_values.spouse_name }}">
-	 			</div>
+		<form>
+		<div class="form-group row">		
+			<div class="col-md-6">	 			
+ 				<h5>Spouse Name</h5>
+ 				<input type="text" name="spouse_name" class="form-control" value="{{ family_background_values.spouse_name }}">	 			
 	 		</div>
- 			<div class="col-md-6">
-	 			<div class="form-group">
-	 				<h5>Spouse Occupation</h5>
-	 				<input type="text" name="spouse_occupation" class="form-control" value="{{ family_background_values.spouse_occupation }}">
-	 			</div>
+ 			<div class="col-md-6">	 			
+ 				<h5>Spouse Occupation</h5>
+ 				<input type="text" name="spouse_occupation" class="form-control" value="{{ family_background_values.spouse_occupation }}">	 			
  			</div>
- 			<div class="col-md-12">
-	 			<div class="form-group">
-	 				<h5>Children <a class="btn" name="children" href="#"
-		 				data-request="{{ __SELF__ }}::onAddChild"
-		 				data-request-update="'{{ __SELF__ }}::child_item':'#children_wrapper'"
-		 				> 
-	  						<i class="glyphicon glyphicon-plus-sign"></i> Add </a></h5>
-		  		</div>
+ 			<div class="col-md-12">	 			
+ 				<h5>Children <a class="btn" name="children" href="#"
+	 				data-request="{{ __SELF__ }}::onAddChild"
+	 				data-request-update="'{{ __SELF__ }}::child_item':'#children_wrapper'"
+	 				> 
+  						<i class="glyphicon glyphicon-plus-sign"></i> Add </a></h5>		  		
 	  		</div>
 			<!-- wrapper of all the list of children -->
 			<div id="children_wrapper">
@@ -29,36 +24,49 @@
 			</div>
 			<!-- end of wrapper of all the list of children -->
 	 			
- 			
-
- 			<div class="col-md-12">
-	 			<div class="form-group">
-	 				<h5>Is your spouse (if married), or your parents / guardians (if not married), in agreement with you to enroll in NTC this school year?</h5>
-	 				<div class="radio">
-		 				<label>
-		 					<input type="radio" name="in_agreement" value='yes' 					{% if family_background_values.in_agreement == "yes" %}
-			    			checked="checked"
-			    			{% endif %}>Yes
-		 				</label>
-		 			</div>
-		 			<div class="radio">
-		 				<label>
-		 					<input type="radio" name="in_agreement" value='no' 
-		 					{% if family_background_values.in_agreement == "no" %}
-			    			checked="checked"
-			    			{% endif %}>No
-		 				</label>
-		 			</div>			 			
+ 		</div>
+		<div class="form-group row">
+ 			<div class="col-md-6">
+ 				<h5>Is your spouse (if married), or your parents / guardians (if minor), in agreement with you to enroll in NLTC this school year?</h5>
+ 				<div class="radio">
+	 				<label>
+	 					<input type="radio" name="in_agreement" value="yes"  onclick="$('#in_agreement_why').hide();" 
+	 					{% if family_background_values.in_agreement == "yes" %}
+		    			checked="checked"
+		    			{% endif %}
+		    			>Yes
+	 				</label>
 	 			</div>
+	 			<div class="radio">
+	 				<label>
+	 					<input type="radio" name="in_agreement" value="no" onclick="$('#in_agreement_why').show();" 
+	 					{% if family_background_values.in_agreement == "no" %}
+		    			checked="checked"
+		    			{% endif %}
+		    			>No
+	 				</label>
+	 			</div> 				
 			</div>
+			<div class="col-md-6" id="in_agreement_why" 
+				{% if family_background_values.in_agreement  != "no" %}
+				style="display:none;"
+				{% endif %}	>			
+					<div class="form-group  dropdown-field span-right" name="in_agreement_why" data-field-name="in_agreement_why" data-trigger-action="show" data-trigger-condition="value[no]" data-trigger-closest-parent="form" >
+					<h5>Why?</h5>
+						<textarea name="in_agreement_why" class="form-control" rows="3" cols="10">
+						</textarea>
+					</div>
+			</div>
+		</div>
+		<div class="form-group row">
 			<div class="col-md-6">
-	      		<div class="pull-left">
+				<div class="pull-right-left">
 					<div class="btn-group" role="group" aria-label="align-right">
 						<button type="button" class="btn btn-primary"
 							data-request="{{ __SELF__ }}::onSave" data-request-data="page: 3" data-request-update="'{{ __SELF__ }}::personalinformation':'#form_wrapper'"
-							>Back:Personal Information</button>
+							>Back : Personal Information</button>
 					</div>
-				</div>
+				</div>					
 			</div>
 			<div class="col-md-6">
 	      		<div class="pull-right">
@@ -66,10 +74,11 @@
 							<button type="button" class="btn btn-primary"
 							data-request-data="page: 3"
 							data-request="{{ __SELF__ }}::onSave"
-							data-request-update="'{{ __SELF__ }}::educationalbackground':'#form_wrapper'">Next:Educational Background</button> 
+							data-request-update="'{{ __SELF__ }}::educationalbackground':'#form_wrapper'">Next : Educational Background</button> 
 					</div>
 				</div>
 			</div>
+		</div>
 		</form>
 	</div>
 </div>

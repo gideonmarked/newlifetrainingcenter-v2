@@ -17,7 +17,7 @@ class CustomDatePicker extends FormWidgetBase
     /**
      * @var string the minimum/earliest date that can be selected.
      */
-    public $minDate = '2000-01-01';
+    public $minDate = '1940-01-01';
 
     /**
      * @var string the maximum/latest date that can be selected.

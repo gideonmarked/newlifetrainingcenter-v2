@@ -3,25 +3,70 @@
 		<h3>Personal References</h3>
 		<p>Please list two (2) references of people who personally know you for at least 2 years</p>
 		<form>
-			<div class="col-md-12">
-	 			<div class="form-group">
+			<div class="form-group row">
+				<div class="col-md-12">	 			
 	 				<h5>References</h5>	 			
 		 				<a class="btn" href="#" data-request="{{ __SELF__ }}::onAddReference"
 		 				data-request-update="'{{ __SELF__ }}::reference_details':'#reference_wrapper'" name="references">
-	  						<i class="glyphicon glyphicon-plus-sign"></i> Add </a>
-	  			</div>				
+	  						<i class="glyphicon glyphicon-plus-sign"></i> Add </a>					
+				</div>
+				<!-- wrapper of all reference details -->
+				<div id="reference_wrapper">
+					{% partial __SELF__~'::reference_details' %}
+				</div>
+				<!-- end of wrapper of all reference details -->
 			</div>
-			<!-- wrapper of all reference details -->
-			<div id="reference_wrapper">
-				{% partial __SELF__~'::reference_details' %}
+			<div class="form-group row">
+				<div class="col-md-12">
+				<p>Person to notify in case of emergency: </p>
+				</div>
 			</div>
-			<!-- end of wrapper of all reference details -->
+			<div class="form-group row">
+				<label class="control-label col-md-1" for="emergeny_name">
+					<h5>Name: </h5>
+				</label>
+				<div class="col-md-4" >
+					<input type="text" name="emergeny_name" class="form-control" value="{{ personal_references_values.emergeny_name }}">				
+				</div>
+			</div>
+			<div class="form-group row">				
+				<label class="control-label col-md-1" for="emergency_relation">
+					<h5>Relation: </h5>
+				</label>
+				<div class="col-md-4">
+					<input type="text" name="emergency_relation" class="form-control" value="{{ personal_references_values.emergency_relation }}">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="control-label col-md-1" for="emergency_address">
+					<h5>Address: </h5>
+				</label>				
+				<div class="col-md-4">
+					<input type="text" name="emergency_address" class="form-control" value="{{ personal_references_values.emergency_address }}">
+				</div>
+			</div>
+			<div class="form-group row">				
+				<label class="control-label col-md-1" for="emergency_telephone">
+					<h5>Telephone: </h5>
+				</label>
+				<div class="col-md-4">
+					<input type="text" name="emergency_telno" class="form-control" value="{{ personal_references_values.emergency_telno }}">
+				</div>
+			</div>
+			<div class="form-group row">				
+				<label class="control-label col-md-1" for="emergency_mobile">
+					<h5>Mobile: </h5>
+				</label>
+				<div class="col-md-4">
+					<input type="text" name="emergency_mobile" class="form-control" value="{{ personal_references_values.emergency_mobile }}">
+				</div>
+			</div>
 			<div class="col-md-6">
 	      		<div class="pull-left">
 					<div class="btn-group" role="group" aria-label="align-right">
 						<button type="button" class="btn btn-primary"
 							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 8" data-request-update="'{{ __SELF__ }}::physicalhealthcondition':'#form_wrapper'"
-							>Back:Physical and Health Condition</button>
+							>Back : Physical and Health Condition</button>
 					</div>
 				</div>
 			</div>
@@ -31,7 +76,7 @@
 							<button type="button" class="btn btn-primary"
 							data-request-data="page: 8"
 							data-request="{{ __SELF__ }}::onSave"
-							data-request-update="'{{ __SELF__ }}::interviewdetails':'#form_wrapper'">Next:Interview Details</button>
+							data-request-update="'{{ __SELF__ }}::interviewdetails':'#form_wrapper'">Next : Interview Details</button>
 					</div>
 				</div>
 			</div>

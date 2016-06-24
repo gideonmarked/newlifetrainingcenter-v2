@@ -71,7 +71,7 @@
 	 				<div class='input-group date'>
 		 				<input type='text'
 		 				value="{{ ministry_involvement_values.christian_lifegroup_lead_started }}"
-		 				 name="christian_lifegroup_lead_started" class="form-control"  data-control="custom_picker">
+		 				 name="christian_lifegroup_lead_started" placeholder="mm/dd/yyyy" class="form-control"  data-control="custom_picker">
 	                    <span class="input-group-addon">
 		                    	<span class="glyphicon glyphicon-calendar"></span>
 	            		</span>	
@@ -88,7 +88,7 @@
 	 				<div class='input-group date'>
 		 				<input type='text'
 		 				value="{{ ministry_involvement_values.christian_lifegroup_member_started }}"
-		 				name="christian_lifegroup_member_started" class="form-control" data-control="custom_picker">
+		 				name="christian_lifegroup_member_started" placeholder="mm/dd/yyyy" class="form-control" data-control="custom_picker">
 	                    <span class="input-group-addon">
 		                    	<span class="glyphicon glyphicon-calendar"></span>
 	            		</span>	
@@ -226,7 +226,7 @@
 					<div class="btn-group" role="group" aria-label="align-right">
 						<button type="button" class="btn btn-primary"
 							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 6" data-request-update="'{{ __SELF__ }}::christianlife':'#form_wrapper'"
-							>Back:Christian Life</button>
+							>Back : Christian Life</button>
 					</div>
 				</div>
 			</div>
@@ -236,7 +236,7 @@
 							<button type="button" class="btn btn-primary"
 							data-request-data="page: 6"
 							data-request="{{ __SELF__ }}::onSave"
-							data-request-update="'{{ __SELF__ }}::physicalhealthcondition':'#form_wrapper'">Next:Physical and Health Condition</button>
+							data-request-update="'{{ __SELF__ }}::physicalhealthcondition':'#form_wrapper'">Next : Physical and Health Condition</button>
 					</div>
 				</div>
 			</div>

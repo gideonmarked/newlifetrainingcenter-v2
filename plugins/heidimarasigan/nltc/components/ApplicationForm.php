@@ -31,8 +31,8 @@ class ApplicationForm extends ComponentBase
     }
 
 
-	public function onRun()
-	{
+    public function onRun()
+    {
         $this->addCss('formwidgets/customdatepicker/assets/css/jquery-ui.css');
         $this->addCss('formwidgets/customdatepicker/assets/css/jquery-ui.structure.css');
 
@@ -78,8 +78,7 @@ class ApplicationForm extends ComponentBase
             '10:00 am',
             '11:00 am',
             '02:00 pm',
-            '03:00 pm',
-            '04:00 pm'
+            '03:00 pm'
             ];
         foreach ($applications as $key => $application) {
             $time_list[] = $application['interview_time'];
@@ -117,6 +116,7 @@ class ApplicationForm extends ComponentBase
         $church_list[] = "New Life, Hibubullao";
         $church_list[] = "New Life, Hinunangan";
         $church_list[] = "New Life, Iligan";
+        $church_list[] = "New Life, Kuala Lumpur";
         $church_list[] = "New Life, La Trinidad";
         $church_list[] = "New Life, Maydolong";
         $church_list[] = "New Life, North Metro";
@@ -173,6 +173,221 @@ class ApplicationForm extends ComponentBase
 
         return $occupation_list;
 
+    }
+
+    public function getCountryList()
+    {
+        $country_list = array();
+
+        $country_list[] = "Afghanistan";
+        $country_list[] = "Albania";
+        $country_list[] = "Algeria";
+        $country_list[] = "American Samoa";
+        $country_list[] = "Andorra";
+        $country_list[] = "Angola";
+        $country_list[] = "Antigua and Barbuda";
+        $country_list[] = "Argentina";
+        $country_list[] = "Armenia";
+        $country_list[] = "Australia";
+        $country_list[] = "Austria";
+        $country_list[] = "Azerbaijan";
+        $country_list[] = "Bahamas";
+        $country_list[] = "Bahrain";
+        $country_list[] = "Bangladesh";
+        $country_list[] = "Barbados";
+        $country_list[] = "Belarus";
+        $country_list[] = "Belgium";
+        $country_list[] = "Belize";
+        $country_list[] = "Benin";
+        $country_list[] = "Bermuda";
+        $country_list[] = "Bhutan";
+        $country_list[] = "Bolivia";
+        $country_list[] = "Bosnia and Herzegovina";
+        $country_list[] = "Botswana";
+        $country_list[] = "Brazil";
+        $country_list[] = "Brunei";
+        $country_list[] = "Bulgaria";
+        $country_list[] = "Burkina Faso";
+        $country_list[] = "Burundi";
+        $country_list[] = "Cambodia";
+        $country_list[] = "Cameroon";
+        $country_list[] = "Canada";
+        $country_list[] = "Cape Verde";
+        $country_list[] = "Cayman Islands";
+        $country_list[] = "Central African Republic";
+        $country_list[] = "Chad";
+        $country_list[] = "Chile";
+        $country_list[] = "China";
+        $country_list[] = "Colombia";
+        $country_list[] = "Comoros";
+        $country_list[] = "Congo, Democratic Republic of the";
+        $country_list[] = "Costa Rica";
+        $country_list[] = "Côte d'Ivoire";
+        $country_list[] = "Croatia";
+        $country_list[] = "Cuba";
+        $country_list[] = "Cyprus";
+        $country_list[] = "Czech Republic";
+        $country_list[] = "Denmark";
+        $country_list[] = "Djibouti";
+        $country_list[] = "Dominica";
+        $country_list[] = "Dominican Republic";
+        $country_list[] = "East Timor";
+        $country_list[] = "Ecuador";
+        $country_list[] = "Egypt";
+        $country_list[] = "El Salvador";
+        $country_list[] = "Equatorial Guinea";
+        $country_list[] = "Eritrea";
+        $country_list[] = "Estonia";
+        $country_list[] = "Ethiopia";
+        $country_list[] = "Fiji";
+        $country_list[] = "Finland";
+        $country_list[] = "France";
+        $country_list[] = "French Polynesia";
+        $country_list[] = "Gabon";
+        $country_list[] = "Gambia";
+        $country_list[] = "Georgia";
+        $country_list[] = "Germany";
+        $country_list[] = "Ghana";
+        $country_list[] = "Greece";
+        $country_list[] = "Greenland";
+        $country_list[] = "Grenada";
+        $country_list[] = "Guam";
+        $country_list[] = "Guatemala";
+        $country_list[] = "Guinea";
+        $country_list[] = "Guinea-Bissau";
+        $country_list[] = "Guyana";
+        $country_list[] = "Haiti";
+        $country_list[] = "Honduras";
+        $country_list[] = "Hong Kong";
+        $country_list[] = "Hungary";
+        $country_list[] = "Iceland";
+        $country_list[] = "India";
+        $country_list[] = "Indonesia";
+        $country_list[] = "Iran";
+        $country_list[] = "Iraq";
+        $country_list[] = "Ireland";
+        $country_list[] = "Israel";
+        $country_list[] = "Italy";
+        $country_list[] = "Jamaica";
+        $country_list[] = "Japan";
+        $country_list[] = "Jordan";
+        $country_list[] = "Kazakhstan";
+        $country_list[] = "Kenya";
+        $country_list[] = "Kiribati";
+        $country_list[] = "North Korea";
+        $country_list[] = "South Korea";
+        $country_list[] = "Kosovo";
+        $country_list[] = "Kuwait";
+        $country_list[] = "Kyrgyzstan";
+        $country_list[] = "Laos";
+        $country_list[] = "Latvia";
+        $country_list[] = "Lebanon";
+        $country_list[] = "Lesotho";
+        $country_list[] = "Liberia";
+        $country_list[] = "Libya";
+        $country_list[] = "Liechtenstein";
+        $country_list[] = "Lithuania";
+        $country_list[] = "Luxembourg";
+        $country_list[] = "Macedonia";
+        $country_list[] = "Madagascar";
+        $country_list[] = "Malawi";
+        $country_list[] = "Malaysia";
+        $country_list[] = "Maldives";
+        $country_list[] = "Mali";
+        $country_list[] = "Malta";
+        $country_list[] = "Marshall Islands";
+        $country_list[] = "Mauritania";
+        $country_list[] = "Mauritius";
+        $country_list[] = "Mexico";
+        $country_list[] = "Micronesia";
+        $country_list[] = "Moldova";
+        $country_list[] = "Monaco";
+        $country_list[] = "Mongolia";
+        $country_list[] = "Montenegro";
+        $country_list[] = "Morocco";
+        $country_list[] = "Mozambique";
+        $country_list[] = "Myanmar";
+        $country_list[] = "Namibia";
+        $country_list[] = "Nauru";
+        $country_list[] = "Nepal";
+        $country_list[] = "Netherlands";
+        $country_list[] = "New Zealand";
+        $country_list[] = "Nicaragua";
+        $country_list[] = "Niger";
+        $country_list[] = "Nigeria";
+        $country_list[] = "Northern Mariana Islands";
+        $country_list[] = "Norway";
+        $country_list[] = "Oman";
+        $country_list[] = "Pakistan";
+        $country_list[] = "Palau";
+        $country_list[] = "Palestine, State of";
+        $country_list[] = "Panama";
+        $country_list[] = "Papua New Guinea";
+        $country_list[] = "Paraguay";
+        $country_list[] = "Peru";
+        $country_list[] = "Philippines";
+        $country_list[] = "Poland";
+        $country_list[] = "Portugal";
+        $country_list[] = "Puerto Rico";
+        $country_list[] = "Qatar";
+        $country_list[] = "Romania";
+        $country_list[] = "Russia";
+        $country_list[] = "Rwanda";
+        $country_list[] = "Saint Kitts and Nevis";
+        $country_list[] = "Saint Lucia";
+        $country_list[] = "Saint Vincent and the Grenadines";
+        $country_list[] = "Samoa";
+        $country_list[] = "San Marino";
+        $country_list[] = "Sao Tome and Principe";
+        $country_list[] = "Saudi Arabia";
+        $country_list[] = "Senegal";
+        $country_list[] = "Serbia and Montenegro";
+        $country_list[] = "Seychelles";
+        $country_list[] = "Sierra Leone";
+        $country_list[] = "Singapore";
+        $country_list[] = "Slovakia";
+        $country_list[] = "Slovenia";
+        $country_list[] = "Solomon Islands";
+        $country_list[] = "Somalia";
+        $country_list[] = "South Africa";
+        $country_list[] = "Spain";
+        $country_list[] = "Sri Lanka";
+        $country_list[] = "Sudan";
+        $country_list[] = "Sudan, South";
+        $country_list[] = "Suriname";
+        $country_list[] = "Swaziland";
+        $country_list[] = "Sweden";
+        $country_list[] = "Switzerland";
+        $country_list[] = "Syria";
+        $country_list[] = "Taiwan";
+        $country_list[] = "Tajikistan";
+        $country_list[] = "Tanzania";
+        $country_list[] = "Thailand";
+        $country_list[] = "Togo";
+        $country_list[] = "Tonga";
+        $country_list[] = "Trinidad and Tobago";
+        $country_list[] = "Tunisia";
+        $country_list[] = "Turkey";
+        $country_list[] = "Turkmenistan";
+        $country_list[] = "Tuvalu";
+        $country_list[] = "Uganda";
+        $country_list[] = "Ukraine";
+        $country_list[] = "United Arab Emirates";
+        $country_list[] = "United Kingdom";
+        $country_list[] = "United States";
+        $country_list[] = "Uruguay";
+        $country_list[] = "Uzbekistan";
+        $country_list[] = "Vanuatu";
+        $country_list[] = "Vatican City";
+        $country_list[] = "Venezuela";
+        $country_list[] = "Vietnam";
+        $country_list[] = "Virgin Islands, British";
+        $country_list[] = "Virgin Islands, U.S.";
+        $country_list[] = "Yemen";
+        $country_list[] = "Zambia";
+        $country_list[] = "Zimbabwe";
+
+        return $country_list;
     }
 
     public function onAddChild()
@@ -545,7 +760,7 @@ class ApplicationForm extends ComponentBase
         $application->last_name = $post['last_name'];
         $application->mobile = $post['mobile'];
         $application->email = $post['email'];
-        $application->age = $post['age'];
+        // $application->age = $post['age'];
         $application->date_of_birth = $post['date_of_birth'];
         if($application->validate())
             Session::put('personal_information', $post);
@@ -623,10 +838,12 @@ class ApplicationForm extends ComponentBase
         $application_model->first_name = $personal_information['first_name'];
         $application_model->middle_name = $personal_information['middle_name'];
         $application_model->last_name = $personal_information['last_name'];
+        $application_model->city = $personal_information['nickname'];
         $application_model->address = $personal_information['address'];
         $application_model->city = $personal_information['city'];
         $application_model->state = $personal_information['state'];
         $application_model->country = $personal_information['country'];
+        $application_model->city = $personal_information['zip'];
         $application_model->citizenship = $personal_information['citizenship'];
         $application_model->phone = $personal_information['phone'];
         $application_model->mobile = $personal_information['mobile'];
@@ -679,7 +896,7 @@ class ApplicationForm extends ComponentBase
         $christian_baptized_date = count($christian_baptized_date) == 3 ? $christian_baptized_date[2] . "-" . $christian_baptized_date[0] . "-" . $christian_baptized_date[1] : '';
 
 
-        $application_model->christian_baptized_date = $christian_baptized_date;
+        $application_model->christian_baptized_date = $christian_life['christian_baptized_date'];
         $application_model->christian_baptized_place = $christian_life['christian_baptized_place'];
         $application_model->christian_church = $christian_life['christian_church'];
         $application_model->christian_church_name = $christian_life['christian_church_name'];
@@ -738,7 +955,14 @@ class ApplicationForm extends ComponentBase
                  );
             }
         }
-        $application_model->references = $personal_references_json;
+
+         $application_model->references = $personal_references_json;
+
+        $application_model->emergeny_name = $personal_references['emergeny_name'];
+        $application_model->emergency_relation = $personal_references['emergency_relation'];
+        $application_model->emergency_address = $personal_references['emergency_address'];
+        $application_model->emergency_telno = $personal_references['emergency_telno'];
+        $application_model->emergency_mobile = $personal_references['emergency_mobile'];
     
         $interview_date = explode("/", $interview_details['interview_date']);
         $interview_date = count($interview_date) == 3 ? $interview_date[2] . "-" . $interview_date[0] . "-" . $interview_date[1] : '';

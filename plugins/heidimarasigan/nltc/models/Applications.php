@@ -52,7 +52,7 @@ class Applications extends Model
     	'last_name' => 'required',
     	'mobile' => 'required|numeric|min:11',
     	'email' => 'required|email|unique:heidimarasigan_nltc_applications,email',      
-    	'age' => 'required|numeric|min:14|max:90',
+    	// 'age' => 'required|numeric|min:14|max:90',
     	'date_of_birth' => 'required',
     ];
 

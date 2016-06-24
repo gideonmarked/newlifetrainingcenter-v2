@@ -57,6 +57,17 @@
             }
         });
 
+        $('#id_acknowledge #id_confirm').click(function() {
+        
+            if ( this.checked ) {
+                $("#btn_apply").show();
+            }
+            else {
+                $("#btn_apply").hide();
+            }
+        });
+
+
     });
 
   });	
