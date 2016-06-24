@@ -569,8 +569,8 @@ class ApplicationForm extends ComponentBase
            $this->page['children'] = $this->setChildrenData( $temp_array );
         }
 
-        $ministry_involvement = Session::get('ministry_involvement');
-        if(empty($ministry_involvement['christian_training_type']))
+        $christian_life = Session::get('christian_life');
+        if(empty($christian_life['christian_training_type']))
         {
             $this->page['training'] = array(
                 array(
@@ -581,9 +581,9 @@ class ApplicationForm extends ComponentBase
             );
         } else {
             $temp_array = array(
-                    "christian_training_type" => $ministry_involvement['christian_training_type'],
-                    "christian_training_venue" => $ministry_involvement['christian_training_venue'],
-                    "christian_training_date" => $ministry_involvement['christian_training_date']
+                    "christian_training_type" => $christian_life['christian_training_type'],
+                    "christian_training_venue" => $christian_life['christian_training_venue'],
+                    "christian_training_date" => $christian_life['christian_training_date']
                 );
            $this->page['training'] = $this->setTrainingData( $temp_array );
         }
@@ -639,19 +639,19 @@ class ApplicationForm extends ComponentBase
                 if( $this->formChristianLifeValidation( post() ) )
                     $this->storeChristianLife( post(), $page );
                 break;
+            // case 6:
+            //     if( $this->formMinistryInvolvementValidation( post() ) )
+            //         $this->storeMinistryInvolvement( post(), $page );
+            //     break;
             case 6:
-                if( $this->formMinistryInvolvementValidation( post() ) )
-                    $this->storeMinistryInvolvement( post(), $page );
-                break;
-            case 7:
                 if( $this->formPhysicalHealthConditionValidation( post() ) )
                     $this->storePhysicalHealthCondition( post(), $page );
                 break;
-            case 8:
+            case 7:
                 if( $this->formPersonalReferencesValidation( post() ) )
                     $this->storePersonalReferences( post(), $page );
                 break;
-            case 9: 
+            case 8: 
                 if( $this->formInterviewDetailsValidation( post() ) )
                     $this->storeInterviewDetails( post(), $page );
                 break;
@@ -661,7 +661,7 @@ class ApplicationForm extends ComponentBase
         $this->page['family_background_values'] = Session::get('family_background');
         $this->page['educational_background_values'] = Session::get('educational_background');
         $this->page['christian_life_values'] = Session::get('christian_life');
-        $this->page['ministry_involvement_values'] = Session::get('ministry_involvement');
+        // $this->page['ministry_involvement_values'] = Session::get('ministry_involvement');
         $this->page['physical_health_condition_values'] = Session::get('physical_health_condition');
         $this->page['personal_references_values'] = Session::get('personal_references');
         $this->page['interview_details_values'] = Session::get('interview_details');
@@ -677,7 +677,7 @@ class ApplicationForm extends ComponentBase
         $this->page['family_bakcground'] = Session::get('family_background');
         $this->page['educational_background'] = Session::get('educational_background');
         $this->page['christian_life'] = Session::get('christian_life');
-        $this->page['ministry_involvement'] = Session::get('ministry_involvement');
+        // $this->page['ministry_involvement'] = Session::get('ministry_involvement');
         $this->page['physical_health_condition'] = Session::get('physical_health_condition');
         $this->page['personal_references'] = Session::get('personal_references');
         $this->page['interview_details'] = Session::get('interview_details');
@@ -714,11 +714,11 @@ class ApplicationForm extends ComponentBase
         return true;
     }
 
-    private function formMinistryInvolvementValidation( $post )
-    {
-        //wag muna validation
-        return true;
-    }
+    // private function formMinistryInvolvementValidation( $post )
+    // {
+    //     //wag muna validation
+    //     return true;
+    // }
 
     private function formPhysicalHealthConditionValidation( $post )
     {
@@ -784,10 +784,10 @@ class ApplicationForm extends ComponentBase
         Session::put('christian_life', $post);
     }
 
-     private function storeMinistryInvolvement( $post )
-    {
-        Session::put('ministry_involvement', $post);
-    }
+    //  private function storeMinistryInvolvement( $post )
+    // {
+    //     Session::put('ministry_involvement', $post);
+    // }
     
     private function storePhysicalHealthCondition( $post )
     {
@@ -824,7 +824,7 @@ class ApplicationForm extends ComponentBase
         $family_background = Session::get('family_background');
         $educational_background = Session::get('educational_background');
         $christian_life = Session::get('christian_life');
-        $ministry_involvement = Session::get('ministry_involvement');
+        // $ministry_involvement = Session::get('ministry_involvement');
         $physical_health_condition = Session::get('physical_health_condition');
         $personal_references = Session::get('personal_references');
         $interview_details = Session::get('interview_details');
@@ -838,12 +838,12 @@ class ApplicationForm extends ComponentBase
         $application_model->first_name = $personal_information['first_name'];
         $application_model->middle_name = $personal_information['middle_name'];
         $application_model->last_name = $personal_information['last_name'];
-        $application_model->city = $personal_information['nickname'];
+        $application_model->nickname = $personal_information['nickname'];
         $application_model->address = $personal_information['address'];
         $application_model->city = $personal_information['city'];
         $application_model->state = $personal_information['state'];
         $application_model->country = $personal_information['country'];
-        $application_model->city = $personal_information['zip'];
+        $application_model->zip = $personal_information['zip'];
         $application_model->citizenship = $personal_information['citizenship'];
         $application_model->phone = $personal_information['phone'];
         $application_model->mobile = $personal_information['mobile'];
@@ -896,7 +896,7 @@ class ApplicationForm extends ComponentBase
         $christian_baptized_date = count($christian_baptized_date) == 3 ? $christian_baptized_date[2] . "-" . $christian_baptized_date[0] . "-" . $christian_baptized_date[1] : '';
 
 
-        $application_model->christian_baptized_date = $christian_life['christian_baptized_date'];
+        // $application_model->christian_baptized_date = $christian_life['christian_baptized_date'];
         $application_model->christian_baptized_place = $christian_life['christian_baptized_place'];
         $application_model->christian_church = $christian_life['christian_church'];
         $application_model->christian_church_name = $christian_life['christian_church_name'];
@@ -905,44 +905,44 @@ class ApplicationForm extends ComponentBase
         $application_model->christian_senior_pastor = $christian_life['christian_senior_pastor'];
         $application_model->christian_length_attend = $christian_life['christian_length_attend'];
 
-        $application_model->christian_ministry_name = $ministry_involvement['christian_ministry_name'];
-        $application_model->christian_ministry_head = $ministry_involvement['christian_ministry_head'];
-        $application_model->christian_years_of_stay = $ministry_involvement['christian_years_of_stay'];
-        $application_model->christian_ministry_responsibilities = $ministry_involvement['christian_ministry_responsibilities'];
-        $application_model->christian_whyattend = $ministry_involvement['christian_whyattend'];
-        $application_model->christian_lifegroup_lead = isset($ministry_involvement['christian_lifegroup_lead'])?$ministry_involvement['christian_lifegroup_lead']:"";
-        $application_model->christian_lifegroup_lead_started = $ministry_involvement['christian_lifegroup_lead_started'];
-        $application_model->christian_lifegroup_member = isset($ministry_involvement['christian_lifegroup_member'])?$ministry_involvement['christian_lifegroup_member']:"";
-        $application_model->christian_lifegroup_member_started = $ministry_involvement['christian_lifegroup_member_started'];
-        $application_model->christian_fulltime = isset($ministry_involvement['christian_fulltime'])?$ministry_involvement['christian_fulltime']:"";
-        $application_model->christian_tither = isset($ministry_involvement['christian_tither'])?$ministry_involvement['christian_tither']:"";
+        $application_model->christian_ministry_name = $christian_life['christian_ministry_name'];
+        $application_model->christian_ministry_head = $christian_life['christian_ministry_head'];
+        $application_model->christian_years_of_stay = $christian_life['christian_years_of_stay'];
+        $application_model->christian_ministry_responsibilities = $christian_life['christian_ministry_responsibilities'];
+        $application_model->christian_whyattend = $christian_life['christian_whyattend'];
+        $application_model->christian_lifegroup_lead = isset($christian_life['christian_lifegroup_lead'])?$christian_life['christian_lifegroup_lead']:"";
+        $application_model->christian_lifegroup_lead_started = $christian_life['christian_lifegroup_lead_started'];
+        $application_model->christian_lifegroup_member = isset($christian_life['christian_lifegroup_member'])?$christian_life['christian_lifegroup_member']:"";
+        $application_model->christian_lifegroup_member_started = $christian_life['christian_lifegroup_member_started'];
+        $application_model->christian_fulltime = isset($christian_life['christian_fulltime'])?$christian_life['christian_fulltime']:"";
+        $application_model->christian_tither = isset($christian_life['christian_tither'])?$christian_life['christian_tither']:"";
 
-        $ministry_involvement_json = array();
-        if( $ministry_involvement["christian_training_type"] ){
-            foreach ($ministry_involvement["christian_training_type"] as $key => $christian_training_type) 
+        $christian_life_json = array();
+        if( $christian_life["christian_training_type"] ){
+            foreach ($christian_life["christian_training_type"] as $key => $christian_training_type) 
             {
 
-                $christian_training_date = explode("/", $ministry_involvement['christian_training_date'][$key]);
+                $christian_training_date = explode("/", $christian_life['christian_training_date'][$key]);
                 $christian_training_date = count($christian_training_date) == 3 ? $christian_training_date[2] . "-" . $christian_training_date[0] . "-" . $christian_training_date[1] : '';
 
-                $ministry_involvement_json[$key+1] = array(
-                    'christian_training_type' => $ministry_involvement['christian_training_type'][$key],
-                    'christian_training_venue' => $ministry_involvement['christian_training_venue'][$key],
+                $christian_life_json[$key+1] = array(
+                    'christian_training_type' => $christian_life['christian_training_type'][$key],
+                    'christian_training_venue' => $christian_life['christian_training_venue'][$key],
                     'christian_training_date' => $christian_training_date,
                 );
             }
         }  
         
-        $application_model->christian_trainings = $ministry_involvement_json;
+        $application_model->christian_trainings = $christian_life_json;
        
-        $application_model->christian_ntc_volunteer = isset($ministry_involvement['christian_ntc_volunteer'])?$ministry_involvement['christian_ntc_volunteer']:"";
-        $application_model->christian_ntc_volunteer_area = isset($ministry_involvement['christian_ntc_volunteer_area'])?$ministry_involvement['christian_ntc_volunteer_area']:"";
-        $application_model->training_fee = $ministry_involvement['training_fee'];
+        $application_model->christian_ntc_volunteer = isset($christian_life['christian_ntc_volunteer'])?$christian_life['christian_ntc_volunteer']:"";
+        $application_model->christian_ntc_volunteer_area = isset($christian_life['christian_ntc_volunteer_area'])?$christian_life['christian_ntc_volunteer_area']:"";
+        $application_model->training_fee = $christian_life['training_fee'];
 
         $application_model->physical_handicap = isset($physical_health_condition['physical_handicap'])?$physical_health_condition['physical_handicap']:"";
         $application_model->physical_criminal = isset($physical_health_condition['physical_criminal'])?$physical_health_condition['physical_criminal']:"";
         $application_model->physical_abuse = isset($physical_health_condition['physical_abuse'])?$physical_health_condition['physical_abuse']:"";
-        $application_model->physical_phsychological = isset($physical_health_condition['physical_phsychological'])?$physical_health_condition['physical_psychological']:"";
+        $application_model->physical_phsychological = isset($physical_health_condition['physical_phsychological'])?$physical_health_condition['physical_phsychological']:"";
 
         $personal_references_json = array();
         if( $personal_references["reference_name"] ){
@@ -956,9 +956,9 @@ class ApplicationForm extends ComponentBase
             }
         }
 
-         $application_model->references = $personal_references_json;
+        $application_model->references = $personal_references_json;
 
-        $application_model->emergeny_name = $personal_references['emergeny_name'];
+        $application_model->emergency_name = $personal_references['emergency_name'];
         $application_model->emergency_relation = $personal_references['emergency_relation'];
         $application_model->emergency_address = $personal_references['emergency_address'];
         $application_model->emergency_telno = $personal_references['emergency_telno'];
@@ -983,7 +983,7 @@ class ApplicationForm extends ComponentBase
         $this->page['family_background_values'] = Session::get('family_background');
         $this->page['educational_background_values'] = Session::get('educational_background');
         $this->page['christian_life_values'] = Session::get('christian_life');
-        $this->page['ministry_involvement_values'] = Session::get('ministry_involvement');
+        // $this->page['ministry_involvement_values'] = Session::get('ministry_involvement');
         $this->page['physical_health_condition_values'] = Session::get('physical_health_condition');
         $this->page['personal_references_values'] = Session::get('personal_references');
         $this->page['interview_details_values'] = Session::get('interview_details');

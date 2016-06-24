@@ -76,8 +76,8 @@
 	 				<h5>Have you undergone or still in any psychological and/or psychiatric therapy/medication?</h5>
 	 				<div class="radio">
 		 				<label>
-		 					<input type="radio" name="physical_psychological" value="yes"
-		 					{% if physical_health_condition_values.physical_psychological == "yes" %}
+		 					<input type="radio" name="physical_phsychological" value="yes"
+		 					{% if physical_health_condition_values.physical_phsychological == "yes" %}
 		 						checked="checked"
 		 					{% endif %}
 		 					>Yes
@@ -98,8 +98,8 @@
 	      		<div class="pull-left">
 					<div class="btn-group" role="group" aria-label="align-right">
 						<button type="button" class="btn btn-primary"
-							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 7" data-request-update="'{{ __SELF__ }}::ministryinvolvement':'#form_wrapper'"
-							>Back : Ministry Involvement</button>
+							data-request="{{ __SELF__ }}::onRedirect" data-request-data="page: 7" data-request-update="'{{ __SELF__ }}::christianlife':'#form_wrapper'"
+							>Back : Christian Life</button>
 					</div>
 				</div>
 			</div>
