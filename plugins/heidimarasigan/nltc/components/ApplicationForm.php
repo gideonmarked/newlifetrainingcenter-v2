@@ -64,8 +64,6 @@ class ApplicationForm extends ComponentBase
             );
 
          Session::put('pages_total',0);
-         var_dump(ApplicationModel::where( 'first_name', 'mary aNn' )->where('last_name', 'de ASis')->where('middle_name','irinsco')->first());
-         die;
      }
 
     public function onLoadTime()
@@ -760,6 +758,7 @@ class ApplicationForm extends ComponentBase
         $application = new ApplicationModel;
         $application->current_page = $page;
         $application->first_name = $post['first_name'];
+        $application->middle_name = $post['middle_name'];
         $application->last_name = $post['last_name'];
         $application->mobile = $post['mobile'];
         $application->email = $post['email'];

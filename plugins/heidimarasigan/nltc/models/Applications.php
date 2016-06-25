@@ -3,6 +3,7 @@
 use Model;
 use Mail;
 use RainLab\User\Models\User;
+use ApplicationException;
 
 /**
  * Model
@@ -109,7 +110,7 @@ class Applications extends Model
     			break;
 
     		case 2:
-    			$this->rules = $this->rules_2;
+    			$this->rules = $this->rules_2;            
           if($this->checkFMLNames( $this->first_name, $this->last_name, $this->middle_name ))
           {
               throw new ApplicationException('Your name is already registered in the system.');
