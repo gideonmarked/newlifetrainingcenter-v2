@@ -23,7 +23,7 @@
 		        <div class="col-md-12" id="id_acknowledge">	 								
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox" id="id_confirm" name="acknowledgement" style="margin-top:9px;" value="confirm"
+		 					<input type="checkbox" id="id_confirm" name="acknowledgement" style="margin-top:9px;" value="1"
 		 					{% if interview_details_values.acknowledgement == "confirm" %}
 		 						checked="checked"
 		 					{% endif %}
@@ -54,7 +54,7 @@
 								<button type="button" class="btn btn-primary"
 								data-request-redirect="thank-you"
 								data-request-data="page: 8"	
-								data-request="{{ __SELF__ }}::onSave">Apply</button> 
+								data-request="{{ __SELF__ }}::onSave">Confirm</button> 
 						</div>
 					</div>		 					 		
 		 		</div>	        	

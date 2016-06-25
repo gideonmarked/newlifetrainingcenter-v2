@@ -177,8 +177,9 @@
  				<div class="col-md-6" id="life_group"> 				
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox" id="lg_leader" name="christian_lifegroup_lead" value="leader"
-		 					{% if christian_life_values.christian_lifegroup_lead == "leader" %}
+		 					<input type="checkbox" id="lg_leader" name="christian_lifegroup_lead" 
+		 					value="1" 
+		 					{% if christian_life_values.christian_lifegroup_lead == 1 %}
 		 						checked="checked"
 		 					{% endif %}
 		 					>I am a leader of a Life Group
@@ -188,8 +189,8 @@
 			    <div class="col-md-6" id="life_group"> 				
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
-		 					<input type="checkbox" id="lg_member" name="christian_lifegroup_member" value="member"
-		 					{% if christian_life_values.christian_lifegroup_member == "member" %}
+		 					<input type="checkbox" id="lg_member" name="christian_lifegroup_member" value="1"
+		 					{% if christian_life_values.christian_lifegroup_member == 1 %}
 		 						checked="checked"
 		 					{% endif %}
 		 					>I am a member of a Life Group

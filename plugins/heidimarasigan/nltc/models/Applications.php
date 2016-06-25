@@ -89,7 +89,7 @@ class Applications extends Model
     /**
      * @var array Relations
      */
-		public $hasOne = [];
+	public $hasOne = [];
     public $hasMany = [];
     public $belongsTo = [
 				'students' => ['HeidiMarasigan\Nltc\Models\Students']

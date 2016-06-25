@@ -137,7 +137,7 @@ fields:
         span: auto
         placeholder: DD/MM/YYYY
         required: 1
-        type: datepicker
+        type: text
     place_of_birth:
         label: 'heidimarasigan.nltc::lang.nltc.place_of_birth'
         oc.commentPosition: ''
@@ -148,8 +148,8 @@ fields:
         label: 'heidimarasigan.nltc::lang.nltc.gender'
         oc.commentPosition: ''
         options:
-            male: Male
-            female: Female
+            Male: Male
+            Female: Female
         span: auto
         type: radio
         tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'
@@ -263,7 +263,7 @@ fields:
                     label: 'heidimarasigan.nltc::lang.nltc.child_age'
                     oc.commentPosition: ''
                     span: auto
-                    type: number
+                    type: text
                 child_gender:
                     label: 'heidimarasigan.nltc::lang.nltc.child_gender'
                     oc.commentPosition: ''
@@ -401,6 +401,7 @@ fields:
             'New Life, Hibubulyao': 'New Life, Hibubulyao'
             'New Life, Hinunangan': 'New Life, Hinunangan'
             'New Life, Iligan': 'New Life, Iligan'
+            'New Life, Kuala Lumpur': 'New Life, Kuala Lumpur' 
             'New Life, La Trinidad': 'New Life, La Trinidad'
             'New Life, Maydolong': 'New Life, Maydolong'
             'New Life, North Metro': 'New Life, North Metro'
@@ -492,7 +493,7 @@ fields:
     christian_lifegroup_lead:
         label: 'I am a leader of a Life Group'
         span: auto
-        type: checkbox
+        type: checkbox        
     christian_lifegroup_lead_started:
         label: 'Date Started (Life Group Leader)'
         oc.commentPosition: ''
@@ -526,16 +527,16 @@ fields:
         label: 'heidimarasigan.nltc::lang.nltc.christian_fulltime'
         oc.commentPosition: ''
         options:
-            'Yes': 'Yes'
-            'No': 'No'
+            'yes': 'Yes'
+            'no': 'No'
         span: full
         type: radio
     christian_tither:
         label: 'heidimarasigan.nltc::lang.nltc.christian_tither'
         oc.commentPosition: ''
         options:
-            'Yes': 'Yes'
-            'No': 'No'
+            'yes': 'Yes'
+            'no': 'No'
         span: auto
         type: radio
     christian_trainings:
@@ -567,8 +568,8 @@ fields:
         label: 'Do you have any desire to volunteer in NLTC?'
         oc.commentPosition: ''
         options:
-            'Yes': 'Yes'
-            'No': 'No'
+            'yes': 'Yes'
+            'no': 'No'
         span: auto
         type: radio
     christian_ntc_volunteer_area:
@@ -594,32 +595,32 @@ fields:
         label: 'Do you have any physical handicaps or illnesses?'
         oc.commentPosition: ''
         options:
-            'Yes': 'Yes'
-            'No': 'No'
+            'yes': 'Yes'
+            'no': 'No'
         span: full
         type: radio
     physical_criminal:
         label: 'Have you ever been convicted of any criminal offense?'
         oc.commentPosition: ''
         options:
-            'Yes': 'Yes'
-            'No': 'No'
+            'yes': 'Yes'
+            'no': 'No'
         span: full
         type: radio
     physical_abuse:
         label: 'Have you undergone rehabilitation for substance abuse?'
         oc.commentPosition: ''
         options:
-            'Yes': 'Yes'
-            'No': 'No'
+            'yes': 'Yes'
+            'no': 'No'
         span: full
         type: radio
     physical_phsychological:
         label: 'Have you undergone or still in any psychological and/or psychiatric therapy/medication?'
         oc.commentPosition: ''
         options:
-            'Yes': 'Yes'
-            'No': 'No'
+            'yes': 'Yes'
+            'no': 'No'
         span: full
         type: radio
     reference:
@@ -679,7 +680,6 @@ fields:
             '11:00 am': '11:00 am'
             '2:00 pm': '2:00 pm'
             '3:00 pm': '3:00 pm'
-            '4:00 pm': '4:00 pm'
         span: auto
         required: 1
         type: dropdown
@@ -688,7 +688,7 @@ fields:
         span: full
         type: section
     acknowledgement:
-        label: 'I hereby state that the information provided in this online application is true and correct to the best of my knowledge. I acknowledge that if NLTC is notified that any information given in this registration is false, it will be grounds for either denial of admission or immediate dismissal from NLTC. I affirm my commitment and willingness to abide to all the policies and procedures of NLTC.'
+        label: I hereby state that the information provided in this online application is true and correct to the best of my knowledge. I acknowledge that if NLTC is notified that any information given in this registration is false, it will be grounds for either denial of admission or immediate dismissal from NLTC. I affirm my commitment and willingness to abide to all the policies and procedures of NLTC.
         span: full
         required: 1
         type: checkbox

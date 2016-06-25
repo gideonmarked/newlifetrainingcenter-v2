@@ -636,6 +636,7 @@ class ApplicationForm extends ComponentBase
                     $this->storeEducationalBackground( post(), $page );
                 break;
             case 5:
+
                 if( $this->formChristianLifeValidation( post() ) )
                     $this->storeChristianLife( post(), $page );
                 break;
@@ -781,6 +782,7 @@ class ApplicationForm extends ComponentBase
 
      private function storeChristianLife( $post )
     {
+         // var_dump($post);
         Session::put('christian_life', $post);
     }
 
@@ -894,9 +896,8 @@ class ApplicationForm extends ComponentBase
 
         $christian_baptized_date = explode("/", $christian_life['christian_baptized_date']);
         $christian_baptized_date = count($christian_baptized_date) == 3 ? $christian_baptized_date[2] . "-" . $christian_baptized_date[0] . "-" . $christian_baptized_date[1] : '';
+        $application_model->christian_baptized_date = $christian_baptized_date;
 
-
-        // $application_model->christian_baptized_date = $christian_life['christian_baptized_date'];
         $application_model->christian_baptized_place = $christian_life['christian_baptized_place'];
         $application_model->christian_church = $christian_life['christian_church'];
         $application_model->christian_church_name = $christian_life['christian_church_name'];
@@ -911,9 +912,13 @@ class ApplicationForm extends ComponentBase
         $application_model->christian_ministry_responsibilities = $christian_life['christian_ministry_responsibilities'];
         $application_model->christian_whyattend = $christian_life['christian_whyattend'];
         $application_model->christian_lifegroup_lead = isset($christian_life['christian_lifegroup_lead'])?$christian_life['christian_lifegroup_lead']:"";
-        $application_model->christian_lifegroup_lead_started = $christian_life['christian_lifegroup_lead_started'];
+        $christian_lifegroup_lead_started = explode("/", $christian_life['christian_lifegroup_lead_started']);
+        $christian_lifegroup_lead_started = count($christian_lifegroup_lead_started) == 3 ? $christian_lifegroup_lead_started[2] . "-" . $christian_lifegroup_lead_started[0] . "-" . $christian_lifegroup_lead_started[1] : '';
+        $application_model->christian_lifegroup_lead_started = $christian_lifegroup_lead_started;
         $application_model->christian_lifegroup_member = isset($christian_life['christian_lifegroup_member'])?$christian_life['christian_lifegroup_member']:"";
-        $application_model->christian_lifegroup_member_started = $christian_life['christian_lifegroup_member_started'];
+        $christian_lifegroup_member_started = explode("/", $christian_life['christian_lifegroup_member_started']);
+        $christian_lifegroup_member_started = count($christian_lifegroup_member_started) == 3 ? $christian_lifegroup_member_started[2] . "-" . $christian_lifegroup_member_started[0] . "-" . $christian_lifegroup_member_started[1] : '';
+        $application_model->christian_lifegroup_member_started = $christian_lifegroup_member_started;
         $application_model->christian_fulltime = isset($christian_life['christian_fulltime'])?$christian_life['christian_fulltime']:"";
         $application_model->christian_tither = isset($christian_life['christian_tither'])?$christian_life['christian_tither']:"";
 
@@ -968,6 +973,7 @@ class ApplicationForm extends ComponentBase
         $interview_date = count($interview_date) == 3 ? $interview_date[2] . "-" . $interview_date[0] . "-" . $interview_date[1] : '';
         $application_model->interview_date = $interview_details['interview_date'];
         $application_model->interview_time = $interview_details['interview_time']; 
+        $application_model->acknowledgement = $interview_details['acknowledgement'];         
 
 
 
