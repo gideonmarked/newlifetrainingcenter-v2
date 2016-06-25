@@ -24,7 +24,7 @@
 		 			<div class="checkbox custom-checkbox">
 		 				<label>
 		 					<input type="checkbox" id="id_confirm" name="acknowledgement" style="margin-top:9px;" value="1"
-		 					{% if interview_details_values.acknowledgement == "confirm" %}
+		 					{% if interview_details_values.acknowledgement == "1" %}
 		 						checked="checked"
 		 					{% endif %}
 		 					>
@@ -44,7 +44,7 @@
 					</div>
 				</div>
 			    <div class="col-md-6" id="btn_apply" 
-			    {% if interview_details_values.acknowledgement != "confirm" %}
+			    {% if interview_details_values.acknowledgement != "1" %}
 					style="display:none;"
 				{% endif %}
 			    >
