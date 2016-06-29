@@ -811,8 +811,8 @@ class ApplicationForm extends ComponentBase
         if($application->validate())
         {
             Session::put('interview_details', $post);
-            
-            if( $post['setinterview'] == 'true' )
+
+            if( isset($post['setinterview']) && $post['setinterview'] == 'true' )
                 $this->saveData();
         }
 
