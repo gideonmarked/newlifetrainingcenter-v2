@@ -1,0 +1,64 @@
+[17-Jun-2016 19:18:06 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to October\Rain\Foundation\Exception\Handler::report() must be an instance of Exception, instance of Error given, called in /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php on line 73 and defined in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php:42
+Stack trace:
+#0 /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): October\Rain\Foundation\Exception\Handler->report(Object(Error))
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Error))
+#2 {main}
+  thrown in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php on line 42
+[17-Jun-2016 19:24:56 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home/newlifet/public_html/v2/storage/cms/cache/36/46/footer.htm.php): failed to open stream: No such file or directory in /home/newlifet/public_html/v2/modules/cms/classes/CodeParser.php:155
+Stack trace:
+#0 /home/newlifet/public_html/v2/modules/cms/classes/CodeParser.php(155): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home/newlifet/...', 155, Array)
+#1 /home/newlifet/public_html/v2/modules/cms/classes/CodeParser.php(155): require_once()
+#2 /home/newlifet/public_html/v2/modules/cms/classes/Controller.php(884): Cms\Classes\CodeParser->source(Object(Cms\Classes\Page), Object(Cms\Classes\Layout), Object(Cms\Classes\Controller))
+#3 /home/newlifet/public_html/v2/modules/cms/twig/Extension.php(117): Cms\Classes\Controller->renderPartial('footer', Array)
+#4 /home/newlifet/public_html/v2/storage/cms/twig/04/044eaa550dec775813209d854937f94bd58aacd88932c98621b6b37d880c6df9.php(53): Cms\Twig\Extension->partialFunction('footer', Array)
+# in /home/newlifet/public_html/v2/modules/cms/classes/CodeParser.php on line 155
+[17-Jun-2016 19:24:56 UTC] PHP Fatal error:  Cms\Classes\CodeParser::source(): Failed opening required '/home/newlifet/public_html/v2/storage/cms/cache/36/46/footer.htm.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/newlifet/public_html/v2/modules/cms/classes/CodeParser.php on line 155
+[22-Jun-2016 02:38:58 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to October\Rain\Foundation\Exception\Handler::report() must be an instance of Exception, instance of Error given, called in /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php on line 73 and defined in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php:42
+Stack trace:
+#0 /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): October\Rain\Foundation\Exception\Handler->report(Object(Error))
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Error))
+#2 {main}
+  thrown in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php on line 42
+[22-Jun-2016 06:17:25 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to October\Rain\Foundation\Exception\Handler::report() must be an instance of Exception, instance of Error given, called in /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php on line 73 and defined in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php:42
+Stack trace:
+#0 /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): October\Rain\Foundation\Exception\Handler->report(Object(Error))
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Error))
+#2 {main}
+  thrown in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php on line 42
+[22-Jun-2016 06:17:25 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to October\Rain\Foundation\Exception\Handler::report() must be an instance of Exception, instance of Error given, called in /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php on line 73 and defined in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php:42
+Stack trace:
+#0 /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): October\Rain\Foundation\Exception\Handler->report(Object(Error))
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Error))
+#2 {main}
+  thrown in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php on line 42
+[22-Jun-2016 06:19:15 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to October\Rain\Foundation\Exception\Handler::report() must be an instance of Exception, instance of Error given, called in /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php on line 73 and defined in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php:42
+Stack trace:
+#0 /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): October\Rain\Foundation\Exception\Handler->report(Object(Error))
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Error))
+#2 {main}
+  thrown in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php on line 42
+[25-Jun-2016 11:25:54 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[25-Jun-2016 11:26:08 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[25-Jun-2016 11:26:11 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[25-Jun-2016 11:26:15 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[25-Jun-2016 11:26:16 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[25-Jun-2016 11:31:26 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[25-Jun-2016 11:31:29 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[25-Jun-2016 11:31:38 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[25-Jun-2016 11:31:39 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[25-Jun-2016 11:31:54 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[25-Jun-2016 11:31:55 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[25-Jun-2016 11:31:55 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[25-Jun-2016 11:32:07 Asia/Manila] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/newlifet/public_html/v2/config/app.php on line 32
+[28-Jun-2016 11:41:56 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to October\Rain\Foundation\Exception\Handler::report() must be an instance of Exception, instance of ParseError given, called in /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php on line 73 and defined in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php:42
+Stack trace:
+#0 /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): October\Rain\Foundation\Exception\Handler->report(Object(ParseError))
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ParseError))
+#2 {main}
+  thrown in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php on line 42
+[28-Jun-2016 11:42:52 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to October\Rain\Foundation\Exception\Handler::report() must be an instance of Exception, instance of ParseError given, called in /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php on line 73 and defined in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php:42
+Stack trace:
+#0 /home/newlifet/public_html/v2/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): October\Rain\Foundation\Exception\Handler->report(Object(ParseError))
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ParseError))
+#2 {main}
+  thrown in /home/newlifet/public_html/v2/vendor/october/rain/src/Foundation/Exception/Handler.php on line 42

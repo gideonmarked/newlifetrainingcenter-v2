@@ -1,6 +1,6 @@
 title: Subjects
-modelClass: HeidiMarasigan\Nltc\Models\Subjects
-list: $/heidimarasigan/nltc/models/subjects/columns.yaml
+modelClass: HeidiMarasigan\Nltc\Models\Subject
+list: $/heidimarasigan/nltc/models/subject/columns.yaml
 recordUrl: 'heidimarasigan/nltc/subjects/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true

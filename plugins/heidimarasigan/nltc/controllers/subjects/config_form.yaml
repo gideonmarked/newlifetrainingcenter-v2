@@ -1,6 +1,6 @@
 name: Subjects
-modelClass: HeidiMarasigan\Nltc\Models\Subjects
-form: $/heidimarasigan/nltc/models/subjects/fields.yaml
+modelClass: HeidiMarasigan\Nltc\Models\Subject
+form: $/heidimarasigan/nltc/models/subject/fields.yaml
 defaultRedirect: heidimarasigan/nltc/subjects
 create:
     redirect: 'heidimarasigan/nltc/subjects/update/:id'

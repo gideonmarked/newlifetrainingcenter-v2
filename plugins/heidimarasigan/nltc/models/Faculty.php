@@ -3,26 +3,39 @@
 use Model;
 
 /**
- * Model
+ * Faculty Model
  */
 class Faculty extends Model
 {
-    use \October\Rain\Database\Traits\Validation;
-
-    /*
-     * Validation
-     */
-    public $rules = [
-    ];
-
-    /*
-     * Disable timestamps by default.
-     * Remove this line if timestamps are defined in the database table.
-     */
-    public $timestamps = true;
 
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'heidimarasigan_nltc_faculty';
+    public $table = 'heidimarasigan_nltc_faculties';
+
+    /**
+     * @var array Guarded fields
+     */
+    protected $guarded = ['*'];
+
+    /**
+     * @var array Fillable fields
+     */
+    protected $fillable = [];
+
+    /**
+     * @var array Relations
+     */
+    public $hasOne = [
+        'profile' => ['HeidiMarasigan\Nltc\Models\Profile'],
+    ];
+    public $hasMany = [];
+    public $belongsTo = [];
+    public $belongsToMany = [];
+    public $morphTo = [];
+    public $morphOne = [];
+    public $morphMany = [];
+    public $attachOne = [];
+    public $attachMany = [];
+
 }

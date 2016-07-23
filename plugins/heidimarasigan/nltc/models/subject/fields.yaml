@@ -1,0 +1,21 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    title:
+        label: Name
+        type: text
+
+    description:
+        label: Description
+        type: textarea
+
+    level:
+        label: Level
+        type: relation
+        

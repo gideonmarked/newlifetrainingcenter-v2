@@ -12,8 +12,7 @@ class Levels extends Controller
     public $reorderConfig = 'config_reorder.yaml';
 
     public $requiredPermissions = [
-        'heidimarasigan.nltc.manage_applications', 
-        'heidimarasigan.nltc.subjects.manage_subjects' 
+        'heidimarasigan.nltc.manage_levels' 
     ];
 
     public function __construct()

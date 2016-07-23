@@ -1,21 +1,10 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
 fields:
-    first_name:
-        label: 'heidimarasigan.nltc::lang.faculty.first_name'
-        oc.commentPosition: ''
-        span: auto
-        type: text
-    middle_name:
-        label: 'heidimarasigan.nltc::lang.faculty.middle_name'
-        oc.commentPosition: ''
-        span: auto
-        type: text
-    last_name:
-        label: 'heidimarasigan.nltc::lang.faculty.last_name'
-        oc.commentPosition: ''
-        span: auto
-        type: text
-    email:
-        label: 'heidimarasigan.nltc::lang.faculty.email'
-        span: auto
-        oc.commentPosition: ''
-        type: text
+    id:
+        label: ID
+        disabled: true
+
+

@@ -1,6 +1,6 @@
 name: Levels
-modelClass: HeidiMarasigan\Nltc\Models\Levels
-form: $/heidimarasigan/nltc/models/levels/fields.yaml
+form: $/heidimarasigan/nltc/models/level/fields.yaml
+modelClass: HeidiMarasigan\Nltc\Models\Level
 defaultRedirect: heidimarasigan/nltc/levels
 create:
     redirect: 'heidimarasigan/nltc/levels/update/:id'
@@ -8,4 +8,3 @@ create:
 update:
     redirect: heidimarasigan/nltc/levels
     redirectClose: heidimarasigan/nltc/levels
-preview: {  }

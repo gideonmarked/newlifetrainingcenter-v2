@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Faculty
+
+# Model Form Field configuration
+form: $/heidimarasigan/nltc/models/faculty/fields.yaml
+
+# Model Class name
+modelClass: HeidiMarasigan\Nltc\Models\Faculty
+
+# Default redirect location
+defaultRedirect: heidimarasigan/nltc/faculties
+
+# Create page
+create:
+    title: Create Faculty
+    redirect: heidimarasigan/nltc/faculties/update/:id
+    redirectClose: heidimarasigan/nltc/faculties
+
+# Update page
+update:
+    title: Edit Faculty
+    redirect: heidimarasigan/nltc/faculties
+    redirectClose: heidimarasigan/nltc/faculties
+
+# Preview page
+preview:
+    title: Preview Faculty

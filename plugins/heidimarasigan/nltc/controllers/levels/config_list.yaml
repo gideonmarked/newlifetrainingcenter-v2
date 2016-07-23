@@ -1,6 +1,6 @@
 title: Levels
-modelClass: HeidiMarasigan\Nltc\Models\Levels
-list: $/heidimarasigan/nltc/models/levels/columns.yaml
+modelClass: HeidiMarasigan\Nltc\Models\Level
+list: $/heidimarasigan/nltc/models/level/columns.yaml
 recordUrl: 'heidimarasigan/nltc/levels/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Profile
+
+# Model Form Field configuration
+form: $/heidimarasigan/nltc/models/profile/fields.yaml
+
+# Model Class name
+modelClass: HeidiMarasigan\Nltc\Models\Profile
+
+# Default redirect location
+defaultRedirect: heidimarasigan/nltc/profiles
+
+# Create page
+create:
+    title: Create Profile
+    redirect: heidimarasigan/nltc/profiles/update/:id
+    redirectClose: heidimarasigan/nltc/profiles
+
+# Update page
+update:
+    title: Edit Profile
+    redirect: heidimarasigan/nltc/profiles
+    redirectClose: heidimarasigan/nltc/profiles
+
+# Preview page
+preview:
+    title: Preview Profile

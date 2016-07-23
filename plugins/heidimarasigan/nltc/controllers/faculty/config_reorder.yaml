@@ -1,5 +1,0 @@
-title: Faculty
-modelClass: HeidiMarasigan\Nltc\Models\Faculty
-nameFrom: last_name
-toolbar:
-    buttons: reorder_toolbar

@@ -12,8 +12,7 @@ class Subjects extends Controller
     public $reorderConfig = 'config_reorder.yaml';
 
     public $requiredPermissions = [
-        'heidimarasigan.nltc.manage_applications', 
-        'heidimarasigan.nltc.subjects.manage_subjects' 
+        'heidimarasigan.nltc.manage_subjects' 
     ];
 
     public function __construct()

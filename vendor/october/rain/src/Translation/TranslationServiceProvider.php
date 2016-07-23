@@ -52,7 +52,7 @@ class TranslationServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('translator', 'translation.loader');
+        return ['translator', 'translation.loader'];
     }
 
 }

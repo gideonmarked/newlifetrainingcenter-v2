@@ -14,6 +14,12 @@ permissions:
     heidimarasigan.nltc.manage_nltcportal:
         tab: 'NLTC Portal'
         label: 'Manage NLTC Portal'
+    heidimarasigan.nltc.manage_subjects:
+        tab: 'Manage Subjects'
+        label: 'Manage NLTC Subjects'
+    heidimarasigan.nltc.manage_levels:
+        tab: 'Manage Levels'
+        label: 'Manage NLTC Levels'
 navigation:
     NLTC:
         label: NLTC
@@ -31,16 +37,19 @@ navigation:
                 label: Subjects
                 url: heidimarasigan/nltc/subjects
                 icon: icon-list-ul
-                permissions: {  }
+                permissions:
+                    - heidimarasigan.nltc.manage_subjects
             faculty:
                 label: Faculty
-                url: heidimarasigan/nltc/faculty
+                url: heidimarasigan/nltc/faculties
                 icon: icon-bookmark
                 permissions: {  }
             levels:
                 label: Levels
                 url: heidimarasigan/nltc/levels
                 icon: icon-sitemap
+                permissions:
+                    - heidimarasigan.nltc.manage_levels
             enrolled_students:
                 label: Students
                 url: heidimarasigan/nltc/students

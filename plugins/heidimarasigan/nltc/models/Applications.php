@@ -1,4 +1,4 @@
-<?php namespace HeidiMarasigan\Nltc\Models;
+    <?php namespace HeidiMarasigan\Nltc\Models;
 
 use Model;
 use Mail;
@@ -19,27 +19,6 @@ class Applications extends Model
     public $current_page;
 
     public $rules = [
-
-    	// 'application_type' => 'required',
-    	// 'school_year' => 'required',
-    	// 'level' => 'required',
-    	// 'first_name' => 'required',
-    	// 'last_name' => 'required',
-    	// 'mobile' => 'required|numeric',
-    	// 'email' => 'required|email|unique:users',
-    	// 'age' => 'required|numeric',
-    	// 'date_of_birth' => 'required|before:date',
-    	// 'interview_date' => 'required',
-    	// 'interview_time' => 'required'
-
-
-				//email'   								=> 'required|between:3,255|email',
-        //'email'   								=> 'required|between:3,255|email|unique:users',
-        //'interview_date' 					=> 'required|between:2,64',
-        //'interview_time' 					=> 'required|between:2,64',
-        //'username' 							=> 'required|between:2,64|unique:users',
-        //'password' 							=> 'required:create|between:4,255|confirmed',
-        //'password_confirmation' => 'required_with:password|between:4,255'
     ];
 
     private $rules_1 = [
@@ -51,9 +30,9 @@ class Applications extends Model
     private $rules_2 = [
     	'first_name' => 'required',
     	'last_name' => 'required',
-    	'mobile' => 'required|numeric|min:11',
+    	'mobile' => 'required|integer|min:11',
     	'email' => 'required|email|unique:heidimarasigan_nltc_applications,email',
-    	// 'age' => 'required|numeric|min:14|max:90',
+    	'age' => 'required|integer|min:10',
     	'date_of_birth' => 'required',
     ];
 
@@ -111,11 +90,11 @@ class Applications extends Model
 
     		case 2:
     			$this->rules = $this->rules_2;            
-          if($this->checkFMLNames( $this->first_name, $this->last_name, $this->middle_name ))
-          {
-              throw new ApplicationException('Your name is already registered in the system.');
-              return false;
-          }
+                if($this->checkFMLNames( $this->first_name, $this->last_name, $this->middle_name ))
+                {
+                  throw new ApplicationException('Your name is already registered in the system.');
+                  return false;
+                }
     			break;
 
     		case 3:

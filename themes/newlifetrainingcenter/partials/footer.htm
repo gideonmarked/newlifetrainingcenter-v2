@@ -10,8 +10,14 @@
     </div>
     <!-- /.container -->
 
+    <!-- jQuery -->
+    <script src="{{ ['assets/javascript/jquery.js']|theme }}"></script>
     
-		{% framework extras%}
+    <!-- jQuery UI -->
+    <script src="{{ ['assets/javascript/jquery-ui.js']|theme }}"></script>
+
+    
+		{% framework extras %}
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ ['assets/javascript/bootstrap.min.js']|theme }}"></script>
@@ -22,29 +28,6 @@
     <script src="{{ ['assets/javascript/jqBootstrapValidation.js']|theme }}"></script>
     <script src="{{ ['assets/javascript/contact_me.js']|theme }}"></script>
     <!-- jQuery UI -->
-    <script src="{{ ['assets/javascript/sweetalert.min.js']|theme }}"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-                
-                $('.datepicker').datepicker({
-                    format: "dd/mm/yyyy"
-                });  
-            
-            }); 
-
-          // $(document).on('ajaxErrorMessage', function(event, message){
-
-          //     // This can be any custom JavaScript you want
-          //     // var resp = jQuery.parseJSON(message);
-          //     alert(message);
-          //   // swal("Something wrong happened.", resp['X_OCTOBER_ERROR_MESSAGE'], "error")
-
-          //     // This will stop the default alert() message
-          //     event.preventDefault();
-
-          // });
-  </script>
 
 </body>
 

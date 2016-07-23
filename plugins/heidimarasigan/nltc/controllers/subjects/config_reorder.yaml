@@ -1,5 +1,4 @@
 title: Subjects
-modelClass: HeidiMarasigan\Nltc\Models\Subjects
-nameFrom: subject_name
+modelClass: HeidiMarasigan\Nltc\Models\Subject
 toolbar:
     buttons: reorder_toolbar

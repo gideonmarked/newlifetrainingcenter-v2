@@ -7,11 +7,7 @@ use Illuminate\Database\Eloquent\Relations\MorphMany as MorphManyBase;
 class MorphMany extends MorphManyBase
 {
     use MorphOneOrMany;
-
-    /**
-     * @var string The "name" of the relationship.
-     */
-    protected $relationName;
+    use DefinedConstraints;
 
     /**
      * Create a new has many relationship instance.
@@ -22,5 +18,7 @@ class MorphMany extends MorphManyBase
         $this->relationName = $relationName;
 
         parent::__construct($query, $parent, $type, $id, $localKey);
+
+        $this->addDefinedConstraints();
     }
 }

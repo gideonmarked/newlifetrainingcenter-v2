@@ -762,7 +762,7 @@ class ApplicationForm extends ComponentBase
         $application->last_name = $post['last_name'];
         $application->mobile = $post['mobile'];
         $application->email = $post['email'];
-        // $application->age = $post['age'];
+        $application->age = $post['age'];
         $application->date_of_birth = $post['date_of_birth'];
         if($application->validate())
             Session::put('personal_information', $post);

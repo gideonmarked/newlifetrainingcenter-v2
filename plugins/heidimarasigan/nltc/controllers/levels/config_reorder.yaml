@@ -1,5 +1,4 @@
 title: Levels
-modelClass: HeidiMarasigan\Nltc\Models\Levels
-nameFrom: levels
+modelClass: HeidiMarasigan\Nltc\Models\Level
 toolbar:
     buttons: reorder_toolbar
