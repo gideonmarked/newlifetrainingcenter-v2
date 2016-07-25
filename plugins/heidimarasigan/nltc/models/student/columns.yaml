@@ -6,3 +6,25 @@ columns:
     id:
         label: ID
         searchable: true
+
+    user_id:
+        label: User ID
+        searchable: true
+
+    student_code:
+        label: Student ID
+        searchable: true
+
+    student_type:
+        label: Student Type
+        searchable: true
+
+    school_year:
+        label: School Year
+        searchable: true
+
+    level_id:
+        label: Level
+        type: relation
+        valueFrom: level[title]
+        searchable: true

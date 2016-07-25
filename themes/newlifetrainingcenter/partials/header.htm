@@ -1,3 +1,4 @@
+==
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,8 +46,26 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <!-- jQuery -->
+    <script src="{{ ['assets/javascript/jquery.js']|theme }}"></script>
+    
+    <!-- jQuery UI -->
+    <script src="{{ ['assets/javascript/jquery-ui.js']|theme }}"></script>
 
- {% scripts %}
+    
+		{% framework extras %}
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ ['assets/javascript/bootstrap.min.js']|theme }}"></script>
+    
+
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="{{ ['assets/javascript/jqBootstrapValidation.js']|theme }}"></script>
+    <script src="{{ ['assets/javascript/contact_me.js']|theme }}"></script>
+    <!-- jQuery UI -->
+
 
 </head>
 

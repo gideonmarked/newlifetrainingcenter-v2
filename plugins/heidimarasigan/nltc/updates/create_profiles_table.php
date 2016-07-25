@@ -11,13 +11,13 @@ class CreateProfilesTable extends Migration
         Schema::create('heidimarasigan_nltc_profiles', function(Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->integer('faculty_id');
+            $table->string('user_id'20);
             $table->string('title',20);
             $table->string('firstname',100);
             $table->string('middlename',100);
             $table->string('lastname',100);
             $table->string('extension',20);
-            $table->string('address',20);
+            $table->string('address',100);
             $table->timestamps();
         });
     }

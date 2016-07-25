@@ -1,7 +1,7 @@
 title: Students
-modelClass: HeidiMarasigan\Nltc\Models\Students
-list: $/heidimarasigan/nltc/models/students/columns.yaml
-recordUrl: 'heidimarasigan/nltc/students/update/:id'
+modelClass: HeidiMarasigan\Nltc\Models\Student
+list: $/heidimarasigan/nltc/models/student/columns.yaml
+recordUrl: 'heidimarasigan/nltc/student/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
 showCheckboxes: true

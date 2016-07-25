@@ -9,6 +9,8 @@ use Backend\Models\User as BackendUserModel;
 use Backend\Controllers\Users as BackendUsersController;
 use HeidiMarasigan\Nltc\Controllers\Faculties;
 use HeidiMarasigan\Nltc\Models\Faculty;
+use HeidiMarasigan\Nltc\Controllers\Students;
+use HeidiMarasigan\Nltc\Models\Student;
 
 /*use RainLab\User\Models\User as UserModel;
 use RainLab\User\Controllers\Users as UsersController;*/

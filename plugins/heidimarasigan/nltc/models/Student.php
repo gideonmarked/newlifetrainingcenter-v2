@@ -28,7 +28,12 @@ class Student extends Model
      */
     public $hasOne = [];
     public $hasMany = [];
-    public $belongsTo = [];
+    public $belongsTo = [
+        'level' => [
+                        'HeidiMarasigan\Nltc\Models\Level',
+                        'table' =>  'heidimarasigan_nltc_levels'
+                    ],
+    ];
     public $belongsToMany = [];
     public $morphTo = [];
     public $morphOne = [];

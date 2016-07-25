@@ -1,6 +1,6 @@
 name: Students
-modelClass: HeidiMarasigan\Nltc\Models\Students
-form: $/heidimarasigan/nltc/models/students/fields.yaml
+modelClass: HeidiMarasigan\Nltc\Models\Student
+form: $/heidimarasigan/nltc/models/student/fields.yaml
 defaultRedirect: heidimarasigan/nltc/students
 create:
     redirect: 'heidimarasigan/nltc/students/update/:id'
@@ -8,3 +8,4 @@ create:
 update:
     redirect: heidimarasigan/nltc/students
     redirectClose: heidimarasigan/nltc/students
+preview: {  }

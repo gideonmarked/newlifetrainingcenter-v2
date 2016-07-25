@@ -1,4 +1,4 @@
-    <?php namespace HeidiMarasigan\Nltc\Models;
+<?php namespace HeidiMarasigan\Nltc\Models;
 
 use Model;
 use Mail;
@@ -30,7 +30,7 @@ class Applications extends Model
     private $rules_2 = [
     	'first_name' => 'required',
     	'last_name' => 'required',
-    	'mobile' => 'required|integer|min:11',
+    	'mobile' => 'required|min:11',
     	'email' => 'required|email|unique:heidimarasigan_nltc_applications,email',
     	'age' => 'required|integer|min:10',
     	'date_of_birth' => 'required',

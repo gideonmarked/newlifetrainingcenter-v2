@@ -157,11 +157,11 @@ fields:
         label: 'heidimarasigan.nltc::lang.nltc.civil_status'
         oc.commentPosition: ''
         options:
-            single: Single
-            married: Married
-            separated: Separated
-            widowed: Widowed
-            remarried: Remarried
+            Single: Single
+            Married: Married
+            Separated: Separated
+            Widowed: WidowedF
+            Remarried: Remarried
         span: auto
         type: dropdown
         tab: 'heidimarasigan.nltc::lang.nltc.application_christian_life_tab'

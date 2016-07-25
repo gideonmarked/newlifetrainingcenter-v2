@@ -11,7 +11,11 @@ class CreateStudentsTable extends Migration
         Schema::create('heidimarasigan_nltc_students', function(Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
+            $table->increments('user_id');
             $table->string('student_code',20);
+            $table->string('type',20);
+            $table->string('school_year',20);
+            $table->string('level_id',20);
             $table->timestamps();
         });
     }
