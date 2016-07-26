@@ -3,23 +3,23 @@ fields:
         label: ID
         disabled: true
         type: text
-    user_id:
-        label: 'User ID'
+    user:
+        label: User ID
         disabled: true
         type: text
     student_code:
-        label: 'Student ID'
+        label: Student ID
         disabled: true
         type: text
     type:
-        label: 'Student Type'
+        label: Student Type
         options:
             Regular: Regular
             Irregular: 'Irregular (Students with incomplete subjects in their year level)'
         span: full
         type: radio
     school_year:
-        label: 'School Year'
+        label: School Year
         disabled: true
         span: full
         default: SY2016-2017
@@ -27,4 +27,7 @@ fields:
     level:
         label: Level
         type: relation
-        nameFrom: level[title]
+        emptyOption: -- Select Your Level --
+        nameFrom: title
+    
+        

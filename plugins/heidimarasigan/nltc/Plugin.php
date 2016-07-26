@@ -24,6 +24,7 @@ class Plugin extends PluginBase
     {
 				return [
             'HeidiMarasigan\Nltc\Components\ApplicationForm'							=> 'applicationform',
+            'HeidiMarasigan\Nltc\Components\AccountCreation'							=> 'accountcreation',
         ];
     }
 

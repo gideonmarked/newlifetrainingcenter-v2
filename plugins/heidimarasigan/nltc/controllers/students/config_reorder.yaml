@@ -1,4 +1,4 @@
-title: Subjects
+title: Students
 modelClass: HeidiMarasigan\Nltc\Models\Student
 toolbar:
     buttons: reorder_toolbar

@@ -23,8 +23,7 @@ columns:
         label: School Year
         searchable: true
 
-    level_id:
+    level:
         label: Level
         type: relation
-        valueFrom: level[title]
         searchable: true

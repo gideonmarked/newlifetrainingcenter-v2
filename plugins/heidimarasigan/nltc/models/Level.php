@@ -30,7 +30,9 @@ class Level extends Model
     public $hasMany = [
 
     ];
-    public $belongsTo = [];
+    public $belongsTo = [
+        
+    ];
     public $belongsToMany = [
 
     ];

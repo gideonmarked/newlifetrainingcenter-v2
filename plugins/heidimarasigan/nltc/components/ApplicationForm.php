@@ -976,12 +976,22 @@ class ApplicationForm extends ComponentBase
         $application_model->interview_date = $interview_details['interview_date'];
         $application_model->interview_time = $interview_details['interview_time']; 
         $application_model->acknowledgement = $interview_details['acknowledgement'];
-
+        $application_model->registration_code = $this->generateRegistrationCode(20);
 
 
         $application_model->save();
         Session::flush();
         // return Redirect::to('/thank-you');
+    }
+
+    public function generateRegistrationCode( $length )
+    {
+        $string = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        $registration_code = '';
+        for ($i=0; $i < $length; $i++) { 
+            $registration_code .= $string[ rand( 0 , strlen($string) - 1 ) ];
+        }
+        return $registration_code;
     }
 
     public function onRedirect()

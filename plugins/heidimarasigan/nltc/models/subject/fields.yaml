@@ -18,4 +18,6 @@ fields:
     level:
         label: Level
         type: relation
+        emptyOption: -- Select Your Level --
+        nameFrom: title
         

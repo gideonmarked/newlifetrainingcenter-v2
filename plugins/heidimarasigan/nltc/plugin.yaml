@@ -59,14 +59,3 @@ navigation:
                 icon: icon-child
                 permissions:
                     - heidimarasigan.nltc.manage_students
-    'Application Form':
-        label: 'Application Form'
-        url: heidimarasigan/nltc/applicants/create
-        icon: icon-pencil-square-o
-        permissions:
-            - heidimarasigan.nltc.new_applicant
-        sideMenu:
-            'Fill Up Form':
-                label: 'Fill Up Form'
-                url: heidimarasigan/nltc/applicants/create
-                icon: icon-file
