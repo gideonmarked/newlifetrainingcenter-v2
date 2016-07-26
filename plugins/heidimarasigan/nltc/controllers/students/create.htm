@@ -11,7 +11,6 @@
 
         <div class="layout-row">
             <?= $this->formRender() ?>
-            <?= $this->relationRender('applicant') ?>
         </div>
 
         <div class="form-buttons">
@@ -20,21 +19,21 @@
                     type="submit"
                     data-request="onSave"
                     data-hotkey="ctrl+s, cmd+s"
-                    data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>"
+                    data-load-indicator="Creating Student..."
                     class="btn btn-primary">
-                    <?= e(trans('backend::lang.form.create')) ?>
+                    Create
                 </button>
-                <button 
+                <button
                     type="button"
                     data-request="onSave"
                     data-request-data="close:1"
                     data-hotkey="ctrl+enter, cmd+enter"
-                    data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>"
+                    data-load-indicator="Creating Student..."
                     class="btn btn-default">
-                    <?= e(trans('backend::lang.form.create_and_close')) ?>
+                    Create and Close
                 </button>
                 <span class="btn-text">
-                    <?= e(trans('backend::lang.form.or')) ?> <a href="<?= Backend::url('heidimarasigan/nltc/students') ?>"><?= e(trans('backend::lang.form.cancel')) ?></a>
+                    or <a href="<?= Backend::url('heidimarasigan/nltc/students') ?>">Cancel</a>
                 </span>
             </div>
         </div>
@@ -42,6 +41,8 @@
     <?= Form::close() ?>
 
 <?php else: ?>
-    <p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
-    <p><a href="<?= Backend::url('heidimarasigan/nltc/students') ?>" class="btn btn-default"><?= e(trans('backend::lang.form.return_to_list')) ?></a></p>
+
+    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
+    <p><a href="<?= Backend::url('heidimarasigan/nltc/students') ?>" class="btn btn-default">Return to students list</a></p>
+
 <?php endif ?>

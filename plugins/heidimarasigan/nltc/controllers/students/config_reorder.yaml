@@ -1,5 +1,4 @@
-title: Students
-modelClass: HeidiMarasigan\Nltc\Models\Students
-nameFrom: first_name
+title: Subjects
+modelClass: HeidiMarasigan\Nltc\Models\Student
 toolbar:
     buttons: reorder_toolbar

@@ -11,9 +11,8 @@ fields:
         label: 'Student ID'
         disabled: true
         type: text
-    student_type:
+    type:
         label: 'Student Type'
-        oc.commentPosition: ''
         options:
             Regular: Regular
             Irregular: 'Irregular (Students with incomplete subjects in their year level)'
@@ -21,7 +20,11 @@ fields:
         type: radio
     school_year:
         label: 'School Year'
-        type: dropdown
+        disabled: true
+        span: full
+        default: SY2016-2017
+        type: text
     level:
         label: Level
         type: relation
+        nameFrom: level[title]

@@ -17,6 +17,9 @@ permissions:
     heidimarasigan.nltc.manage_subjects:
         tab: 'Manage Subjects'
         label: 'Manage NLTC Subjects'
+    heidimarasigan.nltc.manage_students:
+        tab: 'Manage Students'
+        label: 'Manage NLTC Students'
     heidimarasigan.nltc.manage_levels:
         tab: 'Manage Levels'
         label: 'Manage NLTC Levels'
@@ -50,10 +53,12 @@ navigation:
                 icon: icon-sitemap
                 permissions:
                     - heidimarasigan.nltc.manage_levels
-            enrolled_students:
+            students:
                 label: Students
                 url: heidimarasigan/nltc/students
                 icon: icon-child
+                permissions:
+                    - heidimarasigan.nltc.manage_students
     'Application Form':
         label: 'Application Form'
         url: heidimarasigan/nltc/applicants/create

@@ -1,6 +1,6 @@
 1.0.1: 'First version of bibleschool'
 1.0.2:
-    - 'Create Subjects Table'
+    - 'Create Essential Tables'
     - 'create_subjects_table.php'
     - 'create_levels_table.php'
     - 'create_faculties_table.php'

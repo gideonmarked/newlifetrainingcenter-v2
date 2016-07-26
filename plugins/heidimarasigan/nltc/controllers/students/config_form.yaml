@@ -1,11 +1,31 @@
-name: Students
-modelClass: HeidiMarasigan\Nltc\Models\Student
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Student
+
+# Model Form Field configuration
 form: $/heidimarasigan/nltc/models/student/fields.yaml
+
+# Model Class name
+modelClass: HeidiMarasigan\Nltc\Models\Student
+
+# Default redirect location
 defaultRedirect: heidimarasigan/nltc/students
+
+# Create page
 create:
-    redirect: 'heidimarasigan/nltc/students/update/:id'
+    title: Create Student
+    redirect: heidimarasigan/nltc/students/update/:id
     redirectClose: heidimarasigan/nltc/students
+
+# Update page
 update:
+    title: Edit Student
     redirect: heidimarasigan/nltc/students
     redirectClose: heidimarasigan/nltc/students
-preview: {  }
+
+# Preview page
+preview:
+    title: Preview Student

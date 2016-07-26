@@ -12,11 +12,8 @@
     </div>
 
 <?php else: ?>
-    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
-<?php endif ?>
 
-<p>
-    <a href="<?= Backend::url('heidimarasigan/nltc/students') ?>" class="btn btn-default oc-icon-chevron-left">
-        <?= e(trans('backend::lang.form.return_to_list')) ?>
-    </a>
-</p>
+    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
+    <p><a href="<?= Backend::url('heidimarasigan/nltc/students') ?>" class="btn btn-default">Return to students list</a></p>
+
+<?php endif ?>

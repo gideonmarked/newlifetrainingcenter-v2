@@ -20,35 +20,37 @@
                     data-request="onSave"
                     data-request-data="redirect:0"
                     data-hotkey="ctrl+s, cmd+s"
-                    data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>"
+                    data-load-indicator="Saving Student..."
                     class="btn btn-primary">
-                    <?= e(trans('backend::lang.form.save')) ?>
+                    <u>S</u>ave
                 </button>
                 <button
                     type="button"
                     data-request="onSave"
                     data-request-data="close:1"
                     data-hotkey="ctrl+enter, cmd+enter"
-                    data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>"
+                    data-load-indicator="Saving Student..."
                     class="btn btn-default">
-                    <?= e(trans('backend::lang.form.save_and_close')) ?>
+                    Save and Close
                 </button>
                 <button
                     type="button"
                     class="oc-icon-trash-o btn-icon danger pull-right"
                     data-request="onDelete"
-                    data-load-indicator="<?= e(trans('backend::lang.form.deleting')) ?>"
-                    data-request-confirm="<?= e(trans('backend::lang.form.confirm_delete')) ?>">
+                    data-load-indicator="Deleting Student..."
+                    data-request-confirm="Delete this student?">
                 </button>
-
                 <span class="btn-text">
-                    <?= e(trans('backend::lang.form.or')) ?> <a href="<?= Backend::url('heidimarasigan/nltc/students') ?>"><?= e(trans('backend::lang.form.cancel')) ?></a>
+                    or <a href="<?= Backend::url('heidimarasigan/nltc/students') ?>">Cancel</a>
                 </span>
             </div>
         </div>
+
     <?= Form::close() ?>
 
 <?php else: ?>
-    <p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
-    <p><a href="<?= Backend::url('heidimarasigan/nltc/students') ?>" class="btn btn-default"><?= e(trans('backend::lang.form.return_to_list')) ?></a></p>
+
+    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
+    <p><a href="<?= Backend::url('heidimarasigan/nltc/students') ?>" class="btn btn-default">Return to students list</a></p>
+
 <?php endif ?>
