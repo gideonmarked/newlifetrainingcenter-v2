@@ -30,6 +30,7 @@ class Student extends Model
     public $hasMany = [];
     public $belongsTo = [
         'level' => ['HeidiMarasigan\Nltc\Models\Level'],
+        'user' => ['Backend\Models\User']
     ];
     public $belongsToMany = [];
     public $morphTo = [];
@@ -37,5 +38,39 @@ class Student extends Model
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = [];
+
+    public function beforeCreate()
+    {
+        $this->student_code = $this->generateStudentCode();
+    }
+
+    private function generateStudentCode()
+    {
+        $code = 'NLTC' . date('Y') . '-';
+        $count = self::all()->count() + 1;
+        switch (true) {
+            case ($count > 0 && $count < 10):
+                $count = '0000' . $count;
+                break;
+
+            case ($count > 9 && $count < 100):
+                $count = '000' . $count;
+                break;
+
+            case ($count > 99 && $count < 1000):
+                $count = '00' . $count;
+                break;
+
+            case ($count > 999 && $count < 10000):
+                $count = '0' . $count;
+                break;
+
+            default:
+                $count = '' . $count;
+                break;
+        }
+        $code .= $count;
+        return $code;
+    }
 
 }

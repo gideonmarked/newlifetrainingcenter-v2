@@ -72,7 +72,7 @@ class Applications extends Model
 	public $hasOne = [];
     public $hasMany = [];
     public $belongsTo = [
-				'students' => ['HeidiMarasigan\Nltc\Models\Students']
+				'user' => ['Backend\Models\User']
 		];
     public $belongsToMany = [];
     public $morphTo = [];

@@ -3,15 +3,15 @@
 use Model;
 
 /**
- * Faculty Model
+ * Enrollment Model
  */
-class Faculty extends Model
+class Enrollment extends Model
 {
 
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'heidimarasigan_nltc_faculties';
+    public $table = 'heidimarasigan_nltc_enrollments';
 
     /**
      * @var array Guarded fields
@@ -26,10 +26,7 @@ class Faculty extends Model
     /**
      * @var array Relations
      */
-    public $hasOne = [
-        'profile' => ['HeidiMarasigan\Nltc\Models\Profile'],
-        'user' => ['Backend\Models\User']
-    ];
+    public $hasOne = [];
     public $hasMany = [];
     public $belongsTo = [];
     public $belongsToMany = [];

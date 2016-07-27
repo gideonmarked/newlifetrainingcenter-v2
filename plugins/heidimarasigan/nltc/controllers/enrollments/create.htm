@@ -1,0 +1,62 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('heidimarasigan/nltc/enrollments') ?>">Enrollments</a></li>
+        <li><?= e($this->pageTitle) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<?php if (!$this->fatalError): ?>
+
+    <?= Form::open(['class' => 'layout']) ?>
+
+        <div class="layout-row">
+            <form class="form-elements" role="form">
+                <?php
+                    $subjects = $this->getSubjects();
+                ?>
+                <?php foreach( $subjects as $key => $subject ){ ?>
+                
+                <div class="form-group span-full">
+                    <label>Address <?= $key ?></label>
+                    <input type="text" name="subject_<?= $key ?>" value="<?= $subject->title ?>" class="form-control" />
+                </div>
+                <?php } ?>
+            </form>
+
+            <div class="form-buttons">
+            <div class="loading-indicator-container">
+                <button
+                    type="submit"
+                    data-request="onCreateEnrollment"
+                    data-hotkey="ctrl+s, cmd+s"
+                    data-load-indicator="Creating Enrollment..."
+                    class="btn btn-primary">
+                    Create
+                </button>
+                <button
+                    type="button"
+                    data-request="onSave"
+                    data-request-data="close:1"
+                    data-hotkey="ctrl+enter, cmd+enter"
+                    data-load-indicator="Creating Enrollment..."
+                    class="btn btn-default">
+                    Create and Close
+                </button>
+                <span class="btn-text">
+                    or <a href="<?= Backend::url('heidimarasigan/nltc/enrollments') ?>">Cancel</a>
+                </span>
+            </div>
+        </div>
+            
+        </div>
+
+        
+
+    <?= Form::close() ?>
+
+<?php else: ?>
+
+    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
+    <p><a href="<?= Backend::url('heidimarasigan/nltc/enrollments') ?>" class="btn btn-default">Return to enrollments list</a></p>
+
+<?php endif ?>

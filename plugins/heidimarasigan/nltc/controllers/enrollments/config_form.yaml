@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Enrollment
+
+# Model Form Field configuration
+form: $/heidimarasigan/nltc/models/enrollment/fields.yaml
+
+# Model Class name
+modelClass: HeidiMarasigan\Nltc\Models\Enrollment
+
+# Default redirect location
+defaultRedirect: heidimarasigan/nltc/enrollments
+
+# Create page
+create:
+    title: Create Enrollment
+    redirect: heidimarasigan/nltc/enrollments/update/:id
+    redirectClose: heidimarasigan/nltc/enrollments
+
+# Update page
+update:
+    title: Edit Enrollment
+    redirect: heidimarasigan/nltc/enrollments
+    redirectClose: heidimarasigan/nltc/enrollments
+
+# Preview page
+preview:
+    title: Preview Enrollment

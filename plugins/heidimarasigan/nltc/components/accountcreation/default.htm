@@ -1,13 +1,13 @@
 <div class="panel panel-default">
 	<div class="wrapper panel-body">
-		<form data-request="">
+		<form data-request="onCreate">
 		 	<div class="row">
 		 		<div class="col-md-6 col-md-offset-3">
 		 			<label class="control-label col-md-3" for="user_email">
 					<h5>Email: </h5>
 					</label>
 					<div class="col-md-9">
-						<input type="text" name="user_email" class="form-control" value="{{ email }}" disabled>
+						<input type="text" name="user_email" class="form-control" value="{{ email }}">
 					</div>					
 				</div>
 				<div class="col-md-6 col-md-offset-3">
@@ -15,7 +15,7 @@
 					<h5>Password: </h5>
 					</label>
 					<div class="col-md-9">
-						<input type="text" name="user_password" class="form-control">
+						<input type="password" name="user_password" class="form-control">
 					</div>
 				</div>
 				<div class="col-md-6 col-md-offset-3">					
@@ -23,13 +23,13 @@
 					<h5>Re-type Password: </h5>
 					</label>
 					<div class="col-md-9">
-						<input type="text" name="user_retype_password" class="form-control">
+						<input type="password" name="user_retype_password" class="form-control">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-6 col-md-offset-3 pull-right">
 				<div class="btn-group">
-					<button type="button" class="btn btn-primary">Create</button>
+					<button type="submit" class="btn btn-primary">Create</button>
 				</div>
 			</div>		
 		</form>

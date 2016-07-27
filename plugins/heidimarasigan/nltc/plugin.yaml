@@ -23,6 +23,9 @@ permissions:
     heidimarasigan.nltc.manage_levels:
         tab: 'Manage Levels'
         label: 'Manage NLTC Levels'
+    heidimarasigan.nltc.manage_enrollment:
+        tab: 'Manage Enrollment'
+        label: 'Manage NLTC Enrollment'
 navigation:
     NLTC:
         label: NLTC
@@ -59,3 +62,9 @@ navigation:
                 icon: icon-child
                 permissions:
                     - heidimarasigan.nltc.manage_students
+    Student:
+        label: Student
+        url: heidimarasigan/nltc/enrollments/create
+        icon: icon-institution
+        permissions:
+            - heidimarasigan.nltc.manage_enrollment
