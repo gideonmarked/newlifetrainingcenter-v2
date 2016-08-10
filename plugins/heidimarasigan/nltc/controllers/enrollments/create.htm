@@ -14,13 +14,30 @@
                 <?php
                     $subjects = $this->getSubjects();
                 ?>
-                <?php foreach( $subjects as $key => $subject ){ ?>
-                
                 <div class="form-group span-full">
-                    <label>Address <?= $key ?></label>
-                    <input type="text" name="subject_<?= $key ?>" value="<?= $subject->title ?>" class="form-control" />
-                </div>
+                    <div class="control-list list-unresponsive">
+                        <table class="table data">
+                            <thead>
+                                <tr>
+                                <th class="sort-desc"><a href="/">#</a></th>
+                                    <th class="sort-desc"><a href="/">Title</a></th>
+                                    <th class="active sort-asc"><a href="/">Description</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                <?php foreach( $subjects as $key => $subject ){ ?>
+                    
+                                <tr>
+                                    <td><?= $key ?></td>
+                                    <td><?= $subject->title ?></td>
+                                    <td><?= $subject->description ?></td>
+                                </tr>
+                
                 <?php } ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </form>
 
             <div class="form-buttons">
@@ -35,7 +52,7 @@
                 </button>
                 <button
                     type="button"
-                    data-request="onSave"
+                    data-request="onCreateEnrollment"
                     data-request-data="close:1"
                     data-hotkey="ctrl+enter, cmd+enter"
                     data-load-indicator="Creating Enrollment..."
