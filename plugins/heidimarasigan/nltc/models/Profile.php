@@ -30,7 +30,7 @@ class Profile extends Model
     public $hasMany = [];
     public $belongsTo = [
         'faculty' => ['HeidiMarasigan\Nltc\Models\Faculty'],
-        'user' => ['Backend\Models\User']
+        // 'user' => ['Backend\Models\User']
     ];
     public $belongsToMany = [];
     public $morphTo = [];

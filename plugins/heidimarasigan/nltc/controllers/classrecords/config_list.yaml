@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/heidimarasigan/nltc/models/faculty/columns.yaml
+list: $/heidimarasigan/nltc/models/classrecord/columns.yaml
 
 # Model Class name
-modelClass: HeidiMarasigan\Nltc\Models\Faculty
+modelClass: HeidiMarasigan\Nltc\Models\ClassRecord
 
 # List Title
-title: Manage Faculties
+title: Manage Class Records
 
 # Link URL for each record
-recordUrl: heidimarasigan/nltc/faculties/update/:id
+recordUrl: heidimarasigan/nltc/classrecords/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

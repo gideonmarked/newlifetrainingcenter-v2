@@ -14,6 +14,7 @@ class CreateSubjectsTable extends Migration
             $table->string('title',50);
             $table->string('description',100);
             $table->integer('level_id');
+            $table->string('date');
             $table->timestamps();
         });
     }

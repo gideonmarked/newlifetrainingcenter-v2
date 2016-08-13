@@ -1,0 +1,25 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+faculty:
+     label: Faculty
+     view:
+         list: $/heidimarasigan/nltc/models/faculty/columns.yaml
+         toolbarButtons: add|create|remove
+     manage:
+         showSearch: true
+         recordsPerPage: 10
+         list: $/heidimarasigan/nltc/models/faculty/columns.yaml
+         form: $/heidimarasigan/nltc/models/faculty/fields.yaml
+
+student:
+     label: Student
+     view:
+         list: $/heidimarasigan/nltc/models/student/columns.yaml
+         toolbarButtons: add|create|remove
+     manage:
+         showSearch: true
+         recordsPerPage: 10
+         list: $/heidimarasigan/nltc/models/student/columns.yaml
+         form: $/heidimarasigan/nltc/models/student/fields.yaml   

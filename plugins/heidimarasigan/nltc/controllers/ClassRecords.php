@@ -4,30 +4,24 @@ use BackendMenu;
 use Backend\Classes\Controller;
 
 /**
- * Students Back-end Controller
+ * Class Records Back-end Controller
  */
-class Students extends Controller
+class ClassRecords extends Controller
 {
     public $implement = [
         'Backend.Behaviors.FormController',
         'Backend.Behaviors.ListController',
-        // 'Backend\Behaviors\ReorderController',
         'Backend.Behaviors.RelationController',
     ];
 
     public $formConfig = 'config_form.yaml';
     public $listConfig = 'config_list.yaml';
-    // public $reorderConfig = 'config_reorder.yaml';
     public $relationConfig = 'config_relation.yaml';
-
-    public $requiredPermissions = [
-        'heidimarasigan.nltc.manage_students' 
-    ];
 
     public function __construct()
     {
         parent::__construct();
 
-        BackendMenu::setContext('HeidiMarasigan.Nltc', 'NLTC', 'students');
+        BackendMenu::setContext('HeidiMarasigan.Nltc', 'NLTC', 'classrecords');
     }
 }

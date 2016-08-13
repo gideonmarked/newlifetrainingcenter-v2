@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Class Record
+
+# Model Form Field configuration
+form: $/heidimarasigan/nltc/models/classrecord/fields.yaml
+
+# Model Class name
+modelClass: HeidiMarasigan\Nltc\Models\ClassRecord
+
+# Default redirect location
+defaultRedirect: heidimarasigan/nltc/classrecords
+
+# Create page
+create:
+    title: Create Class Record
+    redirect: heidimarasigan/nltc/classrecords/update/:id
+    redirectClose: heidimarasigan/nltc/classrecords
+
+# Update page
+update:
+    title: Edit Class Record
+    redirect: heidimarasigan/nltc/classrecords
+    redirectClose: heidimarasigan/nltc/classrecords
+
+# Preview page
+preview:
+    title: Preview Class Record

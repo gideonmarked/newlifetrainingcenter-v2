@@ -21,9 +21,9 @@ class Applicants extends Controller
         BackendMenu::setContext('HeidiMarasigan.Nltc', 'NLTC', 'Applicants');
     }
 		
-		public function onRun()
-		{
-				//$this->addCss('/heidimarasigan/nltc/assets/css/bootstrap-datetimepicker.min.css');
-				//$this->addJs('/heidimarasigan/nltc/assets/js/bootstrap-datetimepicker.min.js');
-		}
+	public function onRun()
+	{
+			//$this->addCss('/heidimarasigan/nltc/assets/css/bootstrap-datetimepicker.min.css');
+			//$this->addJs('/heidimarasigan/nltc/assets/js/bootstrap-datetimepicker.min.js');
+	}
 }

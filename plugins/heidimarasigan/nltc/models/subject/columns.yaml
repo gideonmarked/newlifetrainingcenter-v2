@@ -18,5 +18,8 @@ columns:
     level:
         label: Level
         type: relation
-        valueFrom: level[title]
+        valueFrom: title
         searchable: true
+
+    date:
+        label: Date

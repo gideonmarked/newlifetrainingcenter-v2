@@ -28,8 +28,23 @@ class ClassRecord extends Model
      */
     public $hasOne = [];
     public $hasMany = [];
-    public $belongsTo = [];
-    public $belongsToMany = [];
+    public $belongsTo = [
+        'subject' => [
+                        'HeidiMarasigan\Nltc\Models\Subject',
+                        'table' =>  'heidimarasigan_nltc_subjects'
+                    ],       
+    ];
+    public $belongsToMany = [
+        'faculty' => [
+                        'HeidiMarasigan\Nltc\Models\Faculty',
+                        'table' =>  'heidimarasigan_nltc_class_records_faculties'
+                    ],
+        'student' => [
+                        'HeidiMarasigan\Nltc\Models\Student',
+                        'table' => 'heidimarasigan_nltc_class_records_students',
+                        'pivot' => ['grade','evaluation']
+                    ], 
+    ];
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];

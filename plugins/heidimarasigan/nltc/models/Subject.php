@@ -29,13 +29,7 @@ class Subject extends Model
     public $hasOne = [];
     public $hasMany = [];
     public $belongsTo = [
-        'level' => [
-                        'HeidiMarasigan\Nltc\Models\Level',
-                        'table' =>  'heidimarasigan_nltc_levels'
-                    ],
-    ];
-    public $belongsToMany = [
-        
+        'level' => ['HeidiMarasigan\Nltc\Models\Level'],       
     ];
     public $morphTo = [];
     public $morphOne = [];

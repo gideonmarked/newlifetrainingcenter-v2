@@ -39,6 +39,13 @@ navigation:
                 url: heidimarasigan/nltc/applicants
                 icon: icon-group
                 permissions: {  }
+            
+            classrecords:
+                label: Class Records
+                url: heidimarasigan/nltc/classrecords
+                icon: icon-list-ul
+                permissions: {  }
+            
             subjects:
                 label: Subjects
                 url: heidimarasigan/nltc/subjects

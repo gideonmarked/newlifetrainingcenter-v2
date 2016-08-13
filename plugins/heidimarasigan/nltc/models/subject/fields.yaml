@@ -20,4 +20,10 @@ fields:
         type: relation
         emptyOption: -- Select Your Level --
         nameFrom: title
-        
+
+    date:
+        label: Date
+        type: text
+
+
+  

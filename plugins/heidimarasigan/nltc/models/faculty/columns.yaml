@@ -6,3 +6,21 @@ columns:
     id:
         label: ID
         searchable: true
+
+    faculty_code:
+        searchable: true
+        select: ucase(faculty_code)
+
+    full_name:
+        label: Full Name
+        select: ucase(concat(title, ' ', first_name, ' ', middle_name, ' ', last_name))
+        searchable: true
+
+
+
+
+
+
+
+
+

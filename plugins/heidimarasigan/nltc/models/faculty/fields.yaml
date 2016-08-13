@@ -8,3 +8,32 @@ fields:
         disabled: true
 
 
+    faculty_code:
+        label: Faculty Code
+        type: text
+
+    title:
+        label: Title
+        type: dropdown
+        options:
+          placeholder: -- Select something --
+          'Atty' : 'Atty' 
+          'Dr' : 'Dr'
+          'Dra' : 'Dra'
+          'Engr' : 'Engr'
+          'Mr' : 'Mr'
+          'Mrs' : 'Mrs'
+          'Ms' : 'Ms'                    
+          'Ptr' : 'Ptr'  
+
+    first_name:
+        label: First Name
+        type: text
+
+    middle_name:
+        label: Middle Name
+        type: text
+
+    last_name:
+        label: Last Name
+        type: text

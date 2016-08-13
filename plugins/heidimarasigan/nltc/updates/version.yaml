@@ -7,4 +7,8 @@
     - 'create_faculties_table.php'
     - 'create_students_table.php'
     - 'create_profiles_table.php'
+    - 'create_days_table.php'
+    - 'create_class_records_table.php'
+    - 'seed_days_table.php'
     - 'seed_levels_table.php'
+    

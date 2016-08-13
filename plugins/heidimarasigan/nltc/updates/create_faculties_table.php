@@ -12,6 +12,10 @@ class CreateFacultiesTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('faculty_code',12);
+            $table->string('title',255);
+            $table->string('first_name',255);
+            $table->string('middle_name',255);
+            $table->string('last_name',255);
             $table->timestamps();
         });
     }

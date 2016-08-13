@@ -1,17 +1,17 @@
-<?php namespace HeidiMarasigan\Nltc\Models;
+<?php namespace Heidimarasigan\Nltc\Models;
 
 use Model;
 
 /**
- * Faculty Model
+ * Day Model
  */
-class Faculty extends Model
+class Day extends Model
 {
 
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'heidimarasigan_nltc_faculties';
+    public $table = 'heidimarasigan_nltc_days';
 
     /**
      * @var array Guarded fields
@@ -26,10 +26,7 @@ class Faculty extends Model
     /**
      * @var array Relations
      */
-    public $hasOne = [
-        // 'profile' => ['HeidiMarasigan\Nltc\Models\Profile'],
-        'user' => ['Backend\Models\User']
-    ];
+    public $hasOne = [];
     public $hasMany = [];
     public $belongsTo = [];
     public $belongsToMany = [];

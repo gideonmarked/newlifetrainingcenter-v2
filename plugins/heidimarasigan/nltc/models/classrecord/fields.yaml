@@ -6,3 +6,13 @@ fields:
     id:
         label: ID
         disabled: true
+
+    faculty:
+        label: Faculty
+        type: partial
+        path: field_faculties
+
+    students:
+        label: Students
+        type: partial
+        path: field_students
