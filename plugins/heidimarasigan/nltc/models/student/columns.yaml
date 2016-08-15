@@ -26,4 +26,5 @@ columns:
     level:
         label: Level
         type: relation
-        searchable: true
+        valueFrom: level[title]
+        sortable: false

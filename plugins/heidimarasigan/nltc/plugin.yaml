@@ -43,19 +43,19 @@ navigation:
             classrecords:
                 label: Class Records
                 url: heidimarasigan/nltc/classrecords
-                icon: icon-list-ul
+                icon: icon-book
                 permissions: {  }
             
             subjects:
                 label: Subjects
                 url: heidimarasigan/nltc/subjects
-                icon: icon-list-ul
+                icon: icon-file-text-o
                 permissions:
                     - heidimarasigan.nltc.manage_subjects
             faculty:
                 label: Faculty
                 url: heidimarasigan/nltc/faculties
-                icon: icon-bookmark
+                icon: icon-clipboard
                 permissions: {  }
             levels:
                 label: Levels
